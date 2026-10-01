@@ -1,0 +1,29 @@
+{
+  "prompts": [
+    {
+      "name": "is_about_bacteria",
+      "target_section": ["IAO:0000305", "IAO:0000315", "IAO:0000317", "IAO:0000314"],
+      "prompt": "Does this paper study bacteria or bacterial strains?",
+      "output_format": "boolean"
+    },
+    {
+      "name": "has_gene_genotype",
+      "target_section": ["IAO:0000305", "IAO:0000315", "IAO:0000317", "IAO:0000318", "IAO:0000314"],
+      "prompt": "Does this paper report a specific bacterial gene or genotype by name (e.g. a named resistance gene, efflux pump gene, or genotype/lineage designation) in the bacterial strain(s) under study, even if no specific sequence variant/mutation is described? Answer NO if no gene or genotype is named for the study bacterium.",
+      "output_format": "boolean"
+    },
+    {
+      "name": "has_phenotype_data",
+      "target_section": ["IAO:0000305", "IAO:0000315", "IAO:0000317", "IAO:0000318", "IAO:0000314"],
+      "prompt": "Does this paper report any experimental measurements or observations of bacterial phenotypes (e.g. growth, metabolism, resistance, biofilm formation, virulence)?",
+      "output_format": "boolean"
+    },
+    {
+      "name": "has_amr_phenotype",
+      "target_section": ["IAO:0000305", "IAO:0000315", "IAO:0000317", "IAO:0000318", "IAO:0000314"],
+      "prompt": "Does this paper report a phenotype specifically related to antimicrobial/antibiotic resistance or susceptibility for the bacterial strain(s) under study (e.g. MIC values, resistant/susceptible/intermediate classification, resistance gene expression, inhibition zone diameter)? Answer NO if the only phenotypes reported are unrelated to antimicrobial resistance/susceptibility (e.g. growth rate, biofilm formation, virulence with no resistance angle).",
+      "output_format": "boolean"
+    }
+  ],
+  "detectors": []
+}

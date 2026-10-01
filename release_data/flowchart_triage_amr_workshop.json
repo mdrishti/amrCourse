@@ -1,0 +1,56 @@
+{
+  "startNode": "check_bacteria",
+  "nodes": {
+    "check_bacteria": {
+      "type": "conditional_prompt_boolean",
+      "data": {
+        "prompt_name": "is_about_bacteria",
+        "desc": "Workshop Triage — IS_BACTERIA"
+      },
+      "transitions": {
+        "true": "check_gene_genotype",
+        "false": "terminal_triage"
+      }
+    },
+    "check_gene_genotype": {
+      "type": "conditional_prompt_boolean",
+      "data": {
+        "prompt_name": "has_gene_genotype",
+        "desc": "Workshop Triage — HAS_GENE_GENOTYPE"
+      },
+      "transitions": {
+        "true": "check_phenotype",
+        "false": "check_phenotype"
+      }
+    },
+    "check_phenotype": {
+      "type": "conditional_prompt_boolean",
+      "data": {
+        "prompt_name": "has_phenotype_data",
+        "desc": "Workshop Triage — HAS_PHENOTYPE"
+      },
+      "transitions": {
+        "true": "check_amr_phenotype",
+        "false": "check_amr_phenotype"
+      }
+    },
+    "check_amr_phenotype": {
+      "type": "conditional_prompt_boolean",
+      "data": {
+        "prompt_name": "has_amr_phenotype",
+        "desc": "Workshop Triage — HAS_AMR_PHENOTYPE"
+      },
+      "transitions": {
+        "true": "terminal_triage",
+        "false": "terminal_triage"
+      }
+    },
+    "terminal_triage": {
+      "type": "terminal_triage",
+      "data": {
+        "desc": "Workshop AMR triage result: IS_BACTERIA / HAS_GENE_GENOTYPE / HAS_PHENOTYPE / HAS_AMR_PHENOTYPE flags"
+      },
+      "transitions": {}
+    }
+  }
+}
