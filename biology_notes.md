@@ -19,6 +19,22 @@ Talking points if students ask what should/shouldn't trigger "yes":
 - A gene *named* as a resistance gene (e.g. *blaTEM*, *mecA*, *gyrA* mutation) without any reported susceptibility testing — this is the ambiguous case worth discussing; the current prompt wording is what determines whether it's yes or no, which is exactly the kind of edge case that motivates Section 5 (editable prompts).
 - Resistance in a host organism or an unrelated control strain, not the study bacterium — no (the prompt for `has_genetic_variants` already explicitly excludes this case for variants; worth checking whether `has_amr_phenotype` handles it the same way, and if not, that's a good candidate edit for the group to try in the hands-on section).
 
+## Why section-aware triage (Section h) can disagree with abstract-only triage
+
+Each question in `TRIAGE_PROMPTS` carries a `target_section` list (IAO ontology codes for TITLE,
+ABSTRACT, METHODS, RESULTS, ...). The real pipeline uses this to show each question only the section(s)
+it's actually about — `is_about_bacteria` can be answered from the title/abstract alone, but
+`has_amr_phenotype` often can't: MIC values, R/I/S calls, and resistance-gene expression data are
+reported in Results/Methods and routinely left out of the abstract for space. Section (h) of the
+workshop notebook replicates this instead of the flat title+abstract blob used everywhere else.
+
+This is a good biology talking point in its own right: a paper can be a genuine AMR-phenotype paper
+and still answer "no" under abstract-only triage simply because the abstract doesn't mention
+resistance explicitly, even though Results does. If students compare the same paper's abstract-only
+and section-aware answers in Section (h) and get different results, that's expected, not a bug — it's
+the gap abstract-only triage accepts as a speed/cost tradeoff (see "Genotype-phenotype linkage,
+briefly" above for the same tradeoff reasoning at the extraction level).
+
 ## Picking sample papers with known variety
 
 The notebook's `sample_pmids` list (section g) fetches title+abstract live from PubMed via `Bio.Entrez` — there's no local full-text corpus involved in the Colab version. When choosing/updating that PMID list, aim for a spread rather than all-positive:

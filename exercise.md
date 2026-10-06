@@ -61,9 +61,29 @@ After section (e) has run (so `TRIAGE_PROMPTS` is loaded), edit `TRIAGE_PROMPTS[
 
 **Watch the free-tier cap**: OpenRouter's free tier allows 50 requests/day *total on your key*, shared across every free model — each `run_triage` call uses up to 4 requests, so a handful of papers plus a re-run or two is plenty for one session.
 
-## 5. Discuss
+## 5. Triage a full paper, section-aware (Section h)
+
+So far every triage question has seen the same title+abstract text. Section (h) instead routes each
+question to only the paper section(s) listed in its `target_section` (the IAO ontology codes already
+present in `TRIAGE_PROMPTS`, loaded back in section (e)) — the same thing the real production pipeline
+does over full text, not just the abstract.
+
+This fetches the paper's full text straight from PMC — no files to download or upload, just NCBI:
+1. `pmid_to_pmcid(pmid)` looks up whether a PMID has a linked PMC full-text record. Not every paper
+   does — a `None` result means try a different PMID.
+2. `fetch_sections_from_pmc(pmcid)` fetches that record's full-text XML and splits it into sections.
+3. `run_triage_sectioned(sections)` runs the same flowchart, but each question only sees its own
+   relevant section(s) instead of one abstract-only blob.
+
+Run the "Try it" cell on `sample_pmids[0]`, then try it on each of your other sample PMIDs too (just
+change the `pmid = ...` line) — some will have no PMC full-text record (closed access or
+metadata-only), which is expected. For any PMID that works, compare its result here to what you got
+from the abstract-only `run_triage` on the same paper. Did seeing the full text change any answer?
+
+## 6. Discuss
 
 Bring back to the group:
 - Any paper where your triage answer surprised you.
 - Whether you hit the OpenRouter rate limit.
 - One triage question you'd want to add or reword for your own research area — in the notebook this is a `TRIAGE_PROMPTS`/`TRIAGE_FLOWCHART` dict edit; in the real `microbeMiner` pipeline the identical schema lives in `data/flowchart_triage_amr.json`/`data/prompts_triage_amr.json` instead.
+- Whether abstract-only and section-aware full-text triage agreed, for anyone who tried Section (h).
