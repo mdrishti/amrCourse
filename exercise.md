@@ -16,6 +16,7 @@ Open the notebook in Colab and make your own copy (File > Save a copy in Drive) 
 3. Get a free OpenRouter API key: https://openrouter.ai/keys. Openrouter is a service provider that operates a platform for accessing and routing requests to large language models. For some models accessible through their free router (https://openrouter.ai/openrouter/free). The list of these models changes frequently. For this workshop, you can use gemini models - google/gemma-4-31b-it:free and google/gemma-4-26b-a4b-it. 
 
 If you would like to use API keys of other language model platforms, you can check here (https://openrouter.ai/models) whether that model is accessible through Openrouter and plug-in the key in your Openrouter account to access it programatically.
+It is worth getting an API key for gemini on Google AI studio here (https://aistudio.google.com/api-keys) and plugging that in Openruter account settings to access gemini models. While you can also use gemini models without Openrouter, it just makes it easier to access any model you want and not just the ones provided by gemini.
 
 
 ### Initial steps
