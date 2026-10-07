@@ -22,11 +22,11 @@ Talking points if students ask what should/shouldn't trigger "yes":
 ## Why section-aware triage (Section h) can disagree with abstract-only triage
 
 Each question in `TRIAGE_PROMPTS` carries a `target_section` list (IAO ontology codes for TITLE,
-ABSTRACT, METHODS, RESULTS, ...). The real pipeline uses this to show each question only the section(s)
-it's actually about — `is_about_bacteria` can be answered from the title/abstract alone, but
-`has_amr_phenotype` often can't: MIC values, R/I/S calls, and resistance-gene expression data are
-reported in Results/Methods and routinely left out of the abstract for space. Section (h) of the
-workshop notebook replicates this instead of the flat title+abstract blob used everywhere else.
+ABSTRACT, METHODS, RESULTS, ...). Section (h) of the workshop notebook uses this to show each question
+only the section(s) it's actually about, instead of the flat title+abstract blob used everywhere else
+— `is_about_bacteria` can be answered from the title/abstract alone, but `has_amr_phenotype` often
+can't: MIC values, R/I/S calls, and resistance-gene expression data are reported in Results/Methods and
+routinely left out of the abstract for space.
 
 This is a good biology talking point in its own right: a paper can be a genuine AMR-phenotype paper
 and still answer "no" under abstract-only triage simply because the abstract doesn't mention
