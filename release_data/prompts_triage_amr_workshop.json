@@ -21,7 +21,7 @@
     {
       "name": "has_amr_phenotype",
       "target_section": ["IAO:0000305", "IAO:0000315", "IAO:0000317", "IAO:0000318", "IAO:0000314"],
-      "prompt": "Does this paper report a phenotype specifically related to antimicrobial/antibiotic resistance or susceptibility for the bacterial strain(s) under study (e.g. MIC values, resistant/susceptible/intermediate classification, resistance gene expression, inhibition zone diameter)? Answer NO if the only phenotypes reported are unrelated to antimicrobial resistance/susceptibility (e.g. growth rate, biofilm formation, virulence with no resistance angle).",
+      "prompt": "Does this paper report a phenotype specifically related to antimicrobial/antibiotic resistance or susceptibility for the bacterial strain(s) under study (e.g. MIC values, resistant/susceptible/intermediate classification, resistance gene expression, inhibition zone diameter)? Answer NO if the only phenotypes reported are unrelated to antimicrobial resistance/susceptibility (e.g. growth rate, biofilm formation, virulence with no antimicrobial/antibiotic resistance angle).",
       "output_format": "boolean"
     }
   ],
