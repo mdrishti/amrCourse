@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[packages]
+biopython = "*"
+requests = "*"
+pandas = "*"
+python-dotenv = "*"
+huggingface-hub = "*"
+llama-cpp-python = "*"
+mlx-lm = {version = "*", markers = "sys_platform == 'darwin' and platform_machine == 'arm64'"}
+jupyter = "*"
+
+[requires]
+python_version = "3.11"
