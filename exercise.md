@@ -6,6 +6,29 @@
 
 Open the notebook in Colab and make your own copy (File > Save a copy in Drive) before starting, so your edits don't collide with anyone else's.
 
+### Running it locally instead (optional)
+
+If you'd rather run the notebook on your own laptop than in Colab (e.g. to use section (i)'s MLX
+backend on Apple Silicon), this repo ships a `Pipfile` with everything the notebook needs:
+
+```bash
+pip install pipenv          # if you don't already have it
+cd amrCourse
+pipenv install              # creates a venv with biopython, pandas, llama-cpp-python, etc.
+                             # -- mlx-lm is pulled in automatically only on Apple Silicon
+pipenv run jupyter notebook colab_triage_workshop.ipynb
+```
+
+Secrets work differently outside Colab — there's no Secrets manager, so the notebook falls back to
+a `.env` file in this directory (loaded via `python-dotenv`, already in the `Pipfile`). Create one
+with:
+```
+GEMINI_API_KEY=...
+ENTREZ_EMAIL=...
+NCBI_API_KEY=...
+```
+and make sure `.env` is gitignored before you commit anything.
+
 ## Setup
 
 ### PubMed
@@ -66,8 +89,8 @@ After section (e) has run (so `TRIAGE_PROMPTS` is loaded), edit `TRIAGE_PROMPTS[
 
 So far every triage question has seen the same title+abstract text. Section (h) instead routes each
 question to only the paper section(s) listed in its `target_section` (the IAO ontology codes already
-present in `TRIAGE_PROMPTS`, loaded back in section (e)) — the same thing the real production pipeline
-does over full text, not just the abstract.
+present in `TRIAGE_PROMPTS`, loaded back in section (e)) — giving each question the actual section of
+the paper it needs, instead of hoping the answer happens to be mentioned in the abstract.
 
 This fetches the paper's full text straight from PMC — no files to download or upload, just NCBI:
 1. `pmid_to_pmcid(pmid)` looks up whether a PMID has a linked PMC full-text record. Not every paper
@@ -86,5 +109,5 @@ from the abstract-only `run_triage` on the same paper. Did seeing the full text 
 Bring back to the group:
 - Any paper where your triage answer surprised you.
 - Whether you hit the OpenRouter rate limit.
-- One triage question you'd want to add or reword for your own research area — in the notebook this is a `TRIAGE_PROMPTS`/`TRIAGE_FLOWCHART` dict edit; in the real `microbeMiner` pipeline the identical schema lives in `data/flowchart_triage_amr.json`/`data/prompts_triage_amr.json` instead.
+- One triage question you'd want to add or reword for your own research area — in the notebook this is a `TRIAGE_PROMPTS`/`TRIAGE_FLOWCHART` dict edit.
 - Whether abstract-only and section-aware full-text triage agreed, for anyone who tried Section (h).
