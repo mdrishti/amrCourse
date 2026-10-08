@@ -41,7 +41,7 @@ and make sure `.env` is gitignored before you commit anything.
 ### Initial steps
 4. Open the notebook in Google Colab. Click the key icon in the left sidebar (Secrets) and add secrets named `GEMINI_API_KEY`, `NCBI_API_KEY` and `ENTREZ_EMAIL` with your repective keys and email-id as the value. This keeps it out of the notebook file and out of your clipboard history. 
 5. Run the notebook's setup cells in section (a) (`pip install biopython requests pandas`, then the API key / email cell).
-6. Run section (b) — this downloads the triage flowchart/prompts and reference-data CSVs from a web link and checks each one's checksum before using it. You should see `✓ <filename> downloaded and checksum-verified` for all 4 files.
+6. Run section (b) — this downloads the reference-data CSVs used in section (c)'s query-tuning discussion from a web link and checks each one's checksum before using it. You should see `✓ <filename> downloaded and checksum-verified` for all 3 files. (The triage flowchart/prompts are defined directly in the notebook in section (e), not downloaded — see step 11.)
 
 ### Query PMC to get initial corpus of papers.
 7. Section (c) constructs the AMR search query used to build the paper corpus. Think about the terms, add/substract terms you think can be useful to expand/narrow the list of PMIDs. For instance, you can add a genus name to focus on specific bacterial species/strains. 
@@ -51,7 +51,7 @@ You can also play with a set of random 200 papers, analyze what phrases were rep
 10. Section (d) lists a flow to exclude more papers from the initial cohort. There are papers of type retraction/expression-of-concern notices. You would not want to curate information from such papers where the scientific integrity is not optimal. These notices also contain metadata (e.g.: PMID of the orginal paper that is retracted). This second pass excludes the PMIDs of the notices and the concerned original papers.
 
 ### Triage using language models
-11. Section (e) loads the triage question set from the downloaded JSON files into `TRIAGE_PROMPTS` (the questions) and `TRIAGE_FLOWCHART` (the order/branching). These together guide the language model through the questions - 
+11. Section (e) defines the triage question set directly in the notebook as `TRIAGE_PROMPTS` (the questions) and `TRIAGE_FLOWCHART` (the order/branching) — nothing downloaded, so editing a prompt is just editing this cell. These together guide the language model through the questions - 
 Is this paper about bacteria? Is a gene/genotype named? Does it report a phenotype? is that phenotype AMR-specific?
 12. Section (f) sets up the Gemini call and the flowchart walker (`call_llm`/`run_triage`). Section (g) fetches title+abstract for a small set of sample PMIDs via `Bio.Entrez` — run this before triaging anything, since `run_triage` needs the `papers` dict it builds.
 13. Use the schema to run triage on one or more papers ("Run triage on one paper").
@@ -77,7 +77,7 @@ Run that section. It loops `run_triage` over all 4 sample PMIDs and builds a pan
 
 ## 4. Edit a prompt and re-run
 
-After section (e) has run (so `TRIAGE_PROMPTS` is loaded), edit `TRIAGE_PROMPTS["has_amr_phenotype"]["prompt"]` directly in a new cell — narrower or broader, your choice — then re-run "Run triage on one paper" or the tabulated section on the same paper(s). Does the answer or reasoning change? (This only changes the in-memory dict for your session, not the published file on disk — to make the change stick for everyone, it would need to go back into `workshop/release_data/prompts_triage_amr_workshop.json` and get re-published.)
+Edit `TRIAGE_PROMPTS["has_amr_phenotype"]["prompt"]` directly in section (e)'s cell — narrower or broader, your choice — then re-run that cell followed by "Run triage on one paper" or the tabulated section on the same paper(s). Does the answer or reasoning change? (This changes the prompt for the rest of your session once you re-run section (e); it doesn't persist across a fresh run of the notebook from the top, since section (e) always starts from the wording written in that cell.)
 
 **Watch the free-tier cap**: Gemini's free tier is rate-limited per-minute and per-day (check current limits at https://ai.google.dev/gemini-api/docs/rate-limits) — each `run_triage` call uses up to 4 requests, so a handful of papers plus a re-run or two is plenty for one session.
 
