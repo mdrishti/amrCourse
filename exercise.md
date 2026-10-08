@@ -6,6 +6,29 @@
 
 Open the notebook in Colab and make your own copy (File > Save a copy in Drive) before starting, so your edits don't collide with anyone else's.
 
+### Running it locally instead (optional)
+
+If you'd rather run the notebook on your own laptop than in Colab (e.g. to use section (i)'s MLX
+backend on Apple Silicon), this repo ships a `Pipfile` with everything the notebook needs:
+
+```bash
+pip install pipenv          # if you don't already have it
+cd amrCourse
+pipenv install              # creates a venv with biopython, pandas, llama-cpp-python, etc.
+                             # -- mlx-lm is pulled in automatically only on Apple Silicon
+pipenv run jupyter notebook colab_triage_workshop.ipynb
+```
+
+Secrets work differently outside Colab — there's no Secrets manager, so the notebook falls back to
+a `.env` file in this directory (loaded via `python-dotenv`, already in the `Pipfile`). Create one
+with:
+```
+GEMINI_API_KEY=...
+ENTREZ_EMAIL=...
+NCBI_API_KEY=...
+```
+and make sure `.env` is gitignored before you commit anything.
+
 ## Setup
 
 ### PubMed
@@ -13,14 +36,10 @@ Open the notebook in Colab and make your own copy (File > Save a copy in Drive) 
 2. Go to the settings on your NCBI account https://account.ncbi.nlm.nih.gov/settings/ and create an API key.
 
 ### Language models
-3. Get a free OpenRouter API key: https://openrouter.ai/keys. Openrouter is a service provider that operates a platform for accessing and routing requests to large language models. For some models accessible through their free router (https://openrouter.ai/openrouter/free). The list of these models changes frequently. For this workshop, you can use gemini models - google/gemma-4-31b-it:free and google/gemma-4-26b-a4b-it. 
-
-If you would like to use API keys of other language model platforms, you can check here (https://openrouter.ai/models) whether that model is accessible through Openrouter and plug-in the key here (https://openrouter.ai/workspaces/default/byok) in your Openrouter account to access it programatically.
-For this workshop, it is worth getting an API key for gemini on Google AI studio here (https://aistudio.google.com/api-keys) and plugging that in Openruter account settings to access gemini models. While you can also use gemini models without Openrouter, the latter makes it easier to access any model you want and not just the ones provided by gemini.
-
+3. Get a free Gemini API key from Google AI Studio: https://aistudio.google.com/api-keys. The notebook calls the Gemini API directly (no router/middleman), so this one key is all you need for the language-model side.
 
 ### Initial steps
-4. Open the notebook in Google Colab. Click the key icon in the left sidebar (Secrets) and add secrets named `OPENROUTER_API_KEY`, `NCBI_API_KEY` and `ENTREZ_EMAIL` with your repective keys and email-id as the value. This keeps it out of the notebook file and out of your clipboard history. 
+4. Open the notebook in Google Colab. Click the key icon in the left sidebar (Secrets) and add secrets named `GEMINI_API_KEY`, `NCBI_API_KEY` and `ENTREZ_EMAIL` with your repective keys and email-id as the value. This keeps it out of the notebook file and out of your clipboard history. 
 5. Run the notebook's setup cells in section (a) (`pip install biopython requests pandas`, then the API key / email cell).
 6. Run section (b) — this downloads the triage flowchart/prompts and reference-data CSVs from a web link and checks each one's checksum before using it. You should see `✓ <filename> downloaded and checksum-verified` for all 4 files.
 
@@ -34,7 +53,7 @@ You can also play with a set of random 200 papers, analyze what phrases were rep
 ### Triage using language models
 11. Section (e) loads the triage question set from the downloaded JSON files into `TRIAGE_PROMPTS` (the questions) and `TRIAGE_FLOWCHART` (the order/branching). These together guide the language model through the questions - 
 Is this paper about bacteria? Is a gene/genotype named? Does it report a phenotype? is that phenotype AMR-specific?
-12. Section (f) sets up the OpenRouter call and the flowchart walker (`call_llm`/`run_triage`). Section (g) fetches title+abstract for a small set of sample PMIDs via `Bio.Entrez` — run this before triaging anything, since `run_triage` needs the `papers` dict it builds.
+12. Section (f) sets up the Gemini call and the flowchart walker (`call_llm`/`run_triage`). Section (g) fetches title+abstract for a small set of sample PMIDs via `Bio.Entrez` — run this before triaging anything, since `run_triage` needs the `papers` dict it builds.
 13. Use the schema to run triage on one or more papers ("Run triage on one paper").
 
 
@@ -60,14 +79,14 @@ Run that section. It loops `run_triage` over all 4 sample PMIDs and builds a pan
 
 After section (e) has run (so `TRIAGE_PROMPTS` is loaded), edit `TRIAGE_PROMPTS["has_amr_phenotype"]["prompt"]` directly in a new cell — narrower or broader, your choice — then re-run "Run triage on one paper" or the tabulated section on the same paper(s). Does the answer or reasoning change? (This only changes the in-memory dict for your session, not the published file on disk — to make the change stick for everyone, it would need to go back into `workshop/release_data/prompts_triage_amr_workshop.json` and get re-published.)
 
-**Watch the free-tier cap**: OpenRouter's free tier allows 50 requests/day *total on your key*, shared across every free model — each `run_triage` call uses up to 4 requests, so a handful of papers plus a re-run or two is plenty for one session.
+**Watch the free-tier cap**: Gemini's free tier is rate-limited per-minute and per-day (check current limits at https://ai.google.dev/gemini-api/docs/rate-limits) — each `run_triage` call uses up to 4 requests, so a handful of papers plus a re-run or two is plenty for one session.
 
 ## 5. Triage a full paper, section-aware (Section h)
 
 So far every triage question has seen the same title+abstract text. Section (h) instead routes each
 question to only the paper section(s) listed in its `target_section` (the IAO ontology codes already
-present in `TRIAGE_PROMPTS`, loaded back in section (e)) — the same thing the real production pipeline
-does over full text, not just the abstract.
+present in `TRIAGE_PROMPTS`, loaded back in section (e)) — giving each question the actual section of
+the paper it needs, instead of hoping the answer happens to be mentioned in the abstract.
 
 This fetches the paper's full text straight from PMC — no files to download or upload, just NCBI:
 1. `pmid_to_pmcid(pmid)` looks up whether a PMID has a linked PMC full-text record. Not every paper
@@ -85,6 +104,6 @@ from the abstract-only `run_triage` on the same paper. Did seeing the full text 
 
 Bring back to the group:
 - Any paper where your triage answer surprised you.
-- Whether you hit the OpenRouter rate limit.
-- One triage question you'd want to add or reword for your own research area — in the notebook this is a `TRIAGE_PROMPTS`/`TRIAGE_FLOWCHART` dict edit; in the real `microbeMiner` pipeline the identical schema lives in `data/flowchart_triage_amr.json`/`data/prompts_triage_amr.json` instead.
+- Whether you hit the Gemini rate limit.
+- One triage question you'd want to add or reword for your own research area — in the notebook this is a `TRIAGE_PROMPTS`/`TRIAGE_FLOWCHART` dict edit.
 - Whether abstract-only and section-aware full-text triage agreed, for anyone who tried Section (h).
