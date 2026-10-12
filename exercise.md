@@ -66,12 +66,12 @@ You should see each question's answer and reasoning print as it runs, then a fin
 
 Run that section. It loops `run_triage` over all 4 sample PMIDs and builds a pandas table. Record your own read of each result:
 
-| PMID | is_bacteria | has_gene_genotype | has_phenotype | has_amr_phenotype | Your gut check — do you agree? |
-|---|---|---|---|---|---|
-| 12737743 | | | | | |
-| 12800222 | | | | | |
-| 12927083 | | | | | |
-| 12059906 | | | | | |
+| PMID | is_bacteria | has_gene_genotype | has_phenotype | has_amr_phenotype 
+|---|---|---|---|---|
+| 12737743 | | | | |
+| 12800222 | | | | |
+| 12927083 | | | | |
+| 12059906 | | | | |
 
 **Question to think about while you do this:** for any paper where you disagree with the model, look at the printed reasoning from "Run triage on one paper" (re-run that paper individually with `verbose=True` if you skipped straight to the tabulated section) — is the model wrong about the biology, or is the *question wording* ambiguous for this paper?
 
