@@ -52,26 +52,26 @@ You can also play with a set of random 200 papers, analyze what phrases were rep
 
 ### Triage using language models
 11. Section (e) defines the triage question set directly in the notebook as `TRIAGE_PROMPTS` (the questions) and `TRIAGE_FLOWCHART` (the order/branching) — nothing downloaded, so editing a prompt is just editing this cell. These together guide the language model through the questions - 
-Is this paper about bacteria? Is a gene/genotype named? Does it report a phenotype? is that phenotype AMR-specific?
+Is this paper about bacteria? Is a gene/genotype named? Does it report an AMR-specific phenotype?
 12. Section (f) sets up the Gemini call and the flowchart walker (`call_llm`/`run_triage`). Section (g) fetches title+abstract for a small set of sample PMIDs via `Bio.Entrez` — run this before triaging anything, since `run_triage` needs the `papers` dict it builds.
 13. Use the schema to run triage on one or more papers ("Run triage on one paper").
 
 
 You should see each question's answer and reasoning print as it runs, then a final dict like:
 ```
-{'is_bacteria': True, 'has_gene_genotype': True, 'has_phenotype': True, 'has_amr_phenotype': True}
+{'is_bacteria': True, 'has_gene_genotype': True, 'has_amr_phenotype': True}
 ```
 
 ## 3. Run triage across all sample papers and tabulate ("Run triage across several papers and tabulate")
 
 Run that section. It loops `run_triage` over all 4 sample PMIDs and builds a pandas table. Record your own read of each result:
 
-| PMID | is_bacteria | has_gene_genotype | has_phenotype | has_amr_phenotype | Your gut check — do you agree? |
-|---|---|---|---|---|---|
-| 12737743 | | | | | |
-| 12800222 | | | | | |
-| 12927083 | | | | | |
-| 12059906 | | | | | |
+| PMID | is_bacteria | has_gene_genotype | has_amr_phenotype | Your gut check — do you agree? |
+|---|---|---|---|---|
+| 12737743 | | | | |
+| 12800222 | | | | |
+| 12927083 | | | | |
+| 12059906 | | | | |
 
 **Question to think about while you do this:** for any paper where you disagree with the model, look at the printed reasoning from "Run triage on one paper" (re-run that paper individually with `verbose=True` if you skipped straight to the tabulated section) — is the model wrong about the biology, or is the *question wording* ambiguous for this paper?
 

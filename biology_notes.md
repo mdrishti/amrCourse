@@ -6,7 +6,16 @@ For framing Section 1 (why these specific triage questions) and answering questi
 
 `data/flowchart_triage_amr.json` asks, in sequence: is_about_bacteria → has_genetic_variants → has_gene_genotype → has_phenotype_data → has_amr_phenotype. That order mirrors how a domain expert would actually skim a paper: organism first (wrong kingdom kills relevance immediately), then whether there's any genotype signal at all, then whether that genotype signal is phenotypically linked, then whether the phenotype is specifically resistance-related. It's worth saying this explicitly — the flowchart isn't arbitrary, it encodes a triage heuristic a curator already uses.
 
-The workshop's Colab notebook uses a trimmed 4-question version of this (is_about_bacteria → has_gene_genotype → has_phenotype_data → has_amr_phenotype), dropping only `has_genetic_variants` — the variant-path check. `has_gene_genotype` is kept because it's the AMR-path genotype check, not a variant check: it asks whether a gene/genotype is *named* at all, regardless of whether a specific mutation/variant is described. Worth mentioning explicitly if students ask why the notebook's flowchart is shorter than the repo's 5-question default.
+The workshop's Colab notebook uses a trimmed 3-question version of this (is_about_bacteria →
+has_gene_genotype → has_amr_phenotype), dropping `has_genetic_variants` (the variant-path check) and
+`has_phenotype_data`. `has_gene_genotype` is kept because it's the AMR-path genotype check, not a
+variant check: it asks whether a gene/genotype is *named* at all, regardless of whether a specific
+mutation/variant is described. `has_phenotype_data` is dropped because in this flowchart it never
+gated anything — both its `true` and `false` transitions point to the same next node
+(`check_amr_phenotype`), so its answer was recorded but never changed which question got asked next
+or whether the paper reached the end of triage; removing it saves one LLM call per paper with no
+change in triage outcome. Worth mentioning explicitly if students ask why the notebook's flowchart is
+shorter than the repo's 5-question default.
 
 ## Genotype-phenotype linkage, briefly
 
