@@ -33,7 +33,7 @@ There are three notebooks, meant to be run in order:
 
 Open each notebook in Colab and make your own copy (File > Save a copy in Drive) before starting, so your edits don't collide with anyone else's.
 
-### Running it locally instead (optional)
+### Running it locally instead 
 
 If you'd rather run the notebooks on your own laptop than in Colab (e.g. to use the local-model
 section's MLX backend on Apple Silicon), this repo ships a `Pipfile` with everything the notebooks need:
@@ -92,11 +92,11 @@ You should see each question's answer and reasoning print as it runs, then a fin
 {'is_bacteria': True, 'has_gene_genotype': True, 'has_amr_phenotype': True}
 ```
 
-### Run triage across all sample papers and tabulate ("Run triage across several papers and tabulate")
+### Run triage across all sample papers and tabulate
 
 10. Run that section. It loops over all 9 sample papers and builds a table. Record your own read of each result in a table like this one, filling in the PMIDs printed in the notebook:
 
-| PMID | is_bacteria | has_gene_genotype | has_amr_phenotype | Your gut check — do you agree? |
+| PMID | is_bacteria | has_gene_genotype | has_amr_phenotype | How does it compare against manual triage? |
 |---|---|---|---|---|
 | | | | | |
 
@@ -118,6 +118,15 @@ This fetches the paper's full text straight from PubMed Central — no files to 
 3. Then it runs the same set of questions, but each one only sees its own relevant section(s) instead of one abstract-only blob of text.
 
 Try this on the first sample paper, then try it on each of your other sample papers too — some will have no full-text record available (closed access or metadata-only), which is expected. For any paper that works, compare its result here to what you got from the abstract-only triage on the same paper. Did seeing the full text change any answer?
+
+### Trying a local, open weights model for triage
+
+There's an optional section near the end of this notebook for running an open-weights model on
+your own computer instead of calling Gemini online — useful for comparing results, or for running
+triage without an internet connection. It's off by default: nothing downloads or uses your
+computer's memory unless you deliberately switch it on in that section. If you try it, you can
+also turn on `ENABLE_LOCAL_THINKING` there to see the model's step-by-step reasoning for each
+question, which can help explain a surprising answer.
 
 ### Discuss
 
@@ -144,7 +153,7 @@ Open `colab_03_curation.ipynb` next.
 
 18. Some papers put their real results in a separate supplementary file instead of the main text — an extra table or spreadsheet attached to the paper. Further down in the notebook ("Supplementary table mining") there's a step that checks a paper for these extra files, fetches them, and curates them the same way as the main text. Turn it on, then re-run the full pipeline to see if it picks up anything new.
 
-### Trying a local, offline model (optional)
+### Trying a local, open weights model
 
 19. Like the triage notebook, there's an optional section near the end for running an AI model on your own computer instead of calling Gemini online. This is **off by default** — the notebook will not download anything or use your computer's memory unless you deliberately switch it on in that section. Only try this if you want to compare it with Gemini, or want to run curation without an internet connection.
 
