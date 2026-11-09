@@ -126,3 +126,31 @@ Bring back to the group:
 - Whether you hit the Gemini rate limit.
 - One triage question you'd want to add or reword for your own research area — in the notebook this just means editing the questions directly.
 - Whether abstract-only and full-text triage agreed, for anyone who tried the full-text step.
+
+### Curation: pulling out the actual facts
+
+Open `colab_03_curation.ipynb` next.
+
+13. Triage only answers yes/no questions. This notebook goes further: for a paper that already passed triage, it pulls out the real facts — which bacteria were studied, which genes were found, and what resistance result was measured. It does this in three steps, one after another: strains, then genes, then phenotypes. A last step checks all three together and flags anything that looks off.
+14. Like the triage questions, the instructions for each step are written directly in the notebook as plain text, so you can edit them the same way.
+15. Run curation on one sample paper first ("Try it"). You'll see a small table for strains, a table for genes, and a table for phenotypes.
+16. Then run it across all sample papers ("Run curation across all sample papers"). Look at how many rows end up in each table. It's normal for the phenotypes table to have fewer rows than the genes table — not every gene has a measured resistance result reported in the paper.
+
+### Antibiotic names get looked up, not guessed
+
+17. Each gene and phenotype row tries to record which antibiotic it relates to, along with a standard reference code for that antibiotic. This code is not a guess from the language model — it's looked up from a reference file that comes with this repo, so it's accurate.
+
+### Extra data hiding in supplementary files
+
+18. Some papers put their real results in a separate supplementary file instead of the main text — an extra table or spreadsheet attached to the paper. Further down in the notebook ("Supplementary table mining") there's a step that checks a paper for these extra files, fetches them, and curates them the same way as the main text. Turn it on, then re-run the full pipeline to see if it picks up anything new.
+
+### Trying a local, offline model (optional)
+
+19. Like the triage notebook, there's an optional section near the end for running an AI model on your own computer instead of calling Gemini online. This is **off by default** — the notebook will not download anything or use your computer's memory unless you deliberately switch it on in that section. Only try this if you want to compare it with Gemini, or want to run curation without an internet connection.
+
+### Discuss
+
+Bring back to the group:
+- How many strains, genes, and phenotypes you ended up with for your sample papers.
+- Any gene marked as causing resistance that had no matching phenotype row — what do you think happened there?
+- Whether turning on supplementary file mining changed any of your results.
