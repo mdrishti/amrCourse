@@ -1,0 +1,7 @@
+Multiple introductions of multidrug-resistant typhoid associated with acute infection and asymptomatic carriage, Kenya.
+
+Understanding the dynamics of infection and carriage of typhoid in endemic settings is critical to finding solutions to prevention and control.
+In a 3-year case-control study, we investigated typhoid among children aged <16 years (4670 febrile cases and 8549 age matched controls) living in an informal settlement, Nairobi, Kenya.
+148 <i>S</i>. Typhi isolates from cases and 95 from controls (stool culture) were identified; a carriage frequency of 1 %. Whole-genome sequencing showed 97% of cases and 88% of controls were genotype 4.3.1 (Haplotype 58), with the majority of each (76% and 88%) being multidrug-resistant strains in three sublineages of the H58 genotype (East Africa 1 (EA1), EA2, and EA3), with sequences from cases and carriers intermingled.
+The high rate of multidrug-resistant H58 <i>S</i>. Typhi, and the close phylogenetic relationships between cases and controls, provides evidence for the role of carriers as a reservoir for the community spread of typhoid in this setting.
+National Institutes of Health (R01AI099525); Wellcome Trust (106158/Z/14/Z); European Commission (TyphiNET No 845681); National Institute for Health Research (NIHR); Bill and Melinda Gates Foundation (OPP1175797).

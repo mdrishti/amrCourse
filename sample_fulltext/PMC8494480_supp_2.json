@@ -1,0 +1,30 @@
+[
+ {
+  "source": "BioC",
+  "date": "2024-08-14",
+  "key": "BioC.key",
+  "documents": [
+   {
+    "id": "elife-67852-supp10.docx",
+    "passages": [
+     {
+      "offset": 0,
+      "text": "Supplementary Material",
+      "annotations": []
+     },
+     {
+      "offset": 23,
+      "text": "Supplementary table 10 - Climatic predictors of WGS confirmed elevated case and carrier counts inside the DSS",
+      "annotations": []
+     },
+     {
+      "offset": 133,
+      "text": "Typhoid Cases \u2028 \u2029Month \u2028Same month \u2028Previous month \u20282 months prior \u2028 \u2029 \u2028OR (95% CI) \u2028p-value \u2028OR (95% CI) \u2028p-value \u2028OR (95% CI) \u2028p-value \u2028 \u2029Rainfall (precipitation) &gt; 75 mm \u20280.92 (0.076-6.91) \u20281 \u20284.71 (0.64-40.3) \u20280.08 \u202810.3 (1.3-133.7) \u20280.011* \u2028 \u2029Minimum temperature &gt;14&amp;deg;C \u20280.44 (0.055-3.1) \u20280.41 \u20280.98 (0.14-7.81) \u20281 \u20285.4 (0.56-275.2) \u20280.21 \u2028 \u2029Maximum temperature &gt;26&amp;deg;C \u20281.25 (0.18-9.89) \u20281 \u20280.30 (0.025-2.19) \u20280.23 \u20280.34 (0.029-2.47) \u20280.41 \u2028 \u2029Asymptomatic Carriers \u2028 \u2029Month \u2028Same month \u2028Previous month \u20282 months prior \u2028 \u2029 \u2028OR (95% CI) \u2028p-value \u2028OR (95% CI) \u2028p-value \u2028OR (95% CI) \u2028p-value \u2028 \u2029Rainfall (precipitation) &gt; 75 mm \u20281.6 (0.12-16.8) \u20280.63 \u20280 (0-2.85) \u20280.30 \u20280 (0-2.85) \u20280.30 \u2028 \u2029Minimum temperature &gt;14&amp;deg;C \u20280.40 (0.030-4.01) \u20280.37 \u20280.45 (0.034-4.50) \u20280.63 \u20280.45 (0.034-4.50) \u20280.64 \u2028 \u2029Maximum temperature &gt;26&amp;deg;C \u20280.57 (0.043-5.63) \u20280.65 \u20280.57 (0.043-5.63) \u20280.65 \u20280.64 (0.048-6.29) \u20281 \u2028 \u2029",
+      "annotations": []
+     }
+    ],
+    "relations": []
+   }
+  ]
+ }
+]

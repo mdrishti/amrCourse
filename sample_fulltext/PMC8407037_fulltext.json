@@ -1,0 +1,2778 @@
+[
+ {
+  "bioctype": "BioCCollection",
+  "source": "PMC",
+  "date": "20260205",
+  "key": "pmc.key",
+  "version": "1.0",
+  "infons": {},
+  "documents": [
+   {
+    "bioctype": "BioCDocument",
+    "id": "PMC8407037",
+    "infons": {
+     "license": "CC BY"
+    },
+    "passages": [
+     {
+      "bioctype": "BioCPassage",
+      "offset": 0,
+      "infons": {
+       "article-id_doi": "10.1186/s13073-021-00953-4",
+       "article-id_pmc": "PMC8407037",
+       "article-id_pmid": "34461978",
+       "article-id_publisher-id": "953",
+       "elocation-id": "138",
+       "kwd": "Tuberculosis Drug resistance Drug-susceptibility testing Diagnostics Whole genome sequencing Machine learning MDR-TB XDR-TB",
+       "license": "Open AccessThis article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/. The Creative Commons Public Domain Dedication waiver (http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated in a credit line to the data.",
+       "name_0": "surname:Gr\u00f6schel;given-names:Matthias I.",
+       "name_1": "surname:Owens;given-names:Martin",
+       "name_2": "surname:Freschi;given-names:Luca",
+       "name_3": "surname:Vargas;given-names:Roger;suffix:Jr",
+       "name_4": "surname:Marin;given-names:Maximilian G.",
+       "name_5": "surname:Phelan;given-names:Jody",
+       "name_6": "surname:Iqbal;given-names:Zamin",
+       "name_7": "surname:Dixit;given-names:Avika",
+       "name_8": "surname:Farhat;given-names:Maha R.",
+       "section_type": "TITLE",
+       "title": "Keywords",
+       "type": "front",
+       "volume": "13",
+       "year": "2021"
+      },
+      "text": "GenTB: A user-friendly genome-based predictor for tuberculosis resistance powered by machine learning",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 102,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract_title_1"
+      },
+      "text": "Background",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 113,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract"
+      },
+      "text": "Multidrug-resistant Mycobacterium tuberculosis (Mtb) is a significant global public health threat. Genotypic resistance prediction from Mtb DNA sequences offers an alternative to laboratory-based drug-susceptibility testing. User-friendly and accurate resistance prediction tools are needed to enable public health and clinical practitioners to rapidly diagnose resistance and inform treatment regimens.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 517,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract_title_1"
+      },
+      "text": "Results",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 525,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract"
+      },
+      "text": "We present Translational Genomics platform for Tuberculosis (GenTB), a free and open web-based application to predict antibiotic resistance from next-generation sequence data. The user can choose between two potential predictors, a Random Forest (RF) classifier and a Wide and Deep Neural Network (WDNN) to predict phenotypic resistance to 13 and 10 anti-tuberculosis drugs, respectively. We benchmark GenTB\u2019s predictive performance along with leading TB resistance prediction tools (Mykrobe and TB-Profiler) using a ground truth dataset of 20,408 isolates with laboratory-based drug susceptibility data. All four tools reliably predicted resistance to first-line tuberculosis drugs but had varying performance for second-line drugs. The mean sensitivities for GenTB-RF and GenTB-WDNN across the nine shared drugs were 77.6% (95% CI 76.6\u201378.5%) and 75.4% (95% CI 74.5\u201376.4%), respectively, and marginally higher than the sensitivities of TB-Profiler at 74.4% (95% CI 73.4\u201375.3%) and Mykrobe at 71.9% (95% CI 70.9\u201372.9%). The higher sensitivities were at an expense of \u2264 1.5% lower specificity: Mykrobe 97.6% (95% CI 97.5\u201397.7%), TB-Profiler 96.9% (95% CI 96.7 to 97.0%), GenTB-WDNN 96.2% (95% CI 96.0 to 96.4%), and GenTB-RF 96.1% (95% CI 96.0 to 96.3%). Averaged across the four tools, genotypic resistance sensitivity was 11% and 9% lower for isoniazid and rifampicin respectively, on isolates sequenced at low depth (< 10\u00d7 across 95% of the genome) emphasizing the need to quality control input sequence data before prediction. We discuss differences between tools in reporting results to the user including variants underlying the resistance calls and any novel or indeterminate variants",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 2232,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract_title_1"
+      },
+      "text": "Conclusions",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 2244,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract"
+      },
+      "text": "GenTB is an easy-to-use online tool to rapidly and accurately predict resistance to anti-tuberculosis drugs. GenTB can be accessed online at https://gentb.hms.harvard.edu, and the source code is available at https://github.com/farhat-lab/gentb-site.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 2494,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract_title_1"
+      },
+      "text": "Supplementary Information",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 2520,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract"
+      },
+      "text": "The online version contains supplementary material available at 10.1186/s13073-021-00953-4.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 2612,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "title_1"
+      },
+      "text": "Background",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 2623,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": "Human tuberculosis, a chronic infectious disease caused by members of the Mycobacterium tuberculosis complex, is a leading cause of death from a bacterial infectious agent. The proliferation of multidrug-resistant tuberculosis (MDR-TB) is threatening TB prevention and control activities worldwide. Timely detection of antimicrobial resistance is vital to guide therapeutic options and contain transmission. Antimicrobial resistance is conventionally determined by in vitro drug susceptibility tests (DST) on solid or liquid antibiotic-containing culture, which uses drug-specific testing breakpoints (\u201ccritical concentration\u201d) to classify the infecting strain into drug-susceptible or drug-resistant. Being contingent on mycobacteria\u2019s slow growth rate, these phenotypic tests require days to weeks. In contrast, molecular methods have emerged as rapid resistance prediction alternatives to complement and speed up traditional DST, leveraging known and reliable genotype-phenotype relationships between variants in the M. tuberculosis genome and in vitro drug resistance.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 3702,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": "Over recent years, whole-genome sequencing (WGS) of M. tuberculosis has become an affordable tool to provide genetic information for genotypic resistance prediction and high-resolution outbreak reconstruction. Large scale genotype-phenotype assessments have demonstrated high diagnostic accuracy for clinical use to predict susceptibility to first-line drugs based on WGS. While some evidence suggests that WGS-based mycobacterial diagnostics is feasible with fast turnaround in a clinical research setting further validation studies under routine care conditions are warranted. Following these results, public health authorities have begun to discontinue phenotypic testing when pan susceptibility is predicted from the genotype, a step with considerable cost and time benefits. Start-to-end applications which analyze sequencing data to predict resistance phenotypes and are accessible to non-bioinformatic experts are required as WGS based analyses become part of the standardized diagnostic process in clinical laboratories. A range of published tools available for command-line or web-based/desktop use or both exists. These applications vary in quality control and sequence preprocessing steps and rely on detecting pre-defined resistance-conferring mutations such as single nucleotide polymorphisms (SNPs) or small insertions/deletions (indels) in the WGS data to predict the resistance phenotype. They also vary in the type of information fed back to the user including error rates and specific variants detected.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 5224,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": "Here, we present GenTB (https://gentb.hms.harvard.edu), an open user-friendly start-to-end application to predict drug resistance phenotypes to 13 drugs from WGS data. Resistance prediction is made based on a previously observed set of variant positions spanning 18 resistance-associated genetic loci and a validated random forest (RF) classifier as well as a wide and deep neural network (WDNN) combining a logistic regression model with a multilayer perceptron. GenTB provides access to multivariate statistical models of resistance to non-expert users. These models can consider the simultaneous effect of one or more mutations. GenTB\u2019s online interface allows users to interactively explore the sequencing data, prediction results and geographic distributions. The GenTB analysis pipeline is also available for command-line use wrapped in Snakemake. In this study, we benchmark these two classification models implemented in GenTB along with two other tools with a command-line interface, TB-profiler, and Mykrobe, on a large dataset of >\u200920\u2009k clinical M. tuberculosis isolates (Additional file 1) starting from raw Illumina sequence data.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 6374,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_1"
+      },
+      "text": "Implementation",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 6389,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "Backend and website build",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 6415,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "GenTB is a bespoke Django website hosted by the Harvard Medical School O2 high performance computing environment and collaboratively developed on GitHub (https://github.com/farhat-lab/gentb-site). The website uses off-the-shelf frontend components; Bootstrap for styling and mobile-friendly delivery, nvd3 for plots and graphs, resumable.js for robust uploading and supplements these with custom Javascript functionality for integration. The backend is a Python-Django web service using a PostgreSQL database which integrates with Dropbox for file uploading, and python-chore for slurm cluster job submission and management. GenTB predict jobs are run by modular programs organized into pipelines. The modularity allows for easy maintenance and management of dependencies and outputs. Administration screens allow a non-expert developer design new program calls and construct new pipelines and integrate them without redeployment of the website. Further tools provide error tracking. GenTB predict results are integrated into the PostgreSQL database allowing website generated plots to be populated quickly. All generated files for the intermediary pipeline steps are provided for download by the user. GenTB Map uses a PostGIS database to rapidly link strain mutation and lineage information with geo-spatial objects; these are fed into the leaflet.js display to render strain information to the user. Map allows users to display strain data groupings by country, lineage, drug resistance phenotype, or specific genetic mutation through tabs that can nest the groups in any order.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 7997,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "Raw read processing",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 8017,
+      "infons": {
+       "file": "13073_2021_953_Fig1_HTML.jpg",
+       "id": "Fig1",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "Schematic overview of the GenTB pipeline. Raw sequence data is quality checked and adapter trimmed before alignment to the H37Rv reference strain (accession AL123456). Variants are called with Pilon, and variant matrices used by the prediction models are prepared using custom scripts available on Github. The analysis will fail if quality criteria are not met (blunt end arrows). Numbers represent the three moments in the pipeline where users can upload their data to predict resistance for their isolate.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 8525,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "Upon uploading single-end or paired-end FastQ files, GenTB first validates the input using fastQValidator (Fig. 1). Low-quality reads and sequencing adapters are then trimmed with fastp. Kraken is used as a quality control step to assess the percentage of reads that map to the M. tuberculosis complex using a custom-built Kraken database comprising M. tuberculosis complex reference sequences. Reads not classified as M. tuberculosis complex are filtered internally using seqtk (https://github.com/lh3/seqtk). Paired-read matching is performed\u00a0with fastq-pair\u00a0(https://github.com/linsalrob/fastq-pair)\u00a0followed by minimap2 alignment (parameters: -ax sr) of\u00a0reads to the H37Rv reference genome (AL123456). In\u00a0the\u00a0present benchmarking we removed unclassified reads only for those isolates with\u00a0> 10% non-M. tuberculosis\u00a0reads.\u00a0Samtools is used for sorting the aligned reads, removing duplicates, and indexing. After read mapping is performed the coverage of drug resistance genes is confirmed (Additional file 2: Table S1). Sequence read datasets with a coverage of <\u200995% at 10\u00d7 or less across these resistance genes will not be further processed, and an error message is displayed to the user. Variants are called with pilon (parameters: default) to obtain SNPs and indels in the variant calling format (VCF) requiring that they have a PASS or Amb filter tags with read allele frequency >\u20090.40. The allele frequency threshold of 0.40 was chosen based on our observation that lower thresholds only marginally increased sensitivity of resistance prediction with a larger decrease in specificity (see Farhat et al). Fast-Lineage-Caller then detects the M. tuberculosis lineage based on five lineage typing schemes as implemented by Freschi et al.. Subsequently, invariant sites in the VCF file are removed, and a custom Perl script annotates each variant as frameshift, synonymous or non-synonymous, stop codon, indel along with the H37Rv locus tag for each respective gene. A custom python script generates a matrix file with all model features/variables in the columns used as input to the two prediction steps specified below. These scripts are available from Github and are open source (AGPLv3 license). All intermediate sequence files are accessible to the user for download and verification. ",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 10835,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "For runtime evaluation, we pulled start and end time of all successfully completed pipeline runs submitted between April 12th and May 12th and computed average and median processing times.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 11024,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "Operation",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 11034,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "GenTB is a free tool and registration is open to everyone. User registration is needed for security and to allow users to run predictions, track intermediary files and results. Users with low internet bandwidth can use the Dropbox integration to upload files. Both raw sequence reads and variants in variant call format (VCF) can be uploaded for resistance prediction. The required minimum genomic input, i.e., in case of targeted sequencing data, is specified on the input page and derived from Farhat et al.. The user can select an option to delete uploaded source data after prediction or otherwise to save it for their future access through GenTB. Files are user-specific and not shared or accessible by others. Users can submit their genomic data for prediction and log off and will be sent an email with a link to the results when they are completed. Their prediction result will be stored indefinitely unless the user deletes it. Raw sequence data and intermediary files will be stored for three days.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 12043,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "The upload and processing stability of the GenTB online interface has been tested with up to 300 isolates uploaded in one batch. For batch processing of larger numbers of raw sequence data, we provide a command-line GenTB workflow based on Snakemake v5.20.1 where dependent software will be sourced via conda. The Snakemake workflow can be accessed via Github (https://github.com/farhat-lab/gentb-snakemake). This repository contains a README file detailing the installation process and a description of the output files.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 12565,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "Validation sequencing and phenotype data",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 12606,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "We collated a database of 20,408 Illumina raw sequence read datasets for which laboratory-based phenotypic DST data was available from public sources (Additional file 1). Sequence data was downloaded from NCBI nucleotide databases. Custom scripts were used to pool the phenotype data from Patric, ReseqTB, Zignol et al., Wollenberg et al., Phelan et al., Hicks et al., Coll et al., and Dheda et al. (scripts available at https://github.com/farhat-lab/resdata-ng). Phenotypic testing was performed using WHO endorsed methods (Additional file 2: Table S2). Sequence data was merged in case of multiple sequencing runs per isolate for downstream processing and resistance prediction. The 20,408 sequence read datasets are not completely independent of the original training datasets with a small overlap (<\u20095%) and we thus do not expect this to affect the diagnostic accuracy.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 13482,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "Genotypic resistance prediction using two statistical models",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 13543,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "Two multivariate models are used to predict the resistance phenotype, an RF model (GenTB-RF) and a WDNN (GenTB-WDNN). GenTB-RF was trained on isolates with available resistance phenotype data and was validated as described in Farhat et al.. Briefly, 1397 clinical isolates sampled as detailed in Farhat et al. underwent targeted sequencing at 18 drug resistance loci using molecular inversion probes and in parallel underwent binary drug culture-based DST to 13 drugs (Additional file 2: Table S1). One RF was built for each drug using the randomForest R package (v. 4.6.7) with a subset of the total 992 SNPs/indels observed. Variants of highest importance for resistance prediction to each drug were selected by iteratively paring down the model and measuring loss of performance. Important variants are shown in Additional file 2: Fig. S1 for isoniazid and rifampicin.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 14415,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "Pyrazinamide resistance is known to rely on a large number of individually rare variants. Given the large increase in published M. tuberculosis WGS and linked DST data as well as the recent implication of novel resistance loci we retrained the pyrazinamide RF here using a newer version of randomForest R package (v. 4.6.-14) on variants in the genes pncA, panD, clpC1, and clpP. We used 75% (15,267 isolates) of the dataset to train the model and 25% (5098 isolates) to validate its performance. During retraining, we excluded silent variants, those that occurred only in phenotypically susceptible isolates, and the final model was trained on 393 variants occurring in 3,262 phenotypically pyrazinamide resistant isolates. We chose the randomForest mtry variable that yielded the smallest out-of-bag error and varied the classwt variable to maximize the sum of sensitivity and specificity.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 15307,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "GenTB-WDNN is a multitask logistic regression model combined with a multilayer perceptron. It has been previously shown to have equal or higher performance than the RF architecture when both are trained on the same data. GenTB-WDNN was trained on 3,601 isolates (sampled as detailed in Chen et al.) for 11 drugs using the Keras 2.2.4 library in Python 3.6 with a TensorFlow 1.8.0 backend. The model uses 222 features (i.e., SNPs or small insertions/deletions) along with derived variables (i.e., the number of non-synonymous SNPs across all resistance-conferring genes) to predict the resistance phenotype. GenTB-WDNN was trained on the same genetic loci like GenTB-RF plus the resistance genes rpsA (plus its promoter region) and eis (plus its promoter region) (Additional file 2: Table S1).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 16100,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "Performance of GenTB and comparison with other tools",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 16153,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "To assess the performance of GenTB for predicting resistance, all isolates were processed through the GenTB pipeline. We compared the diagnostic accuracy with two leading resistance prediction tools, TB-profiler 2.8.12 and Mykrobe v0.9.0, that were run with default parameters. These two tools rely on a curated list of mutations and make a resistance call once they identify one of these mutations in a sample. The two tools and two GenTB prediction models\u2019 predictive ability was obtained by comparing the genotypic prediction to the phenotype data that was considered the ground truth. We calculated the true positive rate (sensitivity), the true negative rate (specificity), and area under the receiver operating curve (AUC for short) to measure test accuracy for each drug and tool. We evaluated 1,000 probability thresholds per drug to call resistance or susceptibility for GenTB-RF while using the GenTB-WDNN thresholds described in Chen et al. (Additional file 2: Fig. S2 and Additional file 2: Fig. S3).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 17168,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "Statistical analyses and data visualization",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 17212,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "Prediction files from all tools were parsed and analyzed in Jupyter Notebooks running Python 3.7 using the Pandas and JSON libraries. Receiver operating characteristic curves were plotted using the Seaborn library. The Vioplot package was used for violin plots. We used the randomforestExplainer v0.10.1 package to visualize important variants in random forest models. Summary tables were created in R version 3.6.3 using the packages from the tidyverse and kable (https://cran.r-project.org/web/packages/kableExtra/index.html). Sequencing depth in resistance loci was calculated and plotted using Mosdepth version 0.2.9. Confidence intervals were obtained by bootstrapping, comparing 5000 predictions per tool and drug on a resampled dataset.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 17956,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "Comparison of output between tools",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 17991,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "We collated the output files and information produced by the GenTB online application, the webserver of TB-Profiler (https://tbdr.lshtm.ac.uk, version 3.0.0), and the Desktop version of Mykrobe (MacOS app v0.90) using one example raw sequence dataset (accession ERR1664619). The tools\u2019 output was compared based on the following criteria: (1) type and accessibility of output data formats; (2) communication of genotypic prediction results, i.e., binary classification versus probability; (3) disclosure of the prediction model's error rate; (4) description of known resistance-conferring variants identified; (5) reporting any novel mutation not listed in the resistance variant database; (6) detailed account of detected lineage variants and what lineage typing scheme was used; and (7) report quality metrics on the input sequence data.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 18833,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "Questionnaire",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 18847,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "We conducted a survey among past GenTB users in May 2021 to explore how easy the GenTB website is to use (Additional file 3). The survey was developed using Google Forms in English and administered on May 3rd to 166 registered users. The five questionnaire items assessed how (1) pleasing, (2) how clear, (3) how easy to use, (4) how stable, and (5) how usable the GenTB tool is. Responses were recorded on a Likert scale where 0 means \u201cworst\u201d and 10 \u201cbest.\u201d",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 19314,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_1"
+      },
+      "text": "Results",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 19322,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_2"
+      },
+      "text": "A user-friendly application to analyze M. tuberculosis sequencing data",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 19393,
+      "infons": {
+       "file": "13073_2021_953_Fig2_HTML.jpg",
+       "id": "Fig2",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "GenTB online user interface. A The user is presented with the three main features offered by GenTB, i.e., to run predictions from user input data, to upload, share, and cite their data with the GenTB project, and to geographically map resistance frequencies or phenotype data. B Example of a resistance prediction output where boxes are colored in the function of the prediction model\u2019s output probability. C Mutation plot that appears when clicked on one of the drugs heatmaps in B. Mutations will be shown when hovering the mouse over the genetic loci. INH = isoniazid, RIF = rifampicin, PZA = pyrazinamide, STR = streptomycin, EMB = ethambutol, ETH = ethionamide, KAN = kanamycin, CAP = capreomycin, AMK = amikacin, LEVO = levofloxacin, OFL = ofloxacin, PAS = Para-aminosalicylic acid",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 20183,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "GenTB was developed as a free and benchmarked online application to help public health and clinical practitioners deconvolute the complexity of M. tuberculosis WGS data. GenTB Predict allows users to predict resistance to 13 anti-TB drugs from a clinical isolate\u2019s raw Illumina sequence data (FASTQ) obtained from either WGS or targeted sequencing. Two validated machine learning models are used to make predictions: GenTB-RF and GenTB-WDNN (\u201cImplementation\u201d and). GenTB-RF is the default prediction model. The average computing time based on 23 runs for the prediction pipeline was 35\u2009min (SD 4\u2009min, median 35\u2009min, IQR 33 to 38\u2009min). In addition to the GenTB Predict function that we focus on here, the web-application has additional features for sharing, mapping, and exploring M. tuberculosis genetic and phenotypic data (Fig. 2). GenTB Data enables researchers to store, version, and share M. tuberculosis sequence and phenotype data and is powered by the Dataverse research data repository. Users can select an option to delete source files upon processing the prediction. GenTB Map enables users to geographically visualize genetic and phenotype data. Users can explore the subset of 20,408 isolates with geographic tags (n = 12,547 isolates) used for GenTB predict validation (\u201cImplementation\u201d) or can upload and explore their own data in enriched-VCF format (https://gitlab.com/doctormo/evcf/-/blob/master/docs/Enriched_VCF_Format.md). Raw data and results can be exported to a tabular data format. ",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 21709,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "A questionnaire-based evaluation of GenTB\u2019s user-friendliness among previous users (12 respondents) showed that GenTB is a clear, pleasing, stable, easy to use, and usable application (Additional file 2: Fig. S4).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 21925,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_2"
+      },
+      "text": "Dataset description",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 21945,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "We curated a dataset of 20,408\u2009M. tuberculosis isolates with known phenotypic resistance status to benchmark GenTB Predict performance (\u201cImplementation\u201d and Additional file 1). We excluded 29 isolates as they failed FastQ validation. Of the remaining, 1339 isolates\u00a0did not pass our taxonomy filter criterion, and their non-M. tuberculosis reads were removed. The GenTB pipeline identified an additional 499 isolates where more than 5% of the genome was covered at depth <10x and these isolates were excluded from further analysis. These isolates had a median depth of 21x (IQR 17 to 26). The remaining 19,880 isolates with high quality sequencing data were majority lineage 4 (52%), with lesser representation of lineage 2 (21%), lineage 3 (15%), lineage 1 (10%), M. bovis (0.6%), lineage 6 (0.3%), and lineage 5 (0.2%). Completeness of phenotypic DST data varied by drug and was highest for the first-line drugs rifampicin (98.3%), isoniazid (96.4%), ethambutol (77.5%), and pyrazinamide (71.5%) (Additional file 2: Table S3). The second and third-line drug phenotype data ranged from 35.1% completeness for streptomycin to 7.8% for ethionamide. Of the 20,408 isolates, 13,817 were phenotypically susceptible to first-line drugs, 4743 (23.3%) were phenotypically MDR (i.e., resistant to isoniazid and rifampicin) and 396 (1.9%) were phenotypically XDR (MDR and resistant to fluoroquinolones and the second-line injectables\u2014amikacin, kanamycin, or capreomycin). We ran GenTB-RF and GenTB-WDNN to predict resistance on 19,880 isolates and compared the predictions to phenotypic data.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 23538,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_2"
+      },
+      "text": "Predictive performance of the GenTB-Random Forest",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 23588,
+      "infons": {
+       "file": "Tab1.xml",
+       "id": "Tab1",
+       "section_type": "TABLE",
+       "type": "table_caption"
+      },
+      "text": "Diagnostic accuracy of GenTB RandomForest and GenTB wide and deep neural network compared with two other leading prediction tools on a depth filtered dataset",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 23746,
+      "infons": {
+       "file": "Tab1.xml",
+       "id": "Tab1",
+       "section_type": "TABLE",
+       "type": "table",
+       "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<table frame=\"hsides\" rules=\"groups\"><thead><tr><th>Drug name</th><th colspan=\"2\">Phenotype</th><th colspan=\"2\">GenTB - RF</th><th colspan=\"2\">GenTB - WDNN</th><th colspan=\"2\">Mykrobe</th><th colspan=\"2\">TB-Profiler</th></tr><tr><th/><th>R (<bold><italic>n</italic></bold>)</th><th>S (<bold><italic>n</italic></bold>)</th><th>Sensitivity (95% CI)</th><th>Specificity (95% CI)</th><th>Sensitivity (95% CI)</th><th>Specificity (95% CI)</th><th>Sensitivity (95% CI)</th><th>Specificity (95% CI)</th><th>Sensitivity (95% CI)</th><th>Specificity (95% CI)</th></tr></thead><tbody><tr><td>Isoniazid</td><td>6,043</td><td>13,112</td><td>91% (91 to 92)</td><td>98% (97 to 98)</td><td>90% (89 to 91)</td><td>99% (99 to 99)</td><td>87% (86 to 88)</td><td>98% (98 to 98)</td><td>91% (90 to 92)</td><td>98% (97 to 98)</td></tr><tr><td>Rifampicin</td><td>5,068</td><td>14,474</td><td>93% (93 to 94)</td><td>98% (98 to 98)</td><td>88% (88 to 89)</td><td>99% (99 to 99)</td><td>90% (89 to 91)</td><td>98% (98 to 99)</td><td>92% (91 to 93)</td><td>98% (98 to 99)</td></tr><tr><td>Ethambutol</td><td>2,936</td><td>12,362</td><td>86% (85 to 87)</td><td>92% (92 to 93)</td><td>82% (80 to 83)</td><td>93% (93 to 94)</td><td>79% (77 to 80)</td><td>93% (93 to 94)</td><td>86% (85 to 88)</td><td>92% (92 to 93)</td></tr><tr><td>Pyrazinamide</td><td>508</td><td>1,544</td><td>79% (76 to 83)</td><td>94% (93 to 95)</td><td>80% (79 to 82)</td><td>95% (94 to 95)</td><td>72% (71 to 74)</td><td>98% (97 to 98)</td><td>83% (80 to 86)</td><td>96% (96 to 97)</td></tr><tr><td>Amikacin</td><td>618</td><td>3,458</td><td>67% (63 to 71)</td><td>99% (99 to 100)</td><td>66% (62 to 70)</td><td>99% (99 to 100)</td><td>63% (60 to 67)</td><td>99% (99 to 100)</td><td>55% (51 to 59)</td><td>99% (99 to 100)</td></tr><tr><td>Capreomycin</td><td>648</td><td>3,733</td><td>63% (59 to 67)</td><td>97% (97 to 98)</td><td>57% (53 to 61)</td><td>98% (98 to 99)</td><td>60% (56 to 64)</td><td>98% (98 to 99)</td><td>56% (52 to 60)</td><td>96% (95 to 96)</td></tr><tr><td>Ethionamide</td><td>502</td><td>1,094</td><td>67% (63 to 72)</td><td>78% (75 to 80)</td><td>-</td><td>-</td><td>-</td><td>-</td><td>70% (66 to 74)</td><td>73% (70 to 76)</td></tr><tr><td>Kanamycin</td><td>576</td><td>3,707</td><td>68% (64 to 72)</td><td>99% (98 to 99)</td><td>66% (62 to 70)</td><td>100% (99 to 100)</td><td>66% (63 to 70)</td><td>99 (99 to 100)</td><td>68% (64 to 71)</td><td>98% (98 to 99)</td></tr><tr><td>Streptomycin</td><td>2,126</td><td>4,968</td><td>82% (80 to 83)</td><td>89% (88 to 90)</td><td>87% (85 to 88)</td><td>87% (86 to 88)</td><td>68% (66 to 70)</td><td>95% (95 to 96)</td><td>71% (70 to 73)</td><td>95% (95 to 96%)</td></tr><tr><td>Ofloxacin</td><td>743</td><td>4,038</td><td>68% (65 to 72)</td><td>99% (98 to 99)</td><td>62% (58 to 66)</td><td>96% (95 to 96)</td><td>62% (58 to 65)</td><td>99% (98 to 99)</td><td>67% (63 to 70)</td><td>98 (98 to 99)</td></tr></tbody></table>\n"
+      },
+      "text": "Drug name\tPhenotype\tGenTB - RF\tGenTB - WDNN\tMykrobe\tTB-Profiler\t \t\tR (n)\tS (n)\tSensitivity (95% CI)\tSpecificity (95% CI)\tSensitivity (95% CI)\tSpecificity (95% CI)\tSensitivity (95% CI)\tSpecificity (95% CI)\tSensitivity (95% CI)\tSpecificity (95% CI)\t \tIsoniazid\t6,043\t13,112\t91% (91 to 92)\t98% (97 to 98)\t90% (89 to 91)\t99% (99 to 99)\t87% (86 to 88)\t98% (98 to 98)\t91% (90 to 92)\t98% (97 to 98)\t \tRifampicin\t5,068\t14,474\t93% (93 to 94)\t98% (98 to 98)\t88% (88 to 89)\t99% (99 to 99)\t90% (89 to 91)\t98% (98 to 99)\t92% (91 to 93)\t98% (98 to 99)\t \tEthambutol\t2,936\t12,362\t86% (85 to 87)\t92% (92 to 93)\t82% (80 to 83)\t93% (93 to 94)\t79% (77 to 80)\t93% (93 to 94)\t86% (85 to 88)\t92% (92 to 93)\t \tPyrazinamide\t508\t1,544\t79% (76 to 83)\t94% (93 to 95)\t80% (79 to 82)\t95% (94 to 95)\t72% (71 to 74)\t98% (97 to 98)\t83% (80 to 86)\t96% (96 to 97)\t \tAmikacin\t618\t3,458\t67% (63 to 71)\t99% (99 to 100)\t66% (62 to 70)\t99% (99 to 100)\t63% (60 to 67)\t99% (99 to 100)\t55% (51 to 59)\t99% (99 to 100)\t \tCapreomycin\t648\t3,733\t63% (59 to 67)\t97% (97 to 98)\t57% (53 to 61)\t98% (98 to 99)\t60% (56 to 64)\t98% (98 to 99)\t56% (52 to 60)\t96% (95 to 96)\t \tEthionamide\t502\t1,094\t67% (63 to 72)\t78% (75 to 80)\t-\t-\t-\t-\t70% (66 to 74)\t73% (70 to 76)\t \tKanamycin\t576\t3,707\t68% (64 to 72)\t99% (98 to 99)\t66% (62 to 70)\t100% (99 to 100)\t66% (63 to 70)\t99 (99 to 100)\t68% (64 to 71)\t98% (98 to 99)\t \tStreptomycin\t2,126\t4,968\t82% (80 to 83)\t89% (88 to 90)\t87% (85 to 88)\t87% (86 to 88)\t68% (66 to 70)\t95% (95 to 96)\t71% (70 to 73)\t95% (95 to 96%)\t \tOfloxacin\t743\t4,038\t68% (65 to 72)\t99% (98 to 99)\t62% (58 to 66)\t96% (95 to 96)\t62% (58 to 65)\t99% (98 to 99)\t67% (63 to 70)\t98 (98 to 99)\t \t",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 25392,
+      "infons": {
+       "file": "Tab2.xml",
+       "id": "Tab2",
+       "section_type": "TABLE",
+       "type": "table_caption"
+      },
+      "text": "Area under the receiver operating characteristic curve for GenTB-RF and GenTB-WDNN",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 25475,
+      "infons": {
+       "file": "Tab2.xml",
+       "id": "Tab2",
+       "section_type": "TABLE",
+       "type": "table",
+       "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<table frame=\"hsides\" rules=\"groups\"><thead><tr><th>Drug</th><th>GenTB-RF</th><th>GenTB-WDNN</th></tr><tr><th/><th colspan=\"2\">Area under the ROC curve (95% CI)</th></tr></thead><tbody><tr><td>Isoniazid</td><td>0.94 (0.94 to 0.95)</td><td>0.94 (0.94 to 0.95)</td></tr><tr><td>Rifampicin</td><td>0.96 (0.95 to 0.96)</td><td>0.94 (0.93 to 0.94)</td></tr><tr><td>Ethambutol</td><td>0.89 (0.88 to 0.9)</td><td>0.87 (0.87 to 0.87)</td></tr><tr><td>Pyrazinamide</td><td>0.90 (0.88 to 91)</td><td>0.88 (0.87 to 0.88)</td></tr><tr><td>Amikacin</td><td>0.83 (0.81 to 0.85)</td><td>0.83 (0.81 to 0.84)</td></tr><tr><td>Capreomycin</td><td>0.80 (0.78 to 0.82)</td><td>0.78 (0.76 to 0.80)</td></tr><tr><td>Ethionamide</td><td>0.73 (0.7 to 0.75)</td><td>-</td></tr><tr><td>Kanamycin</td><td>0.83 (0.81 to 0.85)</td><td>0.83 (0.81 to 0.85)</td></tr><tr><td>Streptomycin</td><td>0.85 (0.84 to 0.86)</td><td>0.87 (0.86 to 0.88)</td></tr><tr><td>Ofloxacin</td><td>0.83 (0.82 to 0.85)</td><td>0.79 (0.77 to 0.81)</td></tr></tbody></table>\n"
+      },
+      "text": "Drug\tGenTB-RF\tGenTB-WDNN\t \t\tArea under the ROC curve (95% CI)\t \tIsoniazid\t0.94 (0.94 to 0.95)\t0.94 (0.94 to 0.95)\t \tRifampicin\t0.96 (0.95 to 0.96)\t0.94 (0.93 to 0.94)\t \tEthambutol\t0.89 (0.88 to 0.9)\t0.87 (0.87 to 0.87)\t \tPyrazinamide\t0.90 (0.88 to 91)\t0.88 (0.87 to 0.88)\t \tAmikacin\t0.83 (0.81 to 0.85)\t0.83 (0.81 to 0.84)\t \tCapreomycin\t0.80 (0.78 to 0.82)\t0.78 (0.76 to 0.80)\t \tEthionamide\t0.73 (0.7 to 0.75)\t-\t \tKanamycin\t0.83 (0.81 to 0.85)\t0.83 (0.81 to 0.85)\t \tStreptomycin\t0.85 (0.84 to 0.86)\t0.87 (0.86 to 0.88)\t \tOfloxacin\t0.83 (0.82 to 0.85)\t0.79 (0.77 to 0.81)\t \t",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 26049,
+      "infons": {
+       "file": "Tab2.xml",
+       "id": "Tab2",
+       "section_type": "TABLE",
+       "type": "table_foot"
+      },
+      "text": "RF = random forest, WDNN = wide and deep neural network",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 26105,
+      "infons": {
+       "file": "13073_2021_953_Fig3_HTML.jpg",
+       "id": "Fig3",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "Diagnostic performance of the four prediction tools across antituberculosis drugs. Paired violin plots displaying sensitivity and specificity to predict drug resistance for A GenTB-Random Forest, B) GenTB-Wide and Deep Neural Network, C TB-Profiler, and D Mykrobe. E Violinplot of diagnostic performance to predict rifampicin resistance comparing isolates passing depth filters (in black) to isolates that failed the depth-filters (in gray) arranged by prediction tool. F Violinplot of diagnostic performance to predict isoniazid resistance comparing isolates passing depth filters (in black) to isolates that failed the depth-filters (in gray) arranged by prediction tool. AMK = amikacin, CAP = capreomycin, EMB = ethambutol, ETH = ethionamide, INH = isoniazid, KAN = kanamycin, OFL = ofloxacin, PZA = pyrazinamide, RIF = rifampicin, STR = streptomycin",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 26959,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "We assessed each tools\u2019 predictive performance by comparison with phenotypic culture-based DST results. Overall, the four tools had comparable performance characterized by varying sensitivities and high specificities (Tables 1 and 2, Fig. 3A, Additional file 2: Fig. S5). Diagnostic performance was better for first-line than second-line drugs. As sensitivity varied most widely, we discuss it by drug class below. Specificities varied less by tool or by drug. GenTB-RF's diagnostic specificity was >\u200992% for all drugs including the second-line injectables and fluoroquinolones with the exception of ethionamide (specificity = 78% [95% CI 75\u201380]) and streptomycin (specificity = 89% [95% CI 88\u201390]). GenTB-RF\u2019s specificities were similar or higher than the other three tools with the exception of pyrazinamide (94% [95% CI 93\u201395]) and streptomycin (89% [95% CI = 88\u201390]) compared to TB-Profiler (96% and 95%, respectively) as well as Mykrobe (98% and 95%, respectively). ",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 27945,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_3"
+      },
+      "text": "First-line drugs",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 27962,
+      "infons": {
+       "file": "13073_2021_953_Fig4_HTML.jpg",
+       "id": "Fig4",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "ROC performance curve of the GenTB-RF and GenTB-WDNN prediction models. A ROC plot of the GenTB-Random Forest (top) and GenTB-WDNN (bottom) predictive performance on the study dataset for first line (A, C) and second line drugs (B, D)",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 28197,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "Rifampicin resistance prediction by GenTB-RF was most accurate compared to other tools: AUC 0.96 (95% CI = 0.95\u20130.96), sensitivity 93% (95% CI = 93\u201394), and specificity 98% (95% CI 98\u201398), second highest sensitivity was for TB-Profiler at 92% (95% CI = 91\u201393) (Tables 1 and 2, Fig. 4). The accuracy of isoniazid resistance prediction was high and comparable across three of the four tools including GenTB-RF (sensitivity 91% [95% CI =91\u201392], specificity 98% [95% CI 97\u201398]). For ethambutol, GenTB-RF and TB-Profiler had the best and comparable performance with sensitivity 86% (95% CI = 85\u201387) and specificity 92% (95% CI 92\u201393). ",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 28844,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "GenTB-RF predictions for pyrazinamide using the original model (v1.0) had low sensitivity at 56% (95% CI 54\u201358) with adequate specificity (98% [95% CI = 98\u201399]) compared to the other tools when evaluated on the 19,880 isolates (2336 phenotypically resistant and 11,932 susceptible). Pyrazinamide resistance is known to be caused by a large number of individually rare variants in the gene pncA. Given the large interval increase in available WGS data and recent implication of novel resistance loci (panD, clpC1, clpP) since GenTB-RF was last trained, we assessed the number of rare variants in the four aforementioned genes linked to pyrazinamide resistance. In a random 75% subset of the 20,379 isolates, we detected a total of 393 different variants in pncA, panD, clpC1, and clpP with 40% (158/393) occurring only once. The majority of these variants, i.e., 73% (285/393) were not previously seen by the original model. As a result of these observations, we retrained a GenTB-RFv2.0, on 75% of the data using all 393 non-synonymous variants including singletons and insertion/deletion variants from pncA, panD, clpC1, and clpP. The retrained model, when benchmarked on an independent validation dataset of 5,098 isolates, offered a sensitivity (79% [95% CI 76\u201383]) and specificity (94% [95% CI 93\u201395]) similar to the other tools) (Table 1).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 30197,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_3"
+      },
+      "text": "Second-line drugs",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 30215,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "For second-line drugs, larger discrepancies between genotype and resistance phenotype have been previously described compared with first-line drugs. Diagnostic sensitivity to the second-line injectable drugs amikacin and kanamycin ranged between 63 and 68% across the four tools, with the exception of a sensitivity of 55% by TB-Profiler for amikacin (Table 1). Specificities to these drugs were \u2265 98% for all four tools. For the fluoroquinolone ofloxacin, sensitivity ranged from 62\u201368% and specificity from 96%-99% across the four tools. Three drugs had too few isolates with known phenotypic resistance (ciprofloxacin [n = 63], levofloxacin [n = 111], and para-aminosalicylic acid [n = 46]), and hence the tool's predictions had wide confidence intervals for these drugs (Additional file 2: Table S4 and Additional file 2: Table S5). For levofloxacin, GenTB\u2019s diagnostic sensitivity was 81% (95% CI 73\u201388) with a specificity of 77% (95% CI 66\u201387) (Additional file 2: Table S4).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 31206,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_2"
+      },
+      "text": "Predictive performance of GenTB-WDNN",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 31243,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "We sought to determine the performance of GenTB-WDNN that was previously shown to outperform other statistical resistance prediction approaches. To determine the probability of phenotypic resistance, GenTB-WDNN combines multitask logistic regression to learn the effect of individual mutations with a three-layer perceptron to account for more complex epistatic effects on antibiotic resistance. Similar to GenTB-RF, the overall GenTB-WDNN performance was marked by high prediction accuracy of first-line drug resistance and lower accuracy of second-line resistance (Table 1). AUC 95% CI overlapped for all drugs between the two models except for ofloxacin and rifampicin for which the GenTB-RF AUC was higher (Table 2). For streptomycin, the GenTB-WDNN offered the best sensitivity and specificity of all four models (sensitivity 87%, 95% CI 85\u201388%, specificity 87% (95%CI 86\u201388%). Specificities were >\u200995% for all drugs except for streptomycin (87%, 95% CI 85 to 88) and ethambutol (93%, 95% CI 93 to 94).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 32257,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_2"
+      },
+      "text": "Predictive performance depends on sequencing depth",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 32308,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "We evaluated the need for quality control on sequencing depth as several tools do not currently implement this prior to resistance prediction. We observed predictive performance to be highly dependent on sequencing depth as indicated by lower sensitivity to predict rifampicin or isoniazid resistance by all four tools for the 499 isolates that did not meet the threshold of \u2265 10\u00d7depth across >\u200995% of the genome (median depth of 21\u00d7, IQR 17 to 26, Fig. 3E, F). Using GenTB-RF, the mean sensitivity of isoniazid and rifampicin prediction was 84.6% (SD 3.6) and 87.3% (SD 3.6) respectively among low-depth isolates, compared with 91% and 93%, respectively, on high-depth isolates (Additional file 2: Table S6, Fig. 3E, F). Loss of sensitivity due to low sequencing depth was comparable across the four tools.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 33122,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_2"
+      },
+      "text": "Discordant resistance predictions",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 33156,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "To gain insight into model performance, we probed discrepancies between GenTB-RF's genotype-based prediction and the resistance phenotype. We focused on this model as it had the highest overall sensitivity. We examined specifically rifampicin and isoniazid as resistance to these two drugs defines MDR-TB, and their genetic resistance mechanisms are well understood. We investigated isolates for which GenTB-RF predicted resistance while the phenotype was reported as susceptible (false positives) and isolates for which GenTB-RF predicted susceptibility with a resistant phenotype (false negatives). We confirmed that false negative predictions were not due to low sequencing depth in relevant drug resistance loci (i.e., that depth was \u2265 10\u00d7 across all bases, Additional file 2: Fig. S6 and Additional file 2: Fig. S7).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 33981,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_3"
+      },
+      "text": "Rifampicin false positives",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 34008,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "Most of the variants linked to rifampicin resistance are concentrated in a 81-bp window in the rpoB gene a.k.a the rifampicin resistance determining region (RRDR, H37Rv coordinates 761081 to 761162, accession AL123456). For rifampicin, we observed 254 false positive predictions (phenotypically susceptible isolates predicted resistant). GenTB-RF detected one or more non-silent RRDR variants in 198 of these 254 isolates (78%). The most common RRDR variants were S450L (occurred in 49/254 isolates), L430P (in 33/254), and H445N (in 31/254) (Additional file 2: Table S7). The remaining 56 of 254 isolates, harbored non-RRDR variants, the two most common were rpoB I491F (occurred in 29/56) and rpoB V695L (occurred in 24/56). Twenty-eight of the 56 isolates (50%) were phenotypically resistant to isoniazid and a further 16 (29%) were resistant to ethambutol.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 34869,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_3"
+      },
+      "text": "Rifampicin false negatives",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 34896,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "Among the 333 false negative rifampicin predictions (phenotypically resistant isolates predicted susceptible), 96 (29%) isolates harbored a variant in rpoB and of these 75 (23% of the 333) were in the RRDR (Additional file 2: Table S7). These included most commonly three base pair insertion in rpoB codon 433 (occurred in 14/333 isolates) and rpoB codon 443 (occurred in 9/333 isolates) and rpoB substitution Q432L (in 9/333). These rpoB variants were not previously seen by the GenTB-RF model when initially trained. For the remaining 237 of 333 isolates (71%), phenotypic resistance remained unexplained.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 35504,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_3"
+      },
+      "text": "Isoniazid false positives",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 35530,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "For isoniazid, we observed 315 false positive predictions (phenotypically susceptible isolates predicted resistant by GenTB-RF). Among these isolates, 119/315 (38%) had a total of 40 unique non-silent non-lineage variants in genes linked to isoniazid resistance (inhA, katG, ahpC, fabG1) (Additional file 2: Table S8). Most variants, 36/40, were rare, occurring in only 2 or fewer isolates. Five out of the 40 unique mutations detected in 75/315 (24%) isolates are considered important for isoniazid resistance prediction by GenTB-RF. The most frequent INH resistance variants were the canonical isoniazid resistance mutation katG S315T (occurred in 56/315 isolates) and non-silent variants at inhA codon 94 (occurred in 14/315 isolates). Seventy-six of the 315 (24%) apparent false positive isolates were phenotypically resistant to rifampicin and 189 (60%) isolates had a phenotypic resistance to at least one other drug.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 36454,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_3"
+      },
+      "text": "Isoniazid false negatives",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 36480,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "Among the 518 false negative isoniazid predictions (phenotypically resistant isolates predicted susceptible by GenTB-RF), 194/518 (37%) harbored non-silent variants in isoniazid resistance-associated genes (Additional file 2: Table S8). Only 13 of the 139 unique variants observed in the 518 isolates were seen before by GenTB-RF and none of these were considered important isoniazid resistance mutations. KatG W328L was the variant detected most frequently (occurred in 10/518 isolates predicted false negative) and although not previously seen by GenTB-RF was described to occur in 0.2% of isoniazid resistance in one study. Most variants linked to isoniazid resistance observed in these isolates were rare, i.e., 134/139 (96%) occurred in \u2264 3 isolates.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 37238,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_2"
+      },
+      "text": "Output comparison across the three tools",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 37279,
+      "infons": {
+       "file": "Tab3.xml",
+       "id": "Tab3",
+       "section_type": "TABLE",
+       "type": "table_caption"
+      },
+      "text": "Output comparison across tools",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 37310,
+      "infons": {
+       "file": "Tab3.xml",
+       "id": "Tab3",
+       "section_type": "TABLE",
+       "type": "table",
+       "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<table frame=\"hsides\" rules=\"groups\"><thead><tr><th>Criteria</th><th>GenTB</th><th>TB-Profiler</th><th>Mykrobe</th></tr></thead><tbody><tr><td>1) Output</td><td/><td/><td/></tr><tr><td>\u2003Type</td><td>Heatmap and barplot</td><td>Overview tables</td><td>Overview table</td></tr><tr><td>\u2003Download</td><td>All intermediate and output files (JSON)</td><td>Yes (CSV)</td><td>Yes (JSON)</td></tr><tr><td>2) Genotypic predictions</td><td>Probability</td><td>Binary</td><td>Binary</td></tr><tr><td>3) Error rate</td><td>Yes</td><td>N.A.</td><td>N.A.</td></tr><tr><td>4) Resistance variants</td><td>Variant by drug</td><td>Variant by drug incl. fraction of mutant/wild-type allele</td><td>Variant by drug incl. depth of mutant and wild-type alleles</td></tr><tr><td>5) Unknown variants</td><td>Yes, in all genes</td><td>Yes, in candidate resistance genes</td><td>No</td></tr><tr><td>6) <italic>M. tuberculosis</italic> Lineage</td><td/><td/><td/></tr><tr><td>\u2003Main lineage</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>\u2003Sublineage</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>\u2003Typing scheme</td><td>Yes</td><td>No</td><td>No</td></tr><tr><td>7) Quality metrics</td><td>Trimming and contamination\u00a0report</td><td>No. of reads, Percentage of reads mapped</td><td>No</td></tr></tbody></table>\n"
+      },
+      "text": "Criteria\tGenTB\tTB-Profiler\tMykrobe\t \t1) Output\t\t\t\t \t\u2003Type\tHeatmap and barplot\tOverview tables\tOverview table\t \t\u2003Download\tAll intermediate and output files (JSON)\tYes (CSV)\tYes (JSON)\t \t2) Genotypic predictions\tProbability\tBinary\tBinary\t \t3) Error rate\tYes\tN.A.\tN.A.\t \t4) Resistance variants\tVariant by drug\tVariant by drug incl. fraction of mutant/wild-type allele\tVariant by drug incl. depth of mutant and wild-type alleles\t \t5) Unknown variants\tYes, in all genes\tYes, in candidate resistance genes\tNo\t \t6) M. tuberculosis Lineage\t\t\t\t \t\u2003Main lineage\tYes\tYes\tYes\t \t\u2003Sublineage\tYes\tYes\tYes\t \t\u2003Typing scheme\tYes\tNo\tNo\t \t7) Quality metrics\tTrimming and contamination\u00a0report\tNo. of reads, Percentage of reads mapped\tNo\t \t",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 38039,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "All four tools are accessible to the non-experienced user via either an online interface (GenTB, TB-Profiler) or via a Desktop application. We compared each tool's output using the criteria specified in the \u201cImplementation\u201d section (Table 3). GenTB-RF provides a heatmap indicating the probability of resistance including the models\u2019 error rate with all prediction and intermediary files available for download. TB-Profiler and Mykrobe present binary (resistant or susceptible) predictions in overview tables with download options in CSV or JSON formats, respectively. TB-Profiler and GenTB present resistance causing variants and variants not associated with resistance. All tools provide the main- and sub-lineage call made but GenTB also specifies the lineage typing schemes used. ",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 38830,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "title_1"
+      },
+      "text": "Discussion",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 38841,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "The increasing affordability of WGS and our improving comprehension of mycobacterial drug resistance mechanisms has placed sequencing at the forefront of M. tuberculosis resistance diagnosis in clinical and public health laboratories (e.g., Public Health England in the UK and the Centers for Disease Control and Prevention in the USA). Yet, the complexity of resistance biology is such that large and diverse bacterial isolate datasets are needed to confirm the accuracy of genotype-based resistance prediction and its generalizability. Further, the required computational resources and knowledge to conduct sequencing analysis prohibit both the access to and confidence in WGS based resistance prediction in clinics in both low- and high-incidence settings. High confidence automated tools that are systematically benchmarked on diverse datasets are needed to facilitate adoption, and to act as the standard for future tool development and regulation by oversight agencies such as the World Health Organization (WHO).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 39861,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "GenTB is an automated open tool for resistance prediction from WGS. Here we benchmarked its two prediction models against two other leading TB prediction tools. Both GenTB models predicted resistance and susceptibility against first-line drugs with high accuracy. Predictive performance for second line drugs showed lower sensitivity, and this may be helped by studying a larger number of isolates with ethionamide, amikacin, capreomycin, kanamycin, and fluoroquinolone resistance in the future. Specificity was high for several second line drugs, i.e., capreomycin, kanamycin, and ofloxacin. This high specificity may be used to rule out resistance when no resistance-conferring variant for these drugs was found. A detailed analysis of discrepant predictions made by GenTB-RF illustrated that a number of false positive predictions were supported by canonical resistance variants, e.g., non-silent mutation in the rpoB RRDR in case of rifampicin, suggesting that their phenotypes were erroneously labeled as susceptible. Similarly, nearly half (48%) of the variants found in isoniazid false positive predictions are canonical resistance variants. These isoniazid resistance variants, the large proportion (60%) of phenotypic resistance to another drug among these isolates, and the knowledge that isoniazid is usually a gateway drug resistance, suggest that some phenotypes were erroneously characterized as susceptible. Accordingly, specificity of genotype-based prediction in practice maybe even higher than reported here (Table 1). Given the estimated 2% prevalence of rifampicin resistance among new TB cases in the USA in 2019, GenTB-RF's diagnostic accuracy translates to a positive predictive value of 49.5% and a negative predictive value of 99.9%.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 41620,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "For isolates with a resistant rifampicin phenotype that were predicted susceptible by GenTB-RF, we found a mutation in the rpoB RRDR in a nearly a quarter (23%) of isolates that reasonably accounts for the resistance phenotype, but had not been seen by the model previously. For the remaining majority of false negatives (71% for rifampicin) no relevant resistance variant was found. In these cases, phenotypic resistance remained unexplained and could be due to erroneous phenotypes or yet unknown resistance mechanisms. For isolates with a resistant isoniazid phenotype predicted susceptible, no important resistance-conferring mutations were found. In these cases, phenotypic resistance could be due to rare and yet undescribed resistance variants. A substantial proportion of false negative predictions to isoniazid or rifampicin had genotypic resistance to at least another drug (48% of rifampicin false negatives and 40% of isoniazid false negatives). These observations overall suggest that a viable option to reduce false negative predictions by current models would be to leverage genotypic predictions to other drugs and flag such isolates for complementary phenotypic DST. In the future as new larger datasets of paired genotype and resistance phenotype are curated, e.g. by efforts sponsored by the WHO, retraining existing resistance prediction models will improve diagnostic sensitivity.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 43022,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "The final output produced by the four tools varies in terms of detail and type of variants reported with GenTB providing the most detail. In addition to resistance-associated variants, GenTB outputs a description of novel variants in resistance genes that have not been previously seen by GenTB's models. The phylogenetic lineage calling procedure implemented in GenTB uses several validated typing schemes to facilitate comparisons across lineage schemes.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 43479,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "Unlike other published resistance prediction tools that rely on a curated list of resistance-conferring mutations that call resistance when a specific variant is present, GenTB-RF and GenTB-WDNN use multivariable statistical models to predict resistance phenotype. These models are better suited to account for the complex relationships between resistance genotype and phenotype. Among the advantages of multivariate prediction models is that relationships between variables are taken into account as both individual variants and gene-gene interactions cause phenotypic drug resistance. As such, the two models provide a probability value that a given isolate is resistant or susceptible rather than a binary classification. This is relevant in case of variants that, if present alone, confer only weak to no resistance, but may confer complete resistance if present in combination. Also, each variable in a multivariable model has different weights depending on the strength of association with resistance in the training data, reflecting the biological reality where variants cause differing levels of resistance. The benchmarking data presented here confirm that these multivariate models offer gains in sensitivity over the other two tools that use curated mutation lists; however, this comes at a small decrease in specificity overall. Given its higher overall performance GenTB-RF is currently implemented as the default prediction model. As larger and more diverse data will become available for model training, especially for prediction of resistance more quantitatively, i.e., to predict minimum inhibitory concentrations or MICs, we anticipate multivariate models including the more complex GenTB-WDNN architecture to have an even bigger advantage over direct association of mutation lists.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 45280,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "This study was not without limitations. An important prerequisite for reliable genotypic resistance prediction is the quality of the raw sequencing data. Variants and small indels in resistance-conferring genes can be accurately and confidently called from Illumina raw sequence data if the genes are adequately covered at an acceptable sequencing depth. However, short-read sequencing data is recognized to have lower sensitivity for detecting more complex genomic variants including long indels or structural variation and these may have been missed in this study. But these latter types of variants are expected to be rare. Our finding of \u201capparent\u201d false positive predictions (i.e., resistance call by GenTB-RF while susceptible phenotype) in isolates harboring canonical resistance variants portends some erroneous phenotypes in our ground truth dataset. None of the three tools studied predict resistance to recently introduced or repurposed drugs, such as bedaquiline or linezolid, due to limited phenotypic resistance data which is partially driven by limited clinical experience with them thus far. Due to the scale and public nature of the dataset used for benchmarking in this study, we were unable to retest the laboratory-based drug susceptibility profiles of isolates with discordant predictions, but hope that it provides a test closer to a \u201creal-world\u201d scenario for these tool\u2019s application. We also note that the models\u2019 performance as benchmarked here is an average across the currently publicly available datasets that represent isolates from different countries. In the future, large country-specific datasets will further validate their diagnostic accuracy based on the local epidemiology.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 47003,
+      "infons": {
+       "section_type": "CONCL",
+       "type": "title_1"
+      },
+      "text": "Conclusions",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 47015,
+      "infons": {
+       "section_type": "CONCL",
+       "type": "paragraph"
+      },
+      "text": "The rapid emergence and affordability of sequencing of M. tuberculosis along with the herein confirmed high accuracy of several genotypic resistance prediction tools supports the use of informatically assisted treatment design in the clinical setting. Independent benchmarking efforts will facilitate regulatory reviews and assessments and build confidence in the tools\u2019 performances. As genotypic resistance predictions will accompany and increasingly replace laboratory-based resistance phenotyping performance criteria will need to be defined to guide clinical and public health laboratories in their use. Lastly, it will be important to communicate the confidence and uncertainty that is inherent to all genotypic predictions to clinicians and provide clear diagnostic algorithms in case of genotype-phenotype discordances.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 47845,
+      "infons": {
+       "section_type": "SUPPL",
+       "type": "title_1"
+      },
+      "text": "Availability and requirements",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 47875,
+      "infons": {
+       "section_type": "SUPPL",
+       "type": "paragraph"
+      },
+      "text": "Project name: GenTB - Translational Genomics of Tuberculosis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 47936,
+      "infons": {
+       "section_type": "SUPPL",
+       "type": "paragraph"
+      },
+      "text": "Project home page: https://gentb.hms.harvard.edu",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 47985,
+      "infons": {
+       "section_type": "SUPPL",
+       "type": "paragraph"
+      },
+      "text": "Operating system(s): Platform independent",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48027,
+      "infons": {
+       "section_type": "SUPPL",
+       "type": "paragraph"
+      },
+      "text": "Programming language: Python 2 and 3, R, Perl",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48073,
+      "infons": {
+       "section_type": "SUPPL",
+       "type": "paragraph"
+      },
+      "text": "License: AGPLv3",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48089,
+      "infons": {
+       "section_type": "SUPPL",
+       "type": "paragraph"
+      },
+      "text": "Any restrictions to use by non-academics: None.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48137,
+      "infons": {
+       "section_type": "SUPPL",
+       "type": "title_1"
+      },
+      "text": "Supplementary Information",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48163,
+      "infons": {
+       "section_type": "ABBR",
+       "type": "title"
+      },
+      "text": "Abbreviations",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48177,
+      "infons": {
+       "section_type": "ABBR",
+       "type": "paragraph"
+      },
+      "text": "DST",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48181,
+      "infons": {
+       "section_type": "ABBR",
+       "type": "paragraph"
+      },
+      "text": "Drug susceptibility testing",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48209,
+      "infons": {
+       "section_type": "ABBR",
+       "type": "paragraph"
+      },
+      "text": "Indels",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48216,
+      "infons": {
+       "section_type": "ABBR",
+       "type": "paragraph"
+      },
+      "text": "Insertions and deletions",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48241,
+      "infons": {
+       "section_type": "ABBR",
+       "type": "paragraph"
+      },
+      "text": "MDR- TB",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48249,
+      "infons": {
+       "section_type": "ABBR",
+       "type": "paragraph"
+      },
+      "text": "Multi-drug-resistant TB",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48273,
+      "infons": {
+       "section_type": "ABBR",
+       "type": "paragraph"
+      },
+      "text": "SNP",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48277,
+      "infons": {
+       "section_type": "ABBR",
+       "type": "paragraph"
+      },
+      "text": "Single nucleotide polymorphism",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48308,
+      "infons": {
+       "section_type": "ABBR",
+       "type": "paragraph"
+      },
+      "text": "TB",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48311,
+      "infons": {
+       "section_type": "ABBR",
+       "type": "paragraph"
+      },
+      "text": "Tuberculosis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48324,
+      "infons": {
+       "section_type": "ABBR",
+       "type": "paragraph"
+      },
+      "text": "WGS",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48328,
+      "infons": {
+       "section_type": "ABBR",
+       "type": "paragraph"
+      },
+      "text": "Whole genome sequencing",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48352,
+      "infons": {
+       "section_type": "ABBR",
+       "type": "paragraph"
+      },
+      "text": "XDR-TB",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48359,
+      "infons": {
+       "section_type": "ABBR",
+       "type": "paragraph"
+      },
+      "text": "Extensively drug-resistant TB",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48389,
+      "infons": {
+       "section_type": "ABBR",
+       "type": "footnote"
+      },
+      "text": "Publisher\u2019s Note",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48408,
+      "infons": {
+       "section_type": "ABBR",
+       "type": "footnote"
+      },
+      "text": "Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48527,
+      "infons": {
+       "section_type": "AUTH_CONT",
+       "type": "title"
+      },
+      "text": "Authors\u2019 contributions",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48552,
+      "infons": {
+       "section_type": "AUTH_CONT",
+       "type": "paragraph"
+      },
+      "text": "MIG and MRF conceived and designed the study. MIG, MO, RV, LF, AD, and MRF wrote scripts for the website and sequence data analysis. JP and ZI provided help and advice throughout the project. MIG and MRF wrote the first version of the manuscript and the final manuscript contained contributions from all authors. All authors read and pproved the final manuscript.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48916,
+      "infons": {
+       "section_type": "ACK_FUND",
+       "type": "title"
+      },
+      "text": "Funding",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48924,
+      "infons": {
+       "section_type": "ACK_FUND",
+       "type": "paragraph"
+      },
+      "text": "This work was funded by National Institutes of Health (K01 ES026835 and R01 AI55765 to MRF). MIG is supported by the German Research Foundation (GR5643/1-1). The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 49211,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title"
+      },
+      "text": "Availability of data and materials",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 49246,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "All raw M. tuberculosis sequence data used in this study to benchmark the performance of the genotypic resistance prediction tools is available online from public repositories such as the National Center for Biotechnology Information or the European Nucleotide Archive. Accessions are given in Additional file 1. GenTB can be accessed online at https://gentb.hms.harvard.edu. The source code for the GenTB website is available in the repository https://github.com/farhat-lab/gentb-site and the source code for the snakemake implementation of GenTB is available in the repository https://github.com/farhat-lab/gentb-snakemake.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 49872,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title"
+      },
+      "text": "Declarations",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 49885,
+      "infons": {
+       "section_type": "COMP_INT",
+       "type": "title"
+      },
+      "text": "Competing interest",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 49904,
+      "infons": {
+       "section_type": "COMP_INT",
+       "type": "paragraph"
+      },
+      "text": "The authors declare that they have no competing interests.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 49963,
+      "infons": {
+       "section_type": "COMP_INT",
+       "type": "title"
+      },
+      "text": "Ethics approval and consent to participate",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 50006,
+      "infons": {
+       "section_type": "COMP_INT",
+       "type": "paragraph"
+      },
+      "text": "Not applicable",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 50021,
+      "infons": {
+       "section_type": "COMP_INT",
+       "type": "title"
+      },
+      "text": "Consent for publication",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 50045,
+      "infons": {
+       "section_type": "COMP_INT",
+       "type": "paragraph"
+      },
+      "text": "Not applicable",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 50060,
+      "infons": {
+       "section_type": "REF",
+       "type": "title"
+      },
+      "text": "References",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 50071,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "World Health Organization. Global Tuberculosis Report 2020. World Health Organization; 2020. Available from: https://www.who.int/publications/i/item/9789240013131",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 50234,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "World Health Organization. Guidelines for surveillance of drug resistance in tuberculosis 5th Edition. WHO; 2015. Available from: https://apps.who.int/iris/bitstream/handle/10665/174897/;jsessionid=52537DA4A0AB0E19A10382076AC23874?sequence=1",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 50476,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "Cabibbe AM, Trovato A, De Filippo MR, Ghodousi A, Rindi L, Garzelli C, et al. Countrywide implementation of whole genome sequencing: an opportunity to improve tuberculosis management, surveillance and contact tracing in low incidence countries. Eur Respir J. 2018;51. Available from: 10.1183/13993003.00387-2018",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 50788,
+      "infons": {
+       "fpage": "49",
+       "issue": "1",
+       "lpage": "58",
+       "name_0": "surname:Pankhurst;given-names:LJ",
+       "name_1": "surname:del Ojo;given-names:EC",
+       "name_2": "surname:Votintseva;given-names:AA",
+       "name_3": "surname:Walker;given-names:TM",
+       "name_4": "surname:Cole;given-names:K",
+       "name_5": "surname:Davies;given-names:J",
+       "pub-id_doi": "10.1016/S2213-2600(15)00466-X",
+       "section_type": "REF",
+       "source": "Lancet Respir Med. Elsevier BV",
+       "type": "ref",
+       "volume": "4",
+       "year": "2016"
+      },
+      "text": "Rapid, comprehensive, and affordable mycobacterial diagnosis with whole-genome sequencing: a prospective study",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 50899,
+      "infons": {
+       "fpage": "221",
+       "lpage": "246",
+       "name_0": "surname:Cirillo;given-names:DM",
+       "name_1": "surname:Miotto;given-names:P",
+       "name_2": "surname:Tortoli;given-names:E",
+       "pub-id_doi": "10.1007/978-3-319-64371-7_12",
+       "pub-id_pmid": "29116638",
+       "section_type": "REF",
+       "source": "Adv Exp Med Biol.",
+       "type": "ref",
+       "volume": "1019",
+       "year": "2017"
+      },
+      "text": "Evolution of Phenotypic and Molecular Drug Susceptibility Testing",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 50965,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "Meehan CJ, Goig GA, Kohl TA, Verboven L, Dippenaar A, Ezewudo M, et al. Whole genome sequencing of Mycobacterium tuberculosis: current standards and open issues. Nat Rev Microbiol. 2019; Available from: 10.1038/s41579-019-0214-5",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 51194,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "CRyPTIC Consortium and the 100,000 Genomes Project, Allix-B\u00e9guec C, Arandjelovic I, Bi L, Beckert P, Bonnet M, et al. Prediction of Susceptibility to First-Line Tuberculosis Drugs by DNA Sequencing. N Engl J Med. 2018;379:1403\u201315.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 51428,
+      "infons": {
+       "fpage": "433",
+       "issue": "5",
+       "lpage": "442",
+       "name_0": "surname:McNerney;given-names:R",
+       "name_1": "surname:Zignol;given-names:M",
+       "name_2": "surname:Clark;given-names:TG",
+       "pub-id_doi": "10.1080/14787210.2018.1472577",
+       "pub-id_pmid": "29718745",
+       "section_type": "REF",
+       "source": "Expert Rev Anti Infect Ther.",
+       "type": "ref",
+       "volume": "16",
+       "year": "2018"
+      },
+      "text": "Use of whole genome sequencing in surveillance of drug resistant tuberculosis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 51506,
+      "infons": {
+       "fpage": "e5895",
+       "name_0": "surname:Kohl;given-names:TA",
+       "name_1": "surname:Utpatel;given-names:C",
+       "name_2": "surname:Schleusener;given-names:V",
+       "name_3": "surname:De Filippo;given-names:MR",
+       "name_4": "surname:Beckert;given-names:P",
+       "name_5": "surname:Cirillo;given-names:DM",
+       "pub-id_doi": "10.7717/peerj.5895",
+       "pub-id_pmid": "30479891",
+       "section_type": "REF",
+       "source": "PeerJ.",
+       "type": "ref",
+       "volume": "6",
+       "year": "2018"
+      },
+      "text": "MTBseq: a comprehensive pipeline for whole genome sequence analysis of Mycobacterium tuberculosis complex isolates",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 51621,
+      "infons": {
+       "fpage": "881",
+       "issue": "1",
+       "name_0": "surname:Steiner;given-names:A",
+       "name_1": "surname:Stucki;given-names:D",
+       "name_2": "surname:Coscolla;given-names:M",
+       "name_3": "surname:Borrell;given-names:S",
+       "name_4": "surname:Gagneux;given-names:S",
+       "pub-id_doi": "10.1186/1471-2164-15-881",
+       "pub-id_pmid": "25297886",
+       "section_type": "REF",
+       "source": "BMC Genomics.",
+       "type": "ref",
+       "volume": "15",
+       "year": "2014"
+      },
+      "text": "KvarQ: targeted and direct variant calling from fastq reads of bacterial genomes",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 51702,
+      "infons": {
+       "fpage": "1908",
+       "issue": "6",
+       "lpage": "1914",
+       "name_0": "surname:Feuerriegel;given-names:S",
+       "name_1": "surname:Schleusener;given-names:V",
+       "name_2": "surname:Beckert;given-names:P",
+       "name_3": "surname:Kohl;given-names:TA",
+       "name_4": "surname:Miotto;given-names:P",
+       "name_5": "surname:Cirillo;given-names:DM",
+       "name_6": "surname:Cabibbe;given-names:AM",
+       "name_7": "surname:Niemann;given-names:S",
+       "name_8": "surname:Fellenberg;given-names:K",
+       "pub-id_doi": "10.1128/JCM.00025-15",
+       "pub-id_pmid": "25854485",
+       "section_type": "REF",
+       "source": "J Clin Microbiol.",
+       "type": "ref",
+       "volume": "53",
+       "year": "2015"
+      },
+      "text": "PhyResSE: a Web Tool Delineating Mycobacterium tuberculosis Antibiotic Resistance and Lineage from Whole-Genome Sequencing Data",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 51830,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "Iwai H, Kato-Miyazawa M, Kirikae T, Miyoshi-Akiyama T. CASTB (the comprehensive analysis server for the Mycobacterium tuberculosis complex): A publicly accessible web server for epidemiological analyses, drug-resistance prediction and phylogenetic comparison of clinical isolates. Tuberculosis . 2015;95:843\u2013844.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 52145,
+      "infons": {
+       "fpage": "e0142951",
+       "issue": "11",
+       "name_0": "surname:Sekizuka;given-names:T",
+       "name_1": "surname:Yamashita;given-names:A",
+       "name_2": "surname:Murase;given-names:Y",
+       "name_3": "surname:Iwamoto;given-names:T",
+       "name_4": "surname:Mitarai;given-names:S",
+       "name_5": "surname:Kato;given-names:S",
+       "name_6": "surname:Kuroda;given-names:M",
+       "pub-id_doi": "10.1371/journal.pone.0142951",
+       "pub-id_pmid": "26565975",
+       "section_type": "REF",
+       "source": "PLoS One.",
+       "type": "ref",
+       "volume": "10",
+       "year": "2015"
+      },
+      "text": "TGS-TB: Total Genotyping Solution for Mycobacterium tuberculosis Using Short-Read Whole-Genome Sequencing",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 52251,
+      "infons": {
+       "fpage": "41",
+       "issue": "1",
+       "name_0": "surname:Phelan;given-names:JE",
+       "name_1": "surname:O\u2019Sullivan;given-names:DM",
+       "name_10": "surname:Huggett;given-names:JF",
+       "name_11": "surname:Clark;given-names:TG",
+       "name_2": "surname:Machado;given-names:D",
+       "name_3": "surname:Ramos;given-names:J",
+       "name_4": "surname:Oppong;given-names:YEA",
+       "name_5": "surname:Campino;given-names:S",
+       "name_6": "surname:O\u2019Grady;given-names:J",
+       "name_7": "surname:McNerney;given-names:R",
+       "name_8": "surname:Hibberd;given-names:ML",
+       "name_9": "surname:Viveiros;given-names:M",
+       "pub-id_doi": "10.1186/s13073-019-0650-x",
+       "pub-id_pmid": "31234910",
+       "section_type": "REF",
+       "source": "Genome Med.",
+       "type": "ref",
+       "volume": "11",
+       "year": "2019"
+      },
+      "text": "Integrating informatics tools and portable sequencing technology for rapid detection of resistance to anti-tuberculous drugs",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 52376,
+      "infons": {
+       "fpage": "191",
+       "name_0": "surname:Hunt;given-names:M",
+       "name_1": "surname:Bradley;given-names:P",
+       "name_10": "surname:Comas;given-names:I",
+       "name_11": "surname:Farhat;given-names:MR",
+       "name_12": "surname:Fowler;given-names:P",
+       "name_13": "surname:Gardy;given-names:J",
+       "name_14": "surname:Ismail;given-names:N",
+       "name_15": "surname:Kohl;given-names:TA",
+       "name_16": "surname:Mathys;given-names:V",
+       "name_17": "surname:Merker;given-names:M",
+       "name_18": "surname:Niemann;given-names:S",
+       "name_19": "surname:Omar;given-names:SV",
+       "name_2": "surname:Lapierre;given-names:SG",
+       "name_20": "surname:Sintchenko;given-names:V",
+       "name_21": "surname:Smith;given-names:G",
+       "name_22": "surname:Soolingen;given-names:D",
+       "name_23": "surname:Supply;given-names:P",
+       "name_24": "surname:Tahseen;given-names:S",
+       "name_25": "surname:Wilcox;given-names:M",
+       "name_26": "surname:Arandjelovic;given-names:I",
+       "name_27": "surname:Peto;given-names:TEA",
+       "name_28": "surname:Crook;given-names:DW",
+       "name_29": "surname:Iqbal;given-names:Z",
+       "name_3": "surname:Heys;given-names:S",
+       "name_4": "surname:Thomsit;given-names:M",
+       "name_5": "surname:Hall;given-names:MB",
+       "name_6": "surname:Malone;given-names:KM",
+       "name_7": "surname:Wintringer;given-names:P",
+       "name_8": "surname:Walker;given-names:TM",
+       "name_9": "surname:Cirillo;given-names:DM",
+       "pub-id_doi": "10.12688/wellcomeopenres.15603.1",
+       "pub-id_pmid": "32055708",
+       "section_type": "REF",
+       "source": "Wellcome Open Res.",
+       "type": "ref",
+       "volume": "4",
+       "year": "2019"
+      },
+      "text": "Antibiotic resistance prediction for Mycobacterium tuberculosis from genome sequence data with Mykrobe",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 52479,
+      "infons": {
+       "fpage": "621",
+       "issue": "5",
+       "lpage": "630",
+       "name_0": "surname:Farhat;given-names:MR",
+       "name_1": "surname:Sultana;given-names:R",
+       "name_10": "surname:Kaur;given-names:D",
+       "name_11": "surname:Posey;given-names:J",
+       "name_12": "surname:Kreiswirth;given-names:BN",
+       "name_13": "surname:Kurepina;given-names:N",
+       "name_14": "surname:Rigouts;given-names:L",
+       "name_15": "surname:Streicher;given-names:EM",
+       "name_16": "surname:Victor;given-names:TC",
+       "name_17": "surname:Warren;given-names:RM",
+       "name_18": "surname:van Soolingen;given-names:D",
+       "name_19": "surname:Murray;given-names:M",
+       "name_2": "surname:Iartchouk;given-names:O",
+       "name_3": "surname:Bozeman;given-names:S",
+       "name_4": "surname:Galagan;given-names:J",
+       "name_5": "surname:Sisk;given-names:P",
+       "name_6": "surname:Stolte;given-names:C",
+       "name_7": "surname:Nebenzahl-Guimaraes;given-names:H",
+       "name_8": "surname:Jacobson;given-names:K",
+       "name_9": "surname:Sloutsky;given-names:A",
+       "pub-id_doi": "10.1164/rccm.201510-2091OC",
+       "pub-id_pmid": "26910495",
+       "section_type": "REF",
+       "source": "Am J Respir Crit Care Med.",
+       "type": "ref",
+       "volume": "194",
+       "year": "2016"
+      },
+      "text": "Genetic Determinants of Drug Resistance in Mycobacterium tuberculosis and Their Diagnostic Value",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 52576,
+      "infons": {
+       "fpage": "356",
+       "lpage": "369",
+       "name_0": "surname:Chen;given-names:ML",
+       "name_1": "surname:Doddi;given-names:A",
+       "name_2": "surname:Royer;given-names:J",
+       "name_3": "surname:Freschi;given-names:L",
+       "name_4": "surname:Schito;given-names:M",
+       "name_5": "surname:Ezewudo;given-names:M",
+       "name_6": "surname:Kohane;given-names:IS",
+       "name_7": "surname:Beam;given-names:A",
+       "name_8": "surname:Farhat;given-names:M",
+       "pub-id_doi": "10.1016/j.ebiom.2019.04.016",
+       "pub-id_pmid": "31047860",
+       "section_type": "REF",
+       "source": "EBioMedicine.",
+       "type": "ref",
+       "volume": "43",
+       "year": "2019"
+      },
+      "text": "Beyond multidrug resistance: Leveraging rare variants with machine and statistical learning models in Mycobacterium tuberculosis resistance prediction",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 52727,
+      "infons": {
+       "fpage": "2520",
+       "issue": "19",
+       "lpage": "2522",
+       "name_0": "surname:K\u00f6ster;given-names:J",
+       "name_1": "surname:Rahmann;given-names:S",
+       "pub-id_doi": "10.1093/bioinformatics/bts480",
+       "pub-id_pmid": "22908215",
+       "section_type": "REF",
+       "source": "Bioinformatics",
+       "type": "ref",
+       "volume": "28",
+       "year": "2012"
+      },
+      "text": "Snakemake\u2014a scalable bioinformatics workflow engine",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 52781,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "Martin Owens, Raman Prasad, Maha R Farhat, Corinne Bintz, Davey Hughes, Jimmy Royer, Patrick Hanaj, Christine Choirat, Vladislav Doster, Mohib Javri. gentb-site. 2021. Available from: https://github.com/farhat-lab/gentb-site",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 53006,
+      "infons": {
+       "fpage": "i884",
+       "issue": "17",
+       "lpage": "i890",
+       "name_0": "surname:Chen;given-names:S",
+       "name_1": "surname:Zhou;given-names:Y",
+       "name_2": "surname:Chen;given-names:Y",
+       "name_3": "surname:Gu;given-names:J",
+       "pub-id_doi": "10.1093/bioinformatics/bty560",
+       "pub-id_pmid": "30423086",
+       "section_type": "REF",
+       "source": "Bioinformatics.",
+       "type": "ref",
+       "volume": "34",
+       "year": "2018"
+      },
+      "text": "fastp: an ultra-fast all-in-one FASTQ preprocessor",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 53057,
+      "infons": {
+       "fpage": "R46",
+       "issue": "3",
+       "name_0": "surname:Wood;given-names:DE",
+       "name_1": "surname:Salzberg;given-names:SL",
+       "pub-id_doi": "10.1186/gb-2014-15-3-r46",
+       "pub-id_pmid": "24580807",
+       "section_type": "REF",
+       "source": "Genome Biol.",
+       "type": "ref",
+       "volume": "15",
+       "year": "2014"
+      },
+      "text": "Kraken: ultrafast metagenomic sequence classification using exact alignments",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 53134,
+      "infons": {
+       "fpage": "3094",
+       "issue": "18",
+       "lpage": "3100",
+       "name_0": "surname:Li;given-names:H",
+       "pub-id_doi": "10.1093/bioinformatics/bty191",
+       "pub-id_pmid": "29750242",
+       "section_type": "REF",
+       "source": "Bioinformatics.",
+       "type": "ref",
+       "volume": "34",
+       "year": "2018"
+      },
+      "text": "Minimap2: pairwise alignment for nucleotide sequences",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 53188,
+      "infons": {
+       "fpage": "2078",
+       "issue": "16",
+       "lpage": "2079",
+       "name_0": "surname:Li;given-names:H",
+       "name_1": "surname:Handsaker;given-names:B",
+       "name_2": "surname:Wysoker;given-names:A",
+       "name_3": "surname:Fennell;given-names:T",
+       "name_4": "surname:Ruan;given-names:J",
+       "name_5": "surname:Homer;given-names:N",
+       "name_6": "surname:Marth;given-names:G",
+       "name_7": "surname:Abecasis;given-names:G",
+       "name_8": "surname:Durbin;given-names:R",
+       "pub-id_doi": "10.1093/bioinformatics/btp352",
+       "pub-id_pmid": "19505943",
+       "section_type": "REF",
+       "source": "Bioinformatics.",
+       "type": "ref",
+       "volume": "25",
+       "year": "2009"
+      },
+      "text": "The Sequence Alignment/Map format and SAMtools",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 53235,
+      "infons": {
+       "fpage": "e112963",
+       "issue": "11",
+       "name_0": "surname:Walker;given-names:BJ",
+       "name_1": "surname:Abeel;given-names:T",
+       "name_10": "surname:Earl;given-names:AM",
+       "name_2": "surname:Shea;given-names:T",
+       "name_3": "surname:Priest;given-names:M",
+       "name_4": "surname:Abouelliel;given-names:A",
+       "name_5": "surname:Sakthikumar;given-names:S",
+       "name_6": "surname:Cuomo;given-names:CA",
+       "name_7": "surname:Zeng;given-names:Q",
+       "name_8": "surname:Wortman;given-names:J",
+       "name_9": "surname:Young;given-names:SK",
+       "pub-id_doi": "10.1371/journal.pone.0112963",
+       "pub-id_pmid": "25409509",
+       "section_type": "REF",
+       "source": "PLoS One.",
+       "type": "ref",
+       "volume": "9",
+       "year": "2014"
+      },
+      "text": "Pilon: an integrated tool for comprehensive microbial variant detection and genome assembly improvement",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 53339,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "Freschi L, Vargas R Jr, Hussain A, Kamal SMM, Skrahina A, Tahseen S, et al. Population structure, biogeography and transmissibility of Mycobacterium tuberculosis. bioRxiv. bioRxiv; 2020. Available from: 10.1101/2020.09.29.293274",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 53568,
+      "infons": {
+       "fpage": "475",
+       "lpage": "476",
+       "name_0": "surname:Gr\u00fcning;given-names:B",
+       "name_1": "surname:Dale;given-names:R",
+       "name_2": "surname:Sj\u00f6din;given-names:A",
+       "name_3": "surname:Chapman;given-names:BA",
+       "name_4": "surname:Rowe;given-names:J",
+       "name_5": "surname:Tomkins-Tinch;given-names:CH",
+       "pub-id_doi": "10.1038/s41592-018-0046-7",
+       "pub-id_pmid": "29967506",
+       "section_type": "REF",
+       "source": "Nat Methods.",
+       "type": "ref",
+       "volume": "15",
+       "year": "2018"
+      },
+      "text": "Bioconda: sustainable and comprehensive software distribution for the life sciences",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 53652,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "Matthias Gr\u00f6schel and Martin Owens. gentb-snakemake. 2021. Available from: https://github.com/farhat-lab/gentb-snakemake",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 53774,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "Wattam AR, Davis JJ, Assaf R, Boisvert S, Brettin T, Bun C, et al. Improvements to PATRIC, the all-bacterial bioinformatics database and analysis resource center. Nucleic Acids Res. 2017;45:D535\u201342.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 53975,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "Ezewudo M, Borens A, Chiner-Oms \u00c1, Miotto P, Chindelevitch L, Starks AM, et al. Integrating standardized whole genome sequence analysis with a global Mycobacterium tuberculosis antibiotic resistance knowledgebase. Sci Rep; 2018;8:15382.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 54213,
+      "infons": {
+       "fpage": "675",
+       "issue": "6",
+       "lpage": "683",
+       "name_0": "surname:Zignol;given-names:M",
+       "name_1": "surname:Cabibbe;given-names:AM",
+       "name_10": "surname:Cirillo;given-names:DM",
+       "name_11": "surname:Colvin;given-names:C",
+       "name_12": "surname:Dadu;given-names:A",
+       "name_13": "surname:Dreyer;given-names:A",
+       "name_14": "surname:Driesen;given-names:M",
+       "name_15": "surname:Gilpin;given-names:C",
+       "name_16": "surname:Hasan;given-names:R",
+       "name_17": "surname:Hasan;given-names:Z",
+       "name_18": "surname:Hoffner;given-names:S",
+       "name_19": "surname:Hussain;given-names:A",
+       "name_2": "surname:Dean;given-names:AS",
+       "name_20": "surname:Ismail;given-names:N",
+       "name_21": "surname:Kamal;given-names:SMM",
+       "name_22": "surname:Khanzada;given-names:FM",
+       "name_23": "surname:Kimerling;given-names:M",
+       "name_24": "surname:Kohl;given-names:TA",
+       "name_25": "surname:Mansj\u00f6;given-names:M",
+       "name_26": "surname:Miotto;given-names:P",
+       "name_27": "surname:Mukadi;given-names:YD",
+       "name_28": "surname:Mvusi;given-names:L",
+       "name_29": "surname:Niemann;given-names:S",
+       "name_3": "surname:Glaziou;given-names:P",
+       "name_30": "surname:Omar;given-names:SV",
+       "name_31": "surname:Rigouts;given-names:L",
+       "name_32": "surname:Schito;given-names:M",
+       "name_33": "surname:Sela;given-names:I",
+       "name_34": "surname:Seyfaddinova;given-names:M",
+       "name_35": "surname:Skenders;given-names:G",
+       "name_36": "surname:Skrahina;given-names:A",
+       "name_37": "surname:Tahseen;given-names:S",
+       "name_38": "surname:Wells;given-names:WA",
+       "name_39": "surname:Zhurilo;given-names:A",
+       "name_4": "surname:Alikhanova;given-names:N",
+       "name_40": "surname:Weyer;given-names:K",
+       "name_41": "surname:Floyd;given-names:K",
+       "name_42": "surname:Raviglione;given-names:MC",
+       "name_5": "surname:Ama;given-names:C",
+       "name_6": "surname:Andres;given-names:S",
+       "name_7": "surname:Barbova;given-names:A",
+       "name_8": "surname:Borbe-Reyes;given-names:A",
+       "name_9": "surname:Chin;given-names:DP",
+       "pub-id_doi": "10.1016/S1473-3099(18)30073-2",
+       "pub-id_pmid": "29574065",
+       "section_type": "REF",
+       "source": "Lancet Infect Dis.",
+       "type": "ref",
+       "volume": "18",
+       "year": "2018"
+      },
+      "text": "Genetic sequencing for surveillance of drug resistance in tuberculosis in highly endemic countries: a multi-country population-based surveillance study",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 54365,
+      "infons": {
+       "fpage": "457",
+       "issue": "2",
+       "lpage": "469",
+       "name_0": "surname:Wollenberg;given-names:KR",
+       "name_1": "surname:Desjardins;given-names:CA",
+       "name_10": "surname:Hoffner;given-names:S",
+       "name_11": "surname:Skrahin;given-names:A",
+       "name_12": "surname:Birren;given-names:BW",
+       "name_13": "surname:Rosenthal;given-names:A",
+       "name_14": "surname:Skrahina;given-names:A",
+       "name_15": "surname:Earl;given-names:AM",
+       "name_2": "surname:Zalutskaya;given-names:A",
+       "name_3": "surname:Slodovnikova;given-names:V",
+       "name_4": "surname:Oler;given-names:AJ",
+       "name_5": "surname:Qui\u00f1ones;given-names:M",
+       "name_6": "surname:Abeel;given-names:T",
+       "name_7": "surname:Chapman;given-names:SB",
+       "name_8": "surname:Tartakovsky;given-names:M",
+       "name_9": "surname:Gabrielian;given-names:A",
+       "pub-id_doi": "10.1128/JCM.02116-16",
+       "pub-id_pmid": "27903602",
+       "section_type": "REF",
+       "source": "J Clin Microbiol.",
+       "type": "ref",
+       "volume": "55",
+       "year": "2017"
+      },
+      "text": "Whole-genome sequencing of Mycobacterium tuberculosis provides insight into the evolution and genetic composition of drug-resistant tuberculosis in Belarus",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 54521,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "Phelan JE, Lim DR, Mitarai S, de Sessions PF, Tujan MAA, Reyes LT, et al. Mycobacterium tuberculosis whole genome sequencing provides insights into the Manila strain and drug-resistance mutations in the Philippines. Sci Rep.; 2019;9:9305.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 54760,
+      "infons": {
+       "fpage": "1032",
+       "issue": "9",
+       "lpage": "1042",
+       "name_0": "surname:Hicks;given-names:ND",
+       "name_1": "surname:Yang;given-names:J",
+       "name_10": "surname:Wang;given-names:S",
+       "name_11": "surname:Dong;given-names:J",
+       "name_12": "surname:Sun;given-names:L",
+       "name_13": "surname:Zhu;given-names:Y",
+       "name_14": "surname:Zhao;given-names:Y",
+       "name_15": "surname:Jin;given-names:Q",
+       "name_16": "surname:Fortune;given-names:SM",
+       "name_2": "surname:Zhang;given-names:X",
+       "name_3": "surname:Zhao;given-names:B",
+       "name_4": "surname:Grad;given-names:YH",
+       "name_5": "surname:Liu;given-names:L",
+       "name_6": "surname:Ou;given-names:X",
+       "name_7": "surname:Chang;given-names:Z",
+       "name_8": "surname:Xia;given-names:H",
+       "name_9": "surname:Zhou;given-names:Y",
+       "pub-id_doi": "10.1038/s41564-018-0218-3",
+       "pub-id_pmid": "30082724",
+       "section_type": "REF",
+       "source": "Nat Microbiol.",
+       "type": "ref",
+       "volume": "3",
+       "year": "2018"
+      },
+      "text": "Clinically prevalent mutations in Mycobacterium tuberculosis alter propionate metabolism and mediate multidrug tolerance",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 54881,
+      "infons": {
+       "fpage": "307",
+       "issue": "2",
+       "lpage": "316",
+       "name_0": "surname:Coll;given-names:F",
+       "name_1": "surname:Phelan;given-names:J",
+       "name_10": "surname:Portelli;given-names:S",
+       "name_11": "surname:Oppong;given-names:Y",
+       "name_12": "surname:Alves;given-names:A",
+       "name_13": "surname:Bessa;given-names:TB",
+       "name_14": "surname:Campino;given-names:S",
+       "name_15": "surname:Caws;given-names:M",
+       "name_16": "surname:Chatterjee;given-names:A",
+       "name_17": "surname:Crampin;given-names:AC",
+       "name_18": "surname:Dheda;given-names:K",
+       "name_19": "surname:Furnham;given-names:N",
+       "name_2": "surname:Hill-Cawthorne;given-names:GA",
+       "name_20": "surname:Glynn;given-names:JR",
+       "name_21": "surname:Grandjean;given-names:L",
+       "name_22": "surname:Minh Ha;given-names:D",
+       "name_23": "surname:Hasan;given-names:R",
+       "name_24": "surname:Hasan;given-names:Z",
+       "name_25": "surname:Hibberd;given-names:ML",
+       "name_26": "surname:Joloba;given-names:M",
+       "name_27": "surname:Jones-L\u00f3pez;given-names:EC",
+       "name_28": "surname:Matsumoto;given-names:T",
+       "name_29": "surname:Miranda;given-names:A",
+       "name_3": "surname:Nair;given-names:MB",
+       "name_30": "surname:Moore;given-names:DJ",
+       "name_31": "surname:Mocillo;given-names:N",
+       "name_32": "surname:Panaiotov;given-names:S",
+       "name_33": "surname:Parkhill;given-names:J",
+       "name_34": "surname:Penha;given-names:C",
+       "name_35": "surname:Perdig\u00e3o;given-names:J",
+       "name_36": "surname:Portugal;given-names:I",
+       "name_37": "surname:Rchiad;given-names:Z",
+       "name_38": "surname:Robledo;given-names:J",
+       "name_39": "surname:Sheen;given-names:P",
+       "name_4": "surname:Mallard;given-names:K",
+       "name_40": "surname:Shesha;given-names:NT",
+       "name_41": "surname:Sirgel;given-names:FA",
+       "name_42": "surname:Sola;given-names:C",
+       "name_43": "surname:Oliveira Sousa;given-names:E",
+       "name_44": "surname:Streicher;given-names:EM",
+       "name_45": "surname:Helden;given-names:PV",
+       "name_46": "surname:Viveiros;given-names:M",
+       "name_47": "surname:Warren;given-names:RM",
+       "name_48": "surname:McNerney;given-names:R",
+       "name_49": "surname:Pain;given-names:A",
+       "name_5": "surname:Ali;given-names:S",
+       "name_50": "surname:Clark;given-names:TG",
+       "name_6": "surname:Abdallah;given-names:AM",
+       "name_7": "surname:Alghamdi;given-names:S",
+       "name_8": "surname:Alsomali;given-names:M",
+       "name_9": "surname:Ahmed;given-names:AO",
+       "pub-id_doi": "10.1038/s41588-017-0029-0",
+       "pub-id_pmid": "29358649",
+       "section_type": "REF",
+       "source": "Nat Genet.",
+       "type": "ref",
+       "volume": "50",
+       "year": "2018"
+      },
+      "text": "Genome-wide analysis of multi- and extensively drug-resistant Mycobacterium tuberculosis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 54970,
+      "infons": {
+       "fpage": "269",
+       "issue": "4",
+       "lpage": "281",
+       "name_0": "surname:Dheda;given-names:K",
+       "name_1": "surname:Limberis;given-names:JD",
+       "name_10": "surname:Dolby;given-names:T",
+       "name_11": "surname:Abdallah;given-names:AM",
+       "name_12": "surname:Ben-Rached;given-names:F",
+       "name_13": "surname:Simpson;given-names:J",
+       "name_14": "surname:Smith;given-names:L",
+       "name_15": "surname:Gumbo;given-names:T",
+       "name_16": "surname:van Helden;given-names:P",
+       "name_17": "surname:Sirgel;given-names:FA",
+       "name_18": "surname:McNerney;given-names:R",
+       "name_19": "surname:Theron;given-names:G",
+       "name_2": "surname:Pietersen;given-names:E",
+       "name_20": "surname:Pain;given-names:A",
+       "name_21": "surname:Clark;given-names:TG",
+       "name_22": "surname:Warren;given-names:RM",
+       "name_3": "surname:Phelan;given-names:J",
+       "name_4": "surname:Esmail;given-names:A",
+       "name_5": "surname:Lesosky;given-names:M",
+       "name_6": "surname:Fennelly;given-names:KP",
+       "name_7": "surname:te Riele;given-names:J",
+       "name_8": "surname:Mastrapa;given-names:B",
+       "name_9": "surname:Streicher;given-names:EM",
+       "pub-id_doi": "10.1016/S2213-2600(16)30433-7",
+       "pub-id_pmid": "28109869",
+       "section_type": "REF",
+       "source": "Lancet Respir Med.",
+       "type": "ref",
+       "volume": "5",
+       "year": "2017"
+      },
+      "text": "Outcomes, infectiousness, and transmission dynamics of patients with extensively drug-resistant tuberculosis and home-discharged patients with programmatically incurable tuberculosis: a prospective cohort study",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 55181,
+      "infons": {
+       "fpage": "1661",
+       "name_0": "surname:Gopal;given-names:P",
+       "name_1": "surname:Sarathy;given-names:JP",
+       "name_2": "surname:Yee;given-names:M",
+       "name_3": "surname:Ragunathan;given-names:P",
+       "name_4": "surname:Shin;given-names:J",
+       "name_5": "surname:Bhushan;given-names:S",
+       "pub-id_doi": "10.1038/s41467-020-15516-1",
+       "pub-id_pmid": "32245967",
+       "section_type": "REF",
+       "source": "Nat Commun.",
+       "type": "ref",
+       "volume": "11",
+       "year": "2020"
+      },
+      "text": "Pyrazinamide triggers degradation of its target aspartate decarboxylase",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 55253,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "McKinney W. Data Structures for Statistical Computing in Python. Proceedings of the 9th Python in Science Conference. SciPy; 2010. Available from: 10.25080/majora-92bf1922-00a",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 55429,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "Waskom M, Botvinnik O, O\u2019Kane D, Hobson P, Lukauskas S, Gemperline DC, et al. Mwaskom/Seaborn: V0.8.1 (September 2017). Zenodo; 2017. Available from: 10.5281/zenodo.883859",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 55603,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "Adler D, Kelly ST. vioplot: violin plot. 2020. Available from: https://github.com/TomKellyGenetics/vioplot",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 55710,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "Team RC, Others. R: A language and environment for statistical computing. Vienna, Austria; 2013. Available from: http://cran.univ-paris1.fr/web/packages/dplR/vignettes/intro-dplR.pdf",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 55893,
+      "infons": {
+       "fpage": "1686",
+       "issue": "43",
+       "name_0": "surname:Wickham;given-names:H",
+       "name_1": "surname:Averick;given-names:M",
+       "name_10": "surname:Kuhn;given-names:M",
+       "name_11": "surname:Pedersen;given-names:T",
+       "name_12": "surname:Miller;given-names:E",
+       "name_13": "surname:Bache;given-names:S",
+       "name_14": "surname:M\u00fcller;given-names:K",
+       "name_15": "surname:Ooms;given-names:J",
+       "name_16": "surname:Robinson;given-names:D",
+       "name_17": "surname:Seidel;given-names:D",
+       "name_18": "surname:Spinu;given-names:V",
+       "name_19": "surname:Takahashi;given-names:K",
+       "name_2": "surname:Bryan;given-names:J",
+       "name_20": "surname:Vaughan;given-names:D",
+       "name_21": "surname:Wilke;given-names:C",
+       "name_22": "surname:Woo;given-names:K",
+       "name_23": "surname:Yutani;given-names:H",
+       "name_3": "surname:Chang;given-names:W",
+       "name_4": "surname:McGowan;given-names:L",
+       "name_5": "surname:Fran\u00e7ois;given-names:R",
+       "name_6": "surname:Grolemund;given-names:G",
+       "name_7": "surname:Hayes;given-names:A",
+       "name_8": "surname:Henry;given-names:L",
+       "name_9": "surname:Hester;given-names:J",
+       "pub-id_doi": "10.21105/joss.01686",
+       "section_type": "REF",
+       "source": "JOSS.",
+       "type": "ref",
+       "volume": "4",
+       "year": "2019"
+      },
+      "text": "Welcome to the Tidyverse",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 55918,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "Pedersen BS, Quinlan AR. Mosdepth: quick coverage calculation for genomes and exomes. Bioinformatics. 2018;34:867\u20138.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 56037,
+      "infons": {
+       "fpage": "173",
+       "issue": "2",
+       "lpage": "199",
+       "name_0": "surname:King;given-names:G",
+       "pub-id_doi": "10.1177/0049124107306660",
+       "section_type": "REF",
+       "source": "Sociol Methods Res.",
+       "type": "ref",
+       "volume": "36",
+       "year": "2007"
+      },
+      "text": "An introduction to the dataverse network as an infrastructure for data sharing",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 56116,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "Yadon AN, Maharaj K, Adamson JH, Lai Y-P, Sacchettini JC, Ioerger TR, et al. A comprehensive characterization of PncA polymorphisms that confer resistance to pyrazinamide. Nat Commun; 2017;8:588.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 56312,
+      "infons": {
+       "fpage": "2128",
+       "issue": "1",
+       "name_0": "surname:Farhat;given-names:MR",
+       "name_1": "surname:Freschi;given-names:L",
+       "name_10": "surname:Sunyaev;given-names:S",
+       "name_11": "surname:van Soolingen;given-names:D",
+       "name_12": "surname:Shendure;given-names:J",
+       "name_13": "surname:Sacchettini;given-names:J",
+       "name_14": "surname:Murray;given-names:M",
+       "name_2": "surname:Calderon;given-names:R",
+       "name_3": "surname:Ioerger;given-names:T",
+       "name_4": "surname:Snyder;given-names:M",
+       "name_5": "surname:Meehan;given-names:CJ",
+       "name_6": "surname:de Jong;given-names:B",
+       "name_7": "surname:Rigouts;given-names:L",
+       "name_8": "surname:Sloutsky;given-names:A",
+       "name_9": "surname:Kaur;given-names:D",
+       "pub-id_doi": "10.1038/s41467-019-10110-6",
+       "pub-id_pmid": "31086182",
+       "section_type": "REF",
+       "source": "Nat Commun.",
+       "type": "ref",
+       "volume": "10",
+       "year": "2019"
+      },
+      "text": "GWAS for quantitative resistance phenotypes in Mycobacterium tuberculosis reveals resistance genes and regulatory regions",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 56434,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "Vargas R Jr, Freschi L, Spitaleri A, Tahseen S, Barilar I, Niemann S, et al. The role of epistasis in amikacin, kanamycin, bedaquiline, and clofazimine resistance in Mycobacterium tuberculosis complex. bioRxiv. bioRxiv; 2021 [cited 2021 May 14]. p. 2021.05.07.443178. Available from: https://www.biorxiv.org/content/10.1101/2021.05.07.443178v1",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 56778,
+      "infons": {
+       "fpage": "639",
+       "issue": "6",
+       "lpage": "643",
+       "name_0": "surname:Donnabella;given-names:V",
+       "name_1": "surname:Martiniuk;given-names:F",
+       "name_2": "surname:Kinney;given-names:D",
+       "name_3": "surname:Bacerdo;given-names:M",
+       "name_4": "surname:Bonk;given-names:S",
+       "name_5": "surname:Hanna;given-names:B",
+       "name_6": "surname:Rom;given-names:WN",
+       "pub-id_doi": "10.1165/ajrcmb.11.6.7946393",
+       "pub-id_pmid": "7946393",
+       "section_type": "REF",
+       "source": "Am J Respir Cell Mol Biol.",
+       "type": "ref",
+       "volume": "11",
+       "year": "1994"
+      },
+      "text": "Isolation of the gene for the beta subunit of RNA polymerase from rifampicin-resistant Mycobacterium tuberculosis and identification of new mutations",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 56928,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "Miotto P, Cabibbe AM, Borroni E, Degano M, Cirillo DM. Role of disputed mutations in the rpoB gene in interpretation of automated liquid MGIT culture results for rifampin susceptibility testing of Mycobacterium tuberculosis. J Clin Microbiol.; 2018;56. Available from: http://jcm.asm.org/cgi/pmidlookup?view=long&pmid=29540456",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57255,
+      "infons": {
+       "fpage": "235",
+       "issue": "2",
+       "lpage": "245",
+       "name_0": "surname:Heym;given-names:B",
+       "name_1": "surname:Alzari;given-names:PM",
+       "name_2": "surname:Honor\u00e9;given-names:N",
+       "name_3": "surname:Cole;given-names:ST",
+       "pub-id_doi": "10.1111/j.1365-2958.1995.tb02238.x",
+       "section_type": "REF",
+       "source": "Mol Microbiol. Wiley",
+       "type": "ref",
+       "volume": "15",
+       "year": "1995"
+      },
+      "text": "Missense mutations in the catalase-peroxidase gene, katG, are associated with isoniazid resistance in Mycobacterium tuberculosis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57384,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "Seifert M, Catanzaro D, Catanzaro A, Rodwell TC. Genetic mutations associated with isoniazid resistance in Mycobacterium tuberculosis: a systematic review. PLoS One; 2015;10:e0119628.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57568,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "Miotto P, Tessema B, Tagliani E, Chindelevitch L, Starks AM, Emerson C, et al. A standardised method for interpreting the association between mutations and phenotypic drug resistance in Mycobacterium tuberculosis. Eur Respir J. 2017;50. Available from: 10.1183/13993003.01354-2017",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57849,
+      "infons": {
+       "fpage": "e96",
+       "issue": "3",
+       "lpage": "104",
+       "name_0": "surname:Ektefaie;given-names:Y",
+       "name_1": "surname:Dixit;given-names:A",
+       "name_2": "surname:Freschi;given-names:L",
+       "name_3": "surname:Farhat;given-names:MR",
+       "pub-id_doi": "10.1016/S2666-5247(20)30195-6",
+       "section_type": "REF",
+       "source": "Lancet Microbe. Elsevier BV",
+       "type": "ref",
+       "volume": "2",
+       "year": "2021"
+      },
+      "text": "Globally diverse Mycobacterium tuberculosis resistance acquisition: a retrospective geographical and temporal analysis of whole genome sequences",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57994,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "Marin M, Vargas R Jr, Harris M, Jeffrey B, Epperson LE, Durbin D, et al. Genomic sequence characteristics and the empiric accuracy of short-read sequencing. bioRxiv. bioRxiv; 2021. Available from: 10.1101/2021.04.08.438862",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 58217,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref"
+      },
+      "text": "Kadura S, King N, Nakhoul M, Zhu H, Theron G, K\u00f6ser CU, et al. Systematic review of mutations associated with resistance to the new and repurposed Mycobacterium tuberculosis drugs bedaquiline, clofazimine, linezolid, delamanid and pretomanid. J Antimicrob Chemother. 2020;75:2031\u201343.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     }
+    ],
+    "annotations": [],
+    "relations": []
+   }
+  ]
+ }
+]

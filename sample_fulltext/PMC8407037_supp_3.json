@@ -1,0 +1,40 @@
+[
+ {
+  "source": "BioC",
+  "date": "2024-08-13",
+  "key": "BioC.key",
+  "documents": [
+   {
+    "id": "13073_2021_953_MOESM3_ESM.pdf",
+    "passages": [
+     {
+      "offset": 0,
+      "text": "Supplementary Material",
+      "annotations": []
+     },
+     {
+      "offset": 23,
+      "text": "GenTB: A user-friendly genome-based predictor for tuberculosis resistance powered by machine learning Authors: Matthias I Gr&amp;ouml;schel1, Martin Owens1, Luca Freschi1, Roger Vargas Jr1,2, Maximilian G Marin1,2, Jody Phelan3, Zamin Iqbal4, Avika Dixit1,5 and Maha R Farhat1,6 ADDITIONAL FILE 3 Questionnaire to evaluate the user-friendliness of the GenTB tool",
+      "annotations": []
+     },
+     {
+      "offset": 386,
+      "text": "1. Mark only one oval. Not pleasing at all 1 2 3 4 5 6 7 8 9 10 Very pleasing User friendliness of the GenTB tool As previous GenTB users we would like to solicit your help to evaluate how easy it is to use GenTB. OPTION A: Only answer the questions below without running a prediction now. OPTION B: Run a antibiotic resistance prediction based on provided FASTQ files and report on your experience using the questions below. To do this, please follow these tasks: 1) Create or login to your user account on https://gentb.hms.harvard.edu/ 2) Click on 'Predict' and then on 'Create a prediction from a set of pair-ended FastQ genetic sequences', and provide any dataset name and description. 3) Dropbox link to FASTQ files: https://www.dropbox.com/sh/tnvw8cg1fh0ag0w/AAAu0wk5Dwt6FwfqlwoGYv7ya?dl=0 3a) Download the FASTQ files and upload from your computer, or 3b) Download the FASTQ files to your personal Dropbox, and upload from Dropbox (in this case we need to send you a dropbox invite, please let us know). We appreciate your feedback and would love to hear back by next Monday, May 10th, 2021. Many thanks! Matthias, Martin and Maha How pleasing did you find the GeTB site?",
+      "annotations": []
+     },
+     {
+      "offset": 1566,
+      "text": "2. Mark only one oval. Not clear at all 1 2 3 4 5 6 7 8 9 10 Very clear 3. Mark only one oval. Not easy at all 1 2 3 4 5 6 7 8 9 10 Very easy 4. Mark only one oval. Not stable at all 1 2 3 4 5 6 7 8 9 10 Very stable 5. Mark only one oval. Not usable at all 1 2 3 4 5 6 7 8 9 10 Very usable How clear was the information on GenTB? How easy to use is GenTB? How stable was GenTB during your evaluation? How usable do you find GenTB?",
+      "annotations": []
+     },
+     {
+      "offset": 1997,
+      "text": "6. This content is neither created nor endorsed by Google. Do you have any other feedback? &nbsp;Forms",
+      "annotations": []
+     }
+    ],
+    "relations": []
+   }
+  ]
+ }
+]

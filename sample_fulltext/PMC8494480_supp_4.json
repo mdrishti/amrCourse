@@ -1,0 +1,30 @@
+[
+ {
+  "source": "BioC",
+  "date": "2024-08-14",
+  "key": "BioC.key",
+  "documents": [
+   {
+    "id": "elife-67852-supp12.docx",
+    "passages": [
+     {
+      "offset": 0,
+      "text": "Supplementary Material",
+      "annotations": []
+     },
+     {
+      "offset": 23,
+      "text": "Supplementary table 12 - Climatic predictors of elevated cases presenting at study clinics",
+      "annotations": []
+     },
+     {
+      "offset": 114,
+      "text": "Presenting cases \u2028 \u2029Month \u2028Same month \u2028Previous month \u20282 months prior \u2028 \u2029 \u2028OR (95% CI) \u2028p-value \u2028OR (95% CI) \u2028p-value \u2028OR (95% CI) \u2028p-value \u2028 \u2029Rainfall (precipitation) &gt; 75 mm \u20280.90 (0.15-6.84) \u20281 \u20280.76 (0.12-5.89) \u20281 \u20280.64 (0.10-5.02) \u20280.67 \u2028 \u2029Minimum temperature &gt;14&amp;deg;C \u20280.16 (0.0032-1.47) \u20280.11 \u20280.19 (0.0028-1.28) \u20280.061 \u20280.62 (0.084-3.64) \u20280.71 \u2028 \u2029Maximum temperature &gt;26&amp;deg;C \u20280.48 (0.064-2.77) \u20280.45 \u20280.28 (0.024-1.79) \u20280.15 \u20280.28 (0.024-1.79) \u20280.15 \u2028 \u2029",
+      "annotations": []
+     }
+    ],
+    "relations": []
+   }
+  ]
+ }
+]

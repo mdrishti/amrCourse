@@ -1,0 +1,30 @@
+[
+ {
+  "source": "BioC",
+  "date": "2024-08-14",
+  "key": "BioC.key",
+  "documents": [
+   {
+    "id": "elife-67852-supp8.docx",
+    "passages": [
+     {
+      "offset": 0,
+      "text": "Supplementary Material",
+      "annotations": []
+     },
+     {
+      "offset": 23,
+      "text": "Supplementary Table 8 &amp;ndash; Distribution of n=153 S. Typhi genotypes among each sex for cases and controls",
+      "annotations": []
+     },
+     {
+      "offset": 126,
+      "text": " \u2028Female \u2028Male \u2028 \u2029WGS-confirmed cases \u202835 \u202864 \u2028 \u2029EA1 \u202812 (34.3%) \u202823 (35.9%) \u2028 \u2029EA2 \u202816 (45.7%) \u202830 (46.9%) \u2028 \u2029EA3 \u20284 (11.4%) \u202811 (17.9%) \u2028 \u2029non-H58 \u20283 (8.57%) \u20280 \u2028 \u2029WGS-confirmed carriers \u202828 \u202826 \u2028 \u2029EA1 \u202810 (35.7%) \u202810 (38.5%) \u2028 \u2029EA2 \u202818 (64.3%) \u20289 (34.6%) \u2028 \u2029EA3 \u20280 \u20282 (7.69%) \u2028 \u2029non-H58 \u20280 \u20285 (19.2%) \u2028 \u2029",
+      "annotations": []
+     }
+    ],
+    "relations": []
+   }
+  ]
+ }
+]
