@@ -26,19 +26,24 @@ cd amrCourse
 
 # Hands-on exercise: LLM triage in Colab
 
-Open the notebook in Colab and make your own copy (File > Save a copy in Drive) before starting, so your edits don't collide with anyone else's.
+There are three notebooks, meant to be run in order:
+1. `colab_01_query_corpus.ipynb` — build and clean the PMID corpus.
+2. `colab_02_triage.ipynb` — triage a sample of papers from that corpus with an LLM.
+3. `colab_03_curation.ipynb` — structured extraction (strains/genes/phenotypes) from papers that pass triage.
+
+Open each notebook in Colab and make your own copy (File > Save a copy in Drive) before starting, so your edits don't collide with anyone else's.
 
 ### Running it locally instead (optional)
 
-If you'd rather run the notebook on your own laptop than in Colab (e.g. to use section (i)'s MLX
-backend on Apple Silicon), this repo ships a `Pipfile` with everything the notebook needs:
+If you'd rather run the notebooks on your own laptop than in Colab (e.g. to use the local-model
+section's MLX backend on Apple Silicon), this repo ships a `Pipfile` with everything the notebooks need:
 
 ```bash
 pip install pipenv          # if you don't already have it
 cd amrCourse
 pipenv install              # creates a venv with biopython, pandas, llama-cpp-python, etc.
                              # -- mlx-lm is pulled in automatically only on Apple Silicon
-pipenv run jupyter notebook colab_triage_workshop.ipynb
+pipenv run jupyter notebook colab_01_query_corpus.ipynb
 ```
 
 Secrets work differently outside Colab — there's no Secrets manager, so the notebook falls back to
@@ -61,71 +66,63 @@ and make sure `.env` is gitignored before you commit anything.
 3. Get a free Gemini API key from Google AI Studio: https://aistudio.google.com/api-keys. The notebook calls the Gemini API directly (no router/middleman), so this one key is all you need for the language-model side.
 
 ### Initial steps
-4. Open the notebook in Google Colab. Click the key icon in the left sidebar (Secrets) and add secrets named `GEMINI_API_KEY`, `NCBI_API_KEY` and `ENTREZ_EMAIL` with your repective keys and email-id as the value. This keeps it out of the notebook file and out of your clipboard history. 
-5. Run the notebook's setup cells in section (a) (`pip install biopython requests pandas`, then the API key / email cell).
-6. Run section (b) — this downloads the reference-data CSVs used in section (c)'s query-tuning discussion from a web link and checks each one's checksum before using it. You should see `✓ <filename> downloaded and checksum-verified` for all 3 files. (The triage flowchart/prompts are defined directly in the notebook in section (e), not downloaded — see step 11.)
+
+#### Option A: Google Colab
+1. Open `colab_01_query_corpus.ipynb` in Google Colab. Click the key icon in the left sidebar (Secrets) and add secrets named `GEMINI_API_KEY`, `NCBI_API_KEY` and `ENTREZ_EMAIL` with your keys and email as the values. This keeps them out of the notebook file and out of your clipboard history.
+2. Run the setup cell at the top (installs the needed packages, then reads your keys and email).
+
+#### Option B: Jupyter on your own laptop
+1. Follow "Running it locally instead" above to install the dependencies and create your `.env` file with `GEMINI_API_KEY`, `NCBI_API_KEY` and `ENTREZ_EMAIL`.
+2. Open `colab_01_query_corpus.ipynb` with `pipenv run jupyter notebook colab_01_query_corpus.ipynb` and run the setup cell at the top. It installs the needed packages, then reads your keys and email from `.env`.
 
 ### Query PMC to get initial corpus of papers.
-7. Section (c) constructs the AMR search query used to build the paper corpus. Think about the terms, add/substract terms you think can be useful to expand/narrow the list of PMIDs. For instance, you can add a genus name to focus on specific bacterial species/strains. 
-You can also play with a set of random 200 papers, analyze what phrases were reported the most, and finally include the most reported terms in the query to improve you PMC search.
-8. Exclusion of papers - part 1: the search query's `PUBTYPE_EXCLUSIONS` term (section c) excludes these article types from the result: review, case reports, letter, comment, address, autobiography, biography, conference proceedings, editorial, interactive tutorial, interview, introductory journal article, personal narrative, portrait, news.
-9. Think about how long would you like to go back in time to get the relevant papers. The current example has the range of 2015-2023. You can change the range to expand/narrow your search.
-10. Section (d) lists a flow to exclude more papers from the initial cohort. There are papers of type retraction/expression-of-concern notices. You would not want to curate information from such papers where the scientific integrity is not optimal. These notices also contain metadata (e.g.: PMID of the orginal paper that is retracted). This second pass excludes the PMIDs of the notices and the concerned original papers.
+3. The next cell builds the search query used to find the paper corpus. Look at the search terms, and add or remove terms to make the list of PMIDs wider or narrower. For instance, you can add a genus name to focus on specific bacterial species or strains.
+4. The query also excludes some article types from the results: review, case reports, letter, comment, address, autobiography, biography, conference proceedings, editorial, interactive tutorial, interview, introductory journal article, personal narrative, portrait, news.
+5. Think about how far back in time you want to search for papers. The example uses the range 2015–2023. You can change this range to widen or narrow your search.
+6. A later cell in this notebook removes more papers from the list: retraction notices and expression-of-concern notices. These are notices about papers that were later found to have problems, so you would not want to pull information from them. These notices also point to the PMID of the original paper being retracted, so that original paper is removed too.
 
 ### Triage using language models
-11. Section (e) defines the triage question set directly in the notebook as `TRIAGE_PROMPTS` (the questions) and `TRIAGE_FLOWCHART` (the order/branching) — nothing downloaded, so editing a prompt is just editing this cell. These together guide the language model through the questions - 
-Is this paper about bacteria? Is a gene/genotype named? Does it report an AMR-specific phenotype?
-12. Section (f) sets up the Gemini call and the flowchart walker (`call_llm`/`run_triage`). Section (g) fetches title+abstract for a small set of sample PMIDs via `Bio.Entrez` — run this before triaging anything, since `run_triage` needs the `papers` dict it builds.
-13. Use the schema to run triage on one or more papers ("Run triage on one paper").
+Open `colab_02_triage.ipynb` next.
+7. One cell defines the triage questions directly in the notebook, as plain lists you can edit. These questions guide the language model: Is this paper about bacteria? Is a gene or genotype named? Does it report a result about antibiotic resistance?
+8. The next cells set up the call to the Gemini model and fetch the title and abstract for a small set of sample papers. Run the fetch cell before triaging anything — the triage step needs the paper text it collects.
+9. Use the questions to run triage on one or more papers ("Run triage on one paper").
 
-
-You should see each question's answer and reasoning print as it runs, then a final dict like:
+You should see each question's answer and reasoning print as it runs, then a final result like:
 ```
 {'is_bacteria': True, 'has_gene_genotype': True, 'has_amr_phenotype': True}
 ```
 
-## 3. Run triage across all sample papers and tabulate ("Run triage across several papers and tabulate")
+### Run triage across all sample papers and tabulate ("Run triage across several papers and tabulate")
 
-Run that section. It loops `run_triage` over all 4 sample PMIDs and builds a pandas table. Record your own read of each result:
+10. Run that section. It loops over all 9 sample papers and builds a table. Record your own read of each result in a table like this one, filling in the PMIDs printed in the notebook:
 
 | PMID | is_bacteria | has_gene_genotype | has_amr_phenotype | Your gut check — do you agree? |
 |---|---|---|---|---|
-| 12737743 | | | | |
-| 12800222 | | | | |
-| 12927083 | | | | |
-| 12059906 | | | | |
+| | | | | |
 
-**Question to think about while you do this:** for any paper where you disagree with the model, look at the printed reasoning from "Run triage on one paper" (re-run that paper individually with `verbose=True` if you skipped straight to the tabulated section) — is the model wrong about the biology, or is the *question wording* ambiguous for this paper?
+**Question to think about while you do this:** for any paper where you disagree with the model, look at the printed reasoning from "Run triage on one paper" (re-run that paper individually with the verbose option if you skipped straight to the tabulated section) — is the model wrong about the biology, or is the *question wording* ambiguous for this paper?
 
-## 4. Edit a prompt and re-run
+### Edit a question and re-run
 
-Edit `TRIAGE_PROMPTS["has_amr_phenotype"]["prompt"]` directly in section (e)'s cell — narrower or broader, your choice — then re-run that cell followed by "Run triage on one paper" or the tabulated section on the same paper(s). Does the answer or reasoning change? (This changes the prompt for the rest of your session once you re-run section (e); it doesn't persist across a fresh run of the notebook from the top, since section (e) always starts from the wording written in that cell.)
+11. Find the question about antibiotic resistance in the cell that defines the triage questions, and edit its wording — narrower or broader, your choice. Re-run that cell, then re-run "Run triage on one paper" or the tabulated section on the same paper(s). Does the answer or the reasoning change? (This only changes the question for the rest of your current session. If you run the notebook again from the top, it goes back to the original wording.)
 
-**Watch the free-tier cap**: Gemini's free tier is rate-limited per-minute and per-day (check current limits at https://ai.google.dev/gemini-api/docs/rate-limits) — each `run_triage` call uses up to 4 requests, so a handful of papers plus a re-run or two is plenty for one session.
+**Watch the free-tier cap**: Gemini's free tier limits how many requests you can make per minute and per day (check current limits at https://ai.google.dev/gemini-api/docs/rate-limits). Each triage run on one paper uses a few requests, so a handful of papers plus a re-run or two is plenty for one session.
 
-## 5. Triage a full paper, section-aware (Section h)
+### Triage a full paper, using the right section each time
 
-So far every triage question has seen the same title+abstract text. Section (h) instead routes each
-question to only the paper section(s) listed in its `target_section` (the IAO ontology codes already
-present in `TRIAGE_PROMPTS`, loaded back in section (e)) — giving each question the actual section of
-the paper it needs, instead of hoping the answer happens to be mentioned in the abstract.
+12. So far every question has seen the same title and abstract text. There's a later cell in the same notebook that instead gives each question only the part of the paper it actually needs — for example, a question about methods only sees the methods section — instead of hoping the answer happens to be mentioned in the abstract.
 
-This fetches the paper's full text straight from PMC — no files to download or upload, just NCBI:
-1. `pmid_to_pmcid(pmid)` looks up whether a PMID has a linked PMC full-text record. Not every paper
-   does — a `None` result means try a different PMID.
-2. `fetch_sections_from_pmc(pmcid)` fetches that record's full-text XML and splits it into sections.
-3. `run_triage_sectioned(sections)` runs the same flowchart, but each question only sees its own
-   relevant section(s) instead of one abstract-only blob.
+This fetches the paper's full text straight from PubMed Central — no files to download or upload, just an online lookup:
+1. First it checks whether a paper has a linked full-text record. Not every paper does — if a paper doesn't have one, try a different paper.
+2. Then it fetches that paper's full text and splits it into sections (title, abstract, methods, results, and so on).
+3. Then it runs the same set of questions, but each one only sees its own relevant section(s) instead of one abstract-only blob of text.
 
-Run the "Try it" cell on `sample_pmids[0]`, then try it on each of your other sample PMIDs too (just
-change the `pmid = ...` line) — some will have no PMC full-text record (closed access or
-metadata-only), which is expected. For any PMID that works, compare its result here to what you got
-from the abstract-only `run_triage` on the same paper. Did seeing the full text change any answer?
+Try this on the first sample paper, then try it on each of your other sample papers too — some will have no full-text record available (closed access or metadata-only), which is expected. For any paper that works, compare its result here to what you got from the abstract-only triage on the same paper. Did seeing the full text change any answer?
 
-## 6. Discuss
+### Discuss
 
 Bring back to the group:
 - Any paper where your triage answer surprised you.
 - Whether you hit the Gemini rate limit.
-- One triage question you'd want to add or reword for your own research area — in the notebook this is a `TRIAGE_PROMPTS`/`TRIAGE_FLOWCHART` dict edit.
-- Whether abstract-only and section-aware full-text triage agreed, for anyone who tried Section (h).
+- One triage question you'd want to add or reword for your own research area — in the notebook this just means editing the questions directly.
+- Whether abstract-only and full-text triage agreed, for anyone who tried the full-text step.
