@@ -1,0 +1,29 @@
+[
+ {
+  "pmid": "",
+  "pmcid": "8407037",
+  "num": "1",
+  "bioc_file": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/supplmat.cgi/BioC_json/PMC8407037/1",
+  "original_file": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8407037/bin/13073_2021_953_MOESM1_ESM.csv",
+  "tar_dir": "",
+  "relevant": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/supplmat_relevant.cgi/BioC_json/PMC8407037/13073_2021_953_MOESM1_ESM.csv"
+ },
+ {
+  "pmid": "",
+  "pmcid": "8407037",
+  "num": "2",
+  "bioc_file": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/supplmat.cgi/BioC_json/PMC8407037/2",
+  "original_file": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8407037/bin/13073_2021_953_MOESM2_ESM.docx",
+  "tar_dir": "",
+  "relevant": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/supplmat_relevant.cgi/BioC_json/PMC8407037/13073_2021_953_MOESM2_ESM.docx"
+ },
+ {
+  "pmid": "",
+  "pmcid": "8407037",
+  "num": "3",
+  "bioc_file": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/supplmat.cgi/BioC_json/PMC8407037/3",
+  "original_file": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8407037/bin/13073_2021_953_MOESM3_ESM.pdf",
+  "tar_dir": "",
+  "relevant": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/supplmat_relevant.cgi/BioC_json/PMC8407037/13073_2021_953_MOESM3_ESM.pdf"
+ }
+]

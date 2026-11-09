@@ -1,0 +1,2648 @@
+[
+ {
+  "bioctype": "BioCCollection",
+  "source": "PMC",
+  "date": "20260219",
+  "key": "pmc.key",
+  "version": "1.0",
+  "infons": {},
+  "documents": [
+   {
+    "bioctype": "BioCDocument",
+    "id": "PMC12338148",
+    "infons": {
+     "license": "CC BY"
+    },
+    "passages": [
+     {
+      "bioctype": "BioCPassage",
+      "offset": 0,
+      "infons": {
+       "article-id_doi": "10.1128/msystems.00178-21",
+       "article-id_pmc": "PMC12338148",
+       "article-id_pmid": "34463568",
+       "article-id_publisher-id": "mSystems00178-21",
+       "elocation-id": "10.1128/msystems.00178-21",
+       "issue": "4",
+       "kwd": "Haemophilus Haemophilus influenzae Haemophilus parainfluenzae antibiotic resistance cystic fibrosis genomics",
+       "license": "This is an open-access article distributed under the terms of the Creative Commons Attribution 4.0 International license.",
+       "name_0": "surname:Watts;given-names:Stephen C.",
+       "name_1": "surname:Judd;given-names:Louise M.",
+       "name_2": "surname:Carzino;given-names:Rosemary",
+       "name_3": "surname:Ranganathan;given-names:Sarath",
+       "name_4": "surname:Holt;given-names:Kathryn E.",
+       "name_5": "surname:Whiteson;given-names:Katrine",
+       "name_6": "surname:Holt;given-names:Kathryn Elizabeth",
+       "section_type": "TITLE",
+       "title": "KEYWORDS",
+       "type": "front",
+       "volume": "6",
+       "year": "2021"
+      },
+      "text": "Genomic Diversity and Antimicrobial Resistance of Haemophilus Colonizing the Airways of Young Children with Cystic Fibrosis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 124,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract_title_1"
+      },
+      "text": "ABSTRACT",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 133,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract"
+      },
+      "text": "Respiratory infection during childhood is a key risk factor in early cystic fibrosis (CF) lung disease progression. Haemophilus influenzae and Haemophilus parainfluenzae are routinely isolated from the lungs of children with CF; however, little is known about the frequency and characteristics of Haemophilus colonization in this context. Here, we describe the detection, antimicrobial resistance (AMR), and genome sequencing of H. influenzae and H. parainfluenzae isolated from airway samples of 147 participants aged \u226412\u2009years enrolled in the Australian Respiratory Early Surveillance Team for Cystic Fibrosis (AREST CF) program, Melbourne, Australia. The frequency of colonization per visit was 4.6% for H. influenzae and 32.1% for H. parainfluenzae, 80.3% of participants had H. influenzae and/or H. parainfluenzae detected on at least one visit, and using genomic data, we estimate 15.6% of participants had persistent colonization with the same strain for at least two consecutive visits. Isolates were genetically diverse and AMR was common, with 52% of H. influenzae and 82% of H. parainfluenzae displaying resistance to at least one drug. The genetic basis for AMR could be identified in most cases; putative novel determinants include a new plasmid encoding blaTEM-1 (ampicillin resistance), a new inhibitor-resistant blaTEM allele (augmentin resistance), and previously unreported mutations in chromosomally carried genes (pbp3, ampicillin resistance; folA/folP, cotrimoxazole resistance; rpoB, rifampicin resistance). Acquired AMR genes were more common in H. parainfluenzae than H. influenzae (51% versus 21%, P\u2009=\u20090.0107) and were mostly associated with the ICEHin mobile element carrying blaTEM-1, resulting in more ampicillin resistance in H. parainfluenzae (73% versus 30%, P\u2009=\u20090.0004). Genomic data identified six potential instances of Haemophilus transmission between participants, of which three involved participants who shared clinic visit days.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 2113,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract"
+      },
+      "text": "IMPORTANCE Cystic fibrosis (CF) lung disease begins during infancy, and acute respiratory infections increase the risk of early disease development and progression. Microbes involved in advanced stages of CF are well characterized, but less is known about early respiratory colonizers. We report the population dynamics and genomic determinants of AMR in two early colonizer species, namely, Haemophilus influenzae and Haemophilus parainfluenzae, collected from a pediatric CF cohort. This investigation also reveals that H. parainfluenzae has a high frequency of AMR carried on mobile elements that may act as a potential reservoir for the emergence and spread of AMR to H. influenzae, which has greater clinical significance as a respiratory pathogen in children. This study provides insight into the evolution of AMR and the colonization of H. influenzae and H. parainfluenzae in a pediatric CF cohort, which will help inform future treatment.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 3060,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "title_1"
+      },
+      "text": "INTRODUCTION",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 3073,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": "Cystic fibrosis (CF) is a common inherited genetic disorder caused by deleterious mutations in the cystic fibrosis transmembrane conductance regulator gene. Although the disease is multisystemic, the primary cause of morbidity and mortality results from pulmonary dysfunction. CF lung disease manifests as delayed mucociliary clearance and mucus adhesion leading to recurrent and chronic microbial infections, which elicit an adverse host inflammation response resulting in bronchiectasis and ultimately respiratory failure. Management of bacterial lung infections is essential in CF disease trajectory and can be managed in part through antimicrobial therapy. However, antimicrobial resistance (AMR) is frequently acquired through various mechanisms and can have clinical consequences in CF patients, including reduced lung function.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 3908,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": "There are a small number of bacterial species that predominantly cause CF lung infections, including Pseudomonas aeruginosa, Burkholderia cepacia complex, Staphylococcus aureus, Stenotrophomonas maltophilia, and Haemophilus influenzae. Importantly, acute respiratory infection in newborns with CF is an established risk factor for early disease development and progression.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 4282,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": "H. influenzae and Haemophilus parainfluenzae are among the most common Haemophilus species that colonize the respiratory tract of children in early life. H. influenzae is considered an opportunistic pathogen and can cause invasive disease. Instances of invasive H. parainfluenzae infection have also been described; however, H. parainfluenzae-related disease is less frequently observed, and H. parainfluenzae is recognized as having a lower pathogenic capacity than H. influenzae. Both H. influenzae and H. parainfluenzae are routinely isolated from the respiratory tract of children with CF, particularly during episodes of disease exacerbation. Although many of the classical pathogens involved in CF lung disease have been well studied, less is known about the role of Haemophilus species during the critical period of early childhood. Such knowledge is essential, as it is increasingly recognized that CF lung disease commences soon after diagnosis in early infancy and progresses thereafter. Further insight into the epidemiology and resistance profiles of these early colonizing and infecting bacteria will inform future treatment practices.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 5431,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": "The emergence and accumulation of AMR in H. influenzae and H. parainfluenzae is common, with the highest resistance rates reported for ampicillin (AMP; 23.9 to 58.5% in H. influenzae, 13.2 to 50.0% in H. parainfluenzae) and cotrimoxazole (21.4 to 71.1% in H. influenzae, 14.9 to 44.2% in H. parainfluenzae). Generally, H. influenzae infections are treated with \u03b2-lactams, such as extended-spectrum penicillins or cephalosporins. Other drugs are often used in combination with or as an alternative to \u03b2-lactams and include antifolates, quinolones, and macrolides. Resistance to these drugs typically arises through either acquisition of horizontally transferred resistance genes or mutations in chromosomally encoded protein targets. Acquired AMR genes in H. influenzae and H. parainfluenzae are frequently localized within mobile genetic elements, such as ICEHin or small plasmids, which appear to have facilitated the emergence of multidrug-resistant H. influenzae and H. parainfluenzae strains in recent years.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 6450,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": "H. influenzae is known to produce a polysaccharide capsule, which can be classified into six serotypes (Hia through Hif) and is an invasive virulence determinant. Strains that do not produce the capsule are designated nontypeable H. influenzae (NTHi). The introduction of the highly effective Hib conjugate vaccines caused a marked reduction of Hib-related disease incidence but consequently resulted in an increased prevalence of NTHi-related disease; NTHi is now more commonly isolated from children with CF than any encapsulated H. influenzae serotype. H. parainfluenzae is generally less well characterized, and the role it may have in CF disease is unclear. There is no detailed description of encapsulated H. parainfluenzae, although there is increasing evidence that some H. parainfluenzae strains could express a polysaccharide capsule. Moreover, there is a stark lack of H. parainfluenzae genomic data compared with H. influenzae, despite that it occupies a similar niche. Here, we investigate the prevalence, genomic diversity, and AMR phenotypes of H. influenzae and H. parainfluenzae colonizing the airways of children with CF, recruited at the Royal Children\u2019s Hospital (RCH), Melbourne, Australia.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 7664,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_1"
+      },
+      "text": "RESULTS",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 7672,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_2"
+      },
+      "text": "Detection and sequencing of Haemophilus isolates.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 7722,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "During the 1-year study period, 147 AREST CF study participants receiving treatment at the RCH CF specialist clinic were screened for the presence of H. influenzae or H. parainfluenzae in the respiratory tract during regular clinic visits and during hospitalization for pulmonary exacerbation. Participant characteristics are given in Table\u00a01. Thirty (20.4%) participants tested culture positive for colonization with H. influenzae in \u22651 sample and 111 (75.5%) participants for H. parainfluenzae. Only 29 participants (19.7%) had no Haemophilus-positive samples; these individuals did not differ by age or gender but contributed fewer samples each (mean 4.6 versus 6.0, P\u2009=\u20090.012 using two-sample Kolmogorov-Smirnov test). The overall frequency of colonization per visit was 4.6% for H. influenzae and 32.1% for H. parainfluenzae, with 86 participants (58.5%) presenting with either H. influenzae or H. parainfluenzae on 2 or more occasions. Several participants had both H. influenzae and H. parainfluenzae detected during the same (n\u2009=\u200910, 6.8%) or different (n\u2009=\u200915, 10.2%) visits.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 8822,
+      "infons": {
+       "file": "tab1.xml",
+       "id": "tab1",
+       "section_type": "TABLE",
+       "type": "table_caption"
+      },
+      "text": "Study participant characteristics",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 8856,
+      "infons": {
+       "file": "tab1.xml",
+       "id": "tab1",
+       "section_type": "TABLE",
+       "type": "table",
+       "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<table frame=\"hsides\" rules=\"groups\"><colgroup span=\"1\"><col span=\"1\"/><col span=\"1\"/><col span=\"1\"/></colgroup><thead><tr><th rowspan=\"2\" colspan=\"1\">Characteristic</th><th colspan=\"2\" rowspan=\"1\">Data for:<hr/></th></tr><tr><th rowspan=\"1\" colspan=\"1\">All participants (lab-reported species identification)</th><th rowspan=\"1\" colspan=\"1\">Participants with WGS data (WGS species identification)</th></tr></thead><tbody><tr><td rowspan=\"1\" colspan=\"1\">All participants</td><td rowspan=\"1\" colspan=\"1\"/><td rowspan=\"1\" colspan=\"1\"/></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2003\u2003\u2003\u2003No. of total participants</td><td rowspan=\"1\" colspan=\"1\">147</td><td rowspan=\"1\" colspan=\"1\">59</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2003\u2003\u2003\u2003No. of females (%)</td><td rowspan=\"1\" colspan=\"1\">64 (43.5)</td><td rowspan=\"1\" colspan=\"1\">23 (38.9)</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2003\u2003\u2003\u2003Mean age at first sample, yrs (range)</td><td rowspan=\"1\" colspan=\"1\">5.7 (0.08\u201311.8)</td><td rowspan=\"1\" colspan=\"1\">4.1 (0.10\u20138.9)</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2003\u2003\u2003\u2003Mean no. of samples, count (range)</td><td rowspan=\"1\" colspan=\"1\">5.8 (1\u201312)</td><td rowspan=\"1\" colspan=\"1\">6.2 (2\u201312)</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2003\u2003\u2003\u2003No. with \u22651 <named-content content-type=\"genus-species\">H. influenzae</named-content>-positive sample (%)</td><td rowspan=\"1\" colspan=\"1\">30 (20.4)</td><td rowspan=\"1\" colspan=\"1\">21 (35.6)</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2003\u2003\u2003\u2003No. with \u22651 <italic toggle=\"yes\">H. parainfluenzae</italic>-positive sample (%)</td><td rowspan=\"1\" colspan=\"1\">111 (75.5)</td><td rowspan=\"1\" colspan=\"1\">55 (93.2)</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2003\u2003\u2003\u2003No. with Zero <named-content content-type=\"genus-species\">H. influenzae</named-content><italic toggle=\"yes\">-</italic> or <italic toggle=\"yes\">H. parainfluenzae</italic>-positive samples (%)</td><td rowspan=\"1\" colspan=\"1\">29 (19.7)</td><td rowspan=\"1\" colspan=\"1\"/></tr><tr><td rowspan=\"1\" colspan=\"1\">Participants with \u22651 <named-content content-type=\"genus-species\">Haemophilus</named-content> culture-positive sample</td><td rowspan=\"1\" colspan=\"1\"/><td rowspan=\"1\" colspan=\"1\"/></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2003\u2003\u2003\u2003No. of total participants</td><td rowspan=\"1\" colspan=\"1\">118</td><td rowspan=\"1\" colspan=\"1\">59</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2003\u2003\u2003\u2003No. of females (%)</td><td rowspan=\"1\" colspan=\"1\">54 (45.8)</td><td rowspan=\"1\" colspan=\"1\">23 (39.0)</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2003\u2003\u2003\u2003Mean age at first sample, yrs (range)</td><td rowspan=\"1\" colspan=\"1\">5.3 (0.08\u201311.8)</td><td rowspan=\"1\" colspan=\"1\">4.1 (0.10\u20138.9)</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2003\u2003\u2003\u2003Mean no. of samples (range)</td><td rowspan=\"1\" colspan=\"1\">6.0 (2\u201312)</td><td rowspan=\"1\" colspan=\"1\">6.2 (2\u201312)</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2003\u2003\u2003\u2003Mean no. of <named-content content-type=\"genus-species\">H. influenzae</named-content>-positive samples (range)</td><td rowspan=\"1\" colspan=\"1\">0.3 (0\u20133)</td><td rowspan=\"1\" colspan=\"1\">0.5 (0\u20133)</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2003\u2003\u2003\u2003Mean no. of <italic toggle=\"yes\">H. parainfluenzae</italic>-positive samples (range)</td><td rowspan=\"1\" colspan=\"1\">2.3 (0\u20137)</td><td rowspan=\"1\" colspan=\"1\">2.8 (0\u20137)</td></tr></tbody></table>\n"
+      },
+      "text": "Characteristic\tData for:\t \tAll participants (lab-reported species identification)\tParticipants with WGS data (WGS species identification)\t \tAll participants\t\t\t \t\u2003\u2003\u2003\u2003No. of total participants\t147\t59\t \t\u2003\u2003\u2003\u2003No. of females (%)\t64 (43.5)\t23 (38.9)\t \t\u2003\u2003\u2003\u2003Mean age at first sample, yrs (range)\t5.7 (0.08\u201311.8)\t4.1 (0.10\u20138.9)\t \t\u2003\u2003\u2003\u2003Mean no. of samples, count (range)\t5.8 (1\u201312)\t6.2 (2\u201312)\t \t\u2003\u2003\u2003\u2003No. with \u22651 H. influenzae-positive sample (%)\t30 (20.4)\t21 (35.6)\t \t\u2003\u2003\u2003\u2003No. with \u22651 H. parainfluenzae-positive sample (%)\t111 (75.5)\t55 (93.2)\t \t\u2003\u2003\u2003\u2003No. with Zero H. influenzae- or H. parainfluenzae-positive samples (%)\t29 (19.7)\t\t \tParticipants with \u22651 Haemophilus culture-positive sample\t\t\t \t\u2003\u2003\u2003\u2003No. of total participants\t118\t59\t \t\u2003\u2003\u2003\u2003No. of females (%)\t54 (45.8)\t23 (39.0)\t \t\u2003\u2003\u2003\u2003Mean age at first sample, yrs (range)\t5.3 (0.08\u201311.8)\t4.1 (0.10\u20138.9)\t \t\u2003\u2003\u2003\u2003Mean no. of samples (range)\t6.0 (2\u201312)\t6.2 (2\u201312)\t \t\u2003\u2003\u2003\u2003Mean no. of H. influenzae-positive samples (range)\t0.3 (0\u20133)\t0.5 (0\u20133)\t \t\u2003\u2003\u2003\u2003Mean no. of H. parainfluenzae-positive samples (range)\t2.3 (0\u20137)\t2.8 (0\u20137)\t \t",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 10045,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "A subset of 162 Haemophilus isolates from 59 participants (50% of culture-positive individuals, representative in terms of age and gender) (see Table\u00a01) were subjected to whole-genome sequencing (WGS), of which 89.5% were sequenced successfully. WGS data revealed some species misidentifications (5.5%) and mixed cultures (13%), leaving 24 H. influenzae and H. parainfluenzae isolates for further analysis (see Fig. S1 online at doi.org/10.26188/14954931 and Materials and Methods).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 10529,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_2"
+      },
+      "text": "Genetic diversity and population structure.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 10573,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "The H. influenzae isolates collected in this study were highly diverse (median of 2.3% nucleotide divergence in conserved core genome), and a comparison with publicly available WGS data from other studies (n\u2009=\u2009877 genomes, see Data Set S1 in the supplemental material) indicates RCH CF isolates are distributed across the global species phylogeny (red tips in Fig.\u00a01A). All but two RCH CF H. influenzae genomes had no detectable capsule biosynthesis (cap) locus and fell outside the small number of lineages typically associated with encapsulation (colored branches in Fig.\u00a01A); they are thus predicted to be unencapsulated or nontypeable. Two RCH CF isolates (drug susceptible, sequence type 18 [ST18], from the same patient) carried intact copies of the cap-e locus and fell within the lineage typically associated with serotype e (green branches in Fig.\u00a01A); thus, they are predicted to express serotype e capsules.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 11499,
+      "infons": {
+       "file": "msystems.00178-21-f001.jpg",
+       "id": "fig1",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "Maximum likelihood phylogenies for H. influenzae (A) and H. parainfluenzae (B). Trees were inferred from alignments of core genome SNVs, showing the relationship between RCH isolates (red tips) and publicly available genome collections (summarized in Table S1 online at doi.org/10.26188/14954931). Shading indicates strain clusters of RCH isolates involved in potential transmission or persistence (see Fig.\u00a04).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 11912,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "We used discriminant analysis of principal components (DAPC) to explore how the population of RCH CF H. influenzae isolates compared with the global H. influenzae population structure captured by k-mer profiles of publicly available WGS data from a range of other contexts (see Data Set S1; see Fig. S4 online at doi.org/10.26188/14954931). The data indicate that our Australian pediatric CF isolates are typical of noninvasive respiratory isolates from children in other settings, based on functions constructed to discriminate these parameters from isolates collected from adults, nonrespiratory specimens, and invasive disease (Fig.\u00a02A to C). RCH isolates clustered most closely with other Australian isolates in the discriminant function based on geographical location (Fig.\u00a02D). Notably, DAPC analysis of the 264,940 core-genome single nucleotide variants (SNVs) used for phylogenetic inference yielded much weaker discriminant functions for specimen type and geographical location (see Fig. S5 online at doi.org/10.26188/14954931), suggesting that the discriminant genetic features are carried in the accessory genome rather than core gene allelic variation.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 13079,
+      "infons": {
+       "file": "msystems.00178-21-f002.jpg",
+       "id": "fig2",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "Discriminant analysis of principal components for H. influenzae isolates. Analyses were based on k-mer profiles extracted from the genomes of novel Australian CF pediatric respiratory colonizing isolates sequenced for this study (labeled RCH, black) and those available in public genome collections (other colors; data sources are summarized in Data Set S1). Plots show the distribution of values for the significant linear discriminants (LD1 and LD2) included in the linear discriminant functions, which were constructed to discriminate genomes on the basis of host age (A), infection status (invasive or noninvasive/colonizing) (B), specimen type (C), and country of isolation (D).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 13763,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "The H. parainfluenzae isolates collected in this study also show extensive genetic diversity (median 5.1% nucleotide divergence in conserved core genome). This finding is harder to contextualize within the overall species diversity due to the low number of genomes available from other studies but appears to be representative of species-wide phylogenetic diversity (Fig.\u00a01B).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 14141,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_2"
+      },
+      "text": "Antimicrobial resistance.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 14167,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "AMR was relatively common, with 52% of H. influenzae and 82% of H. parainfluenzae isolates displaying resistance to at least one of the five drugs tested (Table\u00a02). The frequency of cotrimoxazole (STX) resistance was similar in both species (35% in H. influenzae, 31% in H. parainfluenzae), but ampicillin and/or augmentin (AMC) resistance was observed at significantly higher rates in H. parainfluenzae than those in H. influenzae (P\u2009<\u20090.05) (see Table\u00a02). Rifampicin (RIF) was observed at low frequencies in both species (17% in H. influenzae, 7% in H. parainfluenzae). Multidrug resistance (defined here as resistance to ampicillin or augmentin plus at least one other drug class) was also more commonly detected in H. parainfluenzae, although the difference was not statistically significant (see Table\u00a02).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 14985,
+      "infons": {
+       "file": "tab2.xml",
+       "id": "tab2",
+       "section_type": "TABLE",
+       "type": "table_caption"
+      },
+      "text": "Frequency of nonsusceptibility to antimicrobials among sequenced isolatesa",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 15060,
+      "infons": {
+       "file": "tab2.xml",
+       "id": "tab2",
+       "section_type": "TABLE",
+       "type": "table",
+       "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<table frame=\"hsides\" rules=\"groups\"><colgroup span=\"1\"><col span=\"1\"/><col span=\"1\"/><col span=\"1\"/><col span=\"1\"/><col span=\"1\"/></colgroup><thead><tr><th rowspan=\"2\" colspan=\"1\">Antimicrobial</th><th colspan=\"2\" rowspan=\"1\">No. (%) positive for:<hr/></th><th rowspan=\"2\" colspan=\"1\">Odds ratio (95% CI)</th><th rowspan=\"2\" colspan=\"1\"><italic toggle=\"yes\">P</italic> value</th></tr><tr><th rowspan=\"1\" colspan=\"1\">\n<named-content content-type=\"genus-species\">H. influenzae</named-content>\n</th><th rowspan=\"1\" colspan=\"1\">\n<italic toggle=\"yes\">H. parainfluenzae</italic>\n</th></tr></thead><tbody><tr><td rowspan=\"1\" colspan=\"1\">Ampicillin</td><td rowspan=\"1\" colspan=\"1\">7/23 (30)</td><td rowspan=\"1\" colspan=\"1\">60/82 (73)</td><td rowspan=\"1\" colspan=\"1\">6.11 (2.05\u201320.09)</td><td rowspan=\"1\" colspan=\"1\">0.0004</td></tr><tr><td rowspan=\"1\" colspan=\"1\">Augmentin</td><td rowspan=\"1\" colspan=\"1\">1/17 (6)</td><td rowspan=\"1\" colspan=\"1\">25/79 (32)</td><td rowspan=\"1\" colspan=\"1\">7.30 (1.02\u2013322.38)</td><td rowspan=\"1\" colspan=\"1\">0.0351</td></tr><tr><td rowspan=\"1\" colspan=\"1\">Cefotaxime</td><td rowspan=\"1\" colspan=\"1\">0/23 (0)</td><td rowspan=\"1\" colspan=\"1\">2/81 (3)</td><td rowspan=\"1\" colspan=\"1\">Inf (0.053\u2013Inf)</td><td rowspan=\"1\" colspan=\"1\">1</td></tr><tr><td rowspan=\"1\" colspan=\"1\">Cotrimoxazole</td><td rowspan=\"1\" colspan=\"1\">8/23 (35)</td><td rowspan=\"1\" colspan=\"1\">25/82 (31)</td><td rowspan=\"1\" colspan=\"1\">0.82 (0.28\u20132.55)</td><td rowspan=\"1\" colspan=\"1\">0.8002</td></tr><tr><td rowspan=\"1\" colspan=\"1\">Rifampicin</td><td rowspan=\"1\" colspan=\"1\">2/12 (17)</td><td rowspan=\"1\" colspan=\"1\">4/59 (7)</td><td rowspan=\"1\" colspan=\"1\">0.37 (0.045\u20134.61)</td><td rowspan=\"1\" colspan=\"1\">0.2659</td></tr><tr><td rowspan=\"1\" colspan=\"1\">Ampicillin or augmentin</td><td rowspan=\"1\" colspan=\"1\">7/17 (41)</td><td rowspan=\"1\" colspan=\"1\">62/78 (80)</td><td rowspan=\"1\" colspan=\"1\">5.41 (1.58\u201319.72)</td><td rowspan=\"1\" colspan=\"1\">0.0026</td></tr><tr><td rowspan=\"1\" colspan=\"1\">One or more drugs tested</td><td rowspan=\"1\" colspan=\"1\">12/23 (52)</td><td rowspan=\"1\" colspan=\"1\">68/83 (82)</td><td rowspan=\"1\" colspan=\"1\">4.09 (1.36\u201312.47)</td><td rowspan=\"1\" colspan=\"1\">0.0058</td></tr><tr><td rowspan=\"1\" colspan=\"1\">MDR</td><td rowspan=\"1\" colspan=\"1\">5/23 (22)</td><td rowspan=\"1\" colspan=\"1\">23/83 (28)</td><td rowspan=\"1\" colspan=\"1\">1.38 (0.42\u20135.30)</td><td rowspan=\"1\" colspan=\"1\">0.7897</td></tr></tbody></table>\n"
+      },
+      "text": "Antimicrobial\tNo. (%) positive for:\tOdds ratio (95% CI)\tP value\t \tH. influenzae\tH. parainfluenzae\t \tAmpicillin\t7/23 (30)\t60/82 (73)\t6.11 (2.05\u201320.09)\t0.0004\t \tAugmentin\t1/17 (6)\t25/79 (32)\t7.30 (1.02\u2013322.38)\t0.0351\t \tCefotaxime\t0/23 (0)\t2/81 (3)\tInf (0.053\u2013Inf)\t1\t \tCotrimoxazole\t8/23 (35)\t25/82 (31)\t0.82 (0.28\u20132.55)\t0.8002\t \tRifampicin\t2/12 (17)\t4/59 (7)\t0.37 (0.045\u20134.61)\t0.2659\t \tAmpicillin or augmentin\t7/17 (41)\t62/78 (80)\t5.41 (1.58\u201319.72)\t0.0026\t \tOne or more drugs tested\t12/23 (52)\t68/83 (82)\t4.09 (1.36\u201312.47)\t0.0058\t \tMDR\t5/23 (22)\t23/83 (28)\t1.38 (0.42\u20135.30)\t0.7897\t \t",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 15658,
+      "infons": {
+       "file": "tab2.xml",
+       "id": "tab2",
+       "section_type": "TABLE",
+       "type": "table_footnote"
+      },
+      "text": "Nonsusceptibility was defined as I or R according to clinical breakpoints (see Materials and Methods). Multidrug resistance (MDR) was defined as resistance to ampicillin or augmentin plus at least one other antimicrobial. Association tests compare resistance rate between species and were performed using Fisher\u2019s exact test. The analysis is restricted to isolates that were successfully sequenced, had a susceptibility phenotype reported for the given antimicrobial(s), and found to be pure cultures, with species identification based on genome data. Inf, infinity.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 16227,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "We used the WGS data to explore genetic determinants of AMR in the RCH isolates. Horizontally acquired AMR genes were more frequently found in H. parainfluenzae than in H. influenzae, with 42 (51%) H. parainfluenzae and 5 (21%) H. influenzae isolates containing one or more acquired AMR genes (P\u2009=\u20090.0107 using Fisher\u2019s exact test) (see DATA SET\u00a0S2 in the supplemental material). Most common were blaTEM genes (36 blaTEM-1, 4 blaTEM-40, and 2 blaTEM-30), carried in the mobile element ICEHin (2 H. influenzae, 38 H. parainfluenzae) or small plasmids (3 H. influenzae, 2 H. parainfluenzae). Other AMR genes were less common and restricted to H. parainfluenzae, which were generally located in ICEHin elements (11 isolates carried strAB [aminoglycosides] and sul1 [sulfonamide-cotrimoxazole], 5 aph3\u2019la [aminoglycosides], 1 tetB [tetracycline], and 1 tetM [tetracycline] with msrD and mefA [macrolides]). The resistance cassettes of ICEHin varied in structure and gene content (Fig.\u00a03A). Four distinct blaTEM plasmids were observed and were of a similar size (4.3 to 6.5 kbp). Three plasmids were homologous to previously sequenced H. influenzae plasmids pLFH64 (2 H. influenzae, blaTEM-1), pA1209 (one H. influenzae, blaTEM-1), pPN223 (one H. parainfluenzae, blaTEM-1); the fourth was a novel plasmid present in one H. parainfluenzae isolate (pM1C124_1, blaTEM-40; deposited in GenBank under accession MW111541) (Fig.\u00a03B; see Table S4 online at doi.org/10.26188/14954931). Acquired AMR genes accounted for only 33.6% of observed nonsusceptibility phenotypes; hence, we screened for mutations in conserved core resistance-related chromosomal genes that could potentially explain resistance to ampicillin and augmentin (pbp genes) (see Table S3 online at doi.org/10.26188/14954931), cotrimoxazole (folP and folA), and rifampicin (rpoB) (summarized in Tables S5 and S6 at doi.org/10.26188/14954931).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 18134,
+      "infons": {
+       "file": "msystems.00178-21-f003.jpg",
+       "id": "fig3",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "Representative ICEHin structures (A) and plasmids (B) carrying AMR genes identified in RCH isolates. Plasmids are annotated with the best corresponding match in the NCBI nucleotide database, see Table S3 online at doi.org/10.26188/14954931.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 18375,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "Ampicillin resistance in H. influenzae could be entirely explained by acquired \u03b2-lactamases encoded by blaTEM genes (57%) and/or mutations in the penicillin-binding proteins PBP3 (FtsI) and PBP1B (MrcB) (Table S5 online at doi.org/10.26188/14954931). In H. parainfluenzae, acquired blaTEM could explain 60% of ampicillin resistance, but we detected no known or novel PBP mutation that was statistically associated with resistance (Table S6 online at doi.org/10.26188/14954931). Notably though, the first H. parainfluenzae isolated from participant M1C152 was ampicillin sensitive and wild type at PBP3-502. The two subsequent H. parainfluenzae isolates from this participant (following treatment with augmentin and ceftriaxone) were ampicillin resistant with no acquired AMR genes and differed from the first by a single SNV across the entire genome resulting in the amino acid substitution PBP3-A502T, supporting the previously reported role of this mutation in conferring resistance. Nevertheless, our findings leave 33% of ampicillin resistance in H. parainfluenzae unexplained.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 19460,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "Augmentin is a combination of amoxicillin plus the \u03b2-lactamase inhibitor clavulanic acid. Just four augmentin-resistant isolates (16%) carried inhibitor-resistant \u03b2-lactamase alleles (2 H. parainfluenzae with blaTEM-30, 2 H. parainfluenzae with blaTEM-40). Nine more isolates (36%) carried blaTEM-1, but this encoded \u03b2-lactamase is susceptible to clavulanic acid inhibition and we identified no pbp variants in these isolates that were significantly associated with augmentin resistance; hence, inhibitor resistance remains unexplained in these cases. Two augmentin-resistant H. parainfluenzae isolates collected from the same participant (M1C141) contained novel blaTEM alleles that share substitution mutations with known inhibitor-resistant alleles (blaTEM-1-M67I, blaTEM-1-W163L) (Fig. S6 online at doi.org/10.26188/14954931), which likely explain the phenotype. Hence, the vast majority of augmentin resistance (100% in H. influenzae, 80% in H. parainfluenzae) is unexplained. Resistance to the third-generation cephalosporin cefotaxime (CTX) was observed in two H. parainfluenzae isolates from different participants but was unexplained (one carried no acquired genes, one carried only blaTEM-1, and neither carried unique pbp mutations).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 20714,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "Cotrimoxazole is a combination of trimethoprim and sulfamethoxazole. Resistance to trimethoprim is associated with mutations in the chromosomal dihydrofolate reductase folA or acquisition of mobile resistant alleles (dfr genes), while resistance to sulfamethoxazole requires mutations in the chromosomal dihydropteroate synthase folP or acquisition of mobile resistant alleles (sul genes). In H. influenzae, no acquired sul or dfr genes were detected; however, all cotrimoxazole-resistant isolates carried a novel resistance-associated mutation, FolA-N13S, and most carried the novel FolP-G189C (75%), as well as previously reported FolA-I95L (75%) and FolP-P64ins (38%) (Table S5 online at doi.org/10.26188/14954931, and Data Set S2). In H. parainfluenzae, 92% of cotrimoxazole-resistant isolates carried sul1 (36%) and/or resistance-associated FolP mutations (including FolP-P64ins and FolP-G189C, 80%); 64% carried resistance-associated FolA mutations (Table S6 online at doi.org/10.26188/14954931, and Data Set S2).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 21734,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "Rifampicin resistance is most often explained by mutations in rpoB (the RNA polymerase beta subunit), including one previous report in H. influenzae. Both rifampicin-resistant H. influenzae isolates (from the same patient, M1C073) carried a novel mutation, RpoB-A1131T, that was absent from sensitive isolates. In H. parainfluenzae, one of four rifampicin-resistant isolates (M1C081_2) carried RpoB-T724I, which has been previously described in resistant H. parainfluenzae isolates; however, the remaining three isolates contained no other mutations associated with rifampicin resistance (Data Set S2).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 22337,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_2"
+      },
+      "text": "Persistent colonization and transmission.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 22379,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "Seventy-nine participants (53.7%) were culture positive for the same Haemophilus species on \u22651 occasion; 7 (4.8%) participants had \u22652 H. influenzae and 75 (51%) had \u22652 H. parainfluenzae. The probability of testing culture positive for the same species in the next sample after an initial positive result (mean time interval 105\u2009days) was 16.0% for H. influenzae and 48.1% for H. parainfluenzae (P = 0.004 for test of difference in proportions). Among those individuals who had a culture-positive sample directly followed by a culture-negative for the same species (n\u2009=\u2009107), 36 (33.6%) had a subsequent positive sample and 11 (10.3%) had no further samples tested. In 45/79 participants, WGS data were available for at least 2 isolates of the same species. Among these patients with \u22652 WGS sequences, 13 participants (29%) had matching isolates of the same strain (defined as \u226420 mutations; see Materials and Methods), consistent with persistent colonization (2 H. influenzae and 11 H. parainfluenzae) (see Fig.\u00a04A). Assuming the same rate of strain matching (29%) among the 34 participants who had \u22652 isolates but WGS data was available for only 1 of those isolates, we estimate that a further 10 of these participants would have matching strains. Thus, we estimate a total of 23 (15.6%) of the 147 participants (95% confidence interval [CI], 8.4% to 22.6%) had Haemophilus colonization that persisted between visits. Notably, the only encapsulated strain detected in this study (cap-e H. influenzae) was detected twice in the same participant (M1C094), on two separate clinic visits 84\u2009days apart.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 24000,
+      "infons": {
+       "file": "msystems.00178-21-f004.jpg",
+       "id": "fig4",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "Timelines of Haemophilus isolation for participants affected by persistent colonization (A) or potential transmission between participants (B). Triangles indicate Haemophilus isolates that are colored according to WGS-confirmed species as per inset legend. Isolates presented above each timeline represent the same strain (defined as pairwise genetic distance <20; see Materials and Methods) and those below are different strains. Dist, range of pairwise genetic distances (nonrecombinant SNVs + number of inferred recombination events) observed between isolates of the same strain. In B, lines connecting participant timelines represent instances where participants attended an RCH clinic during the same day. Shared days, number of days on which both participants attended the RCH CF clinic; 1\u00b0 intermediaries, for participant pairs not sharing any clinic visit days with one another, we searched for primary intermediary participants who shared at least one clinic data point with each of the participants.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 25011,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "WGS data showed that most strains were unique to a single participant; however, we identified 6 participant pairs that shared the same strain (1 to 19 mutations, see Materials and Methods; 3 H. influenzae, 3 H. parainfluenzae) (see Fig.\u00a04B), suggesting potential transmission. In three such cases, both participants visited an RCH CF clinic on the same day (Fig.\u00a04B), providing a potential opportunity for transmission within the clinic. A contact network reconstructed from visit dates showed that while the other three strain-sharing participant pairs never attended on the same day, they did have shared visit days with single-step intermediary participants (Fig. S7 online at doi.org/10.26188/14954931); hence, it is possible that one of these intermediary participants had become colonized at the clinic via the first participant and then passed the strain on to the second participant on a subsequent visit.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 25927,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "Twelve of the 13 (92%) WGS-confirmed cases of persistent strain colonization exhibited resistance to at least 1 drug, compared with 70% of strains that were not identified as persisting (see Table S7 online at doi.org/10.26188/14954931) (Data Set S2). For H. parainfluenzae, all AMR phenotypes were more frequent among isolates associated with persistent strain colonization; however, these comparisons were underpowered, and the differences were only statistically significant for ampicillin, augmentin, and cefotaxime (Table S7 at doi.org/10.26188/14954931). Five of the six potentially transmitted strains displayed at least one AMR phenotype, similar to the overall rate of AMR across all colonizing isolates (Table S8 online at doi.org/10.26188/14954931) (Data Set S2). Changes in AMR phenotypes within individual H. influenzae or H. parainfluenzae strains were observed during both persistent colonization (resistance phenotypes varied in 8/13 individuals, 62%) and transmission chains (resistance phenotypes varied in 4/6 transmission pairs, 67%), indicating short-term evolution of resistance (Data Set S2).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 27043,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "title_1"
+      },
+      "text": "DISCUSSION",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 27054,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "H. influenzae and H. parainfluenzae colonization of the airways was strikingly common in this cohort, with >80% of participants contributing \u22651 Haemophilus culture-positive respiratory sample during the 1-year period of study (Table\u00a01) and 58.5% contributing \u22652 such samples. The point prevalence was 4.6% for H. influenzae and 32.1% for H. parainfluenzae, and repeat colonization with H. parainfluenzae was much more common than that with H. influenzae (detected in 51% and 4.8% of participants, respectively). H. parainfluenzae also displayed a significantly higher frequency of AMR (Table\u00a02), which was perhaps linked to its increased carriage rate. Globally, the H. influenzae carriage rate in children varies, likely due to differences in cohort demographics and geographical location. H. influenzae has been reported to be recoverable from the nasopharynx in 8% to 34% of children with CF, consistent with H. influenzae carriage estimation in this CF cohort. The frequency of H. parainfluenzae airway colonization has not been established in children (with or without CF) despite the potential to opportunistically cause disease and act as a reservoir for AMR genes.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 28233,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "Substantial genetic diversity was observed for both H. influenzae and H. parainfluenzae isolates cultured from the airways of participants in this study (Fig.\u00a01). Unsurprisingly, only two H. influenzae isolates (from a single patient) were predicted to be encapsulated (cap-e); they belonged to a known clonal capsule-positive lineage (ST18). The remaining H. influenzae isolates belong to the highly heterogenous NTHi group, similar to those detected in other studies examining nasopharyngeal colonization, which consistently report NTHi as the dominant H. influenzae subtype in the respiratory tract.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 28837,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "An analysis of H. influenzae core-genome SNVs using phylogenetics and DAPC showed no apparent lineage associations with age group, specimen type, disease status, or geographical location (Fig. S4 and S5 online at doi.org/10.26188/14954931). This finding is consistent with prior studies of NTHi which reported finding no evidence for phylogenetic signals of geographical origin or clinical source. However, whole-genome k-mer DAPC revealed distinct clustering of RCH CF isolates with others that were noninvasive, collected from the respiratory tract, isolated from children, and circulating in Australia (based on the respective individual discriminant functions, see Fig.\u00a02). Hence, H. influenzae isolates of distinct epidemiological origins are differentiable based on variation in accessory genes but not by allelic variation in the core genome.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 29688,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "The structured variability across the accessory genome could potentially be explained by niche-specific positive selection of genes that confer increased fitness. For example, fixation of ICEHin1056 in respiratory H. influenzae populations has been previously observed within 2 weeks of amoxicillin treatment but subsequently lost (or resistant strains outcompeted) 12 weeks after the initial treatment. The Hia and HMW adhesins, Hif pilus, and IgA proteases are H. influenzae virulence factors that are also differentially present in strains and play a role in the colonization of specific niches like the respiratory tract. Genome-wide association analysis could potentially identify other contributing factors; however, this identification is beyond the scope of the present study.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 30473,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "Antimicrobial therapy is used routinely both to control bacterial lung infections of CF patients and also as an antimicrobial prophylaxis. Augmentin is routinely used for both of these purposes. Cotrimoxazole is used at many specialist CF centers, but it is not routine at RCH; however, resistance was still observed in nearly a one-third of H. influenzae and H. parainfluenzae. Regular use of antimicrobials is known to induce resistance, and indeed, we observed a high rate of AMR in isolates collected in this study, with resistance to one or more drugs observed in 52% H. influenzae and 82% H. parainfluenzae (Table\u00a02). AMR rates in H. influenzae isolated from the respiratory tract in non-CF patients vary between studies, with recent reports of ampicillin resistance at 23.9% to 58.5%, augmentin at 0% to 10.4%, cefotaxime at 0% to 5.9%, cotrimoxazole at 51.2% to 71.1%, and rifampicin at 0% and 4.8%. Similar rates have been reported for H. parainfluenzae in non-CF patients, as follows: for ampicillin, 13.2% to 18.5%; augmentin, 0% to 12.5%; cefotaxime, 0% to 0.3%; cotrimoxazole, 14.9% to 44.2%; and rifampicin, 26.7%. AMR rates detected in the present study are mostly in line with rates in these reports, with the exception of higher rates of resistance in H. parainfluenzae versus H. influenzae. The only other report of such a difference is an earlier study in our setting (children with CF at RCH, 1998 to 2012), which also found higher rates of resistance in H. parainfluenzae than in H. influenzae and showed that rates of ampicillin, augmentin, and cotrimoxazole resistance increased significantly in H. parainfluenzae over the 15-year duration of the study.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 32151,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "Most of the AMR phenotypes were explained by the presence of known genetic determinants. Ampicillin resistance was the most readily explained by known mechanisms, with all H. influenzae-resistant isolates and 67% of H. parainfluenzae-resistant isolates harboring the acquired gene blaTEM or resistance-associated mutations in PBP genes (Data Set S2). The exceptions were augmentin and ceftriaxone; inhibitor-resistant blaTEM alleles accounted for just 20% of augmentin resistance in H. parainfluenzae and none in H. influenzae, and no mechanisms for ceftriaxone resistance were identified.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 32741,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "Novel mutations in AMR-associated proteins discovered through association analysis increased the proportion of resistance explained by amino acid substitutions from 13.4% to 31.3%. Several mutations in FolA and FolP were associated with cotrimoxazole resistance (Table S5 and S6 online at doi.org/10.26188/14954931), including both novel and previously established mutations. Notably, we identified an insertion in H. parainfluenzae FolP that was strongly linked with cotrimoxazole resistance and shared the same location as the H. influenzae FolP-P64ins mutation, which has been demonstrated to induce sulfamethoxazole resistance. Mutations for rifampicin resistance were identified in H. influenzae (RpoB-A1131T) and H. parainfluenzae (RpoB-T724I); the latter was also recently reported as resistance associated in an independent study of H. parainfluenzae.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 33601,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "Consistent with previous studies, nearly all acquired genes detected here in Haemophilus isolates were localized to either an ICEHin element or small blaTEM plasmids. Novel variants of acquired resistant determinants were also observed, including a new ICEHin-encoded blaTEM allele associated with augmentin resistance in H. parainfluenzae and a novel plasmid harboring blaTEM-1.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 33981,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "Not all AMR could be explained by an underlying genetic component. This result is likely due in part to a lack of statistical power for detecting novel resistance-associated variants, even when taking a candidate-gene approach as we did, due to the small sample size. This limitation is particularly problematic for H. influenzae, for which only 24 sequenced isolates were available; for example, FolP-G189C was associated with cotrimoxazole resistance in both H. influenzae and H. parainfluenzae but was statistically significant only in H. parainfluenzae after adjustment for multiple testing (Table S5 and S6 online at doi.org/10.26188/14954931). Additionally, AMR phenotypes are not always reproducible, and AMR genes or mutations can be lost during subculture to extract DNA for sequencing. Moreover, it is conceivable that some single chromosomal mutations reported here are alone insufficient to confer resistance and instead may require a stepwise acquisition of additional mutations before resistance is gained.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 35002,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "A small number of isolates originally identified biochemically as H. influenzae were found to be H. parainfluenzae via WGS (n\u2009=\u20093) and vice versa (n\u2009=\u20095; Fig. S1 online at doi.org/10.26188/14954931). The definitive underlying cause of this discrepancy is unclear but could be explained by several possibilities, including the presence of both H. influenzae and H. parainfluenzae in the same sample or inaccuracies in the biochemical species identification test. The overall rate of discordance between biochemical and genomic species identification was \u22647%, suggesting that studies of H. influenzae colonization or infection that rely solely on biochemical identification without additional confirmation may suffer from both false positives and false negatives. There is little published data on the persistence of Haemophilus colonization in the lungs of children; however, there is some evidence that H. influenzae strain persistence is associated with chronic respiratory disease and does not occur in healthy childhood cohorts. This study reveals for the first time strain persistence of H. influenzae and H. parainfluenzae in the lungs of children with cystic fibrosis for up to 349\u2009days and estimates the carriage rate of persistent strains in the cohort to be 15.6% (95% CI, 8.4% to 22.6%). Strain persistence likely arises due to substantial selective pressure exerted by extensive and prolonged administration of antimicrobials or niche adaptation to the diseased lung. For example, mutations in the single-strand mispairing mechanism allow H. influenzae to alter the expression of nutrient uptake systems and surface molecules, such as adhesins, during persistent colonization in adult patients with chronic obstructive pulmonary disorder. Other important CF pathogens, such as P. aeruginosa and members of the Burkholderia cepacia complex, have been shown to undergo similar changes to surface molecules and remodeling of regulatory networks during persistence. In addition to strain persistence, we observed that participants were frequently colonized by different strains of H. influenzae and H. parainfluenzae across clinic visits, indicating that Haemophilus colonization is a dynamic process and suggesting that strains of both species compete to occupy the niche.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 37295,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "There were six instances where participants shared the same Haemophilus strain. Three of the six cases were supported by epidemiological links whereby participants shared clinic visit days (Fig. S7 online at doi.org/10.26188/14954931), and the remaining three cases shared visit days with possible intermediaries (Fig. S7 online at doi.org/10.26188/14954931). Nosocomial transmission of CF pathogens, such as P. aeruginosa, has been demonstrated in other settings and historically at our center, as has cross-infection with Mycobacterium abscessus. These findings have led to strict infection control practices in CF clinics such as RCH with strict isolation in both clinics and inpatient areas, wearing of face masks by patients in all public spaces, and strict gloving and gowning by all clinical staff. Notably, preceding the introduction of such stringent infection-control measures, sharing of RCH CF clinic visit days was common in our cohort, and nearly all participant pairs could be connected either through a shared clinic visit day (15%) or shared visit days with a single intermediary (72.4%). Hence, it is not clear whether the overlap in visit days could be circumstantial or strain sharing may reflect circulation of strains in the general community rather than nosocomial transmission. Future studies in settings where fewer patients share visit days may be better able to differentiate these possibilities.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 38719,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "This study provides the first insights into the population dynamics and genomic determinants of AMR among colonizing H. influenzae and H. parainfluenzae strains in a pediatric CF cohort and identifies multiple novel AMR determinants particularly for H. parainfluenzae. Notably, while relatively little attention has been paid to H. parainfluenzae colonization in children due to its relative lack of pathogenicity, our data indicate it is a common colonizer that can persist in the respiratory tract of CF children and is very frequently drug resistant. The high frequency of AMR in H. parainfluenzae, of which most was encoded in mobile elements that can transfer to H. influenzae, indicates that H. parainfluenzae could serve as a reservoir for the emergence and spread of AMR to H. influenzae which is of more significant clinical concern in children with and without CF. Further insights are essential and will inform antimicrobial treatment and stewardship in the future. Understanding the role of H. influenzae and H. parainfluenzae in early CF disease progression falls within the province of the AREST CF program goals, and additional studies will aim to assess and explore the specific risk factors associated with early lung colonization by these Haemophilus species.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 39997,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_1"
+      },
+      "text": "MATERIALS AND METHODS",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 40019,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "Participant recruitment and sample and data collection.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 40075,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "Participants in this study are a subset of those enrolled in the Australian Respiratory Early Surveillance Team for Cystic Fibrosis (AREST CF) birth cohort who meet the following inclusion criteria: diagnosed with CF, under 12\u2009years of age, resident in catchment area, and presented to the RCH CF clinic between February 2016 to February 2017. Respiratory samples (bronchoalveolar lavage [BAL] fluid, sputum, or cough swabs) were routinely collected from participants during regular visits and cultured on chocolate agar in the RCH microbiological diagnostics laboratory as previously described. During the 1-year study period, 847 samples collected from 147 study participants were analyzed and yielded 39 isolates identified as H. influenzae and 272 identified as H. parainfluenzae (identified using the X and V factor test). Isolates were tested for susceptibility to ampicillin (AMP), augmentin (AMC), cefotaxime (CTX), cotrimoxazole (STX), and rifampicin (RIF) using disk diffusion with CLSI breakpoints (Table S1 online at doi.org/10.26188/14954931).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 41134,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "Bacterial isolates, sequencing, and assembly.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 41180,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "A total of 162 of the 311 Haemophilus isolates (n\u2009=\u200930, 77% of those biochemically identified as H. influenzae; and n\u2009=\u2009132, 48.5% as H. parainfluenzae) were successfully resuscitated, subcultured, and transferred to the University of Melbourne for whole-genome sequencing (WGS). Isolates were plated onto chocolate agar and incubated at 37\u00b0C under microaerophilic conditions for 48 hours. Colonies were harvested and DNA extracted using GenFindV2 (Beckman Coulter), using proteinase K for bacterial lysis according to the manufacturer\u2019s instructions. Short-read DNA libraries were prepared for all isolates with a Nextera XT kit (Illumina) and subsequently sequenced on the Illumina MiniSeq platform, generating paired-end reads of 151\u2009bp each. DNA samples for long-read sequencing were prepared for a subset of 14 isolates using GenFindV2 (Beckman Coulter); a barcoded ligation library was prepared (SQK-LSK108, EXP-NBD103) and sequenced via an Oxford Nanopore MinION device on a R9.4.1 flow cell.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 42193,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "A total of 107 isolates (24 H. influenzae, 83 H. parainfluenzae) were successfully sequenced via Illumina and passed quality control, each yielding \u2265150,000 high-quality reads (Fig. S1 online at doi.org/10.26188/14954931, and Data Set S1). Centrifuge v1.0.4b was used to categorize isolates as either (i) pure H. influenzae or H. parainfluenzae, defined as one of these species at \u226550% relative abundance and the next most common species <20% relative abundance; (ii) contaminated H. influenzae or H. parainfluenzae, defined as one of these species at \u226550% relative abundance and a second species also highly represented (\u226520% relative abundance); or (iii) other, where neither of these species exceeded 50% relative abundance (Fig. S1 online at doi.org/10.26188/14954931). Strain multiplicity for pure H. influenzae and H. parainfluenzae cultures was assessed by comparing the ratio of heterozygous to homozygous single nucleotide variant (SNV) calls (methods below) against an empirically determined threshold (H. influenzae, \u22650.025; or H. parainfluenzae, \u22650.100, calculated from public data sets); samples exceeding this threshold were considered mixed cultures and were excluded from further analysis (Fig. S1 online at doi.org/10.26188/14954931). Genomes were assembled with Unicycler v0.4.7, using Illumina data in all cases and complemented by MinION data where available. All AMR plasmid sequences (listed in Table S4 online at doi.org/10.26188/14954931) were identified as circularized contigs in the assembly graphs. Read data and assemblies were deposited under the NCBI BioProject accession PRJNA668428 (see Data Set S1 for individual accessions).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 43865,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "Population structure analysis.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 43896,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "The H. influenzae and H. parainfluenzae short-read Illumina data generated in this study (n\u2009=\u2009107), and publicly available read sets for previously sequenced genomes of these species (n\u2009=\u2009891; summarized in Table S2 online at doi.org/10.26188/14954931), were subjected to SNV detection, phylogenetic, and population structure analyses. SNVs (biallelic and polyallelic) were called using Bowtie2 v2.2.9 (for read mapping) and SAMtools v1.9 (for variant calling) via the RedDog pipeline v1beta.11 (https://github.com/katholt/reddog), using H. influenzae strain Rd KW20 (accession GCA_000027305.1) and H. parainfluenzae strain T3T1 (accession GCA_000210895.1) as reference genomes. For each species, core SNV alleles were defined as SNV alleles present in \u226595% genomes. Maximum likelihood conserved core-genome SNV phylogenies were inferred from alignments of core SNV alleles (263,940 [85.3% of all detected SNV] for 901 H. influenzae genomes and 329,046 [79.1% of all detected SNV] for 97 H. parainfluenzae genomes) using IQ-TREE v2.1.0. Phylogenies were visualized with ggtree v1.14.6 in R v3.5.2. H. influenzae capsular serotype loci were detected from genome assemblies using hicap v1.0.0, and sequence types (STs) were assigned to H. influenzae read sets using SRST2 v0.2.0 with the H. influenzae multilocus sequence typing (MLST) database (https://pubmlst.org/organisms/haemophilus-influenzae).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 45305,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "Discriminant analysis of principal components (DAPC) was conducted to explore the relationship between bacterial population structure and sample source using k-mers (of length k\u2009=\u200916) extracted from assemblies. Frequencies of k-mers were counted in each assembly with fsm-lite v1.0 (https://github.com/nvalimak/fsm-lite), and a presence-absence matrix was constructed. Due to memory limitations, random sets of 500,000 k-mers were selected from the presence-absence matrix to use as input for DAPC, which was performed with the R package adegenet v2.1.1 in triplicate using different random k-mer subsets to ensure stability of results (and additionally using the core-genome SNVs called from reads).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 46010,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "Analysis of antimicrobial determinants.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 46050,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "RCH isolates were investigated for known and novel AMR determinants. Reads and assemblies were screened using SRST2 v0.2.0 and BLAST v2.7.1, respectively, to identify alleles of horizontally transferred AMR genes curated in the ARG-ANNOT database. Exact matches for translated blaTEM gene sequences were identified in the NCBI AMR database with BLAST to infer the spectrum of activity and inhibitor resistance.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 46461,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "Mutations in chromosomally encoded antimicrobial target genes (ftsI, folA, rpoB, and pbp genes) were also investigated. An exhaustive search for PBP genes present in the H. influenzae and H. parainfluenzae reference genomes was performed by aligning translated gene sequences to all curated PBP protein sequences available in the Swiss-Prot database to identify those with \u226580% coverage and \u226570% identity (Table S3 online at doi.org/10.26188/14954931). Nucleotide sequences for target genes (ftsI, folA, rpoB, and pbp genes) were extracted from RCH isolate assemblies, and the translated amino acid sequences were aligned using MAFFT v7.407. Each alignment position was compared to the consensus sequence for all isolates that were sensitive to the relevant antimicrobial. Positions that varied were tested for statistical association with the corresponding antimicrobial susceptibility phenotype (expressed as a binary variable, insensitive [I/R] versus sensitive [S]) using Fisher\u2019s exact test and using linear mixed models (LMMs) to correct for population structure by including a genetic relatedness matrix calculated from the alignment of biallelic SNVs. LMMs were fitted with GEMMA v0.98.1, and significance was assessed by the Wald test. The resulting P values were adjusted for multiple testing using Benjamini-Hochberg correction on a per-gene basis. Significant variants (P\u2009<\u20090.05) are reported in Table S5 and S6 (available online at doi.org/10.26188/14954931), and the distribution of variants in isolates are detailed in Data Set S2.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48018,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "Identification of persistent and transmitted strains.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48072,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "Strains were defined as groups of closely related isolates with a pairwise genetic distance of \u226420. They were identified initially using complete-linkage hierarchical clustering based on SNV distances derived from the global conserved core-genome alignment (Fig. S2 online at doi.org/10.26188/14954931). To capture isolate pairs with inflated SNV counts due to small numbers of recombination events, the SNV distance thresholds for strain definition were set to \u22642,000 for H. influenzae and \u22644,000 for H. parainfluenzae (Fig. S2A and C online at doi.org/10.26188/14954931). Precise pairwise SNV distances within each potential strain group were obtained by mapping all isolates to the best within-group genome assembly (lowest N50 value) using RedDog v1beta.11 as described above. Recombination blocks were identified by comparing pairwise SNV densities within discrete 4-kbp windows along the genome with the mean pairwise SNV count for all windows, using a binomial test and Bonferroni correction to account for multiple testing within each strain group (Fig. S3 online at doi.org/10.26188/14954931). Genetic distance between isolate pairs was then defined as nonrecombinant SNVs plus the number of recombinant blocks, and strains were defined as groups of isolates with pairwise genetic distance of \u226420 (Fig. S2B and D online at doi.org/10.26188/14954931).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 49440,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "Data availability.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 49459,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "Read data and assemblies of H. influenzae and H. parainfluenzae isolates are available through NCBI BioProject under the accession PRJNA668428. Accessions for individual isolates are additionally listed in Data Set S1.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 49678,
+      "infons": {
+       "section_type": "REF",
+       "type": "title"
+      },
+      "text": "REFERENCES",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 49689,
+      "infons": {
+       "fpage": "344",
+       "lpage": "399",
+       "pub-id_doi": "10.1001/archpedi.1938.01980140114013",
+       "section_type": "REF",
+       "source": "Am J Dis Child",
+       "type": "ref",
+       "volume": "56",
+       "year": "1938"
+      },
+      "text": "Cystic fibrosis of the pancreas and its relation to celiac disease: a clinical and pathologic study",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 49789,
+      "infons": {
+       "fpage": "2:240",
+       "lpage": "248",
+       "pub-id_doi": "10.1038/ng1192-240",
+       "pub-id_pmid": "1284641",
+       "section_type": "REF",
+       "source": "Nat Genet",
+       "type": "ref",
+       "volume": "2",
+       "year": "1992"
+      },
+      "text": "Submucosal glands are the predominant site of CFTR expression in the human bronchus",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 49873,
+      "infons": {
+       "fpage": "811",
+       "lpage": "817",
+       "pub-id_doi": "10.1067/mpd.2002.129847",
+       "pub-id_pmid": "12461498",
+       "section_type": "REF",
+       "source": "J Pediatr",
+       "type": "ref",
+       "volume": "141",
+       "year": "2002"
+      },
+      "text": "Induced sputum inflammatory measures correlate with lung function in children with cystic fibrosis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 49972,
+      "infons": {
+       "fpage": "425",
+       "lpage": "432",
+       "pub-id_doi": "10.1093/cid/cir399",
+       "pub-id_pmid": "21844026",
+       "section_type": "REF",
+       "source": "Clin Infect Dis",
+       "type": "ref",
+       "volume": "53",
+       "year": "2011"
+      },
+      "text": "Inflammatory responses to individual microorganisms in the lungs of children with cystic fibrosis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 50070,
+      "infons": {
+       "fpage": "1812",
+       "lpage": "1816",
+       "pub-id_doi": "10.1093/cid/ciz364",
+       "pub-id_pmid": "31056660",
+       "section_type": "REF",
+       "source": "Clin Infect Dis",
+       "type": "ref",
+       "volume": "69",
+       "year": "2019"
+      },
+      "text": "Reconciling antimicrobial susceptibility testing and clinical response in antimicrobial treatment of chronic cystic fibrosis lung infections",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 50211,
+      "infons": {
+       "fpage": "696",
+       "lpage": "704",
+       "pub-id_doi": "10.1016/j.jcf.2018.08.014",
+       "pub-id_pmid": "30266518",
+       "section_type": "REF",
+       "source": "J Cyst Fibros",
+       "type": "ref",
+       "volume": "17",
+       "year": "2018"
+      },
+      "text": "Defining antimicrobial resistance in cystic fibrosis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 50264,
+      "infons": {
+       "elocation-id": "e00795",
+       "pub-id_doi": "10.1016/j.heliyon.2018.e00795",
+       "pub-id_pmid": "30238064",
+       "section_type": "REF",
+       "source": "Heliyon",
+       "type": "ref",
+       "volume": "4",
+       "year": "2018"
+      },
+      "text": "Antibiotic multidrug resistance in the cystic fibrosis airway microbiome is associated with decreased diversity",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 50376,
+      "infons": {
+       "fpage": "29",
+       "lpage": "70",
+       "pub-id_doi": "10.1128/CMR.00036-10",
+       "pub-id_pmid": "21233507",
+       "section_type": "REF",
+       "source": "Clin Microbiol Rev",
+       "type": "ref",
+       "volume": "24",
+       "year": "2011"
+      },
+      "text": "Clinical significance of microbial infection and adaptation in cystic fibrosis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 50455,
+      "infons": {
+       "fpage": "1963",
+       "lpage": "1970",
+       "pub-id_doi": "10.1056/NEJMoa1301725",
+       "pub-id_pmid": "23692169",
+       "section_type": "REF",
+       "source": "N Engl J Med",
+       "type": "ref",
+       "volume": "368",
+       "year": "2013"
+      },
+      "text": "Risk factors for bronchiectasis in children with cystic fibrosis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 50520,
+      "infons": {
+       "fpage": "59",
+       "lpage": "73",
+       "pub-id_doi": "10.1093/jac/dkf506",
+       "section_type": "REF",
+       "source": "J Antimicrob Chemother",
+       "type": "ref",
+       "volume": "50",
+       "year": "2002"
+      },
+      "text": "Dynamics of nasopharyngeal colonization by potential respiratory pathogens",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 50595,
+      "infons": {
+       "elocation-id": "e799",
+       "pub-id_doi": "10.1097/MD.0000000000000799",
+       "pub-id_pmid": "25950686",
+       "section_type": "REF",
+       "source": "Medicine (Baltimore)",
+       "type": "ref",
+       "volume": "94",
+       "year": "2015"
+      },
+      "text": "Nasopharyngeal and adenoid colonization by Haemophilus influenzae and Haemophilus parainfluenzae in children undergoing adenoidectomy and the ability of bacterial isolates to biofilm production",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 50789,
+      "infons": {
+       "fpage": "315",
+       "lpage": "317",
+       "pub-id_doi": "10.1038/sj.jp.7200078",
+       "pub-id_pmid": "10685246",
+       "section_type": "REF",
+       "source": "J Perinatol",
+       "type": "ref",
+       "volume": "19",
+       "year": "1999"
+      },
+      "text": "Haemophilus parainfluenzae sepsis in a very low birth weight premature infant: a case report and review of the literature",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 50911,
+      "infons": {
+       "fpage": "342",
+       "lpage": "346",
+       "pub-id_doi": "10.1093/clinids/10.2.342",
+       "pub-id_pmid": "3287563",
+       "section_type": "REF",
+       "source": "Rev Infect Dis",
+       "type": "ref",
+       "volume": "10",
+       "year": "1988"
+      },
+      "text": "Haemophilus parainfluenzae infections in children, with the report of a unique case",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 50995,
+      "infons": {
+       "fpage": "638",
+       "lpage": "641",
+       "pub-id_doi": "10.1093/tropej/fmz010",
+       "pub-id_pmid": "30892629",
+       "section_type": "REF",
+       "source": "J Trop Pediatr",
+       "type": "ref",
+       "volume": "65",
+       "year": "2019"
+      },
+      "text": "Premature infant with Haemophilus parainfluenzae sepsis: case report and literature review",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 51086,
+      "infons": {
+       "fpage": "255",
+       "lpage": "258",
+       "pub-id_doi": "10.1136/adc.65.3.255",
+       "pub-id_pmid": "2185699",
+       "section_type": "REF",
+       "source": "Arch Dis Child",
+       "type": "ref",
+       "volume": "65",
+       "year": "1990"
+      },
+      "text": "Haemophilus infection in cystic fibrosis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 51127,
+      "infons": {
+       "fpage": "146",
+       "lpage": "152",
+       "pub-id_doi": "10.1164/rccm.200901-0069OC",
+       "pub-id_pmid": "19372250",
+       "section_type": "REF",
+       "source": "Am J Respir Crit Care Med",
+       "type": "ref",
+       "volume": "180",
+       "year": "2009"
+      },
+      "text": "Lung disease at diagnosis in infants with cystic fibrosis detected by newborn screening",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 51215,
+      "infons": {
+       "fpage": "509",
+       "lpage": "516",
+       "pub-id_doi": "10.1136/thoraxjnl-2011-200912",
+       "pub-id_pmid": "22201161",
+       "section_type": "REF",
+       "source": "Thorax",
+       "type": "ref",
+       "volume": "67",
+       "year": "2012"
+      },
+      "text": "Progression of early structural lung disease in young children with cystic fibrosis assessed using CT",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 51317,
+      "infons": {
+       "fpage": "626",
+       "lpage": "631",
+       "pub-id_doi": "10.1016/j.jpag.2017.06.002",
+       "pub-id_pmid": "28629795",
+       "section_type": "REF",
+       "source": "J Pediatr Adolesc Gynecol",
+       "type": "ref",
+       "volume": "30",
+       "year": "2017"
+      },
+      "text": "Epidemiological features and antibiotic resistance patterns of Haemophilus influenzae originating from respiratory tract and vaginal specimens in pediatric patients",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 51482,
+      "infons": {
+       "fpage": "12",
+       "lpage": "20",
+       "pub-id_doi": "10.1016/j.ijid.2020.08.040",
+       "pub-id_pmid": "32827751",
+       "section_type": "REF",
+       "source": "Int J Infect Dis",
+       "type": "ref",
+       "volume": "100",
+       "year": "2020"
+      },
+      "text": "Analysis of Haemophilus species in patients with respiratory tract infections in Yaound\u00e9, Cameroon",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 51582,
+      "infons": {
+       "fpage": "1209",
+       "lpage": "1220",
+       "pub-id_doi": "10.2147/IDR.S203121",
+       "pub-id_pmid": "31190909",
+       "section_type": "REF",
+       "source": "Infect Drug Resist",
+       "type": "ref",
+       "volume": "12",
+       "year": "2019"
+      },
+      "text": "Antimicrobial susceptibility among Streptococcus pneumoniae and Haemophilus influenzae collected globally between 2015 and 2017 as part of the Tigecycline Evaluation and Surveillance Trial (TEST)",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 51778,
+      "infons": {
+       "fpage": "161",
+       "lpage": "166",
+       "pub-id_doi": "10.1016/j.jgar.2017.08.005",
+       "pub-id_pmid": "28818575",
+       "section_type": "REF",
+       "source": "J Glob Antimicrob Resist",
+       "type": "ref",
+       "volume": "11",
+       "year": "2017"
+      },
+      "text": "\u03b2-Lactam resistance among Haemophilus influenzae isolates in Poland",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 51849,
+      "infons": {
+       "fpage": "6456321",
+       "pub-id_doi": "10.1155/2019/6456321",
+       "pub-id_pmid": "31485283",
+       "section_type": "REF",
+       "source": "Can J Infect Dis Med Microbiol",
+       "type": "ref",
+       "volume": "2019",
+       "year": "2019"
+      },
+      "text": "Antibiotic resistance profiles of Haemophilus influenzae isolates from children in 2016: a multicenter study in China",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 51967,
+      "infons": {
+       "fpage": "133",
+       "lpage": "138",
+       "pub-id_doi": "10.1093/jac/dki167",
+       "pub-id_pmid": "15917287",
+       "section_type": "REF",
+       "source": "J Antimicrob Chemother",
+       "type": "ref",
+       "volume": "56",
+       "year": "2005"
+      },
+      "text": "Susceptibility of European \u03b2-lactamase-positive and -negative Haemophilus influenzae isolates from the periods 1997/1998 and 2002/2003",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 52105,
+      "infons": {
+       "fpage": "65",
+       "lpage": "71",
+       "pub-id_doi": "10.1128/AAC.00966-09",
+       "pub-id_pmid": "19884366",
+       "section_type": "REF",
+       "source": "Antimicrob Agents Chemother",
+       "type": "ref",
+       "volume": "54",
+       "year": "2010"
+      },
+      "text": "Antimicrobial resistance in Haemophilus influenzae respiratory tract isolates in Korea: results of a nationwide acute respiratory infections surveillance",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 52259,
+      "infons": {
+       "fpage": "247",
+       "lpage": "256",
+       "pub-id_doi": "10.1016/j.jiac.2014.11.012",
+       "pub-id_pmid": "25596977",
+       "section_type": "REF",
+       "source": "J Infect Chemother",
+       "type": "ref",
+       "volume": "21",
+       "year": "2015"
+      },
+      "text": "Nationwide survey of the development of drug resistance in the pediatric field in 2000\u20132001, 2004, 2007, 2010, and 2012: evaluation of the changes in drug sensitivity of Haemophilus influenzae and patients\u2019 background factors",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 52489,
+      "infons": {
+       "fpage": "39",
+       "lpage": "43",
+       "pub-id_doi": "10.1016/j.ijantimicag.2003.05.013",
+       "pub-id_pmid": "14732312",
+       "section_type": "REF",
+       "source": "Int J Antimicrob Agents",
+       "type": "ref",
+       "volume": "23",
+       "year": "2004"
+      },
+      "text": "Antimicrobial resistance of Streptococcus pneumoniae and Haemophilus influenzae isolated from children with community-acquired respiratory tract infections in Central Poland",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 52663,
+      "infons": {
+       "fpage": "86",
+       "lpage": "90",
+       "pub-id_doi": "10.1111/j.1469-0691.2005.01303.x",
+       "pub-id_pmid": "16460553",
+       "section_type": "REF",
+       "source": "Clin Microbiol Infect",
+       "type": "ref",
+       "volume": "12",
+       "year": "2006"
+      },
+      "text": "Antimicrobial susceptibility patterns of Haemophilus influenzae and Streptococcus pneumoniae isolates in a Beirut general university hospital between 2000 and 2004",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 52827,
+      "infons": {
+       "fpage": "296",
+       "lpage": "299",
+       "pub-id_doi": "10.1016/j.ijantimicag.2003.07.018",
+       "pub-id_pmid": "15164972",
+       "section_type": "REF",
+       "source": "Int J Antimicrob Agents",
+       "type": "ref",
+       "volume": "23",
+       "year": "2004"
+      },
+      "text": "Antimicrobial susceptibility of Haemophilus influenzae, Haemophilus parainfluenzae and Moraxella catarrhalis isolated from adult patients with respiratory tract infections in four southern European countries. The ARISE project",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 53054,
+      "infons": {
+       "fpage": "703",
+       "lpage": "710",
+       "pub-id_doi": "10.1007/s10096-019-03774-x",
+       "pub-id_pmid": "31828685",
+       "section_type": "REF",
+       "source": "Eur J Clin Microbiol Infect Dis",
+       "type": "ref",
+       "volume": "39",
+       "year": "2020"
+      },
+      "text": "Emergence of multidrug resistance among Haemophilus parainfluenzae from respiratory and urogenital samples in Barcelona, Spain",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 53181,
+      "infons": {
+       "fpage": "173",
+       "lpage": "178",
+       "pub-id_pmid": "16130040",
+       "section_type": "REF",
+       "source": "Rev Esp Quimioter",
+       "type": "ref",
+       "volume": "18",
+       "year": "2005"
+      },
+      "text": "Haemophilus spp. antimicrobial susceptibility in Health Area 6 in Madrid, Spain (2000\u20132004)",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 53275,
+      "infons": {
+       "fpage": "004",
+       "pub-id_doi": "10.4172/2161-0703.S5-004",
+       "section_type": "REF",
+       "source": "J Med Microbiol Diagnosis",
+       "type": "ref",
+       "volume": "S5",
+       "year": "2015"
+      },
+      "text": "Haemophilus influenzae and Haemophilus parainfluenza in cystic fibrosis: 15 years experience",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 53368,
+      "infons": {
+       "fpage": "368",
+       "lpage": "389",
+       "pub-id_doi": "10.1128/CMR.00040-06",
+       "pub-id_pmid": "17428889",
+       "section_type": "REF",
+       "source": "Clin Microbiol Rev",
+       "type": "ref",
+       "volume": "20",
+       "year": "2007"
+      },
+      "text": "Antimicrobial resistance in Haemophilus influenzae",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 53419,
+      "infons": {
+       "fpage": "R237",
+       "pub-id_doi": "10.1186/gb-2007-8-11-r237",
+       "pub-id_pmid": "17996041",
+       "section_type": "REF",
+       "source": "Genome Biol",
+       "type": "ref",
+       "volume": "8",
+       "year": "2007"
+      },
+      "text": "Sequence and functional analyses of Haemophilus spp. genomic islands",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 53488,
+      "infons": {
+       "fpage": "2621",
+       "lpage": "2625",
+       "pub-id_doi": "10.1093/jac/dks264",
+       "pub-id_pmid": "22782486",
+       "section_type": "REF",
+       "source": "J Antimicrob Chemother",
+       "type": "ref",
+       "volume": "67",
+       "year": "2012"
+      },
+      "text": "Sequences of small blaTEM-encoding plasmids in Haemophilus influenzae and description of variants falsely negative for blaTEM by PCR",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 53621,
+      "infons": {
+       "fpage": "509",
+       "lpage": "514",
+       "pub-id_doi": "10.1093/jac/dkm523",
+       "pub-id_pmid": "18245789",
+       "section_type": "REF",
+       "source": "J Antimicrob Chemother",
+       "type": "ref",
+       "volume": "61",
+       "year": "2008"
+      },
+      "text": "Characterization of extended-spectrum beta-lactamase-producing isolates of Haemophilus parainfluenzae",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 53723,
+      "infons": {
+       "fpage": "1",
+       "lpage": "5",
+       "pub-id_doi": "10.1089/mdr.2012.0060",
+       "pub-id_pmid": "23095085",
+       "section_type": "REF",
+       "source": "Microb Drug Resist",
+       "type": "ref",
+       "volume": "19",
+       "year": "2013"
+      },
+      "text": "Emergence of a multidrug-resistant Haemophilus influenzae strain causing chronic pneumonia in a patient with common variable immunodeficiency",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 53865,
+      "infons": {
+       "fpage": "4481",
+       "pub-id_doi": "10.1038/s41598-019-40812-2",
+       "pub-id_pmid": "30872664",
+       "section_type": "REF",
+       "source": "Sci Rep",
+       "type": "ref",
+       "volume": "9",
+       "year": "2019"
+      },
+      "text": "Identification of polysaccharide capsules among extensively drug-resistant genitourinary Haemophilus parainfluenzae isolates",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 53990,
+      "infons": {
+       "fpage": "471",
+       "lpage": "492",
+       "pub-id_doi": "10.1084/jem.53.4.471",
+       "pub-id_pmid": "19869858",
+       "section_type": "REF",
+       "source": "J Exp Med",
+       "type": "ref",
+       "volume": "53",
+       "year": "1931"
+      },
+      "text": "Variation and type specificity in the bacterial species Hemophilus influenzae",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 54068,
+      "infons": {
+       "fpage": "302",
+       "lpage": "317",
+       "pub-id_doi": "10.1128/CMR.13.2.302",
+       "pub-id_pmid": "10756001",
+       "section_type": "REF",
+       "source": "Clin Microbiol Rev",
+       "type": "ref",
+       "volume": "13",
+       "year": "2000"
+      },
+      "text": "Worldwide Haemophilus influenzae type b disease at the beginning of the 21st century: global analysis of the disease burden 25 years after the use of the polysaccharide vaccine and a decade after the advent of conjugates",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 54289,
+      "infons": {
+       "fpage": "45",
+       "lpage": "52",
+       "pub-id_doi": "10.1016/j.ijmm.2011.08.003",
+       "pub-id_pmid": "22001303",
+       "section_type": "REF",
+       "source": "Int J Med Microbiol",
+       "type": "ref",
+       "volume": "302",
+       "year": "2012"
+      },
+      "text": "Haemophilus influenzae in children with cystic fibrosis: antimicrobial susceptibility, molecular epidemiology, distribution of adhesins and biofilm formation",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 54447,
+      "infons": {
+       "fpage": "1450",
+       "lpage": "1459",
+       "pub-id_doi": "10.1128/JCM.42.4.1450-1459.2004",
+       "pub-id_pmid": "15070988",
+       "section_type": "REF",
+       "source": "J Clin Microbiol",
+       "type": "ref",
+       "volume": "42",
+       "year": "2004"
+      },
+      "text": "Dynamics of long-term colonization of respiratory tract by Haemophilus influenzae in cystic fibrosis patients shows a marked increase in hypermutable strains",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 54605,
+      "infons": {
+       "elocation-id": "e00190-19",
+       "pub-id_doi": "10.1128/JCM.00190-19",
+       "pub-id_pmid": "30944197",
+       "section_type": "REF",
+       "source": "J Clin Microbiol",
+       "type": "ref",
+       "volume": "57",
+       "year": "2019"
+      },
+      "text": "hicap: in silico serotyping of the Haemophilus influenzae capsule locus",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 54677,
+      "infons": {
+       "fpage": "2208",
+       "lpage": "2218",
+       "pub-id_doi": "10.1128/AAC.46.7.2208-2218.2002",
+       "pub-id_pmid": "12069976",
+       "section_type": "REF",
+       "source": "Antimicrob Agents Chemother",
+       "type": "ref",
+       "volume": "46",
+       "year": "2002"
+      },
+      "text": "Diversity of beta-lactam resistance-conferring amino acid substitutions in penicillin-binding protein 3 of Haemophilus influenzae",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 54807,
+      "infons": {
+       "fpage": "1054",
+       "lpage": "1059",
+       "pub-id_doi": "10.1093/jac/dks525",
+       "pub-id_pmid": "23335113",
+       "section_type": "REF",
+       "source": "J Antimicrob Chemother",
+       "type": "ref",
+       "volume": "68",
+       "year": "2013"
+      },
+      "text": "Novel mechanisms of resistance to \u03b2-lactam antibiotics in Haemophilus parainfluenzae: \u03b2-lactamase-negative ampicillin resistance and inhibitor-resistant TEM \u03b2-lactamases",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 54986,
+      "infons": {
+       "fpage": "3232",
+       "lpage": "3234",
+       "pub-id_doi": "10.1128/AAC.44.11.3232-3234.2000",
+       "pub-id_pmid": "11036062",
+       "section_type": "REF",
+       "source": "Antimicrob Agents Chemother",
+       "type": "ref",
+       "volume": "44",
+       "year": "2000"
+      },
+      "text": "Updated sequence information and proposed nomenclature for blaTEM genes and their promoters",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 55078,
+      "infons": {
+       "fpage": "944.e1",
+       "lpage": "944.e7",
+       "pub-id_doi": "10.1016/j.cmi.2019.11.022",
+       "section_type": "REF",
+       "source": "Clin Microbiol Infect",
+       "type": "ref",
+       "volume": "26",
+       "year": "2020"
+      },
+      "text": "Assessment of trimethoprim-sulfamethoxazole susceptibility testing methods for fastidious Haemophilus spp",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 55184,
+      "infons": {
+       "fpage": "1011",
+       "lpage": "1014",
+       "pub-id_doi": "10.1093/jac/dkh008",
+       "pub-id_pmid": "14613947",
+       "section_type": "REF",
+       "source": "J Antimicrob Chemother",
+       "type": "ref",
+       "volume": "52",
+       "year": "2003"
+      },
+      "text": "Molecular basis of rifampicin resistance in Haemophilus influenzae",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 55251,
+      "infons": {
+       "fpage": "267",
+       "lpage": "275",
+       "pub-id_doi": "10.1002/(SICI)1099-0496(199605)21:5<267::AID-PPUL1>3.0.CO;2-K",
+       "pub-id_pmid": "8726151",
+       "section_type": "REF",
+       "source": "Pediatr Pulmonol",
+       "type": "ref",
+       "volume": "21",
+       "year": "1996"
+      },
+      "text": "Bronchoalveolar lavage or oropharyngeal cultures to identify lower respiratory pathogens in infants with cystic fibrosis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 55372,
+      "infons": {
+       "fpage": "321",
+       "lpage": "328",
+       "pub-id_doi": "10.1002/(SICI)1099-0496(199911)28:5<321::AID-PPUL3>3.0.CO;2-V",
+       "pub-id_pmid": "10536062",
+       "section_type": "REF",
+       "source": "Pediatr Pulmonol",
+       "type": "ref",
+       "volume": "28",
+       "year": "1999"
+      },
+      "text": "Diagnostic accuracy of oropharyngeal cultures in infants and young children with cystic fibrosis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 55469,
+      "infons": {
+       "fpage": "1554",
+       "lpage": "1560",
+       "pub-id_doi": "10.1378/chest.09-0132",
+       "pub-id_pmid": "19505987",
+       "section_type": "REF",
+       "source": "CHEST",
+       "type": "ref",
+       "volume": "136",
+       "year": "2009"
+      },
+      "text": "Respiratory microbiology of patients with cystic fibrosis in the United States, 1995 to 2005",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 55562,
+      "infons": {
+       "fpage": "590",
+       "lpage": "599",
+       "pub-id_doi": "10.1164/rccm.201810-1919OC",
+       "pub-id_pmid": "30811949",
+       "section_type": "REF",
+       "source": "Am J Respir Crit Care Med",
+       "type": "ref",
+       "volume": "200",
+       "year": "2019"
+      },
+      "text": "Changing prevalence of lower airway infections in young children with cystic fibrosis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 55648,
+      "infons": {
+       "fpage": "356",
+       "lpage": "366",
+       "pub-id_doi": "10.1002/ppul.1144",
+       "pub-id_pmid": "11596160",
+       "section_type": "REF",
+       "source": "Pediatr Pulmonol",
+       "type": "ref",
+       "volume": "32",
+       "year": "2001"
+      },
+      "text": "Early pulmonary infection, inflammation, and clinical outcomes in infants with cystic fibrosis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 55743,
+      "infons": {
+       "fpage": "5439",
+       "lpage": "5444",
+       "pub-id_doi": "10.1073/pnas.1403353111",
+       "pub-id_pmid": "24706866",
+       "section_type": "REF",
+       "source": "Proc Natl Acad Sci USA",
+       "type": "ref",
+       "volume": "111",
+       "year": "2014"
+      },
+      "text": "Genome sequencing of disease and carriage isolates of nontypeable Haemophilus influenzae identifies discrete population structure",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 55873,
+      "infons": {
+       "fpage": "E3256",
+       "lpage": "E3265",
+       "pub-id_doi": "10.1073/pnas.1719654115",
+       "pub-id_pmid": "29555745",
+       "section_type": "REF",
+       "source": "Proc Natl Acad Sci USA",
+       "type": "ref",
+       "volume": "115",
+       "year": "2018"
+      },
+      "text": "Haemophilus influenzae genome evolution during persistence in the human airways in chronic obstructive pulmonary disease",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 55994,
+      "infons": {
+       "elocation-id": "e000405",
+       "pub-id_doi": "10.1099/mgen.0.000405",
+       "section_type": "REF",
+       "source": "Microbial Genomics",
+       "type": "ref",
+       "volume": "6",
+       "year": "2020"
+      },
+      "text": "Whole-genome analyses reveal gene content differences between nontypeable Haemophilus influenzae isolates from chronic obstructive pulmonary disease compared to other clinical phenotypes",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 56181,
+      "infons": {
+       "fpage": "429",
+       "pub-id_doi": "10.1136/bmj.39274.647465.BE",
+       "pub-id_pmid": "17656505",
+       "section_type": "REF",
+       "source": "BMJ",
+       "type": "ref",
+       "volume": "335",
+       "year": "2007"
+      },
+      "text": "Effect of antibiotic prescribing on antibiotic resistance in individual children in primary care: prospective cohort study",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 56304,
+      "infons": {
+       "fpage": "3065",
+       "lpage": "3072",
+       "pub-id_doi": "10.1128/JCM.42.7.3065-3072.2004",
+       "pub-id_pmid": "15243061",
+       "section_type": "REF",
+       "source": "J Clin Microbiol",
+       "type": "ref",
+       "volume": "42",
+       "year": "2004"
+      },
+      "text": "Prevalence of the hifBC, hmw1A, hmw2A, hmwC, and hia genes in Haemophilus influenzae isolates",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 56398,
+      "infons": {
+       "fpage": "2875",
+       "lpage": "2879",
+       "pub-id_doi": "10.1073/pnas.90.7.2875",
+       "pub-id_pmid": "8464902",
+       "section_type": "REF",
+       "source": "Proc Natl Acad Sci USA",
+       "type": "ref",
+       "volume": "90",
+       "year": "1993"
+      },
+      "text": "High-molecular-weight proteins of nontypable Haemophilus influenzae mediate attachment to human epithelial cells",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 56511,
+      "infons": {
+       "fpage": "3362",
+       "lpage": "3367",
+       "pub-id_doi": "10.1128/IAI.68.6.3362-3367.2000",
+       "pub-id_pmid": "10816486",
+       "section_type": "REF",
+       "source": "Infect Immun",
+       "type": "ref",
+       "volume": "68",
+       "year": "2000"
+      },
+      "text": "Pilus-mediated adherence of Haemophilus influenzae to human respiratory mucins",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 56590,
+      "infons": {
+       "pub-id_doi": "10.1128/mBio.02714-20",
+       "section_type": "REF",
+       "source": "bioRxiv",
+       "type": "ref",
+       "year": "2020"
+      },
+      "text": "The non-typeable Haemophilus influenzae major adhesin Hia is a dual function lectin that binds to human-specific respiratory tract sialic acid glycan receptors",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 56750,
+      "infons": {
+       "fpage": "2913",
+       "lpage": "2921",
+       "pub-id_doi": "10.1128/jb.174.9.2913-2921.1992",
+       "pub-id_pmid": "1373717",
+       "section_type": "REF",
+       "source": "J Bacteriol",
+       "type": "ref",
+       "volume": "174",
+       "year": "1992"
+      },
+      "text": "A comparative genetic study of serologically distinct Haemophilus influenzae type 1 immunoglobulin A1 proteases",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 56862,
+      "infons": {
+       "fpage": "mgen000405",
+       "pub-id_doi": "10.1099/mgen.0.000405",
+       "pub-id_pmid": "32706329",
+       "section_type": "REF",
+       "source": "Microb Genom",
+       "type": "ref",
+       "volume": "6",
+       "year": "2020"
+      },
+      "text": "Whole-genome analyses reveal gene content differences between nontypeable Haemophilus influenzae isolates from chronic obstructive pulmonary disease compared to other clinical phenotypes",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57049,
+      "infons": {
+       "fpage": "802",
+       "lpage": "808",
+       "pub-id_doi": "10.1164/rccm.200812-1845PP",
+       "pub-id_pmid": "19729669",
+       "section_type": "REF",
+       "source": "Am J Respir Crit Care Med",
+       "type": "ref",
+       "volume": "180",
+       "year": "2009"
+      },
+      "text": "Cystic fibrosis pulmonary guidelines",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57086,
+      "infons": {
+       "fpage": "1934",
+       "lpage": "1939",
+       "pub-id_doi": "10.1128/AAC.46.6.1934-1939.2002",
+       "pub-id_pmid": "12019111",
+       "section_type": "REF",
+       "source": "Antimicrob Agents Chemother",
+       "type": "ref",
+       "volume": "46",
+       "year": "2002"
+      },
+      "text": "Sulfonamide resistance in Haemophilus influenzae mediated by acquisition of sul2 or a short insertion in chromosomal folP",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57208,
+      "infons": {
+       "fpage": "8114",
+       "lpage": "8122",
+       "pub-id_doi": "10.1128/JB.186.23.8114-8122.2004",
+       "pub-id_pmid": "15547285",
+       "section_type": "REF",
+       "source": "J Bacteriol",
+       "type": "ref",
+       "volume": "186",
+       "year": "2004"
+      },
+      "text": "Transferable antibiotic resistance elements in Haemophilus influenzae share a common evolutionary origin with a diverse family of syntenic genomic islands",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57363,
+      "infons": {
+       "fpage": "207",
+       "lpage": "216",
+       "pub-id_doi": "10.1038/ismej.2014.106",
+       "pub-id_pmid": "25003965",
+       "section_type": "REF",
+       "source": "ISME J",
+       "type": "ref",
+       "volume": "9",
+       "year": "2015"
+      },
+      "text": "Improved annotation of antibiotic resistance determinants reveals microbial resistomes cluster by ecology",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57469,
+      "infons": {
+       "fpage": "4958",
+       "lpage": "4960",
+       "pub-id_doi": "10.1128/AAC.00408-12",
+       "pub-id_pmid": "22733069",
+       "section_type": "REF",
+       "source": "Antimicrob Agents Chemother",
+       "type": "ref",
+       "volume": "56",
+       "year": "2012"
+      },
+      "text": "Molecular organization of small plasmids bearing blaTEM-1 and conferring resistance to \u03b2-lactams in Haemophilus influenzae",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57595,
+      "infons": {
+       "fpage": "450",
+       "lpage": "455",
+       "pub-id_doi": "10.1089/mdr.2013.0186",
+       "pub-id_pmid": "24716536",
+       "section_type": "REF",
+       "source": "Microb Drug Resist",
+       "type": "ref",
+       "volume": "20",
+       "year": "2014"
+      },
+      "text": "Oropharyngeal colonization by nontypeable Haemophilus influenzae among healthy children attending day care centers",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57710,
+      "infons": {
+       "elocation-id": "e00029-16",
+       "pub-id_doi": "10.1128/mSystems.00029-16",
+       "pub-id_pmid": "27822534",
+       "section_type": "REF",
+       "source": "mSystems",
+       "type": "ref",
+       "volume": "1",
+       "year": "2016"
+      },
+      "text": "Long-term evolution of Burkholderia multivorans during a chronic cystic fibrosis infection reveals shifting forces of selection",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57838,
+      "infons": {
+       "fpage": "1275",
+       "lpage": "1280",
+       "pub-id_doi": "10.1038/ng.997",
+       "pub-id_pmid": "22081229",
+       "section_type": "REF",
+       "source": "Nat Genet",
+       "type": "ref",
+       "volume": "43",
+       "year": "2011"
+      },
+      "text": "Parallel bacterial evolution within multiple patients identifies candidate pathogenicity genes",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57933,
+      "infons": {
+       "fpage": "57",
+       "lpage": "64",
+       "pub-id_doi": "10.1038/ng.3148",
+       "pub-id_pmid": "25401299",
+       "section_type": "REF",
+       "source": "Nat Genet",
+       "type": "ref",
+       "volume": "47",
+       "year": "2015"
+      },
+      "text": "Convergent evolution and adaptation of Pseudomonas aeruginosa within patients with cystic fibrosis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 58032,
+      "infons": {
+       "fpage": "ciaa788",
+       "pub-id_doi": "10.1093/cid/ciaa788",
+       "section_type": "REF",
+       "source": "Clin Infect Dis",
+       "type": "ref",
+       "volume": "16",
+       "year": "2020"
+      },
+      "text": "Pseudomonas aeruginosa strain sharing in early infection among children with cystic fibrosis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 58125,
+      "infons": {
+       "fpage": "49",
+       "lpage": "52",
+       "pub-id_doi": "10.1016/j.jcf.2011.08.005",
+       "pub-id_pmid": "21907639",
+       "section_type": "REF",
+       "source": "J Cyst Fibros",
+       "type": "ref",
+       "volume": "11",
+       "year": "2012"
+      },
+      "text": "Australian epidemic strain pseudomonas (AES-1) declines further in a cohort segregated cystic fibrosis clinic",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 58235,
+      "infons": {
+       "fpage": "983",
+       "lpage": "987",
+       "pub-id_doi": "10.1164/rccm.200204-269OC",
+       "pub-id_pmid": "12359658",
+       "section_type": "REF",
+       "source": "Am J Respir Crit Care Med",
+       "type": "ref",
+       "volume": "166",
+       "year": "2002"
+      },
+      "text": "Detection of a widespread clone of Pseudomonas aeruginosa in a pediatric cystic fibrosis clinic",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 58331,
+      "infons": {
+       "fpage": "219",
+       "lpage": "224",
+       "pub-id_doi": "10.1016/j.jcf.2019.02.011",
+       "pub-id_pmid": "30853372",
+       "section_type": "REF",
+       "source": "J Cyst Fibros",
+       "type": "ref",
+       "volume": "19",
+       "year": "2020"
+      },
+      "text": "Investigating transmission of Mycobacterium abscessus amongst children in an Australian cystic fibrosis centre",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 58442,
+      "infons": {
+       "fpage": "1721",
+       "lpage": "1729",
+       "pub-id_doi": "10.1101/gr.210641.116",
+       "pub-id_pmid": "27852649",
+       "section_type": "REF",
+       "source": "Genome Res",
+       "type": "ref",
+       "volume": "26",
+       "year": "2016"
+      },
+      "text": "Centrifuge: rapid and sensitive classification of metagenomic sequences",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 58514,
+      "infons": {
+       "elocation-id": "e1005595",
+       "pub-id_doi": "10.1371/journal.pcbi.1005595",
+       "pub-id_pmid": "28594827",
+       "section_type": "REF",
+       "source": "PLoS Comput Biol",
+       "type": "ref",
+       "volume": "13",
+       "year": "2017"
+      },
+      "text": "Unicycler: resolving bacterial genome assemblies from short and long sequencing reads",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 58600,
+      "infons": {
+       "fpage": "1530",
+       "lpage": "1534",
+       "pub-id_doi": "10.1093/molbev/msaa015",
+       "pub-id_pmid": "32011700",
+       "section_type": "REF",
+       "source": "Mol Biol Evol",
+       "type": "ref",
+       "volume": "37",
+       "year": "2020"
+      },
+      "text": "IQ-TREE 2: new models and efficient methods for phylogenetic inference in the genomic era",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 58690,
+      "infons": {
+       "fpage": "28",
+       "lpage": "36",
+       "pub-id_doi": "10.1111/2041-210X.12628",
+       "section_type": "REF",
+       "source": "Methods Ecol Evol",
+       "type": "ref",
+       "volume": "8",
+       "year": "2017"
+      },
+      "text": "ggtree: an r package for visualization and annotation of phylogenetic trees with their covariates and other associated data",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 58814,
+      "infons": {
+       "section_type": "REF",
+       "source": "R: a language and environment for statistical computing.",
+       "type": "ref",
+       "year": "2019"
+      },
+      "text": "",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 58815,
+      "infons": {
+       "fpage": "90",
+       "pub-id_doi": "10.1186/s13073-014-0090-6",
+       "pub-id_pmid": "25422674",
+       "section_type": "REF",
+       "source": "Genome Med",
+       "type": "ref",
+       "volume": "6",
+       "year": "2014"
+      },
+      "text": "SRST2: rapid genomic surveillance for public health and hospital microbiology labs",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 58898,
+      "infons": {
+       "fpage": "1623",
+       "lpage": "1636",
+       "pub-id_doi": "10.1128/JCM.41.4.1623-1636.2003",
+       "pub-id_pmid": "12682154",
+       "section_type": "REF",
+       "source": "J Clin Microbiol",
+       "type": "ref",
+       "volume": "41",
+       "year": "2003"
+      },
+      "text": "Characterization of encapsulated and noncapsulated Haemophilus influenzae and determination of phylogenetic relationships by multilocus sequence typing",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 59050,
+      "infons": {
+       "fpage": "94",
+       "pub-id_doi": "10.1186/1471-2156-11-94",
+       "pub-id_pmid": "20950446",
+       "section_type": "REF",
+       "source": "BMC Genet",
+       "type": "ref",
+       "volume": "11",
+       "year": "2010"
+      },
+      "text": "Discriminant analysis of principal components: a new method for the analysis of genetically structured populations",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 59165,
+      "infons": {
+       "fpage": "1403",
+       "lpage": "1405",
+       "pub-id_doi": "10.1093/bioinformatics/btn129",
+       "pub-id_pmid": "18397895",
+       "section_type": "REF",
+       "source": "Bioinformatics",
+       "type": "ref",
+       "volume": "24",
+       "year": "2008"
+      },
+      "text": "adegenet: a R package for the multivariate analysis of genetic markers",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 59236,
+      "infons": {
+       "fpage": "212",
+       "lpage": "220",
+       "pub-id_doi": "10.1128/AAC.01310-13",
+       "pub-id_pmid": "24145532",
+       "section_type": "REF",
+       "source": "Antimicrob Agents Chemother",
+       "type": "ref",
+       "volume": "58",
+       "year": "2014"
+      },
+      "text": "ARG-ANNOT, a new bioinformatic tool to discover antibiotic resistance genes in bacterial genomes",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 59333,
+      "infons": {
+       "fpage": "2131",
+       "lpage": "2136",
+       "pub-id_doi": "10.1128/AAC.40.9.2131",
+       "pub-id_pmid": "8878594",
+       "section_type": "REF",
+       "source": "Antimicrob Agents Chemother",
+       "type": "ref",
+       "volume": "40",
+       "year": "1996"
+      },
+      "text": "Genetic characterization of trimethoprim resistance in Haemophilus influenzae",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 59411,
+      "infons": {
+       "fpage": "584",
+       "lpage": "590",
+       "pub-id_pmid": "24522126",
+       "section_type": "REF",
+       "source": "Trop Biomed",
+       "type": "ref",
+       "volume": "30",
+       "year": "2013"
+      },
+      "text": "Molecular insights of co-trimoxazole resistance genes in Haemophilus influenzae isolated in Malaysia",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 59512,
+      "infons": {
+       "fpage": "2487",
+       "lpage": "2492",
+       "pub-id_doi": "10.1128/AAC.01316-05",
+       "pub-id_pmid": "16801430",
+       "section_type": "REF",
+       "source": "Antimicrob Agents Chemother",
+       "type": "ref",
+       "volume": "50",
+       "year": "2006"
+      },
+      "text": "Molecular evolution of \u03b2-lactam-resistant Haemophilus influenzae: 9-year surveillance of penicillin-binding protein 3 mutations in isolates from Japan",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 59666,
+      "infons": {
+       "fpage": "2544",
+       "lpage": "2547",
+       "pub-id_doi": "10.1093/jac/dkx157",
+       "pub-id_pmid": "28582518",
+       "section_type": "REF",
+       "source": "J Antimicrob Chemother",
+       "type": "ref",
+       "volume": "72",
+       "year": "2017"
+      },
+      "text": "Substitutions in PBP3 confer resistance to both ampicillin and extended-spectrum cephalosporins in Haemophilus parainfluenzae as revealed by site-directed mutagenesis and gene recombinants",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 59855,
+      "infons": {
+       "fpage": "1693",
+       "lpage": "1699",
+       "pub-id_doi": "10.1128/AAC.45.6.1693-1699.2001",
+       "pub-id_pmid": "11353613",
+       "section_type": "REF",
+       "source": "Antimicrob Agents Chemother",
+       "type": "ref",
+       "volume": "45",
+       "year": "2001"
+      },
+      "text": "Association of amino acid substitutions in penicillin-binding protein 3 with \u03b2-lactam resistance in \u03b2-lactamase-negative ampicillin-resistant Haemophilus influenzae",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 60026,
+      "infons": {
+       "fpage": "36",
+       "lpage": "41",
+       "pub-id_pmid": "16495632",
+       "section_type": "REF",
+       "source": "Jpn J Infect Dis",
+       "type": "ref",
+       "volume": "59",
+       "year": "2006"
+      },
+      "text": "Genetic analyses of beta-lactamase negative ampicillin-resistant strains of Haemophilus influenzae isolated in Okinawa, Japan",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 60152,
+      "infons": {
+       "fpage": "509",
+       "lpage": "513",
+       "pub-id_doi": "10.1016/j.jiac.2019.02.010",
+       "pub-id_pmid": "30879978",
+       "section_type": "REF",
+       "source": "J Infect Chemother",
+       "type": "ref",
+       "volume": "25",
+       "year": "2019"
+      },
+      "text": "Cefotaxime-non-susceptibility of Haemophilus influenzae induced by additional amino acid substitutions of G555E and Y557H in altered penicillin-binding protein 3",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 60314,
+      "infons": {
+       "fpage": "89",
+       "lpage": "112",
+       "pub-id_doi": "10.1007/978-1-59745-535-0_4",
+       "pub-id_pmid": "18287689",
+       "section_type": "REF",
+       "source": "Methods Mol Biol",
+       "type": "ref",
+       "volume": "406",
+       "year": "2007"
+      },
+      "text": "UniProtKB/Swiss-Prot",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 60335,
+      "infons": {
+       "fpage": "772",
+       "lpage": "780",
+       "pub-id_doi": "10.1093/molbev/mst010",
+       "pub-id_pmid": "23329690",
+       "section_type": "REF",
+       "source": "Mol Biol Evol",
+       "type": "ref",
+       "volume": "30",
+       "year": "2013"
+      },
+      "text": "MAFFT multiple sequence alignment software version 7: improvements in performance and usability",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 60431,
+      "infons": {
+       "fpage": "821",
+       "lpage": "824",
+       "pub-id_doi": "10.1038/ng.2310",
+       "pub-id_pmid": "22706312",
+       "section_type": "REF",
+       "source": "Nat Genet",
+       "type": "ref",
+       "volume": "44",
+       "year": "2012"
+      },
+      "text": "Genome-wide efficient mixed-model analysis for association studies",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     }
+    ],
+    "annotations": [],
+    "relations": []
+   }
+  ]
+ }
+]

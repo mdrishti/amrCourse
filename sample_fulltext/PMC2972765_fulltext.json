@@ -1,0 +1,1010 @@
+[
+ {
+  "bioctype": "BioCCollection",
+  "source": "PMC",
+  "date": "20260128",
+  "key": "pmc.key",
+  "version": "1.0",
+  "infons": {},
+  "documents": [
+   {
+    "bioctype": "BioCDocument",
+    "id": "PMC2972765",
+    "infons": {
+     "license": "CC BY"
+    },
+    "passages": [
+     {
+      "bioctype": "BioCPassage",
+      "offset": 0,
+      "infons": {
+       "article-id_doi": "10.3201/eid0905.020609",
+       "article-id_pmc": "PMC2972765",
+       "article-id_pmid": "12737743",
+       "article-id_publisher-id": "02-0609",
+       "fpage": "585",
+       "issue": "5",
+       "kwd": "Salmonella Albany DT104 SGI1 antibiotic resistance gene cluster SGI1-F integron Thailand Vibrio constin resrearch",
+       "license": "This is a publication of the U.S. Government. This publication is in the public domain and is therefore without copyright. All text from this work may be reprinted freely. Use of these materials should be properly cited.",
+       "lpage": "591",
+       "name_0": "surname:Doublet;given-names:Beno\u00eet",
+       "name_1": "surname:Lailler;given-names:Renaud",
+       "name_2": "surname:Meunier;given-names:Dani\u00e8le",
+       "name_3": "surname:Brisabois;given-names:Anne",
+       "name_4": "surname:Boyd;given-names:David",
+       "name_5": "surname:Mulvey;given-names:Michael R.",
+       "name_6": "surname:Chaslus-Dancla;given-names:Elisabeth",
+       "name_7": "surname:Cloeckaert;given-names:Axel",
+       "section_type": "TITLE",
+       "title": "Keywords: ",
+       "type": "front",
+       "volume": "9",
+       "year": "2003"
+      },
+      "text": "Variant Salmonella Genomic Island 1 Antibiotic Resistance Gene Cluster in Salmonella enterica Serovar Albany",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 109,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract"
+      },
+      "text": "Salmonella genomic island 1 (SGI1) contains an antibiotic resistance gene cluster and has been previously identified in multidrug-resistant Salmonella enterica serovars Typhimurium DT104, Agona, and Paratyphi B. We identified a variant SGI1 antibiotic-resistance gene cluster in a multidrug-resistant strain of S. enterica serovar Albany isolated from food fish from Thailand and imported to France. In this strain, the streptomycin resistance aadA2 gene cassette in one of the SGI1 integrons was replaced by a dfrA1 gene cassette, conferring resistance to trimethoprim and an open reading frame of unknown function. Thus, this serovar Albany strain represents the fourth S. enterica serovar in which SGI1 has been identified and the first SGI1 example where gene cassette replacement took place in one of its integron structures. The antibiotic resistance gene cluster of serovar Albany strain 7205.00 constitutes a new SGI1 variant; we propose a name of SGI1-F.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 1073,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": "Multidrug-resistant Salmonella enterica serovar Typhimurium definitive phage type 104 (DT104) emerged during the 1980s as a global health problem because of the strain\u2019s involvement in diseases in animals and humans. Multidrug-resistant strains of this phage type were first identified from exotic birds in the United Kingdom in the early 1980s and in cattle and humans in the late 1980s; they have since become common in other animal species such as poultry, swine, and sheep. The DT104 epidemic has now spread worldwide, including several outbreaks since 1996 in the United States and Canada.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 1670,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": "Multidrug-resistant S. enterica serovar Typhimurium DT104 is commonly resistant to ampicillin (Ap), chloramphenicol/florfenicol (Cm/Ff), streptomycin/spectinomycin (Sm/Sp), sulfonamides (Su), and tetracyclines (Tc). The antibiotic resistance genes are clustered in part of a 43-kb genomic island called Salmonella genomic island 1 (SGI1), located between the chromosomal thdf and int2 genes. The int2 gene is part of a retron that has been detected only in serovar Typhimurium. Downstream of the retron sequence is the yidY gene, which is also found in the chromosome of other S. enterica serovars. The antibiotic resistance gene cluster represents approximately one third of SGI1 and is located at the 3\u00b4 end of the structure. All resistance genes are clustered and are bracketed by two integron structures (Figure 1). The first integron carries the aadA2 gene, which confers resistance to Sm and Sp, and a truncated sul1 (sul1delta) gene. The second integron contains the \u03b2-lactamase gene pse-1 conferring resistance to Ap and a complete sul1 gene conferring resistance to Su. Flanked by these two integron structures are the floR gene, also called floSt or cmlA-like (9), which confers cross-resistance to Cm and Ff, and the tetracycline-resistance genes tetR and tet(G).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 2948,
+      "infons": {
+       "file": "02-0609-F1.jpg",
+       "id": "F1",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "Genetic organization of the antibiotic resistance gene cluster of Salmonella genomic island 1 (SGI1) of Salmonella enterica serovar Typhimurium DT104 and serovar Albany strain 7205.00. DR-L and DR-R are the left and right direct repeats, respectively, bracketing SGI1. Polymerase chain reactions (PCRs) used to assess the genetic organization of the antibiotic resistance genes (PCRs floR, A, B, C, D, E, and F) and the SGI1 junctions to the chromosome (PCRs LJ and RJ for left and right junctions respectively) are indicated. Abbreviations used: S., Salmonella; X, XbaI; H, HindIII; Xh, XhoI; E, EcoRI; orf, open reading frame.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 3577,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": "Recently, SGI1 has also been identified in other phage types (i.e., serovar Typhimurium and S. enterica serovars Agona and Paratyphi B), indicating the horizontal transfer potential of SGI1. In serovars Agona and Paratyphi B, SGI1 has the same chromosomal location as in serovar Typhimurium DT104, except that they lack the retron sequence found downstream of SGI1; thus it is located between the thdf gene and the yidY gene of their chromosomes. Moreover, variant SGI1 antibiotic resistance gene clusters have recently been reported for serovars Typhimurium DT104 and Agona variant SGI1. These clusters were probably generated after chromosomal recombinational events, resulting in either deletion or inactivation of some antibiotic resistance genes or in insertion of a new antibiotic resistance gene cassette. In particular, the dfrA10 gene coding for trimethoprim (Tm) resistance was found downstream of the pse-1 integron in two of the SGI1 variant antibiotic resistance gene clusters reported. They were accordingly classified in SGI1-A to -E; the resulting antibiotic resistance phenotypes were ApCmFfSmSpSuTcTm, ApSu, SmSpSu, SmSpSuTm, and ApSmSpSuTc, respectively.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 4751,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": "We examined a strain of S. enterica serovar Albany, isolated from food fish from Thailand and imported in France, that displayed the multidrug-resistance profile ApCmFfSuTcTm. This multidrug resistance profile suggested the possible occurrence of SGI1 with a new variant antibiotic resistance cluster in this serovar.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 5069,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_1"
+      },
+      "text": "Materials and Methods",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 5091,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "The S. enterica serovar Albany strain 7205.00 used in this study was isolated from a food fish from Thailand. This strain and control strains S. Typhimurium DT 104 BN9181, S. Agona 959SA97, S. Paratyphi B 44, and Escherichia coli strain TOP10 (Invitrogen SARL, Cergy-Pontoise, France) used in cloning experiments were grown at 37\u00b0C in brain heart infusion broth or agar plates. The strains were tested for their antibiotic susceptibility by the disc-diffusion assay on Mueller-Hinton plates. Susceptibility was tested by using discs containing the following antibiotics: Ap (10 \u00b5g), Cm (30 \u00b5g), Ff (30 \u00b5g), Sm (10 IU), Sp (100 \u00b5g), Su (200 \u00b5g), Tc (30 IU), and Tm (5 \u00b5g). All antibiotic disks except for Ff were purchased from Bio-Rad (Marnes-la-Coquette, France). Ff disks and the drug itself were obtained from Schering-Plough Animal Health (Kenilworth, NJ). MICs of Ff and Cm were determined by using the standard agar doubling dilution method. MIC breakpoints for Cm and Ff were defined by the Comit\u00e9 de l\u2019Antibiogramme de la Soci\u00e9t\u00e9 Fran\u00e7aise de Microbiologie (CASFM) or by the manufacturer (i.e., susceptible [MIC <8 \u00b5g/mL], intermediate [MIC = 16 \u00b5g/mL], or resistant [MIC >32 \u00b5g/mL]).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 6320,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "Detection of SGI1 and its location were performed by using primers corresponding to left and right (with or without retron) junctions in the chromosome as described (Table; Figure 1). Polymerase chain reaction (PCR) mapping of the typical antibiotic resistance genes and integrons associated with SGI1 was performed by using conditions and primers as described (Table; Figure 1). The antibiotic resistance gene organization was also assessed by Southern blots of genomic DNA cut by either XbaI, XhoI, HindIII or EcoRI by using as a probe the XbaI insert from recombinant plasmid pSTF3, comprising nearly the entire DT104 antibiotic resistance gene cluster, as described. Presence of SGI1 regions outside the antibiotic resistance gene cluster was assessed by Southern blot of genomic DNA cut by XbaI by using probe p1-9 as described. This probe contains a 2-kb EcoRI insert corresponding to a central region of SGI1, comprising parts of S023 and S024 open reading frames (ORFs), which code for putative helicase and exonuclease proteins.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 7358,
+      "infons": {
+       "file": "T1.xml",
+       "id": "T1",
+       "section_type": "TABLE",
+       "type": "table_title_caption"
+      },
+      "text": "Primers used for polymerase chain reaction",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 7401,
+      "infons": {
+       "file": "T1.xml",
+       "id": "T1",
+       "section_type": "TABLE",
+       "type": "table",
+       "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<table frame=\"hsides\" rules=\"groups\"><col width=\"44\" span=\"1\"/><col width=\"70\" span=\"1\"/><col width=\"85\" span=\"1\"/><col width=\"70\" span=\"1\"/><col width=\"198\" span=\"1\"/><thead><tr><th valign=\"top\" align=\"left\" scope=\"col\" rowspan=\"1\" colspan=\"1\">Primer</th><th valign=\"top\" align=\"left\" scope=\"col\" rowspan=\"1\" colspan=\"1\">Gene</th><th valign=\"top\" align=\"left\" scope=\"col\" rowspan=\"1\" colspan=\"1\">Amplification<sup>a</sup></th><th valign=\"top\" align=\"left\" scope=\"col\" rowspan=\"1\" colspan=\"1\">Size (bp)</th><th valign=\"top\" align=\"left\" scope=\"col\" rowspan=\"1\" colspan=\"1\">Nucleotide sequence (5\u00b4\u20133\u00b4)</th></tr></thead><tbody><tr><td valign=\"top\" align=\"left\" scope=\"row\" rowspan=\"1\" colspan=\"1\">U7-L12<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<italic>thdf</italic>\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">Left junction<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">500<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">ACACCTTGAGCAGGGCAAG<hr/></td></tr><tr><td valign=\"top\" align=\"left\" scope=\"row\" rowspan=\"1\" colspan=\"1\">LJ-R1<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<italic>int</italic>\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">AGTTCTAAAGGTTCGTAGTCG<hr/></td></tr><tr><td valign=\"top\" align=\"left\" scope=\"row\" rowspan=\"1\" colspan=\"1\">104-RJ<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">S044<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">Right junction<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">TGACGAGCTGAAGCGAATTG<hr/></td></tr><tr><td valign=\"top\" align=\"left\" scope=\"row\" rowspan=\"1\" colspan=\"1\">C9-L2<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<italic>int2</italic>\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">515<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">AGCAAGTGTGCGTAATTTGG<hr/></td></tr><tr><td valign=\"top\" align=\"left\" scope=\"row\" rowspan=\"1\" colspan=\"1\">104-D<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<italic>yidY</italic>\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">500<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">ACCAGGGCAAAACTACACAG<hr/></td></tr><tr><td valign=\"top\" align=\"left\" scope=\"row\" rowspan=\"1\" colspan=\"1\">cml01<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<italic>floR</italic>\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<italic>floR</italic>\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">494<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">TTTGGWCCGCTMTCRGAC<hr/></td></tr><tr><td valign=\"top\" align=\"left\" scope=\"row\" rowspan=\"1\" colspan=\"1\">cml15<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<italic>floR</italic>\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">SGAGAARAAGACGAAGAAG<hr/></td></tr><tr><td valign=\"top\" align=\"left\" scope=\"row\" rowspan=\"1\" colspan=\"1\">int1<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<italic>intI1</italic>\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">A<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">1,135<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">GCTCTCGGGTAACATCAAGG<hr/></td></tr><tr><td valign=\"top\" align=\"left\" scope=\"row\" rowspan=\"1\" colspan=\"1\">aad<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<italic>aadA2</italic>\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">GACCTACCAAGGCAACGCTA<hr/></td></tr><tr><td valign=\"top\" align=\"left\" scope=\"row\" rowspan=\"1\" colspan=\"1\">sulTER<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<italic>sul1delta</italic>\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">B<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">942<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">AAGGATTTCCTGACCCTG<hr/></td></tr><tr><td valign=\"top\" align=\"left\" scope=\"row\" rowspan=\"1\" colspan=\"1\">F3<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<italic>floR</italic>\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">AAAGGAGCCATCAGCAGCAG<hr/></td></tr><tr><td valign=\"top\" align=\"left\" scope=\"row\" rowspan=\"1\" colspan=\"1\">F4<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<italic>floR</italic>\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">C<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">598<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">TTCCTCACCTTCATCCTACC<hr/></td></tr><tr><td valign=\"top\" align=\"left\" scope=\"row\" rowspan=\"1\" colspan=\"1\">F6<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<italic>tetR</italic>\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">TTGGAACAGACGGCATGG<hr/></td></tr><tr><td valign=\"top\" align=\"left\" scope=\"row\" rowspan=\"1\" colspan=\"1\">tetR<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<italic>tetR</italic>\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">D<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">1,559<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">GCCGTCCCGATAAGAGAGCA<hr/></td></tr><tr><td valign=\"top\" align=\"left\" scope=\"row\" rowspan=\"1\" colspan=\"1\">tetA<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<italic>tetA</italic>\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">GAAGTTGCGAATGGTCTGCG<hr/></td></tr><tr><td valign=\"top\" align=\"left\" scope=\"row\" rowspan=\"1\" colspan=\"1\">int2<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<italic>groEL-intI1</italic>\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">E<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">1,338<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">TTCTGGTCTTCGTTGATGCC<hr/></td></tr><tr><td valign=\"top\" align=\"left\" scope=\"row\" rowspan=\"1\" colspan=\"1\">pse1<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<italic>pse-1</italic>\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">CATCATTTCGCTCTGCCATT<hr/></td></tr><tr><td valign=\"top\" align=\"left\" scope=\"row\" rowspan=\"1\" colspan=\"1\">pse-L<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">\n<italic>pse-1</italic>\n<hr/>\n</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">F<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">4,400<hr/></td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">AATGGCAATCAGCGCTTCCC<hr/></td></tr><tr><td valign=\"top\" align=\"left\" scope=\"row\" rowspan=\"1\" colspan=\"1\">MDR-B</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">S044</td><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\"/><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\"/><td valign=\"top\" align=\"left\" rowspan=\"1\" colspan=\"1\">GAATCCGACAGCCAACGTTCC</td></tr></tbody></table>\n"
+      },
+      "text": "Primer\tGene\tAmplificationa\tSize (bp)\tNucleotide sequence (5\u00b4\u20133\u00b4)\t \tU7-L12\tthdf\tLeft junction\t500\tACACCTTGAGCAGGGCAAG\t \tLJ-R1\tint\t\t\tAGTTCTAAAGGTTCGTAGTCG\t \t104-RJ\tS044\tRight junction\t\tTGACGAGCTGAAGCGAATTG\t \tC9-L2\tint2\t\t515\tAGCAAGTGTGCGTAATTTGG\t \t104-D\tyidY\t\t500\tACCAGGGCAAAACTACACAG\t \tcml01\tfloR\tfloR\t494\tTTTGGWCCGCTMTCRGAC\t \tcml15\tfloR\t\t\tSGAGAARAAGACGAAGAAG\t \tint1\tintI1\tA\t1,135\tGCTCTCGGGTAACATCAAGG\t \taad\taadA2\t\t\tGACCTACCAAGGCAACGCTA\t \tsulTER\tsul1delta\tB\t942\tAAGGATTTCCTGACCCTG\t \tF3\tfloR\t\t\tAAAGGAGCCATCAGCAGCAG\t \tF4\tfloR\tC\t598\tTTCCTCACCTTCATCCTACC\t \tF6\ttetR\t\t\tTTGGAACAGACGGCATGG\t \ttetR\ttetR\tD\t1,559\tGCCGTCCCGATAAGAGAGCA\t \ttetA\ttetA\t\t\tGAAGTTGCGAATGGTCTGCG\t \tint2\tgroEL-intI1\tE\t1,338\tTTCTGGTCTTCGTTGATGCC\t \tpse1\tpse-1\t\t\tCATCATTTCGCTCTGCCATT\t \tpse-L\tpse-1\tF\t4,400\tAATGGCAATCAGCGCTTCCC\t \tMDR-B\tS044\t\t\tGAATCCGACAGCCAACGTTCC\t \t",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 8228,
+      "infons": {
+       "file": "T1.xml",
+       "id": "T1",
+       "section_type": "TABLE",
+       "type": "table_foot"
+      },
+      "text": "aSee Figure 1.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 8243,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "PCR amplification of the first integron was also performed by using primer int1 of PCR A and primer F3 of PCR B (Figure 1). Cloning of this PCR product in plasmid pCR2.1-TOPO was performed by using the TOPO TA cloning kit (Invitrogen). We used Genome Express (Meylan, France) for nucleotide sequencing of the insert.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 8560,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "Genomic DNA, contained in agarose plugs, was digested with BlnI or XbaI and fragments separated by pulsed-field gel electrophoresis (PFGE) performed by using the CHEF-DR III system (Bio-Rad, Hemel Hempstead, U.K.) at 6 V/cm for 24 h with pulse times of 10\u201330 sec. The nucleotide sequence of the S. Albany strain 7205.00 integron fragment harboring the Tm resistance gene has been deposited in GenBank under accession number AY146989.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 8996,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_1"
+      },
+      "text": "Results",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 9004,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_2"
+      },
+      "text": "Multidrug-Resistant Phenotype",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 9034,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "S. Albany strain 7205.00 showed a multidrug-resistant phenotype similar to SGI1 carrying S. enterica serovars Typhimurium DT104, Agona, or Paratyphi B, (i.e., Ap, Cm/Ff, Su, Tc). The strain was susceptible to Sp and Sm but showed additional resistance to Tm. The strain showed the same level of resistance to Ff as S. enterica serovars Typhimurium DT 104, Agona, or Paratyphi B with a Ff MIC of 64 \u00b5g/mL. No plasmids were detected in the S. Albany strain, suggesting a chromosomal location of antibiotic-resistance genes and possibly the presence of SGI1.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 9594,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_2"
+      },
+      "text": "Identification of SGI1",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 9617,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "To assess the presence of SGI1 and its location in the chromosome of the S. Albany strain 7205.00, PCR was performed by using primers corresponding to the left and right junctions of SGI1 in the Salmonella chromosome (Figure 1). We also used PCR to detect the presence or absence of the int2-retron sequence, which is located downstream of SGI1 in serovar Typhimurium DT104 but not in serovars Agona and Paratyphi B. PCR results were positive for the left junction of SGI1, as for the other serovars. If a sequence of the int2 gene of the retron was used as reverse primer, the PCR results were negative for the right junction of SGI1 but positive if the sequence of the yidY gene was used. PCR products showed the expected sizes of approximately 500 bp for both the left junction and right junction PCR without the retron sequence, as indicated in Figure 1. These data thus indicate that the serovar Albany strain 7205.00 contains SGI1 at the same chromosomal location as in serovars Typhimurium DT104, Agona, or Paratyphi B (i.e., between the thdf and yidY genes) but lacks the retron sequence found in DT104 and other serovar Typhimurium strains.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 10767,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "The nucleotide sequences of the left and right junction PCR products were determined by allowing an analysis of the imperfect 18-bp direct repeats flanking SGI1. This direct repeat appeared to be a duplication of the last 18 bp of the thdf gene. The right junction direct repeat sequence (DR-R) was previously shown to be identical to the sequence from the respective thdf sequences from sensitive serovar Typhimurium or Agona strains, suggesting the origin of the DR-R is actually the end of thdF (Figure 2). These sequences are slightly divergent between serovars Typhimurium and Agona, with a C located at position 9 of the direct repeat in serovar Typhimurium as opposed to a T at this position in Agona. The left junction direct repeat sequence (DR-L) is identical in both serovars, suggesting the origin of this sequence may be from the donor DNA and not the result of a duplication event. As shown in Figure 2, DR-L and DR-R sequences in the serovar Paratyphi B strain, which were not investigated in a previous study, and in the serovar Albany strain 7205.00 are identical to those found in serovar Agona strains carrying SGI1 (Figure 2). These results reinforce the hypothesis that the SGI1 insertions in serovar Typhimurium DT104 and in the other serovars were separate events and not a result of genetic exchange between serovar Typhimurium DT104 and the other serovars.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 12149,
+      "infons": {
+       "file": "02-0609-F2.jpg",
+       "id": "F2",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "Alignment of the direct repeats (DR) flanking the Salmonella genomic island 1 (SGI1) in serovars Typhimurium DT104 (DT104), Agona, Paratyphi B, and Albany. Asterisks represent nucleotide substitutions. Sen, sensitive.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 12367,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "Aside from the antibiotic resistance genes presented below, the presence of the entire SGI1 in the serovar Albany strain 7205.00 was confirmed by Southern blot of XbaI-digested genomic DNA with the p1-9 probe, as described previously. This probe showed XbaI fragments of the expected 4- and 9-kb sizes as in control serovar Typhimurium DT 104, Agona, and Paratyphi B strains carrying SGI1 (Figure 3A).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 12769,
+      "infons": {
+       "file": "02-0609-F3.jpg",
+       "id": "F3",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "A) Southern blot hybridization with the p1-9 probe of XbaI-digested genomic DNAs of Salmonella enterica serovar Typhimurium DT104 strain BN9181 (lane 1), serovar Agona strain 959SA97 (lane 2), serovar Paratyphi B strain 44 (lane 3), and serovar Albany strain 7205.00 (lane 4). B) Southern blot hybridization of XbaI-, XhoI-, HindIII-, and EcoRI-digested genomic DNAs of serovar Typhimurium DT104 strain BN9181 (lanes 1), serovar Agona strain 959SA97 (lanes 2), serovar Paratyphi B strain 44 (lanes 3), and serovar Albany strain 7205.00 (lanes 4), with the pSTF3 probe containing all antibiotic resistance genes (see Figure 1).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 13396,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_2"
+      },
+      "text": "New Variant Antibiotic Resistance Gene Cluster",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 13443,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "PCR mapping of the typical antibiotic resistance genes and integrons associated with SGI1 is schematized in Figure 1. PCR amplifications on genomic DNA extracted from serovar Albany strain 7205.00 yielded fragments B, C, D, E, F, and partial floR of the sizes expected from DNA of serovar Typhimurium DT104 control strain BN9181 (data not shown). However, fragment A specific for the aadA2 integron was not obtained. Thus, these PCR mapping results indicated the presence of floR, tetR, and tet(G) genes and the second integron carrying the pse-1 gene. A positive PCR result for fragment B, representing the link between the aadA2 integron and floR, would nevertheless suggest the presence of at least a partial aadA2 integron. These data are in accordance with the antibiotic resistance phenotype of serovar Albany strain 7205.00 (i.e., ApCmFfSuTc with lack of resistance to Sm and Sp) and indicate the presence of a SGI1 variant antibiotic resistance gene cluster at the level of the aadA2 integron.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 14445,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "These results were confirmed by Southern blot of genomic DNA digested by XbaI, XhoI, HindIII, or EcoRI with the pSTF3 probe containing nearly the entire antibiotic resistance gene cluster of serovar Typhimurium DT104 strain BN9181 (see XbaI fragment in Figure 1). XbaI and XhoI Southern blot profiles of the serovar Albany strain were similar to those obtained for the control strains of serovar Typhimurium DT104, Agona, and Paratyphi B harboring SGI1 (Figure 3B). However, the HindIII and EcoRI Southern blot profiles of the serovar Albany strain were clearly distinct from those of the control strains, confirming the presence of a variant antibiotic resistance gene cluster in the serovar Albany strain.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 15153,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "The genetic variation at the level of the aadA2 integron in the serovar Albany strain was further assessed by PCR with a forward primer of fragment A and reverse primer of fragment B (Figure 1). This PCR result was positive and yielded a fragment approximately 300 bp larger than with DNA from serovar Typhimurium DT104 control strain BN9181 (data not shown). This PCR product was cloned in plasmid pCR2.1-TOPO and sequenced. E. coli carrying this plasmid were resistant to Tm, indicating the presence of a Tm resistance gene in the fragment. Sequence analysis (done by using BLAST [available from: URL: http://www.ncbi.nlm.nih.gov:80/BLAST/]) showed, in addition to the corresponding nucleotide sequence of the DT104 antibiotic resistance gene cluster, two gene cassettes (dfrA1 coding for Tm resistance and an ORF of unknown function), described in class 1 integrons of Vibrio cholerae strains isolated in Thailand and India (99% nucleotide identity; GenBank accession nos. AF221901 and AF455254). Thus, instead of the aadA2 gene classically found in the first integron of the SGI1 antibiotic resistance gene cluster, dfrA1 and an ORF of unknown function were found in the corresponding integron of serovar Albany strain 7205.00. The conserved regions of this integron were 100% identical to those found in serovar Typhimurium DT104 with a truncated sul1 gene (Figure 1). The distinct serovar Albany strain 7205.00 HindIII and EcoRI Southern blot profiles with probe pSTF3 described above are in accordance with the nucleotide sequence of the variable region containing dfrA1 of this integron (Figure 1). The antibiotic resistance gene cluster of serovar Albany strain 7205.00 constitutes a new SGI1 variant; we propose a name of SGI1-F, according to previously proposed nomenclature.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 16940,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_2"
+      },
+      "text": "Evidence for Horizontal Transfer",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 16973,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "Macrorestriction analysis by PFGE of the serovar Albany strain DNA cut by XbaI or BlnI showed that the strain is genetically distinct from serovars Typhimurium DT104, Agona, and Paratyphi B in which SGI1 has been identified (Figure 4). This distinction further indicates at the molecular level that the occurrence of SGI1 in the serovar Albany strain probably results from horizontal transfer and not seroconversion of known S. enterica serovars harboring SGI1.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 17435,
+      "infons": {
+       "file": "02-0609-F4.jpg",
+       "id": "F4",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "Macrorestriction analysis by pulsed-field gel electrophoresis of genomic DNAs cut by XbaI or BlnI of Salmonella enterica serovar Typhimurium DT104 strain BN9181 (lanes 1), serovar Agona strain 959SA97 (lanes 2), serovar Paratyphi B strain 44 (lanes 3), and serovar Albany strain 7205.00 (lanes 4).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 17733,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "title_1"
+      },
+      "text": "Discussion",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 17744,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "SGI1 is the first genomic island containing an antibiotic resistance gene cluster identified in S. enterica; its acquisition in S. Typhimurium phage type DT104 was possibly an important trait in the worldwide epidemic of the resulting multidrug-resistant clone causing disease in animals as well as in humans. SGI1 has been further identified in other S. enterica serovars, such as in serovar Agona strains isolated from poultry in Belgium and in a serovar Paratyphi B strain isolated from a tropical fish in Singapore. The serovar Albany fish isolate from Thailand in this study represents the fourth S. enterica serovar in which SGI1 has been identified. The identification of SGI1 in several S. enterica serovars, shown by PFGE to be genetically distinct, suggests horizontal transfer of this region. That SGI1 has the same chromosomal location in the different serovars suggests that its insertion occured through site-specific recombination. Genes such as the tandemly arranged int and xis genes found adjacent to the DR-L of SGI1 may play a role in this recombination event because they encode a putative integrase and excisionase, respectively. Sequence analysis of the left and right junctions of SGI1 to the Salmonella chromosome provides additional clues about these recombination events in the different serovars. The right junction 18-bp DR-R direct repeat sequence found at the 3\u00b4 end of SGI1 appears to be a duplication of the last 18 bp of the thdf gene found upstream of SGI1. The left junction SGI1 18-bp DR-L direct repeat sequence is slightly different from the 3\u00b4-end of thdf in sensitive S. enterica serovars lacking SGI1 (Figure 2) but identical in all serovars carrying SGI1. This finding suggests that the origin of this sequence may be from the donor DNA. When SGI1 insertion takes place in a sensitive S. enterica serovar, the last 18 bp of its thdf gene would be duplicated and found at the 3\u00b4 end of SGI1 and replaced by the 18 bp of the donor DNA at the 5\u00b4 end of SGI1. In other words, the last 18 bp of thdf in sensitive S. enterica serovars may constitute a hotspot for homologous recombination with an 18-bp similar sequence of the SGI1 donor DNA. These DR-R and DR-L minor sequence differences also support the hypothesis that the SGI1 insertions in serovar Typhimurium DT104 and other serovars were separate events and not a result of genetic exchange between serovar Typhimurium DT104 and the other serovars. Yet, the origin of SGI1 remains to be determined.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 20242,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "A similar situation has been reported for an approximately 100-kb genomic island in V. cholerae called SXT conjugative, self-transmissible, integrating (constin) element. It carries multiple antibiotic resistance genes, including floR as in SGI1. Integration of the element has been experimentally shown to occur through site-specific recombination in a 17-bp sequence found in the circular form of the SXT element and a similar 17-bp sequence of prfC of the V. cholerae and E. coli chromosomes. Chromosomal integration and excision of the SXT element required an element-encoded int gene that is found as first gene of the SXT element, as is the int gene of SGI1. SGI1 may also exist in an intermediate circular form, but this remains to be demonstrated.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 20998,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "The antibiotic resistance gene cluster of SGI1 contains mainly five antibiotic resistance genes. Variant SGI1 antibiotic resistance gene clusters have been recently reported in serovars Typhimurium DT104 and Agona containing part of the antibiotic resistance genes or an additional resistance gene (i.e., dfrA10 coding for Tm resistance). These variant antibiotic resistance gene clusters were probably generated by recombinational events such as deletions and insertions. The serovar Albany strain of our study represents the first SGI1 example in which gene replacement took place in one of the integron structures. The dfrA1 and ORF gene cassettes found instead of aadA2 may have been introduced by homologous recombination with a class 1 integron containing the same array of gene cassettes from another bacterium. Another possibility is the exchange between aadA2 and the two gene cassettes, which would imply excision, mediated by the integron-encoded integrase, of aadA2 and its replacement by the other gene cassettes. The array of gene cassettes found in the integron of the serovar Albany strain were the same as those recently reported in integrons of V. cholerae isolated in Thailand and India. Considering the origin of the serovar Albany strain (i.e., fish exported from Thailand), a possible explanation could be the exchange of antibiotic resistance gene cassettes between epidemic multidrug-resistant V. cholerae strains and Salmonella strains from Thailand. Moreover, during the choleralike epidemic among the Khmers in 1982, children and pregnant women were reportedly treated with trimethoprim-sulfamethoxazole. A high percentage of Khmer outbreak V. cholerae strains showed resistance to trimethoprim-sulfamethoxazole; the strains that acquired the dfrA1 gene cassette likely became predominant through selective pressure.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 22842,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "The multidrug-resistant V. cholerae epidemics in humans in Asia might be largely responsible for spread of antibiotic resistance genes. Recent reports describe that human colonization by V. cholerae creates a hyperinfectious bacterial state, which is perpetuated even after purging into natural aquatic reservoirs and may contribute to epidemic spread of cholera. These aquatic reservoirs may be an ecologic niche where antibiotic resistance gene exchange takes place between different enterobacterial pathogens. In various seawater places around Hong Kong where untreated sewage is discharged, several enterobacterial pathogens were simultaneously detected such as Salmonella and V. cholerae.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 23536,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "As shown in the present study, gene replacement in the integron structures is another way to contribute to variability of the antibiotic resistance gene cluster of SGI1. SGI1 may thus serve as a vehicle of various antibiotic resistance genes in different S. enterica serovars, a situation somewhat similar to that reported for SXT constins and integrons of multidrug-resistant V. cholerae strains.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 23934,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "footnote"
+      },
+      "text": "Suggested citation for this article: Doublet B, Lailler R, Meunier D, Brisabois A, Boyd D, Mulvey MR, et al. Variant Salmonella island 1 antibiotic resistance gene cluster in salmonella enterica serovar Albany. Emerg Infect Dis [serial online] 2003 May [date cited]. Available from: URL: http://www.cdc.gov/ncidod/EID/vol9no5/02-0609.htm",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 24272,
+      "infons": {
+       "section_type": "REF",
+       "type": "title"
+      },
+      "text": "References",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 24283,
+      "infons": {
+       "section_type": "REF",
+       "type": "ref",
+       "year": "2000"
+      },
+      "text": "",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 24284,
+      "infons": {
+       "fpage": "193",
+       "lpage": "200",
+       "pub-id_doi": "10.1017/S0950268899003283",
+       "pub-id_pmid": "10813142",
+       "section_type": "REF",
+       "source": "Epidemiol Infect",
+       "type": "ref",
+       "volume": "124",
+       "year": "2000"
+      },
+      "text": "Multiresistant Salmonella Typhimurium DT104 infections of humans and domestic animals in the Pacific Northwest of the United States.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 24417,
+      "infons": {
+       "fpage": "802",
+       "lpage": "6",
+       "pub-id_doi": "10.3201/eid0506.990610",
+       "pub-id_pmid": "10603215",
+       "section_type": "REF",
+       "source": "Emerg Infect Dis",
+       "type": "ref",
+       "volume": "5",
+       "year": "1999"
+      },
+      "text": "Changes in antimicrobial resistance among Salmonella enterica serovar Typhimurium isolates from humans and cattle in the Northwestern United States, 1982\u20131997.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 24579,
+      "infons": {
+       "fpage": "1333",
+       "lpage": "8",
+       "pub-id_doi": "10.1056/NEJM199805073381901",
+       "pub-id_pmid": "9571252",
+       "section_type": "REF",
+       "source": "N Engl J Med",
+       "type": "ref",
+       "volume": "338",
+       "year": "1998"
+      },
+      "text": "Emergence of multidrug-resistant Salmonella enterica serotype Typhimurium DT104 infections in the United States.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 24692,
+      "infons": {
+       "fpage": "559",
+       "lpage": "65",
+       "pub-id_pmid": "9752592",
+       "section_type": "REF",
+       "source": "Can Vet J",
+       "type": "ref",
+       "volume": "39",
+       "year": "1998"
+      },
+      "text": "Salmonella typhimurium DT104: a virulent and drug-resistant pathogen.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 24762,
+      "infons": {
+       "fpage": "5725",
+       "lpage": "32",
+       "pub-id_doi": "10.1128/JB.183.19.5725-5732.2001",
+       "pub-id_pmid": "11544236",
+       "section_type": "REF",
+       "source": "J Bacteriol",
+       "type": "ref",
+       "volume": "183",
+       "year": "2001"
+      },
+      "text": "Complete nucleotide sequence of a 43-kilobase genomic island associated with the multidrug resistance region of Salmonella enterica serovar Typhimurium DT104 and its identification in phage type DT120 and serovar Agona.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 24982,
+      "infons": {
+       "fpage": "285",
+       "lpage": "91",
+       "pub-id_doi": "10.1111/j.1574-6968.2000.tb09245.x",
+       "pub-id_pmid": "10930753",
+       "section_type": "REF",
+       "source": "FEMS Microbiol Lett",
+       "type": "ref",
+       "volume": "189",
+       "year": "2000"
+      },
+      "text": "Partial characterization of a genomic island associated with the multidrug resistance region of Salmonella enterica Typhimurium DT104.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 25117,
+      "infons": {
+       "fpage": "327",
+       "lpage": "32",
+       "pub-id_doi": "10.1111/j.1574-6968.1999.tb13586.x",
+       "pub-id_pmid": "10339826",
+       "section_type": "REF",
+       "source": "FEMS Microbiol Lett",
+       "type": "ref",
+       "volume": "174",
+       "year": "1999"
+      },
+      "text": "A new chloramphenicol and florfenicol resistance gene flanked by two integron structures in Salmonella typhimurium DT104.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 25239,
+      "infons": {
+       "fpage": "846",
+       "lpage": "9",
+       "pub-id_pmid": "10103189",
+       "section_type": "REF",
+       "source": "Antimicrob Agents Chemother",
+       "type": "ref",
+       "volume": "43",
+       "year": "1999"
+      },
+      "text": "Molecular characterization of an antibiotic resistance gene cluster of Salmonella typhimurium DT104.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 25340,
+      "infons": {
+       "fpage": "301",
+       "lpage": "10",
+       "pub-id_doi": "10.1051/vetres:2001126",
+       "pub-id_pmid": "11432421",
+       "section_type": "REF",
+       "source": "Vet Res",
+       "type": "ref",
+       "volume": "32",
+       "year": "2001"
+      },
+      "text": "Molecular characterization, spread and evolution of multidrug resistance in Salmonella enterica Typhimurium DT104.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 25455,
+      "infons": {
+       "fpage": "1348",
+       "lpage": "51",
+       "pub-id_pmid": "10203484",
+       "section_type": "REF",
+       "source": "J Clin Microbiol",
+       "type": "ref",
+       "volume": "37",
+       "year": "1999"
+      },
+      "text": "Detection of multi-drug resistant Salmonella enterica serotype typhimurium DT104 based on a gene which confers cross-resistance to florfenicol and chloramphenicol.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 25619,
+      "infons": {
+       "fpage": "2821",
+       "lpage": "8",
+       "pub-id_doi": "10.1128/AAC.46.9.2821-2828.2002",
+       "pub-id_pmid": "12183234",
+       "section_type": "REF",
+       "source": "Antimicrob Agents Chemother",
+       "type": "ref",
+       "volume": "46",
+       "year": "2002"
+      },
+      "text": "Antibiotic resistance genes and Salmonella genomic island 1 in Salmonella enterica serovar Typhimurium isolated in Italy.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 25741,
+      "infons": {
+       "fpage": "1359",
+       "lpage": "61",
+       "pub-id_doi": "10.1128/AAC.44.5.1359-1361.2000",
+       "pub-id_pmid": "10770778",
+       "section_type": "REF",
+       "source": "Antimicrob Agents Chemother",
+       "type": "ref",
+       "volume": "44",
+       "year": "2000"
+      },
+      "text": "Occurrence of a Salmonella enterica serovar Typhimurium DT104-like antibiotic resistance gene cluster including the floR gene in S. enterica serovar Agona.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 25897,
+      "infons": {
+       "fpage": "430",
+       "lpage": "3",
+       "pub-id_doi": "10.3201/eid0804.010213",
+       "pub-id_pmid": "11971780",
+       "section_type": "REF",
+       "source": "Emerg Infect Dis",
+       "type": "ref",
+       "volume": "8",
+       "year": "2002"
+      },
+      "text": "Salmonella enterica serotype Typhimurium DT 104 antibiotic resistance genomic island 1 in serotype Paratyphi B.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 26009,
+      "infons": {
+       "fpage": "1714",
+       "lpage": "22",
+       "pub-id_doi": "10.1128/AAC.46.6.1714-1722.2002",
+       "pub-id_pmid": "12019080",
+       "section_type": "REF",
+       "source": "Antimicrob Agents Chemother",
+       "type": "ref",
+       "volume": "46",
+       "year": "2002"
+      },
+      "text": "Characterization of variant Salmonella genomic island 1 multidrug resistance regions from serovars Typhimurium DT104 and Agona.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 26137,
+      "infons": {
+       "fpage": "1315",
+       "lpage": "21",
+       "pub-id_doi": "10.1128/AAC.44.5.1315-1321.2000",
+       "pub-id_pmid": "10770768",
+       "section_type": "REF",
+       "source": "Antimicrob Agents Chemother",
+       "type": "ref",
+       "volume": "44",
+       "year": "2000"
+      },
+      "text": "Distribution and content of class 1 integrons in different Vibrio cholerae O-serotype strains isolated in Thailand.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 26253,
+      "infons": {
+       "fpage": "2948",
+       "lpage": "55",
+       "pub-id_doi": "10.1128/AAC.46.9.2948-2955.2002",
+       "pub-id_pmid": "12183252",
+       "section_type": "REF",
+       "source": "Antimicrob Agents Chemother",
+       "type": "ref",
+       "volume": "46",
+       "year": "2002"
+      },
+      "text": "Occurrence of antibiotic resistance gene cassettes aac(6\u2019)-Ib, dfrA5, dfrA12, and ereA2 in class I integrons in non-O1, non-O139 Vibrio cholerae strains in India.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 26418,
+      "infons": {
+       "fpage": "4259",
+       "lpage": "69",
+       "pub-id_doi": "10.1128/JB.184.15.4259-4269.2002",
+       "pub-id_pmid": "12107144",
+       "section_type": "REF",
+       "source": "J Bacteriol",
+       "type": "ref",
+       "volume": "184",
+       "year": "2002"
+      },
+      "text": "Genomic and functional analyses of SXT, an integrating antibiotic resistance gene transfer element derived from Vibrio cholerae.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 26547,
+      "infons": {
+       "fpage": "2991",
+       "lpage": "3000",
+       "pub-id_doi": "10.1128/AAC.45.11.2991-3000.2001",
+       "pub-id_pmid": "11600347",
+       "section_type": "REF",
+       "source": "Antimicrob Agents Chemother",
+       "type": "ref",
+       "volume": "45",
+       "year": "2001"
+      },
+      "text": "Molecular analysis of antibiotic resistance gene clusters in Vibrio cholerae O139 and O1 SXT constins.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 26650,
+      "infons": {
+       "fpage": "99",
+       "lpage": "110",
+       "pub-id_doi": "10.1046/j.1365-2958.1999.01330.x",
+       "pub-id_pmid": "10216863",
+       "section_type": "REF",
+       "source": "Mol Microbiol",
+       "type": "ref",
+       "volume": "32",
+       "year": "1999"
+      },
+      "text": "Site-specific integration of the conjugal Vibrio cholerae SXT element into prfC.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 26731,
+      "infons": {
+       "fpage": "2400",
+       "lpage": "8",
+       "pub-id_doi": "10.1128/AAC.46.8.2400-2408.2002",
+       "pub-id_pmid": "12121911",
+       "section_type": "REF",
+       "source": "Antimicrob Agents Chemother",
+       "type": "ref",
+       "volume": "46",
+       "year": "2002"
+      },
+      "text": "Class 1 integron containing a new gene cassette, aadA10, associated with Tn1404 from R151.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 26822,
+      "infons": {
+       "fpage": "593",
+       "lpage": "600",
+       "pub-id_doi": "10.1111/j.1365-2958.1995.tb02368.x",
+       "pub-id_pmid": "7783631",
+       "section_type": "REF",
+       "source": "Mol Microbiol",
+       "type": "ref",
+       "volume": "15",
+       "year": "1995"
+      },
+      "text": "Mobile gene cassettes and integrons: capture and spread of genes by site-specific recombination.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 26919,
+      "infons": {
+       "fpage": "1315",
+       "lpage": "7",
+       "pub-id_pmid": "8501234",
+       "section_type": "REF",
+       "source": "J Clin Microbiol",
+       "type": "ref",
+       "volume": "31",
+       "year": "1993"
+      },
+      "text": "Epidemic of diarrhea caused by Vibrio cholerae non-O1 that produced heat-stable toxin among Khmers in a camp in Thailand.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 27041,
+      "infons": {
+       "fpage": "51",
+       "lpage": "63",
+       "pub-id_doi": "10.1017/S0950268800051906",
+       "pub-id_pmid": "7867743",
+       "section_type": "REF",
+       "source": "Epidemiol Infect",
+       "type": "ref",
+       "volume": "114",
+       "year": "1995"
+      },
+      "text": "Molecular characterization and antibiotic susceptibility patterns of Vibrio cholerae non-O1.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 27134,
+      "infons": {
+       "fpage": "642",
+       "lpage": "5",
+       "pub-id_doi": "10.1038/nature00778",
+       "pub-id_pmid": "12050664",
+       "section_type": "REF",
+       "source": "Nature",
+       "type": "ref",
+       "volume": "417",
+       "year": "2002"
+      },
+      "text": "Host-induced epidemic spread of the cholera bacterium.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 27189,
+      "infons": {
+       "fpage": "2802",
+       "lpage": "12",
+       "pub-id_doi": "10.1016/S0043-1354(01)00503-6",
+       "pub-id_pmid": "12146868",
+       "section_type": "REF",
+       "source": "Water Res",
+       "type": "ref",
+       "volume": "36",
+       "year": "2002"
+      },
+      "text": "Rapid detection of six types of bacterial pathogens in marine waters by multiplex PCR.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     }
+    ],
+    "annotations": [],
+    "relations": []
+   }
+  ]
+ }
+]

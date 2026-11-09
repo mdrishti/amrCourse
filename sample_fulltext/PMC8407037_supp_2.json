@@ -1,0 +1,300 @@
+[
+ {
+  "source": "BioC",
+  "date": "2024-08-13",
+  "key": "BioC.key",
+  "documents": [
+   {
+    "id": "13073_2021_953_MOESM2_ESM.docx",
+    "passages": [
+     {
+      "offset": 0,
+      "text": "Supplementary Material",
+      "annotations": []
+     },
+     {
+      "offset": 23,
+      "text": "GenTB: A user-friendly genome-based predictor for",
+      "annotations": []
+     },
+     {
+      "offset": 75,
+      "text": "tuberculosis resistance powered by machine learning",
+      "annotations": []
+     },
+     {
+      "offset": 127,
+      "text": "ADDITIONAL FILE 2",
+      "annotations": []
+     },
+     {
+      "offset": 145,
+      "text": "Authors:",
+      "annotations": []
+     },
+     {
+      "offset": 154,
+      "text": "Matthias I Gr&amp;ouml;schel1, Martin Owens1, Luca Freschi1, Roger Vargas Jr1,2, Maximilian G Marin1,2, Jody Phelan3, Zamin Iqbal4, Avika Dixit1,5 and Maha R Farhat1,6",
+      "annotations": []
+     },
+     {
+      "offset": 314,
+      "text": "Affiliations",
+      "annotations": []
+     },
+     {
+      "offset": 327,
+      "text": "1 Department of Biomedical Informatics, Harvard Medical School, Boston, MA, USA",
+      "annotations": []
+     },
+     {
+      "offset": 407,
+      "text": "2 Department of Systems Biology, Harvard Medical School, Boston, MA, USA",
+      "annotations": []
+     },
+     {
+      "offset": 480,
+      "text": "3 Faculty of Infectious and Tropical Diseases, London School of Hygiene &amp; Tropical Medicine, London WC1E 7HT, UK",
+      "annotations": []
+     },
+     {
+      "offset": 593,
+      "text": "4 European Bioinformatics Institute, Hinxton, Cambridge CB10 ISD, UK",
+      "annotations": []
+     },
+     {
+      "offset": 662,
+      "text": "5 Division of Infectious Diseases, Boston Children&rsquo;s Hospital, Boston, MA, USA",
+      "annotations": []
+     },
+     {
+      "offset": 741,
+      "text": "6 Division of Pulmonary and Critical Care Medicine, Massachusetts General Hospital, Boston, MA, USA",
+      "annotations": []
+     },
+     {
+      "offset": 841,
+      "text": "Fig S1: Characteristics of variables used for resistance prediction by Gentb-RF for isoniazid and rifampicin. A) Distribution of minimal node depth among the trees of the classification forest for rifampicin resistance is shown. The mean of the distribution is marked by a vertical bar with a value label on it, denoting the mean number of node depth required for the variant to reach classification into resistant or susceptible. B) Multi-way importance for rifampicin resistance classification showing mean depth of first split on the variant on the X-axis, the number of trees where the variable is at the root of the tree on the y-axis, and the total number of nodes in the forest that split on that variant by size of the dots. C) and D) as A) and B) for isoniazid resistance classification. Genetic variants are described as follows and are separated by underscores: First type of variant, second if the variant leads to change in amino acid (AA), frameshift, or stop codon, third the genomic coordinate based on the reference strain H37RV (AL123456), fourth AA change, fifth codon change, last locus tag.",
+      "annotations": []
+     },
+     {
+      "offset": 1953,
+      "text": "Fig S2: Probability distribution and selected threshold for Gentb-RF resistance predictions. A-M. Probability of susceptibility (0 = drug susceptibility, 1 = drug resistance) for 13 drugs among the 20.379 isolates as predicted by Gentb-RF. Vertical lines depict the resistance threshold that yielded the highest predictive performance as measured by the sum of sensitivity and specificity. Drug-specific probability values are written in each subpanel.",
+      "annotations": []
+     },
+     {
+      "offset": 2408,
+      "text": "Fig S3: Probability distribution and thresholds according to [1] of Gentb-WDNN resistance predictions. A-K. Probability of susceptibility (1 = drug susceptibility, 0 = drug resistance) for 11 drugs among the 20.379 isolates as predicted by Gentb-WDNN. Vertical lines depict the resistance threshold that yielded the highest predictive performance as measured by the sum of sensitivity and specificity. Drug-specific probability values are written in each subpanel.",
+      "annotations": []
+     },
+     {
+      "offset": 2875,
+      "text": "Fig S4: User-friendliness evaluation of the GenTB tool. Box plots displaying user&rsquo;s responses on a scale from 1 (worst) to 10 (best) across five questionnaire items.",
+      "annotations": []
+     },
+     {
+      "offset": 3042,
+      "text": "Fig S5: Diagnostic performance of the four prediction tools across antituberculosis drugs. Violin plots displaying A) sensitivity and B) specificity of the used prediction tools to diagnose drug resistance by drug.",
+      "annotations": []
+     },
+     {
+      "offset": 3258,
+      "text": "Fig S6: Sequencing depth of resistance conferring genes in isolates falsely predicted susceptible to first line agents. The plots A) to I) display the sequencing depth against the proportions of bases covered at this depth for the length of the respective genes. Each line represents one isolate that was predicted susceptible by GenTB-RF while phenotypically resistant.",
+      "annotations": []
+     },
+     {
+      "offset": 3630,
+      "text": "Fig S7: Sequencing depth of resistance conferring genes in isolates falsely predicted susceptible to second line agents. The plots A) to R) display the sequencing depth against the proportions of bases covered at this depth for the length of the respective resistance genes noted below each plot. Each line represents one isolate that was predicted susceptible by GenTB-RF while phenotypically resistant.",
+      "annotations": []
+     },
+     {
+      "offset": 4035,
+      "text": "Table S1: Genetic loci used for random forest model training",
+      "annotations": []
+     },
+     {
+      "offset": 4096,
+      "text": "Table S2: Phenotypic drug susceptibility testing methods used by studies included in this benchmarking dataset.",
+      "annotations": []
+     },
+     {
+      "offset": 4208,
+      "text": "Table S3: Frequencies and percentages of available drug susceptibility data per drug",
+      "annotations": []
+     },
+     {
+      "offset": 4293,
+      "text": "Table S4: Diagnostic accuracy comparison of tools for drugs with insufficient phenotype data and pyrazinamide performance on all isolates",
+      "annotations": []
+     },
+     {
+      "offset": 4432,
+      "text": "Note: Tool's performance on all isolates with available pyrazinamide phenotype shown, for performance on the hold-out validation dataset after Random Forest retraining please refer to Table 1.",
+      "annotations": []
+     },
+     {
+      "offset": 4627,
+      "text": "Table S5: Area under the Receiver Operating Characteristic curve for GenTB-RF and GenTB-WDNN",
+      "annotations": []
+     },
+     {
+      "offset": 4720,
+      "text": "RF = Random Forest, WDNN = Wide and Deep Neural Network",
+      "annotations": []
+     },
+     {
+      "offset": 4777,
+      "text": "Table S6: Diagnostic accuracy to rifampicin and isoniazid across low-depth and passed-depth isolates.",
+      "annotations": []
+     },
+     {
+      "offset": 4879,
+      "text": "Note: GenTB-RF = GenTB Random Forest, GenTB-WDNN = GenTB - Wide and Deep Neural Network, SD = Standard Deviation",
+      "annotations": []
+     },
+     {
+      "offset": 4992,
+      "text": "Table S7: Non-silent variants in the gene rpoB among isolates with discordant phenotype and genotype predictions for the drug rifampicin",
+      "annotations": []
+     },
+     {
+      "offset": 5129,
+      "text": "Note: the 15 most frequent variants or variant combinations are shown. Variants are denoted as follows: First type of variant, second if the variant leads to change in amino acid (AA), frameshift, or stop codon, third the genomic coordinate based on the reference strain H37RV (AL123456), fourth AA change, fifth codon change, last locus tag. &para; Variant located in the rifampicin resistance determining region (RRDR)",
+      "annotations": []
+     },
+     {
+      "offset": 5545,
+      "text": "Table S8: Non-silent variants in the genes inhA, katG, ahpC, or fabG1 among isolates with discordant phenotype and genotype predictions for the drug isoniazid",
+      "annotations": []
+     },
+     {
+      "offset": 5705,
+      "text": "Note: The 15 most frequent variants are shown; Known lineage markers are excluded. &dagger; Variants that GenTB-RF has seen before. &para; Variant considered important for isoniazid resistance by GenTB-Random Forest. We excluded variants in genes kasA and embB as their role in isoniazid resistance is questioned.",
+      "annotations": []
+     },
+     {
+      "offset": 6007,
+      "text": "SUPPLEMENT REFERENCES",
+      "annotations": []
+     },
+     {
+      "offset": 6029,
+      "text": "1. Chen ML, Doddi A, Royer J, Freschi L, Schito M, Ezewudo M, et al. Beyond multidrug resistance: Leveraging rare variants with machine and statistical learning models in Mycobacterium tuberculosis resistance prediction. EBioMedicine. 2019;43:356&amp;ndash;69.",
+      "annotations": []
+     },
+     {
+      "offset": 6280,
+      "text": "2. Farhat MR, Sultana R, Iartchouk O, Bozeman S, Galagan J, Sisk P, et al. Genetic Determinants of Drug Resistance in Mycobacterium tuberculosis and Their Diagnostic Value. Am J Respir Crit Care Med. 2016;194:621&amp;ndash;30.",
+      "annotations": []
+     },
+     {
+      "offset": 6497,
+      "text": "3. CRyPTIC Consortium and the 100,000 Genomes Project, Allix-B&amp;eacute;guec C, Arandjelovic I, Bi L, Beckert P, Bonnet M, et al. Prediction of Susceptibility to First-Line Tuberculosis Drugs by DNA Sequencing. N Engl J Med. 2018;379:1403&amp;ndash;15.",
+      "annotations": []
+     },
+     {
+      "offset": 6731,
+      "text": "4. Farhat MR, Freschi L, Calderon R, Ioerger T, Snyder M, Meehan CJ, et al. GWAS for quantitative resistance phenotypes in Mycobacterium tuberculosis reveals resistance genes and regulatory regions. Nat Commun. 2019;10:2128.",
+      "annotations": []
+     },
+     {
+      "offset": 6956,
+      "text": "5. Walker TM, Kohl TA, Omar SV, Hedge J, Del Ojo Elias C, Bradley P, et al. Whole-genome sequencing for prediction of Mycobacterium tuberculosis drug susceptibility and resistance: a retrospective cohort study. Lancet Infect Dis. Elsevier BV; 2015;15:1193&amp;ndash;202.",
+      "annotations": []
+     },
+     {
+      "offset": 7217,
+      "text": "6. Casali N, Nikolayevskyy V, Balabanova Y, Ignatyeva O, Kontsevaya I, Harris SR, et al. Microevolution of extensively drug-resistant tuberculosis in Russia. Genome Res. 2012;22:735&amp;ndash;45.",
+      "annotations": []
+     },
+     {
+      "offset": 7403,
+      "text": "7. Coll F, Phelan J, Hill-Cawthorne GA, Nair MB, Mallard K, Ali S, et al. Genome-wide analysis of multi- and extensively drug-resistant Mycobacterium tuberculosis. Nat Genet. 2018;50:307&amp;ndash;16.",
+      "annotations": []
+     },
+     {
+      "offset": 7594,
+      "text": "8. Hicks ND, Yang J, Zhang X, Zhao B, Grad YH, Liu L, et al. Clinically prevalent mutations in Mycobacterium tuberculosis alter propionate metabolism and mediate multidrug tolerance. Nat Microbiol. 2018;3:1032&amp;ndash;42.",
+      "annotations": []
+     },
+     {
+      "offset": 7808,
+      "text": "9. Guerra-Assun&ccedil;&amp;atilde;o JA, Crampin AC, Houben RMGJ, Mzembe T, Mallard K, Coll F, et al. Large-scale whole genome sequencing of M. tuberculosis provides insights into transmission in a high prevalence area. Elife [Internet]. 2015;4. Available from: http://dx.doi.org/10.7554/eLife.05166",
+      "annotations": []
+     },
+     {
+      "offset": 8090,
+      "text": "10. Wollenberg KR, Desjardins CA, Zalutskaya A, Slodovnikova V, Oler AJ, Qui&ntilde;ones M, et al. Whole-genome sequencing of Mycobacterium tuberculosis provides insight into the evolution and genetic composition of drug-resistant tuberculosis in Belarus. J Clin Microbiol. 2017;55:457&amp;ndash;69.",
+      "annotations": []
+     },
+     {
+      "offset": 8373,
+      "text": "11. Dheda K, Gumbo T, Maartens G, Dooley KE, McNerney R, Murray M, et al. The epidemiology, pathogenesis, transmission, diagnosis, and management of multidrug-resistant, extensively drug-resistant, and incurable tuberculosis. The Lancet Respiratory Medicine. 2017;5:291&amp;ndash;360.",
+      "annotations": []
+     },
+     {
+      "offset": 8648,
+      "text": "12. Zignol M, Cabibbe AM, Dean AS, Glaziou P, Alikhanova N, Ama C, et al. Genetic sequencing for surveillance of drug resistance in tuberculosis in highly endemic countries: a multi-country population-based surveillance study. Lancet Infect Dis. Elsevier BV; 2018;18:675&amp;ndash;83.",
+      "annotations": []
+     },
+     {
+      "offset": 8923,
+      "text": "13. Phelan JE, Lim DR, Mitarai S, de Sessions PF, Tujan MAA, Reyes LT, et al. Mycobacterium tuberculosis whole genome sequencing provides insights into the Manila strain and drug-resistance mutations in the Philippines. Sci Rep. Springer Science and Business Media LLC; 2019;9:9305.",
+      "annotations": []
+     },
+     {
+      "offset": 9206,
+      "text": "14. Klopper M, Heupink TH, Hill-Cawthorne G, Streicher EM, Dippenaar A, de Vos M, et al. A landscape of genomic alterations at the root of a near-untreatable tuberculosis epidemic. BMC Med. Springer Science and Business Media LLC; 2020;18:24.",
+      "annotations": []
+     },
+     {
+      "offset": 9449,
+      "text": "15. Phelan J, Coll F, McNerney R, Ascher DB, Pires DEV, Furnham N, et al. Mycobacterium tuberculosis whole genome sequencing and protein structure modelling provides insights into anti-tuberculosis drug resistance. BMC Med [Internet]. Springer Science and Business Media LLC; 2016;14. Available from: http://dx.doi.org/10.1186/s12916-016-0575-9",
+      "annotations": []
+     },
+     {
+      "offset": 9794,
+      "text": " \u2028Prediction model \u2028 \u2029Drug \u2028GenTB-RF [2] \u2028GenTB-WDNN [1] \u2028 \u2029Isoniazid \u2028katG, inhA (+ promoter), fabG1, embB, kasA, ahpC (+ promoter), oxyR, iniA, iniB, iniC, ndh \u2028katG, inhA (+ promoter), fabG1, embB, kasA, ahpC (+ promoter), oxyR, iniA, iniB, iniC, ndh \u2028 \u2029Rifampicin \u2028rpoB \u2028rpoB \u2028 \u2029Ethambutol \u2028embB, embA, embC, iniA, iniB, iniC \u2028embB, embA, embC, iniA, iniB, iniC \u2028 \u2029Pyrazinamide \u2028pncA \u2028pncA, rpsA (+ promoter) \u2028 \u2029Streptomycin \u2028rpsL, rrs, gid \u2028rpsL, gid \u2028 \u2029Ethionamide \u2028ethA, inhA (+ promoter) \u2028- \u2028 \u2029Ciprofloxacin \u2028gyrA, gyrB \u2028gyrA, gyrB \u2028 \u2029Ofloxacin \u2028gyrA, gyrB \u2028gyrA, gyrB \u2028 \u2029Levofloxacin / Moxifloxacin \u2028gyrA, gyrB \u2028gyrA, gyrB \u2028 \u2029Amikacin \u2028rrs, rrl \u2028rrs, rrl \u2028 \u2029Capreomycin \u2028rrs, rrl, tlyA \u2028rrs, rrl, tlyA \u2028 \u2029Kanamycin \u2028rrs, rrl \u2028rrs, rrl, eis (+ promoter) \u2028 \u2029Para-aminosalicylic acid \u2028thyA \u2028- \u2028 \u2029",
+      "annotations": []
+     },
+     {
+      "offset": 10597,
+      "text": "Data Source \u2028Phenotypic Drug Susceptibility Method \u2028 \u2029PATRIC (https://www.patricbrc.org/) \u2028Various \u2028 \u2029ReSeqTB (https://platform.reseqtb.org/) \u2028Various \u2028 \u2029CRYPTIC [3] \u2028BACTEC Mycobacterial Growth Indicator Tube (MGIT) 960 system (Becton Dickinson), by culture on 7H10 or L&amp;ouml;wenstein&amp;ndash;Jensen (LJ) agar, or by microscopic-observation drug-susceptibility (MODS) assay \u2028 \u2029Farhat et al. [4] \u2028First line drugs using LJ proportion method, pyrazinamide using Wayne method, second line using 7H11 agar proportion method \u2028 \u2029Walker et al. [5] \u2028MGIT 960, LJ or resistance ratio method \u2028 \u2029Casali et al. [6] \u2028MGIT 960 for first and second line, pyrazinamide &amp;ndash; MGIT or semisolid medium \u2028 \u2029Coll et al. [7] \u2028BACTEC 460 TB System (Becton Dickinson), MGIT 960 system, solid agar or LJ slopes \u2028 \u2029Hicks et al. [8] \u2028Minimum inhibitory concentrations (MICs) measured using the Alamar Blue reduction assay after resuspension in 7H12 media \u2028 \u2029Guerra-Assucao et al. [9] \u2028Not reported \u2028 \u2029Wollenberg et al. [10] \u2028LJ medium (BACTEC MGIT PZA for Pyrazinamide) \u2028 \u2029Dheda et al. [11] \u2028Sensititre MYCOTB MIC plates or MGIT 960 \u2028 \u2029Zignol et al.  [12] \u2028LJ proportion method or MGIT 960 \u2028 \u2029Phelan et al. [13] \u2028Not reported \u2028 \u2029Klopper et al. [14] \u2028MGIT 960 \u2028 \u2029Phelan et al. [15] \u2028First line drugs using the proportion method. Second line drugs PAS was tested on LJ at 0.5 &amp;mu;g/ml. The other drugs were tested on Middlebrook 7H11 agar. \u2028 \u2029",
+      "annotations": []
+     },
+     {
+      "offset": 12029,
+      "text": "Drug name \u2028Resistant \u2028Susceptible \u2028Unknown \u2028 \u2029 \u2028n \u2028% \u2028n \u2028% \u2028n \u2028% \u2028 \u2029amikacin&nbsp; \u2028623 \u20283.1 \u20283,563 \u202817.5 \u202816,193 \u202879.5 \u2028 \u2029capreomycin&nbsp; \u2028652 \u20283.2 \u20283,846 \u202818.9 \u202815,881 \u202877.9 \u2028 \u2029ciprofloxacin&nbsp; \u202863 \u20280.3 \u2028331 \u20281.6 \u202819,985 \u202898.1 \u2028 \u2029ethambutol&nbsp; \u20283,001 \u202814.7 \u202812,788 \u202862.8 \u20284,590 \u202822.5 \u2028 \u2029ethionamide&nbsp; \u2028502 \u20282.5 \u20281,095 \u20285.4 \u202818,782 \u202892.2 \u2028 \u2029isoniazid&nbsp; \u20286,141 \u202830.1 \u202813,509 \u202866.3 \u2028729 \u20283.6 \u2028 \u2029kanamycin&nbsp; \u2028583 \u20282.9 \u20283,878 \u202819.0 \u202815,918 \u202878.1 \u2028 \u2029levofloxacin&nbsp; \u2028111 \u20280.5 \u202869 \u20280.3 \u202820,199 \u202899.1 \u2028 \u2029moxifloxacin&nbsp; \u2028426 \u20282.1 \u20284,149 \u202820.4 \u202815,804 \u202877.6 \u2028 \u2029ofloxacin&nbsp; \u2028762 \u20283.7 \u20284,313 \u202821.2 \u202815,304 \u202875.1 \u2028 \u2029para.aminosalicylic_acid&nbsp; \u202846 \u20280.2 \u2028478 \u20282.3 \u202819,855 \u202897.4 \u2028 \u2029pyrazinamide&nbsp; \u20282,374 \u202811.6 \u202812,199 \u202859.9 \u20285,806 \u202828.5 \u2028 \u2029rifampicin&nbsp; \u20285,155 \u202825.3 \u202814,885 \u202873.0 \u2028339 \u20281.7 \u2028 \u2029streptomycin&nbsp; \u20282,150 \u202810.6 \u20285,012 \u202824.6 \u202813,217 \u202864.9 \u2028 \u2029MDR &amp; XDR \u2028 \u2029MDR&nbsp; \u20284,743 \u202823.3 \u2028- \u2028- \u2028- \u2028- \u2028 \u2029XDR&nbsp; \u2028396 \u20281.9 \u2028- \u2028- \u2028- \u2028- \u2028 \u2029Note: MDR = Multi drug-resistant, XDR = Extensively drug-resistant. \u2028 \u2029",
+      "annotations": []
+     },
+     {
+      "offset": 13075,
+      "text": "Drug \u2028Phenotype \u2028GenTB - RF \u2028GenTB - WDNN \u2028Mykrobe \u2028TB-Profiler \u2028 \u2029 \u2028 \u2028Isolates sequenced with high depth (n = 19.880) \u2028 \u2029 \u2028R (n) \u2028S (n) \u2028Sensitivity (95% CI) \u2028Specificity (95% CI) \u2028Sensitivity (95% CI) \u2028Specificity (95% CI) \u2028Sensitivity (95% CI) \u2028Specificity (95% CI) \u2028Sensitivity (95% CI) \u2028Specificity (95% CI) \u2028 \u2029ciprofloxacin \u202863 \u2028330 \u202878% (66 to 88) \u202898% (97 to 99) \u202893% (85 to 100) \u202897% (95 to 99) \u202866% (53 to 78) \u202898% (97 to 100) \u202890% (83 to 97) \u202898% (97 to 100) \u2028 \u2029levofloxacin \u202865 \u2028104 \u202881% (73 to 88) \u202877% (66 - 87) \u2028- \u2028- \u2028- \u2028- \u202874% (65 to 83) \u202875% (64 to 86) \u2028 \u2029para-aminosalicylic_acid \u202846 \u2028474 \u20289% (2 to 18) \u2028100% (99 to 100) \u2028- \u2028- \u2028- \u2028- \u202830% (17 to 44) \u202898% (96 to 99) \u2028 \u2029pyrazinamide \u20282,336 \u202811,932 \u202890% (88 to 91) \u202888% (87 to 90) \u202881% (79 to 82) \u202895% (94 to 95) \u202872% (71 to 74) \u202898% (97 to 98) \u202881% (80 to 83) \u202896% (96 to 97) \u2028 \u2029",
+      "annotations": []
+     },
+     {
+      "offset": 13921,
+      "text": "Drug \u2028GenTB-RF \u2028GenTB-WDNN \u2028 \u2029 \u2028Area under the ROC curve (95% CI) \u2028 \u2029ciprofloxacin \u20280.88 (0.82 to 0.93) \u20280.95 (0.91 to 0.99) \u2028 \u2029levofloxacin \u20280.79 (0.72 to 0.85) \u2028- \u2028 \u2029para-aminosalicylic_acid \u20280.54 (0.51 to 0.59) \u2028- \u2028 \u2029",
+      "annotations": []
+     },
+     {
+      "offset": 14142,
+      "text": "Tool \u2028Drug \u2028Low-depth isolates (n = 499) \u2028Passed-depth isolates (n = 19,880) \u2028 \u2029 \u2028 \u2028Mean Sensitivity (SD) \u2028Mean Specificity (SD) \u2028Mean Sensitivity (SD) \u2028Mean Specificity (SD) \u2028 \u2029GenTB-RF \u2028isoniazid \u202884.6 (3.64) \u202898.2 (0.66) \u202891 (0.36) \u202897.6 (0.13) \u2028 \u2029GenTB-RF \u2028rifampicin \u202887.3 (3.64) \u202898.5 (0.59) \u202893.4 (0.37) \u202898 (0.1) \u2028 \u2029GenTB-WDNN \u2028isoniazid \u202883.7 (3.77) \u202899.4 (0.36) \u202889.9 (0.4) \u202898.9 (0.09) \u2028 \u2029GenTB-WDNN \u2028rifampicin \u202881.5 (4.19) \u202899 (0.48) \u202888.5 (0.45) \u202898.9 (0.09) \u2028 \u2029TBProfiler \u2028isoniazid \u202875.6 (4.3) \u202898.5 (0.61) \u202891.1 (0.37) \u202897.9 (0.13) \u2028 \u2029TBProfiler \u2028rifampicin \u202882.7 (4.05) \u202898.8 (0.54) \u202891.8 (0.40) \u202898.3 (0.1) \u2028 \u2029Mykrobe \u2028isoniazid \u202870.4 (4.53) \u202898.7 (0.56) \u202886.7 (0.44) \u202897.9 (0.13) \u2028 \u2029Mykrobe \u2028rifampicin \u202876.9 (4.49) \u202898.7 (0.54) \u202889.7 (0.44) \u202898.5 (0.1) \u2028 \u2029",
+      "annotations": []
+     },
+     {
+      "offset": 14920,
+      "text": "False negative predictions by GenTB-RandomForest (n = 333 isolates) \u2028 \u2028False positive predictions by GentTB-RandomForest(n = 254 isolates) \u2028 \u2029Variant \u2028count \u2028 \u2028variant \u2028count \u2028 \u2029INS_CI_761103_i1296TTC_433F_rpoB&para; \u202814 \u2028 \u2028SNP_CN_761155_C1349T_S450L_rpoB&para; \u202849 \u2028 \u2029INS_CI_761135_i1328GAC_443L_rpoB&para; \u20289 \u2028 \u2028SNP_CN_761095_T1289C_L430P_rpoB&para; \u202833 \u2028 \u2029SNP_CN_761101_A1295T_Q432L_rpoB&para; \u20289 \u2028 \u2028SNP_CN_761139_C1333A_H445N_rpoB&para; \u202831 \u2028 \u2029DEL_CD_761101_d1294AATTCATGG_432_rpoB&para; \u20288 \u2028 \u2028SNP_CN_761889_G2083C_V695L_rpoB \u202830 \u2028 \u2029DEL_CD_761115_d1308AAC_437_rpoB&para; \u20286 \u2028 \u2028SNP_CN_761109_G1303T_D435Y_rpoB&para; \u202830 \u2028 \u2029SNP_CN_760555_A749G_E250G_rpoB \u20285 \u2028 \u2028SNP_CN_761277_A1471T_I491F_rpoB \u202829 \u2028 \u2029DEL_CF_763258_d3451G_1151_rpoB \u20284 \u2028 \u2028SNP_CN_761161_T1355C_L452P_rpoB&para; \u202826 \u2028 \u2029DEL_CD_761105_d1298CATGGA_433_rpoB&para; \u20283 \u2028 \u2028SNP_CN_761110_A1304T_D435V_rpoB&para; \u20289 \u2028 \u2029DEL_CD_761083_d1276GCACCA_426_rpoB&para; \u20282 \u2028 \u2028SNP_CN_761139_C1333T_H445Y_rpoB&para; \u20285 \u2028 \u2029DEL_CF_762516_d2709G_904_rpoB \u20282 \u2028 \u2028SNP_CN_761155_C1349G_S450W_rpoB&para; \u20285 \u2028 \u2029INS_CI_761099_i1292CCA_431S_rpoB&para; \u20282 \u2028 \u2028SNP_CN_761139_C1333G_H445D_rpoB&para; \u20284 \u2028 \u2029SNP_CN_761141_C1335A_H445Q_rpoB&para; \u20282 \u2028 \u2028SNP_CN_761167_C1361T_P454L_rpoB \u20283 \u2028 \u2029DEL_CD_761069_d1262CAAGGAGTTCTTCGGCAC_421_rpoB \u20282 \u2028 \u2028SNP_CN_761110_A1304G_D435G_rpoB&para; \u20283 \u2028 \u2029DEL_CD_761100_d1293CAA_432_rpoB&para; \u20282 \u2028 \u2028SNP_CN_761140_A1334T_H445L_rpoB&para; \u20282 \u2028 \u2029DEL_CD_761088_d1281AGCCAGCTG_428_rpoB&para; \u20282 \u2028 \u2028SNP_CN_761880_G2074A_A692T_rpoB \u20282 \u2028 \u2029",
+      "annotations": []
+     },
+     {
+      "offset": 16411,
+      "text": "False negative predictions by GenTB-RandomForest(n = 518 isolates) \u2028 \u2028False positive predictions by GentTB-RandomForest(n = 315 isolates) \u2028 \u2029Variant \u2028count \u2028 \u2028Variant \u2028count \u2028 \u2029SNP_CN_2155129_C983A_W328L_katG \u202810 \u2028 \u2028SNP_CN_2155168_C944G_S315T_katG&dagger; &para; \u202856 \u2028 \u2029SNP_CN_2154016_C2096T_G699E_katG \u20286 \u2028 \u2028SNP_CN_1674481_T280G_S94A_inhA&dagger; &para; \u202814 \u2028 \u2029SNP_CN_2155689_C423G_L141F_katG \u20285 \u2028 \u2028SNP_CN_1674782_T581C_I194T_inhA&dagger; \u202810 \u2028 \u2029SNP_CN_2155786_G326A_A109V_katG&dagger; \u20285 \u2028 \u2028SNP_CN_2154695_C1417G_V473L_katG \u202810 \u2028 \u2029SNP_CN_2154661_C1451T_R484H_katG \u20284 \u2028 \u2028SNP_CN_2154075_C2037G_Q679H_katG \u20282 \u2028 \u2029SNP_CN_2155665_C447G_W149C_katG \u20283 \u2028 \u2028SNP_CZ_2154077_G2035A_Q679*_katG \u20282 \u2028 \u2029SNP_CN_2155690_A422G_L141S_katG \u20283 \u2028 \u2028SNP_CN_2726338_T146G_V49G_ahpC&dagger; &para; \u20282 \u2028 \u2029SNP_CN_1674782_T581C_I194T_inhA&dagger; \u20283 \u2028 \u2028SNP_CN_1674263_T62C_I21T_inhA&dagger; \u20282 \u2028 \u2029SNP_CN_2155102_T1010C_Y337C_katG&dagger; \u20283 \u2028 \u2028SNP_CN_2155168_C944T_S315N_katG&dagger; &para; \u20282 \u2028 \u2029SNP_CN_1674262_A61G_I21V_inhA&dagger; \u20283 \u2028 \u2028SNP_CN_2154676_G1436A_A479V_katG \u20281 \u2028 \u2029SNP_CN_2154641_C1471T_G491S_katG \u20283 \u2028 \u2028DEL_CF_2154510_d1602C_535_katG \u20281 \u2028 \u2029SNP_CN_2154688_G1424A_T475I_katG \u20283 \u2028 \u2028SNP_CN_2726323_C131G_P44R_ahpC&dagger; \u20281 \u2028 \u2029SNP_CN_2155819_T293C_Y98C_katG \u20283 \u2028 \u2028SNP_CN_2155258_C854G_G285A_katG \u20281 \u2028 \u2029SNP_CN_2155222_C890A_G297V_katG \u20283 \u2028 \u2028SNP_CN_2154760_C1352T_G451D_katG \u20281 \u2028 \u2029SNP_CN_2154730_T1382G_Q461P_katG \u20283 \u2028 \u2028SNP_CN_2155648_T464C_Y155C_katG&dagger; \u20281 \u2028 \u2029",
+      "annotations": []
+     }
+    ],
+    "relations": []
+   }
+  ]
+ }
+]

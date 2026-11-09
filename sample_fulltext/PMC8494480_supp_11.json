@@ -1,0 +1,35 @@
+[
+ {
+  "source": "BioC",
+  "date": "2024-08-14",
+  "key": "BioC.key",
+  "documents": [
+   {
+    "id": "elife-67852-supp7.docx",
+    "passages": [
+     {
+      "offset": 0,
+      "text": "Supplementary Material",
+      "annotations": []
+     },
+     {
+      "offset": 23,
+      "text": "Supplementary Table 7 &amp;ndash; Comparison of phenotypic and genotypic AMR profiles of 136 (n=128 H58, n=8 Non-H58) high quality S. Typhi genome sequences",
+      "annotations": []
+     },
+     {
+      "offset": 171,
+      "text": "*indicates where resistant and intermediate phenotypes have been combined as resistant",
+      "annotations": []
+     },
+     {
+      "offset": 258,
+      "text": "Drug_class \u2028Resistant phenotype* \u2028Resistant genotype \u2028Very major error \u2028Susceptible phenotype \u2028Susceptible genotype \u2028Major error \u2028Sensitivity \u2028Specificity \u2028PPV \u2028NPV \u2028 \u2029Beta-lactamases \u2028 \u2028 \u2028 \u2029Ampicillin \u2028100 \u202895 \u20285 (3.7%) \u202836 \u202828 \u20288 (5.9%) \u202895% \u202877.8 % \u202892.2% \u202884.8% \u2028 \u2029Ceftazidime \u20281 \u20280 \u20281 (0.74%) \u2028135 \u2028135 \u20280 \u20280% \u2028100% \u20280% \u202899.3% \u2028 \u2029Cefotaxime \u20284 \u20280 \u20284 (2.9%) \u2028132 \u2028132 \u20280 \u20280% \u2028100% \u20280% \u202897.1% \u2028 \u2029Ceftriaxone \u20281 \u20280 \u20281 (0.74%) \u2028135 \u2028135 \u20280 \u20280% \u2028100% \u20280% \u202899.3% \u2028 \u2029Cefpodoxime \u20284 \u20280 \u20284 (2.9%) \u2028132 \u2028132 \u20280 \u20280% \u2028100% \u20280% \u202897.1% \u2028 \u2029Chloramphenicol \u2028 \u2028 \u2028 \u2029Chloramphenicol \u202893 \u202892 \u20281 (0.74%) \u202843 \u202832 \u202810 (7.4%) \u202898.9% \u202874.4% \u202889.3% \u202897.0% \u2028 \u2029Tetracyclines \u2028 \u2028 \u2028 \u2029Tetracycline \u202869 \u202865 \u20284 (2.9%) \u202867 \u202859 \u20288 (5.9%) \u202894.2% \u202888.1% \u202889.0% \u202893.7% \u2028 \u2029Folate pathway inhibitors \u2028 \u2028 \u2028 \u2029Co-trimoxazole \u202898 \u202896 \u20282 (1.5%) \u202838 \u202831 \u20287 (5.1%) \u202898.0% \u202881.6% \u202893.2% \u202893.9% \u2028 \u2029Quinolones and Fluoroquinolones \u2028 \u2028 \u2028 \u2029Ciprofloxacin \u202863 \u202855 \u20288 (5.9%) \u202873 \u202841 \u202832 (23.5%) \u202887.3% \u202856.2% \u202863.2% \u202863.2% \u2028 \u2029Nalidixic acid \u202865 \u202821 \u202844 (32.4%) \u202871 \u202871 \u20280 \u202832.3% \u2028100% \u2028100% \u202861.7% \u2028 \u2029",
+      "annotations": []
+     }
+    ],
+    "relations": []
+   }
+  ]
+ }
+]

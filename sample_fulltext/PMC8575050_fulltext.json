@@ -1,0 +1,1574 @@
+[
+ {
+  "bioctype": "BioCCollection",
+  "source": "PMC",
+  "date": "20260206",
+  "key": "pmc.key",
+  "version": "1.0",
+  "infons": {},
+  "documents": [
+   {
+    "bioctype": "BioCDocument",
+    "id": "PMC8575050",
+    "infons": {
+     "license": "CC BY"
+    },
+    "passages": [
+     {
+      "bioctype": "BioCPassage",
+      "offset": 0,
+      "infons": {
+       "article-id_doi": "10.1093/bib/bbab299",
+       "article-id_pmc": "PMC8575050",
+       "article-id_pmid": "34414415",
+       "article-id_publisher-id": "bbab299",
+       "elocation-id": "bbab299",
+       "issue": "6",
+       "kwd": "graph learning deep learning antibiotic resistance machine learning hierarchical attention genetic data analysis",
+       "license": "This is an Open Access article distributed under the terms of the Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/), which permits unrestricted reuse, distribution, and reproduction in any medium, provided the original work is properly cited.",
+       "name_0": "surname:Yang;given-names:Yang",
+       "name_1": "surname:Walker;given-names:Timothy M",
+       "name_2": "surname:Kouchaki;given-names:Samaneh",
+       "name_3": "surname:Wang;given-names:Chenyang",
+       "name_4": "surname:Peto;given-names:Timothy E A",
+       "name_5": "surname:Crook;given-names:Derrick W",
+       "name_6": "surname:Clifton;given-names:David A",
+       "section_type": "TITLE",
+       "type": "front",
+       "volume": "22",
+       "year": "2021"
+      },
+      "text": "An end-to-end heterogeneous graph attention network for Mycobacterium tuberculosis drug-resistance prediction",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 110,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract_title_1"
+      },
+      "text": "Abstract",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 119,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract"
+      },
+      "text": "Antimicrobial resistance (AMR) poses a threat to global public health. To mitigate the impacts of AMR, it is important to identify the molecular mechanisms of AMR and thereby determine optimal therapy as early as possible. Conventional machine learning-based drug-resistance analyses assume genetic variations to be homogeneous, thus not distinguishing between coding and intergenic sequences. In this study, we represent genetic data from Mycobacterium tuberculosis as a graph, and then adopt a deep graph learning method\u2014heterogeneous graph attention network (\u2018HGAT\u2013AMR\u2019)\u2014to predict anti-tuberculosis (TB) drug resistance. The HGAT\u2013AMR model is able to accommodate incomplete phenotypic profiles, as well as provide \u2018attention scores\u2019 of genes and single nucleotide polymorphisms (SNPs) both at a population level and for individual samples. These scores encode the inputs, which the model is \u2018paying attention to\u2019 in making its drug resistance predictions. The results show that the proposed model generated the best area under the receiver operating characteristic (AUROC) for isoniazid and rifampicin (98.53 and 99.10%), the best sensitivity for three first-line drugs (94.91% for isoniazid, 96.60% for ethambutol and 90.63% for pyrazinamide), and maintained performance when the data were associated with incomplete phenotypes (i.e. for those isolates for which phenotypic data for some drugs were missing). We also demonstrate that the model successfully identifies genes and SNPs associated with drug resistance, mitigating the impact of resistance profile while considering particular drug resistance, which is consistent with domain knowledge.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 1793,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "title_1"
+      },
+      "text": "1 Introduction",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 1808,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": "Antimicrobial resistance (AMR) is a global public health challenge that is impacting the way infections are treated. Mycobacterium tuberculosis (MTB), which kills more people each year than any other single pathogen, is not an exception. Timely prediction of resistance or susceptibility of a bacterial sample (or \u2018isolate\u2019) to anti-TB drugs is key to personalised treatment. As bacterial AMR is usually genetically encoded. There are two major ways to make a fast prediction of AMR for previously unseen isolates using genetic data: (i) making predictions on the presence or absence of a defined catalogue of mutations or (ii) developing computational models to map the genomic data to phenotypes (e.g. resistance / susceptibility to drugs), and let the output of the model determine the prediction. The former is the route taken to date in clinical practice and depends entirely on domain knowledge. While catalogues perform well for well-studied drugs, they are necessarily less complete for less well-studied drugs. Machine learning (ML) has been extensively investigated in the study of AMR to predict resistance phenotypes directly from genotypes. This has typically involved classic models such as support vector machines, logistic regression, random forests and others, as well as deep learning models (incorporating stacks of layers of neural networks). These existing ML models focus on two issues: (i) improving prediction performance and (ii) identifying the predictive genetic variables. Conventional ML-based drug-resistance models are trained on information about the presence or absence of genetic variables, which assume genetic variations to be homogeneous and do not differentiate between coding and intergenic sequences. They also do not take into account that different genetic mutations in the same gene are involved in coding for the same protein, or that some genes contribute more than others to resistance to a particular drug. The existing ML methods thus often identify the most predictive variables (via association) instead of the most interpretable ones. The most predictive mutations could be those that are unlikely to be biologically related to a particular drug. For example, we frequently see that resistance-associated single nucleotide polymorphisms (SNPs) for one drug are ranked as being important for resistance to another drug because patterns of co-occurring resistance to drugs can emerge for epidemiological reasons. A classic example if this would be the fact that rifampicin (RIF) resistance rarely occurs in the absence of isoniazid (INH) resistance, even though the mechanisms of resistance are unrelated. Consequently, predictive mutations of the former also predict the latter yet in no way contribute to the resistance. In practice, it is common that not all samples are tested phenotypically for resistance to all drugs. Samples are often tested to first-line drugs and then only to second-line drugs if resistance to the former is detected. Existing models typically involve the removal of samples with missing phenotypes from analyses, which substantially reduces the number of examples available for multi-drug resistance analysis and reduces the statistical power of the resulting conclusions. In this paper, we propose a graph learning model based on heterogeneous graph attention network (HGAT) to model the full available dataset with improved interpretability\u2014yielding better understanding of the link between drug resistance and factors with which it is associated. (We note in passing that such methods do not claim causality, which requires different approaches beyond the scope of this paper.) This is the first study to format genetic samples as a heterogeneous graph at the level of SNP granularity. In comparison with existing ML models for predicting single-drug resistance and antibiotic profiles, the proposed methods show better prediction performance. Furthermore, the HGAT model allows us to quantify multi-scale contributions of genetic variables from gene and mutation levels for either individual samples or across all samples. Importantly, it can accommodate the large number of missing phenotypic information within the dataset.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 6022,
+      "infons": {
+       "file": "TB1.xml",
+       "id": "TB1",
+       "section_type": "TABLE",
+       "type": "table_caption"
+      },
+      "text": "Phenotype overview of four first-line drugs",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 6066,
+      "infons": {
+       "file": "TB1.xml",
+       "id": "TB1",
+       "section_type": "TABLE",
+       "type": "table",
+       "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<table frame=\"hsides\" rules=\"groups\"><colgroup span=\"1\"><col span=\"1\" align=\"left\"/><col span=\"2\" align=\"left\"/><col span=\"3\" align=\"left\"/><col span=\"4\" align=\"left\"/><col span=\"5\" align=\"left\"/><col span=\"6\" align=\"left\"/></colgroup><thead><tr align=\"left\"><th rowspan=\"1\" colspan=\"1\"/><th rowspan=\"1\" colspan=\"1\">INH</th><th rowspan=\"1\" colspan=\"1\">RIF</th><th rowspan=\"1\" colspan=\"1\">EMB</th><th rowspan=\"1\" colspan=\"1\">PZA</th><th rowspan=\"1\" colspan=\"1\">4 1st-line</th></tr></thead><tbody><tr><td rowspan=\"1\" colspan=\"1\">R</td><td rowspan=\"1\" colspan=\"1\">3361</td><td rowspan=\"1\" colspan=\"1\">2962</td><td rowspan=\"1\" colspan=\"1\">1558</td><td rowspan=\"1\" colspan=\"1\">1076</td><td rowspan=\"1\" colspan=\"1\">\u2013</td></tr><tr><td rowspan=\"1\" colspan=\"1\">S</td><td rowspan=\"1\" colspan=\"1\">5393</td><td rowspan=\"1\" colspan=\"1\">5284</td><td rowspan=\"1\" colspan=\"1\">10515</td><td rowspan=\"1\" colspan=\"1\">3031</td><td rowspan=\"1\" colspan=\"1\">\u2013</td></tr><tr><td rowspan=\"1\" colspan=\"1\">Tot.</td><td rowspan=\"1\" colspan=\"1\">8754</td><td rowspan=\"1\" colspan=\"1\">8246</td><td rowspan=\"1\" colspan=\"1\">12073</td><td rowspan=\"1\" colspan=\"1\">4107</td><td rowspan=\"1\" colspan=\"1\">3574</td></tr></tbody></table>\n"
+      },
+      "text": "\tINH\tRIF\tEMB\tPZA\t4 1st-line\t \tR\t3361\t2962\t1558\t1076\t\u2013\t \tS\t5393\t5284\t10515\t3031\t\u2013\t \tTot.\t8754\t8246\t12073\t4107\t3574\t \t",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 6187,
+      "infons": {
+       "file": "TB1.xml",
+       "id": "TB1",
+       "section_type": "TABLE",
+       "type": "table_foot"
+      },
+      "text": " Note: R and S denote resistant and susceptible class, respectively. 4 1st-line means the four first-line drugs together i.e. INH, RIF, EMB and PZA.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 6336,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_1"
+      },
+      "text": "2 Materials and data",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 6357,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "2.1 Phenotyping",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 6373,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "Our dataset includes 13 402 isolates that were tested to up to 11 drugs, including four first-line drugs: INH, RIF, ethambutol (EMB) and pyrazinamide (PZA). The drug-susceptibility testing (DST) was performed in either liquid culture or on solid medium, or both. All lineages were represented in. The phenotype overview of four first-line drugs is shown in Table 1.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 6739,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "2.2 DNA sequencing and pre-processing",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 6777,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "The details of DNA sequencing are provided in. Nucleotide bases were called using standard filters on sequencing and alignment quality, as well as the number of reads for each base. After filtering, the nucleotide bases at certain positions that could not be called with confidence were denoted as null calls and were not used in our analysis. We applied the same pre-processing method as described in. Each sample has different number of genetic mutations.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 7235,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_1"
+      },
+      "text": "3 Methodology",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 7249,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "We propose a heterogeneous graph attention network to predict AMR (HGAT\u2013AMR) to deal with the heterogeneous genetic data with variable-length. Graph neural networks operate on graph-structured data and can effectively capture the structural information encapsulated in graphs and generate more effective embedding. The graph attention network is one of a major branch of graph neural networks. Attention in deep learning can be thought of as a vector of importance weights, encoding which elements of a vector are learned as being important within the function of the particular network i.e. it encodes those elements of a vector the network is \u2018paying attention to\u2019 in undertaking its task (such as classification). This section starts with the introduction of the inputs, building blocks and architecture for HGAT\u2013AMR, and then introduces ML comparators.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 8114,
+      "infons": {
+       "file": "bbab299f1.jpg",
+       "id": "f1",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "HGAT\u2013AMR algorithm.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 8136,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "3.1 Construct input graph",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 8162,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "The HGAT\u2013AMR takes network-like data (i.e. a graph) as input, in which graph nodes correspond to isolates and to SNPs, and in which graph edges correspond to the relationship between the isolates and SNPs. Each node has different number of neighbouring nodes e.g. each isolate has different number of mutations, and each SNP occurs different number isolates. We term this undirected network-like input the \u2018SNP graph\u2019. In the MTB dataset, there are 24 types of node including: (i) isolates and (ii) SNPs of 23 types, where SNP nodes of the same type correspond to SNPs in the same gene. Figure 1A shows an example of SNP graph with an isolate node at the centre and its neighbours, which are SNPs found in three different genes, katG, rpoB and pncA. In this study, those 23 genes were investigated that constituted the assembled SNPs catalogue for the available tested drugs. No edges were drawn between nodes of the same type as the intra-type relationship was unknown (e.g. the relationship between isolates, and between SNPs in the same gene). During training, the graph will be updated with edges between nodes in light of evidence within the training dataset, as described later.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 9353,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "3.2 Construct a HGAT module",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 9381,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "For any given isolate, different mutations within different genes may carry information of varying importance when determining drug-resistance. To capture this hierarchical importance at both node\u2014(SNP) and type\u2014(gene) level, we applied a building block, the HGAT module, to be described below, which uses a \u2018dual-attention\u2019 mechanism within the graph (as shown in Figure 1B).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 9766,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "For an undirected and unweighted graph ,  and  represent nodes and edges, respectively. Let  be a matrix containing the features of nodes, and  denotes features of the node . If  is homogeneous, the adjacency matrix is  with added self-connections, the degree matrix is , where , and the symmetric normalised adjacency matrix is . If  is heterogeneous, where each node is associated with its types, , so  with m types of nodes . Correspondingly, the type-wise adjacency matrix is  is a submatrix of , whose rows represent all the nodes and columns represent their neighbouring nodes with the type .",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 10365,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": " Type-level attention Given a specific node , its hidden representation at the th layer is . Initially, . The neighbouring node  is with type , whose hidden representation vector is . The hidden representation of the type  is defined as , which is the sum of the neighbouring node of type . Then, the type-level attention scores of the same layer are defined as, where  is the attention vectors for the type ,  means concatenation and  denotes an activation function such as Leaky ReLU. The type-level attention weights are to normalise the attention scores across all the types with the softmax function, ",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 10972,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": " Node-level attention Given a node  with the type , and its neighbouring node  with the type , the node-level attention scores of the th layer are defined as, where  is the attention vector. The node-level attention scores are normalised with the softmax function, As shown in Figure 1B, for the centre node , the type-level attention is a vector of weights for different types of neighbours, e.g. , where each type is a joint representation of all neighbours of the same type (such as the genes, or \u2018colours\u2019, within our graph). The node-level attention is a vector of weights for each neighbour e.g. , after calibration using the type-level attention. Aggregately, the dual-level attention mechanism is incorporated into the graph convolution networks module with the following layer-wise propagation rule: where  represents the attention matrix, whose element in the row th and th column are ,  is type-wise transformation matrix and  is a hidden representation of neighbouring nodes of type . Initially, .",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 11986,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "3.3 Architecture",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 12003,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "Based on the HGAT module, we constructed a deep graph learning model, HGAT\u2013AMR (as shown in Figure 1C). In each layer, there are multiple different HGATs occurring in parallel, and, in keeping with the ML literature, each is named a head (analogous to the multiple \u2018heads\u2019 used in reading from/writing to tapes and disks in classical computer science). Each head of a layer was assumed to learn the different \u2018aspects\u2019 or \u2018tracks\u2019 of the input with different associated model values and attentions. This model structure was considered to account for the fact that there might be different mechanisms for single- and multi-drug-resistance within our AMR application. We used a two-layer model, as shown in Figure 1C, for the purpose of illustration. As shown, each head contains a two- connected HGAT, where the output of the first block undergoes \u2018drop-out\u2019 randomly (i.e. application of a random mask, as is common practice with deep learning) before being passed as input to the second one. Before the final layer, we concatenated the outputs of the second layer and the first layer, thus providing a \u2018shortcut\u2019 that connects the first layer and the final layer. (That is, the final layer sees both the outputs of the second layer and the corresponding outputs of the first layer, where the latter acts as a \u2018shortcut\u2019.) Formally, where  denotes the number of the heads. These shortcut and multi-headed approaches are used in deep learning to avoid numerical stability problems during model training, such as \u2018gradient explosion\u2019 (in which some components of the network unduly dominate others) or \u2018vanishing gradients\u2019 (in which the models become so deep that the model cannot associate small changes in model parameter values with changes in performance), but come at the expense of increasing computational costs.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 13856,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "3.4 ML comparators",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 13875,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "This study considers the current clinical standard (direct association, DA) and several conventional ML methods. The details of the definition and implementation of the DA were the same as described in Yang et al. and which form a useful \u2018real-world\u2019 comparator. The ML comparator models included, as noted above, support vector machines, logistic regression and multi-label random forests. These methods were selected as being representative as the current state-of-the-art. Unlike HGAT\u2013AMR, both the DA and conventional ML methods take as input a binary vector per sample, named grid data. Figure 2 illustrates how to convert tabular raw data into network-like input and grid input, respectively. The raw genetic data are illustrated in Figure 2A, which shows that three isolates (indexed by Iso1-3 as shown in the first column) have four SNPs (indexed by SNP#1-4 as shown in the second column), who belong to two genes (i.e. two types of SNPs denoted by G1 and G2 as shown in the third column). On the one hand, the grid input represents an isolate as a vector where each element corresponds to the presence (1) or absence (0) of a SNP (as shown in Figure 1B); the types of SNPs are not considered. On the other hand, the network-like input constructs a graph for the full tabular data, where the nodes\u2019 colours denote their types. For example, orange corresponds to isolate, blue is SNPs of gene G2, and green is SNPs of gene G1. The SNP nodes\u2019 types implicitly model the information of genes (as shown in Figure 1C).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 15407,
+      "infons": {
+       "file": "bbab299f2.jpg",
+       "id": "f2",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "Illustration of input for discussed models.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 15451,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_1"
+      },
+      "text": "4 Experiment settings",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 15473,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "4.1 Initialisation",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 15492,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "The initialisation of HGAT\u2013AMR involves two components: (i) initialising SNPs\u2019 embedding and (ii) initialising isolates\u2019 embedding.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 15630,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": " SNPs\u2019 embedding initialisation. We compare genetic samples and mutation features to sentences and words in natural language, respectively. In the MTB dataset, we consider SNPs as equivalent to words and isolates (comprising SNPs) as equivalent to sentences (comprising words). Like word embedding in natural language processing, we first compute the SNP co-occurrence matrix based on point-wise mutual information (PMI). Then, we factorise the matrix using sparse singular value decomposition. The result of this procedure is an embedding vector of fixed size for each SNP, where every element is continuous (please see parameters of PMI-based embedding in Supplement B). We note that this embedding vector for a SNP comprises real (scalar) numbers, it being the result of factorising a matrix of PMI values (themselves real numbers).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 16468,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": " Isolates\u2019 embedding initialisation. The vector for each isolate is the aggregation of the embedding vectors for all of the SNPs present in the isolate. Naturally, the number of SNPs within an isolate will vary between isolates, and so the aggregator will accordingly take varying numbers of embedding vectors for different isolates. Common choices for the aggregator functions used to combine the multiple embedding vectors for the isolate\u2019s SNPs into a single vector to represent that isolate include (i) the average, (ii) minimum, or (iii) maximum. In this study, we used an aggregator function of the maximum to initialise these representatives \u2018feature vectors\u2019 for each isolate node in the input graph. The evaluation of the other aggregator functions could be explored in future work, although our experiments are largely insensitive to such a choice.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 17335,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "4.2 Training models",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 17355,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": " ML comparators. For each model, the phenotypes to individual drugs for the isolates were used for classification in single-label learning, whereas those for multiple drugs were used for classification in multi-label learning. The conventional ML models were optimised via conventional cross-validation methods by choosing the values of the various hyperparameters using grid search. All comparator ML methods were trained in a conventional supervised manner (Please see Supplement C for the details, which represent standard practice for such classes of algorithms.)",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 17923,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": " HGAT\u2013AMR. The output of Lth layer of HGAT\u2013AMR, the embeddings of isolate nodes are then fed to a softmax layer for classification. ",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 18060,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "During the training, the cross-entropy loss over training data with the L2-norm is applied. where  is the number of multiple labels,  is the number of classes,  is the set of genetic samples for training,  is the corresponding label indicator matrix,  is the model parameters, and  is regularisation factor. For model optimisation, we adopt the Adam optimiser. Two training modes were considered: (i) transductive and (ii) inductive. The former is standard supervised learning, whereas the latter is novel for our work and is the development of semi-supervised learning. In our MTB dataset, as noted earlier, isolates are frequently not tested for resistance to all relevant anti-TB drugs. The conventional way to cope with missing classes of the samples is to remove all such samples, or alternatively to split the unlabelled and labelled samples for conventional semi-supervised learning. The latter involves switching between \u2018supervised\u2019 and \u2018unsupervised\u2019 learning according to whether or not a sample (in our application, an isolate) has a complete set of class labels (in our application, DST results for all drugs). However, it typically produces substandard results in applications where there are few complete data (as in our MTB case), because unsupervised learning disregards any labels that might be available in the incomplete-data case. We improve upon this method for our HGAT\u2013AMR model as described below in a manner that permits us to capitalise on all available labels, independent of their level of completeness (please see Supplement D).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 19629,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_1"
+      },
+      "text": "5 Results",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 19639,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": " Subsets for the supervised/transductive learning. We first constructed four different subsets of our database for individual drugs (i.e. INH, RIF, EMB and PZA), which were used for single-label learning; the HGAT\u2013AMR model trained on these datasets is termed as \u2018HGAT\u2013AMRs\u2019 (noting the \u2018s\u2019 suffix). We then constructed a fifth subset, where all samples have complete phenotypes of all four drugs, for multi-label learning; the HGAT\u2013AMR model trained on this dataset is named \u2018HGAT\u2013AMRm\u2019.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 20148,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": " Subsets for the inductive learning. We reconfigured the subset for the above supervised multi-label learning by (i) randomly removing the phenotypes of drugs of interest in the existing training set and (ii) augmenting subsets (otherwise comprising completely-labelled data) with any available incompletely-phenotyped samples. The HGAT\u2013AMR model trained in the first experiment is named \u2018HGAT\u2013AMRi\u2019 (for \u2018inductive\u2019), whereas the second is name \u2018HGAT\u2013AMRi-E\u2019 (for \u2018Enhanced\u2019). In our later results, we indicate the ratio of the removed phenotypes by the percentage following the HGAT\u2013AMRi e.g. \u2018HGAT\u2013AMRi-10%.\u2019",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 20790,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": " Data split and cross-validation. To evaluate various models, we split each subset described above corresponding to examined drugs into training (40%), validation (40%) and testing sets (20%). For multi-label learning, we performed stratified cross-validation, which ensures that the proportion of the two classes (resistant versus susceptible) for every label was approximately the same in each fold. For the ML baseline models, as noted earlier, cross-validation was performed to identify the optimal values of the hyperparameters via standard grid-search that led to the best classification accuracy (Please see details of the hyperparameter set used for grid-search in Supplement B). The DA method did not require training, it being a clinical \u2018look-up table\u2019. An early-stopping criterion was applied while training the HGAT\u2013AMR model, such that when the best validation accuracy of the model ceased increasing for at least ten training epochs, training was stopped to avoid over-fitting. For all methods, 20 iterations of the experiments (of 5-fold CV) were carried out, with the average performance of the resulting model being applied to the held-out testing dataset reported, as is conventional practice.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 22009,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_2"
+      },
+      "text": "5.1 Prediction performance",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 22036,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "Before going on to discuss the advantages offered by our proposed method, we first consider the classification task, in which each model aims to classify resistance/susceptibility for individual drugs. Table 2 shows the results of using eight models for predicting phenotypes of the four first-line drugs individually. The average (standard deviation) of sensitivity, specificity, F1-score and AUROC are reported on held-out data over the 20 iterations described above.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 22506,
+      "infons": {
+       "file": "TB2.xml",
+       "id": "TB2",
+       "section_type": "TABLE",
+       "type": "table_caption"
+      },
+      "text": "Comparison of prediction for four first-line drugs",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 22557,
+      "infons": {
+       "file": "TB2.xml",
+       "id": "TB2",
+       "section_type": "TABLE",
+       "type": "table",
+       "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<table frame=\"hsides\" rules=\"groups\"><colgroup span=\"1\"><col span=\"1\" align=\"left\"/><col span=\"2\" align=\"left\"/><col span=\"3\" align=\"left\"/><col span=\"4\" align=\"left\"/><col span=\"5\" align=\"left\"/><col span=\"6\" align=\"left\"/><col span=\"7\" align=\"left\"/><col span=\"8\" align=\"left\"/><col span=\"9\" align=\"left\"/></colgroup><thead><tr align=\"left\"><th rowspan=\"1\" colspan=\"1\"/><th colspan=\"4\" rowspan=\"1\">INH</th><th colspan=\"4\" rowspan=\"1\">RIF</th></tr><tr align=\"left\"><th rowspan=\"1\" colspan=\"1\">Models</th><th rowspan=\"1\" colspan=\"1\">Sen</th><th rowspan=\"1\" colspan=\"1\">Spec</th><th rowspan=\"1\" colspan=\"1\">F1</th><th rowspan=\"1\" colspan=\"1\">AUROC</th><th rowspan=\"1\" colspan=\"1\">Sen</th><th rowspan=\"1\" colspan=\"1\">Spec</th><th rowspan=\"1\" colspan=\"1\">F1</th><th rowspan=\"1\" colspan=\"1\">AUROC</th></tr></thead><tbody><tr><td rowspan=\"1\" colspan=\"1\">DA</td><td rowspan=\"1\" colspan=\"1\">94.05(0.78)</td><td rowspan=\"1\" colspan=\"1\">97.76(0.41)</td><td rowspan=\"1\" colspan=\"1\">96.11(0.40)</td><td rowspan=\"1\" colspan=\"1\">95.90(0.43)</td><td rowspan=\"1\" colspan=\"1\">\n<bold>96.29<sup>*</sup>(0.77)</bold>\n</td><td rowspan=\"1\" colspan=\"1\">97.66(0.41)</td><td rowspan=\"1\" colspan=\"1\">96.84(0.43)</td><td rowspan=\"1\" colspan=\"1\">96.97(0.45)</td></tr><tr><td rowspan=\"1\" colspan=\"1\">LR</td><td rowspan=\"1\" colspan=\"1\">93.85(0.71)</td><td rowspan=\"1\" colspan=\"1\">97.91(0.42)</td><td rowspan=\"1\" colspan=\"1\">96.12(0.40)</td><td rowspan=\"1\" colspan=\"1\">98.51(0.26)</td><td rowspan=\"1\" colspan=\"1\">94.92(0.91)</td><td rowspan=\"1\" colspan=\"1\">98.66(0.38)</td><td rowspan=\"1\" colspan=\"1\">97.07(0.43)</td><td rowspan=\"1\" colspan=\"1\">99.03(0.28)</td></tr><tr><td rowspan=\"1\" colspan=\"1\">SVM</td><td rowspan=\"1\" colspan=\"1\">93.95(0.75)</td><td rowspan=\"1\" colspan=\"1\">97.81(0.41)</td><td rowspan=\"1\" colspan=\"1\">96.10(0.39)</td><td rowspan=\"1\" colspan=\"1\">98.00(0.35)</td><td rowspan=\"1\" colspan=\"1\">94.79(1.06)</td><td rowspan=\"1\" colspan=\"1\">\n<bold>98.87<sup>*</sup>(0.33)</bold>\n</td><td rowspan=\"1\" colspan=\"1\">\n<bold>97.17<sup>*</sup>(0.45)</bold>\n</td><td rowspan=\"1\" colspan=\"1\">98.92(0.31)</td></tr><tr><td rowspan=\"1\" colspan=\"1\">MLRF</td><td rowspan=\"1\" colspan=\"1\">93.57(1.19)</td><td rowspan=\"1\" colspan=\"1\">97.83(0.87)</td><td rowspan=\"1\" colspan=\"1\">95.48(0.68)</td><td rowspan=\"1\" colspan=\"1\">98.18(0.44)</td><td rowspan=\"1\" colspan=\"1\">92.58(1.43)</td><td rowspan=\"1\" colspan=\"1\">97.19(0.72)</td><td rowspan=\"1\" colspan=\"1\">94.17(0.92)</td><td rowspan=\"1\" colspan=\"1\">98.33(0.45)</td></tr><tr><td rowspan=\"1\" colspan=\"1\">HGAT\u2013AMRs</td><td rowspan=\"1\" colspan=\"1\">94.46(0.95)</td><td rowspan=\"1\" colspan=\"1\">97.76(0.47)</td><td rowspan=\"1\" colspan=\"1\">96.28(0.42)</td><td rowspan=\"1\" colspan=\"1\">98.33(0.33)</td><td rowspan=\"1\" colspan=\"1\">95.17(1.11)</td><td rowspan=\"1\" colspan=\"1\">98.50(0.44)</td><td rowspan=\"1\" colspan=\"1\">97.05(0.45)</td><td rowspan=\"1\" colspan=\"1\">\n<bold>99.10<sup>*</sup>(0.21)</bold>\n</td></tr><tr><td rowspan=\"1\" colspan=\"1\">HGAT\u2013AMRm</td><td rowspan=\"1\" colspan=\"1\">94.74(1.16)</td><td rowspan=\"1\" colspan=\"1\">\n<bold>98.32<sup>*</sup>(0.64)</bold>\n</td><td rowspan=\"1\" colspan=\"1\">96.60(0.63)</td><td rowspan=\"1\" colspan=\"1\">98.43(0.45)</td><td rowspan=\"1\" colspan=\"1\">95.21(1.78)</td><td rowspan=\"1\" colspan=\"1\">97.29(1.24)</td><td rowspan=\"1\" colspan=\"1\">96.30(1.19)</td><td rowspan=\"1\" colspan=\"1\">98.99(0.39)</td></tr><tr><td rowspan=\"1\" colspan=\"1\">HGAT\u2013AMRi-10%</td><td rowspan=\"1\" colspan=\"1\">94.78(1.12)</td><td rowspan=\"1\" colspan=\"1\">98.13(0.61)</td><td rowspan=\"1\" colspan=\"1\">96.52(0.59)</td><td rowspan=\"1\" colspan=\"1\">98.43(0.42)</td><td rowspan=\"1\" colspan=\"1\">94.92(1.44)</td><td rowspan=\"1\" colspan=\"1\">95.86(1.89)</td><td rowspan=\"1\" colspan=\"1\">95.33(1.41)</td><td rowspan=\"1\" colspan=\"1\">98.76(0.44)</td></tr><tr><td rowspan=\"1\" colspan=\"1\">HGAT\u2013AMRi-E</td><td rowspan=\"1\" colspan=\"1\">\n<bold>94.91<sup>*</sup>(1.06)</bold>\n</td><td rowspan=\"1\" colspan=\"1\">98.20(0.60)</td><td rowspan=\"1\" colspan=\"1\">\n<bold>96.62<sup>*</sup>(0.57)</bold>\n</td><td rowspan=\"1\" colspan=\"1\">\n<bold>98.53<sup>*</sup>(0.35)</bold>\n</td><td rowspan=\"1\" colspan=\"1\">93.39(1.37)</td><td rowspan=\"1\" colspan=\"1\">94.39(1.93)</td><td rowspan=\"1\" colspan=\"1\">94.02(1.44)</td><td rowspan=\"1\" colspan=\"1\">98.32(0.57)</td></tr><tr><td rowspan=\"1\" colspan=\"1\"/><td colspan=\"4\" rowspan=\"1\">EMB</td><td colspan=\"4\" rowspan=\"1\">PZA</td></tr><tr><td rowspan=\"1\" colspan=\"1\">Models</td><td rowspan=\"1\" colspan=\"1\">Sen</td><td rowspan=\"1\" colspan=\"1\">Spec</td><td rowspan=\"1\" colspan=\"1\">F1</td><td rowspan=\"1\" colspan=\"1\">AUROC</td><td rowspan=\"1\" colspan=\"1\">Sen</td><td rowspan=\"1\" colspan=\"1\">Spec</td><td rowspan=\"1\" colspan=\"1\">F1</td><td rowspan=\"1\" colspan=\"1\">AUROC</td></tr><tr><td rowspan=\"1\" colspan=\"1\">DA</td><td rowspan=\"1\" colspan=\"1\">84.90(1.85)</td><td rowspan=\"1\" colspan=\"1\">94.91(0.47)</td><td rowspan=\"1\" colspan=\"1\">86.86(1.03)</td><td rowspan=\"1\" colspan=\"1\">89.91(0.99)</td><td rowspan=\"1\" colspan=\"1\">50.65(3.65)</td><td rowspan=\"1\" colspan=\"1\">\n<bold>95.02<sup>*</sup>(0.84)</bold>\n</td><td rowspan=\"1\" colspan=\"1\">75.43(1.90)</td><td rowspan=\"1\" colspan=\"1\">72.83(1.86)</td></tr><tr><td rowspan=\"1\" colspan=\"1\">LR</td><td rowspan=\"1\" colspan=\"1\">76.38(2.37)</td><td rowspan=\"1\" colspan=\"1\">\n<bold>97.90<sup>*</sup>(0.36)</bold>\n</td><td rowspan=\"1\" colspan=\"1\">\n<bold>87.37<sup>*</sup>(0.92)</bold>\n</td><td rowspan=\"1\" colspan=\"1\">\n<bold>96.68<sup>*</sup>(0.56)</bold>\n</td><td rowspan=\"1\" colspan=\"1\">74.15(2.78)</td><td rowspan=\"1\" colspan=\"1\">92.67(1.04)</td><td rowspan=\"1\" colspan=\"1\">\n<bold>83.95<sup>*</sup>(1.16)</bold>\n</td><td rowspan=\"1\" colspan=\"1\">\n<bold>93.70<sup>*</sup>(0.82)</bold>\n</td></tr><tr><td rowspan=\"1\" colspan=\"1\">SVM</td><td rowspan=\"1\" colspan=\"1\">75.30(3.00)</td><td rowspan=\"1\" colspan=\"1\">97.08(0.49)</td><td rowspan=\"1\" colspan=\"1\">86.96(0.99)</td><td rowspan=\"1\" colspan=\"1\">95.83(0.67)</td><td rowspan=\"1\" colspan=\"1\">72.68(3.10)</td><td rowspan=\"1\" colspan=\"1\">92.89(1.64)</td><td rowspan=\"1\" colspan=\"1\">83.55(1.45)</td><td rowspan=\"1\" colspan=\"1\">92.91(1.01)</td></tr><tr><td rowspan=\"1\" colspan=\"1\">MLRF</td><td rowspan=\"1\" colspan=\"1\">74.71(3.66)</td><td rowspan=\"1\" colspan=\"1\">90.79(1.35)</td><td rowspan=\"1\" colspan=\"1\">74.96(2.39)</td><td rowspan=\"1\" colspan=\"1\">93.17(0.87)</td><td rowspan=\"1\" colspan=\"1\">69.97(3.66)</td><td rowspan=\"1\" colspan=\"1\">91.93(1.26)</td><td rowspan=\"1\" colspan=\"1\">72.41(2.43)</td><td rowspan=\"1\" colspan=\"1\">92.61(0.87)</td></tr><tr><td rowspan=\"1\" colspan=\"1\">HGAT\u2013AMRs</td><td rowspan=\"1\" colspan=\"1\">79.45(3.90)</td><td rowspan=\"1\" colspan=\"1\">96.31(0.64)</td><td rowspan=\"1\" colspan=\"1\">87.16(1.04)</td><td rowspan=\"1\" colspan=\"1\">96.50(0.46)</td><td rowspan=\"1\" colspan=\"1\">73.59(4.52)</td><td rowspan=\"1\" colspan=\"1\">91.10(1.66)</td><td rowspan=\"1\" colspan=\"1\">82.43(1.57)</td><td rowspan=\"1\" colspan=\"1\">92.21(0.94)</td></tr><tr><td rowspan=\"1\" colspan=\"1\">HGAT\u2013AMRm</td><td rowspan=\"1\" colspan=\"1\">82.13(5.50)</td><td rowspan=\"1\" colspan=\"1\">88.97(2.34)</td><td rowspan=\"1\" colspan=\"1\">84.25(1.42)</td><td rowspan=\"1\" colspan=\"1\">93.88(0.80)</td><td rowspan=\"1\" colspan=\"1\">76.56(5.08)</td><td rowspan=\"1\" colspan=\"1\">89.53(1.93)</td><td rowspan=\"1\" colspan=\"1\">82.30(1.59)</td><td rowspan=\"1\" colspan=\"1\">92.80(0.89)</td></tr><tr><td rowspan=\"1\" colspan=\"1\">HGAT\u2013AMRi-10%</td><td rowspan=\"1\" colspan=\"1\">92.76(2.62)</td><td rowspan=\"1\" colspan=\"1\">84.33(1.71)</td><td rowspan=\"1\" colspan=\"1\">84.64(1.30)</td><td rowspan=\"1\" colspan=\"1\">93.99(0.83)</td><td rowspan=\"1\" colspan=\"1\">89.79(3.89)</td><td rowspan=\"1\" colspan=\"1\">84.26(2.31)</td><td rowspan=\"1\" colspan=\"1\">83.08(1.64)</td><td rowspan=\"1\" colspan=\"1\">92.90(1.01)</td></tr><tr><td rowspan=\"1\" colspan=\"1\">HGAT\u2013AMRi-E</td><td rowspan=\"1\" colspan=\"1\">\n<bold>96.60<sup>*</sup>(1.47)</bold>\n</td><td rowspan=\"1\" colspan=\"1\">79.50(2.04)</td><td rowspan=\"1\" colspan=\"1\">82.45(1.55)</td><td rowspan=\"1\" colspan=\"1\">93.62(0.90)</td><td rowspan=\"1\" colspan=\"1\">\n<bold>90.63<sup>*</sup>(2.75)</bold>\n</td><td rowspan=\"1\" colspan=\"1\">83.20(2.68)</td><td rowspan=\"1\" colspan=\"1\">82.58(1.77)</td><td rowspan=\"1\" colspan=\"1\">92.52(0.92)</td></tr></tbody></table>\n"
+      },
+      "text": "\tINH\tRIF\t \tModels\tSen\tSpec\tF1\tAUROC\tSen\tSpec\tF1\tAUROC\t \tDA\t94.05(0.78)\t97.76(0.41)\t96.11(0.40)\t95.90(0.43)\t96.29*(0.77)\t97.66(0.41)\t96.84(0.43)\t96.97(0.45)\t \tLR\t93.85(0.71)\t97.91(0.42)\t96.12(0.40)\t98.51(0.26)\t94.92(0.91)\t98.66(0.38)\t97.07(0.43)\t99.03(0.28)\t \tSVM\t93.95(0.75)\t97.81(0.41)\t96.10(0.39)\t98.00(0.35)\t94.79(1.06)\t98.87*(0.33)\t97.17*(0.45)\t98.92(0.31)\t \tMLRF\t93.57(1.19)\t97.83(0.87)\t95.48(0.68)\t98.18(0.44)\t92.58(1.43)\t97.19(0.72)\t94.17(0.92)\t98.33(0.45)\t \tHGAT\u2013AMRs\t94.46(0.95)\t97.76(0.47)\t96.28(0.42)\t98.33(0.33)\t95.17(1.11)\t98.50(0.44)\t97.05(0.45)\t99.10*(0.21)\t \tHGAT\u2013AMRm\t94.74(1.16)\t98.32*(0.64)\t96.60(0.63)\t98.43(0.45)\t95.21(1.78)\t97.29(1.24)\t96.30(1.19)\t98.99(0.39)\t \tHGAT\u2013AMRi-10%\t94.78(1.12)\t98.13(0.61)\t96.52(0.59)\t98.43(0.42)\t94.92(1.44)\t95.86(1.89)\t95.33(1.41)\t98.76(0.44)\t \tHGAT\u2013AMRi-E\t94.91*(1.06)\t98.20(0.60)\t96.62*(0.57)\t98.53*(0.35)\t93.39(1.37)\t94.39(1.93)\t94.02(1.44)\t98.32(0.57)\t \t\tEMB\tPZA\t \tModels\tSen\tSpec\tF1\tAUROC\tSen\tSpec\tF1\tAUROC\t \tDA\t84.90(1.85)\t94.91(0.47)\t86.86(1.03)\t89.91(0.99)\t50.65(3.65)\t95.02*(0.84)\t75.43(1.90)\t72.83(1.86)\t \tLR\t76.38(2.37)\t97.90*(0.36)\t87.37*(0.92)\t96.68*(0.56)\t74.15(2.78)\t92.67(1.04)\t83.95*(1.16)\t93.70*(0.82)\t \tSVM\t75.30(3.00)\t97.08(0.49)\t86.96(0.99)\t95.83(0.67)\t72.68(3.10)\t92.89(1.64)\t83.55(1.45)\t92.91(1.01)\t \tMLRF\t74.71(3.66)\t90.79(1.35)\t74.96(2.39)\t93.17(0.87)\t69.97(3.66)\t91.93(1.26)\t72.41(2.43)\t92.61(0.87)\t \tHGAT\u2013AMRs\t79.45(3.90)\t96.31(0.64)\t87.16(1.04)\t96.50(0.46)\t73.59(4.52)\t91.10(1.66)\t82.43(1.57)\t92.21(0.94)\t \tHGAT\u2013AMRm\t82.13(5.50)\t88.97(2.34)\t84.25(1.42)\t93.88(0.80)\t76.56(5.08)\t89.53(1.93)\t82.30(1.59)\t92.80(0.89)\t \tHGAT\u2013AMRi-10%\t92.76(2.62)\t84.33(1.71)\t84.64(1.30)\t93.99(0.83)\t89.79(3.89)\t84.26(2.31)\t83.08(1.64)\t92.90(1.01)\t \tHGAT\u2013AMRi-E\t96.60*(1.47)\t79.50(2.04)\t82.45(1.55)\t93.62(0.90)\t90.63*(2.75)\t83.20(2.68)\t82.58(1.77)\t92.52(0.92)\t \t",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 24392,
+      "infons": {
+       "file": "TB2.xml",
+       "id": "TB2",
+       "section_type": "TABLE",
+       "type": "table_foot"
+      },
+      "text": "Note: The P-value of performance measurement in bold compared to DA was obtained by Wilcoxon signed-rank test. * represents a P-value<0.05.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 24532,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "Considering general classification performance, the ML methods outperformed the DA approach for all four drugs except for sensitivity in RIF and specificity in PZA. In the cases of INH, EMB and PZA, the best sensitivities were obtained by the HGAT\u2013AMRi-E (i.e. 94.91, 96.60 and 90.63%, respectively). For INH and RIF, the best AUROCs were obtained by two of the HGAT\u2013AMR models, 98.53% by HGAT\u2013AMRi-E and 99.10% by HGAT\u2013AMRs. For the EMB and PZA, the LR generated the best F1-score of 87.37 and 83.95% and the best AUROC of 96.68 and 93.70%. In terms of specificity, the best values were 98.32% of HGAT\u2013AMRm for INH, 98.87% of SVM for RIF, 97.90% of LR for EMB and 95.02% of DA for PZA,. The HGAT\u2013AMRs showed similar results as the LR, especially in the cases of EMB and PZA. This is because they were trained in the same mode i.e. supervised single-label learning. The multi-label learning approach enabled the HGAT\u2013AMR model to increase sensitivity by 0.2% for INH and RIF, and by 3% for EMB and PZA. This could be explained by the genetic patterns corresponding to the resistance co-occurrence that are predictive for these cases. Furthermore, inductive learning allowed the HGAT\u2013AMR models to continue the increment in sensitivity for INH, EMB and PZA, but to decrease for RIF. The inductive learning essentially loosened the dependence of resistance co-occurrence and resistance prediction by introducing incomplete phenotypes for all examined drugs. It implies that the resistance to all four first-line drugs except for RIF could be predicted better if the evidence of resistance co-occurrence is relaxed. For INH and RIF, the differences in all performance measurements across different methods were less than 4%. For EMB and PZA, the significant improvement in sensitivity compared to the DA was obtained by HGAT\u2013AMRi-E, which were 12 and 41%, respectively. This can be explained by (i) associations between SNPs and the resistance to INH or RIF being nearly linear, and this is consistent with the results obtained by the DA method, (ii) associations between SNPs and the resistance to EMB or PZA are more complex and (iii) patterns of resistance co-occurrence mask those SNPs associated with EMB or PZA-resistance.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 26776,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_2"
+      },
+      "text": "5.2 Attention interpretation",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 26805,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "A key advantage of the proposed method, beyond any (modest or otherwise) improvements in classification performance is the interpretable nature of the resulting graph constructed during the training of the HGAT. For the purposes of demonstration and computational efficiency, we applied two-head attention in the cases of INH, RIF and EMB, and four-head attention for PZA. The reason for using four heads with PZA is that the use of two heads was experimentally (not shown here for brevity) found not to capture the resistance patterns associated with PZA, which was assumedly masked by patterns of resistance co-occurrence. Therefore, there are four sets of type-level and node-level attention scores for each node for the two-headed models (INH, RIF, EMB) and eight sets of attention scores for the four-headed model (PZA). We index attention scores by head and layer: for example, \u20181L1H\u2019 refers to the 1st head of the 1st layer.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 27741,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": " Averaged type-level attention scores. Figure 3 demonstrates the averaged type-level attention scores obtained via multi-label learning across all training isolates. Considering all four first-line drugs jointly, the first head of the first layer recognised gidB, katG and embB as the most interpretable genes, and that of the second layer further identified rpoB to be the only dominant gene. In contrast, the top two genes ranked by the second head of the first layer were rpoB and embA. It is notable that the PZA-associated gene, pncA, is not shown in Figure 2. This can be explained by (i) the genes being associated with the other three drugs strongly dominant for the joint drug-resistance prediction, and contributing to PZA-resistance prediction due to drug-resistance co-occurrence; thus, the contribution of pncA was masked and (ii) the samples resistant to PZA being relatively fewer than others.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 28650,
+      "infons": {
+       "file": "bbab299f3.jpg",
+       "id": "f3",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "A demonstration of averaged type-level attention scores for all four first-line drugs.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 28737,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "The plots of averaged type-level attention scores for each drug via single-label learning are referred in Figure S3 of Supplement E. For INH (as shown in Supplement E Figure S3A), the top two genes ranked by both the two heads of the first layer were the two main INH-associated genes, katG and fabG1, whereas both the two heads of the second layer considered all genes to be equivalent. It is also observed that all genes were scored the same by the second layers in the case of EMB and PZA, and the second head of the second layer when considering the four drugs jointly. For RIF (as shown in Figure S3B), all heads and layers identified the main RIF-associated gene, ropB. This can be explained by the gene of rpoB being sufficiently obvious to be identified by all layers, and being sufficient for predicting RIF-resistance. In Figure S3C, the top three genes ranked by the first layer were embB, embA and katG. The first two genes were EMB-associated genes but scored differently by two heads. The gene of katG was also recognised due to resistance co-occurrence between INH and EMB. In the case of PZA (Figure S3D), the first layer barely recognised any particular genes. On the contrary, the second head of the second layer identified katG and rpoB, which were associated with INH and RIF resistance, respectively. This could be because the drug-resistance co-occurrence patterns for INH and RIF are also predictive for PZA resistance. Unlike the second head, the third head identified pncA only, which is the key PZA-resistance-related gene. It can be explained that different heads discovered different \u2018aspects\u2019 or \u2018tracks\u2019 of genetic mutations to predict PZA-resistance. Moreover, the different patterns of attention scores across layers for different drugs also imply that genetic variables contribute to drug-resistance prediction with different \u2018depth\u2019.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 30617,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": " Node-level attention scores. Figure 4 demonstrates the node-level attentions for an exemplar isolates whose ids is 00-R0435, who were resistant to all four first-line drugs according to the DST. In the case of INH, the model ranked fabG1_G-17T as the top-1 SNP, which was previously identified as being associated with INH resistance (as shown in Figure 4A). Similarly, only rpoB_S450W was identified in the case of RIF, which was previously identified as being RIF-resistance-associated SNPs (as shown in Figure 4B). In Figure 4C, the top-two SNPs are eis_C-12T and embB_G406D for predicting resistance to EMB, where the latter was previously identified to be related to EMB-resistance. In the case of PZA, 2L3H identified a SNP in the gene of pncA, pncA_Y103C. It is worth noting that each head would identify different SNPs given the type-level attention scores for an individual isolate. Supplement E, Figure S4 provides another example for demonstrating SNP-level attention.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 31598,
+      "infons": {
+       "file": "bbab299f4.jpg",
+       "id": "f4",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "The isolate \u201800-R0435\u2019: averaged isolate-level attention scores for (A) INH, (B) RIF, (C) EMB and (D) PZA.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 31709,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_2"
+      },
+      "text": "5.3 SNPs ranking",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 31726,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "Another key advantage of the proposed method is in identifying structural associations between nodes in the graph and the corresponding phenotypic labels. Table 3 lists the top-10 SNPs ranked by averaged node-level attention scores with respect to each drug, and to all first-line drugs jointly. Those previously-reported SNPs for specific drug-resistance are represented in bold. The presence of these highlighted items is encouraging, as it represents the graph structure capturing those associations that are known in the literature. For individual drugs, the different heads of the same layer often generate a different list of interpretable SNPs, which again validated that the model \u2018sees\u2019 different aspects of the pattern for the prediction task. It is notable that the number of heads of attention can be increased (as described above, with our four-headed model for PZA) to investigate different aspects of the input. Specifically, the seven of the top-ten SNPs of pncA were previously recognised as associated with PZA-resistance in the existing clinical (DA) catalogue. For the four first-line drugs as a whole, the top-ten SNPs ranked by the first layer include those relating to resistance of INH and EMB, whereas the second layer paid more attention to those related to RIF-resistance. This is also consistent with averaged type-level attention in Figure 3B, where the gene of rpoB was sufficiently robust to be identified by both of the two layers.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 33194,
+      "infons": {
+       "file": "TB3.xml",
+       "id": "TB3",
+       "section_type": "TABLE",
+       "type": "table_caption"
+      },
+      "text": "List of the top-ranked SNPs for individual drug and all four first-line drugs jointly",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 33280,
+      "infons": {
+       "file": "TB3.xml",
+       "id": "TB3",
+       "section_type": "TABLE",
+       "type": "table",
+       "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<table frame=\"hsides\" rules=\"groups\"><colgroup span=\"1\"><col span=\"1\" align=\"left\"/><col span=\"2\" align=\"left\"/><col span=\"3\" align=\"left\"/><col span=\"4\" align=\"left\"/><col span=\"5\" align=\"left\"/></colgroup><thead><tr align=\"left\"><th align=\"left\" colspan=\"2\" rowspan=\"1\">INH</th><th align=\"left\" colspan=\"2\" rowspan=\"1\">EMB</th><th rowspan=\"1\" colspan=\"1\"/></tr><tr align=\"left\"><th rowspan=\"1\" colspan=\"1\">1st-L 1st-H</th><th rowspan=\"1\" colspan=\"1\">1st-L 2nd-H</th><th rowspan=\"1\" colspan=\"1\">1st-L 1st-H</th><th rowspan=\"1\" colspan=\"1\">1st-L 2nd-H</th><th rowspan=\"1\" colspan=\"1\">2nd-L 3rd-H</th></tr></thead><tbody><tr><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019katG_S315T\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019katG_S315T\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019embB_M306V\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019embB_M306I\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\u2019pncA_A102P\u2019,</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019katG_S315N\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019katG_S315N\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019embA_C-12T\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\u2019katG_I248T\u2019,</td><td rowspan=\"1\" colspan=\"1\">\u2019pncA_L4W\u2019,</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019fabG1_C-15T\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019fabG1_C-15T\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019embA_C-16T\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\u2019embA_G-76C\u2019,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019pncA_V139L\u2019</bold>,</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2019ahpC_C-54T\u2019,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019fabG1_G-17T\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019embB_Q497R\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\u2019embA_Q1004P\u2019,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019pncA_C14R\u2019</bold>,</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019fabG1_G-17T\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\u2019gyrA_G249G\u2019,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019embB_M306I\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019embB_Q497R\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019pncA_M175V\u2019</bold>,</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019fabG1_L203L\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\u2019ahpC_C-54T\u2019,</td><td rowspan=\"1\" colspan=\"1\">\u2019embA_G-76C\u2019,</td><td rowspan=\"1\" colspan=\"1\">\u2019katG_D448A\u2019,</td><td rowspan=\"1\" colspan=\"1\">\u2019pncA_V130G\u2019,</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2019gyrA_G249G\u2019,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019fabG1_L203L\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\u2019embA_Q1004P\u2019,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019embA_C-16T\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019pncA_V139G\u2019</bold>,</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2019ahpC_G-48A\u2019,</td><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_Q432K\u2019,</td><td rowspan=\"1\" colspan=\"1\">\u2019embA_C-8A\u2019,</td><td rowspan=\"1\" colspan=\"1\">\u2019embA_C-12T\u2019,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019pncA_V155G\u2019</bold>,</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2019gyrA_D639A\u2019,</td><td rowspan=\"1\" colspan=\"1\">\u2019ahpC_G-48A\u2019,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019embB_G406S\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\u2019embA_E951D\u2019,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019pncA_489_delC\u2019</bold>,</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019fabG1_T-8C\u2019</bold>\n</td><td rowspan=\"1\" colspan=\"1\">\u2019gyrA_V374V\u2019</td><td rowspan=\"1\" colspan=\"1\">\u2019embA_E951D\u2019</td><td rowspan=\"1\" colspan=\"1\">\u2019embA_C-8A\u2019</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019pncA_V21G\u2019</bold>\n</td></tr><tr><td align=\"left\" colspan=\"3\" rowspan=\"1\">RIF</td><td align=\"left\" colspan=\"2\" rowspan=\"1\">Four first-line drugs</td></tr><tr><td rowspan=\"1\" colspan=\"1\">1st-L 2nd-H</td><td rowspan=\"1\" colspan=\"1\">1st-L 2nd-H</td><td rowspan=\"1\" colspan=\"1\">2nd-L 1st-H</td><td rowspan=\"1\" colspan=\"1\">1st-L 1st-H</td><td rowspan=\"1\" colspan=\"1\">2nd-L 1st-H</td></tr><tr><td rowspan=\"1\" colspan=\"1\">rpoB_V553V\u2019,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019rpoB_S450L\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_L731P\u2019,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019fabG1_C-15T\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_A286V\u2019,</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_S4S\u2019,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019rpoB_D435V\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_A692T\u2019,</td><td rowspan=\"1\" colspan=\"1\">\u2019iniA_D549E\u2019,</td><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_R827C\u2019,</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_S1133S\u2019,</td><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_P471P\u2019,</td><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_I1106T\u2019,</td><td rowspan=\"1\" colspan=\"1\">\u2019gyrA_D641E\u2019,</td><td rowspan=\"1\" colspan=\"1\">\u2019rrs_C1474T\u2019,</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019rpoB_V359A\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019rpoB_H445Y\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_Q409R\u2019,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019embB_M306V\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_F503S\u2019,</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_S431G\u2019,</td><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_S1133S\u2019,</td><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_R827C\u2019,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019fabG1_G-17T\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\u2019rrs_G368C\u2019,</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_G-21C\u2019,</td><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_V168A\u2019,</td><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_S428R\u2019,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019katG_S315T\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019rpoB_I491F\u2019</bold>,</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_H749Y\u2019,</td><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_S4S\u2019,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019rpoB_V170F\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019embB_M306I\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_L430R\u2019,</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_G876G\u2019,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019rpoB_S450W\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019rpoB_H445D\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\u2019gyrA_D94G\u2019,</td><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_E481A\u2019,</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019rpoB_M434I\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_L430R\u2019,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019rpoB_H445C\u2019</bold>,</td><td rowspan=\"1\" colspan=\"1\">\u2019iniA_N88S\u2019,</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019rpoB_H445L\u2019</bold>,</td></tr><tr><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_L430R\u2019</td><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_V553V\u2019</td><td rowspan=\"1\" colspan=\"1\">\u2019rpoB_S431G\u2019</td><td rowspan=\"1\" colspan=\"1\">\u2019gyrB_V210V\u2019</td><td rowspan=\"1\" colspan=\"1\">\n<bold>\u2019rpoB_H445C\u2019</bold>\n</td></tr></tbody></table>\n"
+      },
+      "text": "INH\tEMB\t\t \t1st-L 1st-H\t1st-L 2nd-H\t1st-L 1st-H\t1st-L 2nd-H\t2nd-L 3rd-H\t \t\u2019katG_S315T\u2019,\t\u2019katG_S315T\u2019,\t\u2019embB_M306V\u2019,\t\u2019embB_M306I\u2019,\t\u2019pncA_A102P\u2019,\t \t\u2019katG_S315N\u2019,\t\u2019katG_S315N\u2019,\t\u2019embA_C-12T\u2019,\t\u2019katG_I248T\u2019,\t\u2019pncA_L4W\u2019,\t \t\u2019fabG1_C-15T\u2019,\t\u2019fabG1_C-15T\u2019,\t\u2019embA_C-16T\u2019,\t\u2019embA_G-76C\u2019,\t\u2019pncA_V139L\u2019,\t \t\u2019ahpC_C-54T\u2019,\t\u2019fabG1_G-17T\u2019,\t\u2019embB_Q497R\u2019,\t\u2019embA_Q1004P\u2019,\t\u2019pncA_C14R\u2019,\t \t\u2019fabG1_G-17T\u2019,\t\u2019gyrA_G249G\u2019,\t\u2019embB_M306I\u2019,\t\u2019embB_Q497R\u2019,\t\u2019pncA_M175V\u2019,\t \t\u2019fabG1_L203L\u2019,\t\u2019ahpC_C-54T\u2019,\t\u2019embA_G-76C\u2019,\t\u2019katG_D448A\u2019,\t\u2019pncA_V130G\u2019,\t \t\u2019gyrA_G249G\u2019,\t\u2019fabG1_L203L\u2019,\t\u2019embA_Q1004P\u2019,\t\u2019embA_C-16T\u2019,\t\u2019pncA_V139G\u2019,\t \t\u2019ahpC_G-48A\u2019,\t\u2019rpoB_Q432K\u2019,\t\u2019embA_C-8A\u2019,\t\u2019embA_C-12T\u2019,\t\u2019pncA_V155G\u2019,\t \t\u2019gyrA_D639A\u2019,\t\u2019ahpC_G-48A\u2019,\t\u2019embB_G406S\u2019,\t\u2019embA_E951D\u2019,\t\u2019pncA_489_delC\u2019,\t \t\u2019fabG1_T-8C\u2019\t\u2019gyrA_V374V\u2019\t\u2019embA_E951D\u2019\t\u2019embA_C-8A\u2019\t\u2019pncA_V21G\u2019\t \tRIF\tFour first-line drugs\t \t1st-L 2nd-H\t1st-L 2nd-H\t2nd-L 1st-H\t1st-L 1st-H\t2nd-L 1st-H\t \trpoB_V553V\u2019,\t\u2019rpoB_S450L\u2019,\t\u2019rpoB_L731P\u2019,\t\u2019fabG1_C-15T\u2019,\t\u2019rpoB_A286V\u2019,\t \t\u2019rpoB_S4S\u2019,\t\u2019rpoB_D435V\u2019,\t\u2019rpoB_A692T\u2019,\t\u2019iniA_D549E\u2019,\t\u2019rpoB_R827C\u2019,\t \t\u2019rpoB_S1133S\u2019,\t\u2019rpoB_P471P\u2019,\t\u2019rpoB_I1106T\u2019,\t\u2019gyrA_D641E\u2019,\t\u2019rrs_C1474T\u2019,\t \t\u2019rpoB_V359A\u2019,\t\u2019rpoB_H445Y\u2019,\t\u2019rpoB_Q409R\u2019,\t\u2019embB_M306V\u2019,\t\u2019rpoB_F503S\u2019,\t \t\u2019rpoB_S431G\u2019,\t\u2019rpoB_S1133S\u2019,\t\u2019rpoB_R827C\u2019,\t\u2019fabG1_G-17T\u2019,\t\u2019rrs_G368C\u2019,\t \t\u2019rpoB_G-21C\u2019,\t\u2019rpoB_V168A\u2019,\t\u2019rpoB_S428R\u2019,\t\u2019katG_S315T\u2019,\t\u2019rpoB_I491F\u2019,\t \t\u2019rpoB_H749Y\u2019,\t\u2019rpoB_S4S\u2019,\t\u2019rpoB_V170F\u2019,\t\u2019embB_M306I\u2019,\t\u2019rpoB_L430R\u2019,\t \t\u2019rpoB_G876G\u2019,\t\u2019rpoB_S450W\u2019,\t\u2019rpoB_H445D\u2019,\t\u2019gyrA_D94G\u2019,\t\u2019rpoB_E481A\u2019,\t \t\u2019rpoB_M434I\u2019,\t\u2019rpoB_L430R\u2019,\t\u2019rpoB_H445C\u2019,\t\u2019iniA_N88S\u2019,\t\u2019rpoB_H445L\u2019,\t \t\u2019rpoB_L430R\u2019\t\u2019rpoB_V553V\u2019\t\u2019rpoB_S431G\u2019\t\u2019gyrB_V210V\u2019\t\u2019rpoB_H445C\u2019\t \t",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 35274,
+      "infons": {
+       "file": "TB3.xml",
+       "id": "TB3",
+       "section_type": "TABLE",
+       "type": "table_foot"
+      },
+      "text": " Note: \u2018L\u2019 and \u2018H\u2019 denote layer and head, respectively.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 35338,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_2"
+      },
+      "text": "5.4 Inductive learning evaluation",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 35372,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "This section evaluates the ability of HGAT\u2013AMR to deal with incomplete labels. We reconfigured the training set for transductive learning (trans-training set) by removing the phenotypes gradually, as outlined earlier. During the training, the phenotype of each of the four drugs could now be absent. For example, an isolate could have been tested by INH and EMB, but not by RIF and PZA. According to an imbalance ratio for a specific drug, the trans-training set is resampled to construct a new training set. The label-masking ratio gradually increased on each resampled training set, and the model is trained for 100 times at each label-masking ratio. The experiment compared baseline models (LR, SVM) and HGAT. The examined models are verified on the same test dataset with a class-imbalance ratio and label-masking ratio. Performance evaluation measurements include sensitivity, precision and AUPCR. It is worth noting that the baseline model is trained with a single-label learning framework, whereas HGAT is trained with multi-labels learning framework. Besides, the optimal threshold for calculating sensitivity and precision is determined by AUROC. Figures 5\u20137 are box-and-whisker plots of the prediction performance for INH, PZA and EMB, respectively. The performance of the RIF and INH models is similar. Please see Tables (S4\u2013S7) for detailed results. Figure 5A shows that HGAT outperforms LR and SVM, except when the data are highly imbalanced (class-imbalance ratio (R:S) is 1:6). When the R:S ratio is 1:3, HGAT\u2019s area under the receiver operating characteristic (AUPRC) has large interquartile range (IQR) (Q3-Q1); the AUPRC of HGAT is as low as 84.4% at the high label-masking ratio (0.95). This may be explained by the fact that the co-resistance related pattern inferred by HGAT introduces errors in predicting INH-resistance at high label-masking ratio. In Figure 5B, LR and SVM\u2019s sensitivity decreases as the training set shrinks to 80% or less, whereas HGAT remains at about 95%. This shows that when predicting INH resistance, HGAT performs better when the label-masking ratio is high. In Figure 6, the sensitivity of HGAT is always higher than that of LR and SVM. At the class-imbalance ratio of 1:6, 1:2 and 1:1, HGAT\u2019s AUPRC is better than LR and SVM. At the ratio of 1:6 and 1:3, the precision of LR is higher. This means that HGAT classifies less PZA-resistant samples to be susceptible, whereas LR did better the other way around; the former has a more significant error clinically. In Figure 6B, LR and SVM\u2019s performance decreases with the increase of the label-masking ratio, and the sensitivity is as low as 60%. The sensitivity of HGAT is always above 85%, and the precision and AUPRC remain unchanged. This shows that HGAT is robust when training with incomplete labels. In Figure 7A, HGAT\u2019s AUPRC is better than the other two methods except when the data are relatively unbalanced (1:6 and 1:3). At the unbalanced ratio of 1:3, the sensitivity of HGAT is higher than that of LR and SVM. When the data are balanced, the average values of HGAT\u2019s sensitivity, precision and AUPRC are 93, 86 and 95%, respectively (nearly 15, 5 and 15% higher than the other two methods, respectively). Figure 7B shows that the sensitivity of HGAT slightly increases, but AUPRC remains unchanged whereas the label-masking ratio reduces. In comparison, LR and SVM\u2019s sensitivity decreases from 86 to 66%, and the AUPRC decreases from 80 to 73%. The IQR of AUPRC obtained by HGAT is relatively large, meaning that AUPRC varies considerably over the different imbalance ratio. This can be explained by the fact that the co-resistance feature is not advantageous for HGAT when the data are strongly imbalanced.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 39110,
+      "infons": {
+       "file": "bbab299f5.jpg",
+       "id": "f5",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "Inductive training performance of HGAT of for INH.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 39161,
+      "infons": {
+       "file": "bbab299f6.jpg",
+       "id": "f6",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "Inductive training performance of HGAT of for PZA.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 39212,
+      "infons": {
+       "file": "bbab299f7.jpg",
+       "id": "f7",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "Inductive training performance of HGAT of for EMB.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 39263,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "title_1"
+      },
+      "text": "6 Discussion",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 39276,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "title_2"
+      },
+      "text": "6.1 Performance explanation",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 39304,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "In the evaluation of prediction performance, HGAT\u2013AMRi-E outperforms the others in terms of sensitivity for all four drugs except RIF. This could be because the extra subset enables the model to learn more patterns from data with incomplete phenotypes. For RIF, the DA and conventional ML models outperform the proposed models in sensitivity, specificity, and F1-score. This can be explained by (i) ropB being the only gene related to RIF-resistance among the considered genes and (ii) that most of the RIF-resistance-associated SNPs in rpoB have been recognised. In contrast, the proposed model considers all genes and the performance was only lower than the best sensitivity, specificity, and F1-score by up to 1% for RIF. This also testifies to the fact that the attention mechanism of the model is able to capture the RIF-associated genes (equivalent to the type as described in the model) and SNPs (equivalent to the node as described in the model). Overall, the sensitivity was increased at the expense of reducing specificity. F1-score is a harmonic mean of precision and recall. In the cases of EMB and PZA, the F1-score is lower because the sensitivities were lower and the trade-off between sensitivity and specificity was larger than the cases of INH and RIF. This can be explained by (i) the genetic pattern of drug-resistance co-occurrence dominating the prediction of EMB and PZA, (ii) the possible underestimation of the effect of predictive SNPs associated with EMB and PZA or (iii) a greater preponderance of phenotypic errors for EMB and PZA.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 40867,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "title_2"
+      },
+      "text": "6.2 Explanation of dual attentions",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 40902,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "The layer-wise type-level averaged attention scores are able to rank the interpretable genes for different drug-resistance predictions. The different attention heads capture different aspects of the predictive genetic patterns. These scores would enable researchers to (i) shortlist effectively the candidates of genetic variables associated with specific drug-resistance by looking into those highly ranked genes and (ii) efficiently identify the candidates of contributed genes given all mutations, especially when predicting drug-resistance without knowing the genes associated with less-studied drugs. Furthermore, the pattern in the layer-wise type-level attentions can be helpful in interpretating genes when the isolates exhibit resistance co-occurrence. For example, all layers and all heads that captured the gene rpoB might explain the high probability that this gene is the only RIF-resistance-associated gene, and the pattern of resistance co-occurrence could minimally influence the RIF-resistance prediction. Conversely, the EMB and PZA-resistance prediction could be highly affected by considering whether the genetic pattern corresponds to resistance co-occurrence.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 42084,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "title_2"
+      },
+      "text": "6.3 Ranked SNPs",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 42100,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "As with conventional feature selection in LR and RF methods, we equivalently generated SNP ranking lists by averaging node-level attention scores. Since the PMI initialisation has removed the most frequent and least frequent words in the corpus (SNPs in all samples), the proposed model will not consider those most and least common SNPs, which aids in the discovery of informative SNPs beyond the most dominant. With our two-level attention structures, the proposed model was inclined to identify the SNPs from the most dominant genes identified by the type-level attention. In the case of INH and EMB, the SNPs associated with resistance were ranked higher by the first layer. For RIF, both the two layers captured several subgroups of RIF-resistance-associated SNPs. For PZA, only 2L3H identified PZA-resistance-associated SNPs, whereas the other attentions captured the SNPs associated with other drugs due to drug-resistance co-occurrence. This list is consistent with the type-level attention scores in Figure 2. It is worth noting that increasing the number of heads would allow discovery of more hidden patterns. This is because the two-headed model, used for INH, RIF and EMB, cannot identify the gene pncA, whereas the model was able to capture this gene when its heads increased to four. We acknowledge that conventional ML models along with the subset of selected SNPs could improve the performance of prediction if that is the primary factor of interest. Such subsets could include the most predictive SNPs, although they may belong to genes that are unlikely to contribute to resistance acquisition for the considered drug. Here, we provide a way to rank the predictive SNPs from different heads, which improves the model\u2019s interpretability by \u201dviewing\u201d the drug-resistance co-occurrence through different viewpoints learned by the various heads.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 43967,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "title_2"
+      },
+      "text": "6.4 Explanation of \u2018transductive\u2019 and \u2018inductive\u2019",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 44025,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "Transductive learning is equivalent to standard supervised learning, where each sample (i.e. the nodes in graph model) in the training set has complete annotations. The inductive learning is semi-supervised learning, where not all samples of the training set have annotations and the unlabelled samples are considered to be \u2018silent\u2019 for classification. In the framework of multiple label learning, an advantage of the inductive learning would be that each sample in the training set is allowed to have incomplete annotations for all labels. In the context of multiple drug-resistance predictions, the \u2018inductive\u2019 training allows the isolates to have phenotypes missed randomly for drugs. As we have discussed, it is common to have incomplete phenotype annotations with respect to the full spectrum of drugs. The inductive learning method allows those samples with incomplete phenotypes to be used as much as possible and reduce information loss. It can be generalised for less tested drugs. For certain drugs, the predictive influence of resistance co-occurrence can be mitigated by randomly removing the phenotype of different drugs. In the case of INH, when the data are highly imbalanced (1:6), the three models\u2019 precision and AUPRC decrease, but the mean and median remain higher than 90% (as shown in Figure 4A). Meanwhile, the three models\u2019 precision and AUPRC maintains at about 95% as the label-masking ratio increases (as shown in Figure 4B). This may be because there are very few genetic factors that distinguish INH-resistant samples from non-resistant samples. For example, if we do not consider the known INH-resistance-associated genes, the sensitivity drops to 50%, and the precision is still higher than 90%. In the case of PZA, it is worth noting that the original data\u2019s class ratio for PZA was around 1:3. In the experiment, we down-sampled susceptible samples to make the data more balanced and down-sampled resistant samples to have more imbalanced data. It implies that (i) adding PZA-susceptible samples helps improve the performance of HGAT, but not for LR and SVM and (ii) reducing PZA-resistant samples hurts all three models. In the case of EMB, all three methods\u2019 performance is low when the imbalance ratio is 1:6 (as shown in Figure 6A). It suggests that severe imbalance of data harms both single-label and multi-label learning models. The HGAT outperforms the other two models when the data are balanced. This may be because HGAT is enhanced by multi-label learning, and the inferred co-resistance pattern helps the prediction of EMB-resistance.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 46620,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "title_2"
+      },
+      "text": "6.5 Limitations",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 46636,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "The proposed model uses full gradients of all nodes and the entire adjacency matrix within the graph, and so one of its limitations is high computational cost. It requires more efficient methods than those used here to deal with whole-genome data and much larger datasets. In this study, we only applied up to three head attentions in each layer due to the computational cost. We demonstrated these scores on a new training set by combining the original training and testing datasets, which could lose the information in the validation dataset. Meanwhile, because the initialisation was carried on the entire dataset in an unsupervised manner, this might be problematic if the nodes were unseen in the training set. This could be resolved by extending the model to the generative model.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 47423,
+      "infons": {
+       "section_type": "CONCL",
+       "type": "title_1"
+      },
+      "text": "7 Conclusion",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 47436,
+      "infons": {
+       "section_type": "CONCL",
+       "type": "paragraph"
+      },
+      "text": "In this work, we proposed HGAT for predicting MTB drug resistance. By considering a different number of genetic variables per genetic sample and the relationship between mutations and corresponding genes, the HGAT can model genetic samples with more interpretability. The dual-level attention scores offer a better insight for understanding the resistance mechanism from the levels of mutations and genes for different anti-TB drugs. The identified drug-resistance-related genes are correctly identified for the examined anti-TB drugs. The most top-ranked mutations are consistent with domain knowledge. The multi-label optimisation scheme coupled with graph learning enables the model to learn from the data with incomplete drug-resistance phenotypes. The experiment results show that the proposed model is more robust when the training data are highly imbalanced and when more phenotypes are missing.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48339,
+      "infons": {
+       "section_type": "SUPPL",
+       "type": "title_1"
+      },
+      "text": "Data availability statement",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48367,
+      "infons": {
+       "section_type": "SUPPL",
+       "type": "paragraph"
+      },
+      "text": "Data are all already available in EBI/NCBI under the accession number(s) provided in.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48453,
+      "infons": {
+       "section_type": "AUTH_CONT",
+       "type": "title_1"
+      },
+      "text": "8 Author contributions statement",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48486,
+      "infons": {
+       "section_type": "AUTH_CONT",
+       "type": "paragraph"
+      },
+      "text": "Y.Y. and D.C. conceived the experiments, Y.Y. conducted the experiments, Y.Y., S.K, C.W, T.M.W, T.E.A.P and D.W.C. analysed the results. Y.Y. wrote the manuscript. Y.Y., S.K, T.M.W, T.E.A.P, D.W.C. and D.C, CRYPTIC Consortium, and other contributors reviewed the manuscript.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 48761,
+      "infons": {
+       "section_type": "AUTH_CONT",
+       "type": "paragraph"
+      },
+      "text": " CRYPTIC Consortium Derrick W Crook, Timothy EA Peto, A Sarah Walker, Sarah J Hoosdally, Ana L Gibertoni Cruz, Joshua Carter, Sarah Earle, Samaneh Kouchaki, Yang Yang, Timothy M Walker, Philip W Fowler, Daniel Wilson and David A Clifton, University of Oxford; Zamin Iqbal, Martin Hunt and Jeff Knaggs, European Bioinformatics Institute; Daniela M Cirillo, Emanuele Borroni, Simone Battaglia, Arash Ghodousi, Andrea Spitaleri and Andrea Cabibbe, Emerging Bacterial Pathogens Unit, IRCCS San Raffaele Scientific Institute, Milan; Sabira Tahseen, National Tuberculosis Control Program Pakistan, Islamabad; Kayzad Nilgiriwala, Sanchi Shah, Ayan Mandal and Nerges Mistry, The Foundation for Medical Research, Mumbai; Camilla Rodrigues, Priti Kambli, Utkarsha Surve and Rukhsar Khot, P.D. Hinduja National Hospital and Medical Research Centre, Mumbai; Stefan Niemann, Thomas Kohl and Matthias Merker, Research Center Borstel; Harald Hoffmann, Katharina Todt and Sara Plesnik, Institute of Microbiology & Laboratory Medicine, IML red, Gauting; Nazir Ismail, Shaheed Vally Omar, Lavania Joseph Dumisani Ngcamu, Nana Okozi and Shen Yuan Yao, National Institute for Communicable Diseases, Johannesburg; Guy Thwaites, Thuong Nguyen Thuy Thuong, Nhung Hoang Ngoc and Vijay Srinivasan, Oxford University Clinical Research Unit, Ho Chi Minh City; David Moore, Jorge Coronel and Walter Solano, London School of Hygiene and Tropical Medicine and Universidad Peruana Cayetano Heredia, Lima; George F Gao, Guangxue He, Yanlin Zhao, Aijing Ma and Chunfa Liu, China CDC, Beijing; Baoli Zhu, Institute of Microbiology, CAS, Beijing; Ian Laurenson and Pauline Claxton, Scottish Mycobacteria Reference Laboratory, Edinburgh; Robert J Wilkinson, University of Cape Town, Imperial College London and Francis Crick Institute; Anastasia Koch, University of Cape Town; Ajit Lalvani, Imperial College London; James Posey, CDC Atlanta; Jennifer Gardy, University of British Columbia; Jim Werngren, Public Health Agency of Sweden; Nicholas Paton, National University of Singapore; Ruwen Jou, Yu-Xin Xiao, Wan-Hsuan Lin, CDC Taiwan; Lucilaine Ferrazoli, Rosangela Siqueira de Oliveira, Juliana Maira Watanabe Pinhata, Institute Adolfo Lutz, S\u00e3o Paulo. James Millard, Africa Health Research Institute, Durban Rob Warren - University of Stellenbosch, Cape town Annelies Van Rie, University of Antwerp Simon Grandjean Lapierre, Marie-Sylvianne Rabodoarivelo and Niaina Rakotosamimanana, Institut Pasteur de Madagascar Camus Nimmo, University College London Kimberlee Musser and Vincent Escuyer, Wadsworth Center, New York Ted Cohen, Yale University",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 51376,
+      "infons": {
+       "section_type": "AUTH_CONT",
+       "type": "paragraph"
+      },
+      "text": " Those contributing to the CRyPTIC consortium: Inaki Comas, Biomedicine Institute of Valencia Maha Farhat, Harvard University Jennifer Gardy, formerly BCCDC and now BMGF Vitali Sintchenko, University of Sydney Vanessa Mathys, Sciensano, Belgian reference laboratory for M. tuberculosis Dick van Soolingen, RIVM, Netherlands Philip Supply, National Center for Scientific Research, France Mark Wilcox, Leeds teaching Hospital NHS Trust Angkana Chaiprasert, Mahidol University, Bangkok, Thailand Irena Arandjelovic, University of Belgrade, Serbia",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 51920,
+      "infons": {
+       "section_type": "SUPPL",
+       "type": "title_1"
+      },
+      "text": "Supplementary Material",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 51943,
+      "infons": {
+       "section_type": "COMP_INT",
+       "type": "title_1"
+      },
+      "text": "Conflict of Interest",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 51964,
+      "infons": {
+       "section_type": "COMP_INT",
+       "type": "paragraph"
+      },
+      "text": "No potential conflict of interest relevant to this article was reported.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 52037,
+      "infons": {
+       "section_type": "ACK_FUND",
+       "type": "title_1"
+      },
+      "text": "Funding",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 52045,
+      "infons": {
+       "section_type": "ACK_FUND",
+       "type": "paragraph"
+      },
+      "text": "This work was supported by Wellcome Trust/Newton Fund-MRC Collaborative Award [200205/Z/15/Z]; and Bill & Melinda Gates Foundation Trust [OPP1133541], grants from the Bill and Melinda Gates Foundation (OPP1133541, to CRyPTIC, plus separate support to Dr. Rodwell), the National Institute for Health Research (NIHR) Oxford Biomedical Research Centre (BRC) and NIHR Health Protection Research Unit in Healthcare Associated Infections and Antimicrobial Resistance at University of Oxford in partnership with Public Health England, the NIHR Biomedical Research Centre at Barts, the NIHR Biomedical Research Centre at Imperial, the NIHR and NHS England (to the 100,000 Genomes Project, which is managed by Genomics England, a wholly owned company of the U.K. Department of Health), the Wellcome Trust, the Medical Research Council, Public Health England, a grant from the National Science and Technology Key Program of China (2014ZX10003002), a grant from the National Basic Research program of China (2014CB744403), a grant from the Strategic Priority Research Program of the Chinese Academy of Sciences (XDB29020000), a grant from the European Commission Seventh Framework Program (FP7/2007-2013, to Borstel under grant agreement 278864 in the framework of the Patho-NGen-Trace project), the German Center for Infection Research (to Borstel), Leibniz Science Campus Evolutionary Medicine of the Lung (EvoLUNG), the Belgian Ministry of Social Affairs (to the Belgian Reference Center for Tuberculosis and Mycobacteria from Bacterial Diseases Service through a fund within the Health Insurance System), the French governmental program ``Investing for the Future'' (to Genoscreen), a grant from the European Commission Seventh Framework Program (FP7/2007-2013, to Genoscreen under grant agreement 278864 in the framework of the Patho-NGen-Trace project), grants from the Drug Resistant Tuberculosis Fund (R015833003, to Dr. Chaiprasert), the Faculty of Medicine, Siriraj Hospital, Mahidol University (to Dr. Chaiprasert), a grant from the Ministry of Economy and Competitiveness (MINECO), Spain (SAF2016-77346-R, to Dr. Comas), a grant from the European Research Council (638553-TB-ACCELERATE, to Dr. Comas), a grant from the BC Centre for Disease Control Foundation for Population and Public Health (to Dr. Gardy), a grant from the British Colombia Lung Association (to Dr. Gardy), grants from the Wellcome Trust and the Royal Society (101237/Z/13/Z and 102541/A/13/Z, to Drs. Wilson and Iqbal [Sir Henry Dale Fellows]), a grant from the National University of Singapore Yong Loo Lin School of Medicine Aspiration Fund (NUHSRO/2014/069/AF-New Idea/04, to Drs. Ong and Teo), a European Commission Seventh Framewo()rk Program European Genetic Network (EUROGEN) grant (201483, to Dr. Drobniewski), and the National Institute of Allergy and Infectious Diseases, National Institutes of Health (to Dr. Rodwell). TMW is a Wellcome Trust Clinical Career Development Fellow(214560/Z/18/Z). This research was supported by the Science Fund of the Republic of Serbia, PROMIS, #GRANT No. 6059147, IN-DEPTH.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 55134,
+      "infons": {
+       "section_type": "ACK_FUND",
+       "type": "paragraph"
+      },
+      "text": "For the purpose of Open Access, the author has applied a CC BY public copyright licence to any Author Accepted Manuscript version arising from this submission. The views expressed are those of the authors and not necessarily those of the NHS, the NIHR or the Department of Health.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 55415,
+      "infons": {
+       "section_type": "ACK_FUND",
+       "type": "paragraph"
+      },
+      "text": " Yang Yang is a Senior Research Associate in the Department of Engineering Science, University of Oxford, UK. Her research interests including digital health, health informatics, machine learning, computational biology and signal processing.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 55657,
+      "infons": {
+       "section_type": "ACK_FUND",
+       "type": "paragraph"
+      },
+      "text": " Timothy M. Walker is a Wellcome Trust Clinical Career Development Fellow based at Oxford University Clinical Research Unit, Ho Chi Minh City, Vietnam.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 55809,
+      "infons": {
+       "section_type": "ACK_FUND",
+       "type": "paragraph"
+      },
+      "text": " Samaneh Kouchaki is Lecturer in Machine learning for Healthcare at the Department of Electronic and Electrical Engineering and a member of the Centre for Vision, Speech and Signal Processing (CVSSP) at the University of Surrey. Her research interests include machine learning, health informatics, biomedical signal processing and computational biology.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 56163,
+      "infons": {
+       "section_type": "ACK_FUND",
+       "type": "paragraph"
+      },
+      "text": " Chenyang Wang received the BEng degree in Computer Science and Technology from Shanghai Jiao Tong University (SJTU), China, in 2019. He is currently a DPhil student in the Department of Engineering Science, University of Oxford, UK. His current research interest is machine learning in healthcare.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 56462,
+      "infons": {
+       "section_type": "ACK_FUND",
+       "type": "paragraph"
+      },
+      "text": " Tim E.A. Peto is a professor of medicine at the University of Oxford. He is the co-leader for the Infection Theme of the Oxford Biomedical Research Centre, and a National Institute for Health Research Senior Investigator.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 56685,
+      "infons": {
+       "section_type": "ACK_FUND",
+       "type": "paragraph"
+      },
+      "text": " Professor Derrick Crook is a Professor of Microbiology, Nuffield Department of Medicine, University of Oxford and Infectious Diseases Physician, Oxford University Hospitals NHS Trust.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 56870,
+      "infons": {
+       "section_type": "ACK_FUND",
+       "type": "paragraph"
+      },
+      "text": " David A. Clifton is a Professor of Clinical Machine Learning in the Department of Engineering Science, University of Oxford, UK and leads the Computational Health Informatics (CHI) Lab.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57057,
+      "infons": {
+       "section_type": "REF",
+       "type": "title"
+      },
+      "text": "References",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57068,
+      "infons": {
+       "fpage": "1",
+       "issue": "NOV",
+       "lpage": "17",
+       "pub-id_pmid": "26834723",
+       "section_type": "REF",
+       "source": "Front Microbiol",
+       "type": "ref",
+       "volume": "7",
+       "year": "2016"
+      },
+      "text": "Evaluation of machine learning and rules-based approaches for predicting antimicrobial resistance profiles in gram-negative bacilli from whole genome sequence data",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57232,
+      "infons": {
+       "fpage": "1",
+       "issue": "11",
+       "lpage": "12",
+       "section_type": "REF",
+       "source": "Antibiotics",
+       "type": "ref",
+       "volume": "9",
+       "year": "2020"
+      },
+      "text": "Role of artificial intelligence in fighting antimicrobial resistance in pediatrics",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57315,
+      "infons": {
+       "fpage": "2276",
+       "issue": "13",
+       "lpage": "82",
+       "pub-id_pmid": "30462147",
+       "section_type": "REF",
+       "source": "Bioinformatics",
+       "type": "ref",
+       "volume": "35",
+       "year": "2019"
+      },
+      "text": "Application of machine learning techniques to tuberculosis drug resistance analysis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57399,
+      "infons": {
+       "fpage": "1",
+       "issue": "1",
+       "lpage": "15",
+       "pub-id_pmid": "29291746",
+       "section_type": "REF",
+       "source": "Microbiome",
+       "type": "ref",
+       "volume": "6",
+       "year": "2018"
+      },
+      "text": "DeepARG: A deep learning approach for predicting antibiotic resistance genes from metagenomic data",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57498,
+      "infons": {
+       "fpage": "1",
+       "issue": "1",
+       "lpage": "15",
+       "section_type": "REF",
+       "source": "mSystems",
+       "type": "ref",
+       "volume": "5",
+       "year": "2020"
+      },
+      "text": "Prediction of Acquired Antimicrobial Resistance for Multiple Bacterial Species Using Neural Networks",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57599,
+      "infons": {
+       "fpage": "3240",
+       "issue": "18",
+       "lpage": "9",
+       "pub-id_pmid": "30689732",
+       "section_type": "REF",
+       "source": "Bioinformatics",
+       "type": "ref",
+       "volume": "35",
+       "year": "2019"
+      },
+      "text": "DeepAMR for predicting co-occurrent resistance of Mycobacterium tuberculosis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57676,
+      "infons": {
+       "fpage": "1",
+       "issue": "Suppl 15",
+       "lpage": "14",
+       "pub-id_pmid": "30606105",
+       "section_type": "REF",
+       "source": "BMC Bioinformatics",
+       "type": "ref",
+       "volume": "20",
+       "year": "2019"
+      },
+      "text": "Antimicrobial resistance genetic factor identification from whole-genome sequence data using deep feature selection",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57792,
+      "infons": {
+       "section_type": "REF",
+       "source": "Technical manual for drug susceptibility testing of medicines used in the treatment of tuberculosis",
+       "type": "ref",
+       "volume": "2",
+       "year": "2018"
+      },
+      "text": "",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57793,
+      "infons": {
+       "fpage": "4823",
+       "lpage": "32",
+       "section_type": "REF",
+       "source": "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+       "type": "ref",
+       "year": "2019"
+      },
+      "text": "Heterogeneous graph attention networks for semi-supervised short text classification",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 57878,
+      "infons": {
+       "fpage": "1193",
+       "issue": "10",
+       "lpage": "202",
+       "pub-id_pmid": "26116186",
+       "section_type": "REF",
+       "source": "Lancet Infect Dis",
+       "type": "ref",
+       "volume": "15",
+       "year": "2015"
+      },
+      "text": "Whole-genome sequencing for prediction of Mycobacterium tuberculosis drug susceptibility and resistance: a retrospective cohort study",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 58012,
+      "infons": {
+       "fpage": "1403",
+       "issue": "15",
+       "lpage": "15",
+       "section_type": "REF",
+       "source": "New England Journal of Medicine",
+       "type": "ref",
+       "volume": "379",
+       "year": "2018"
+      },
+      "text": "Prediction of susceptibility to first-line tuberculosis drugs by DNA sequencing",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 58092,
+      "infons": {
+       "fpage": "1666",
+       "issue": "10",
+       "lpage": "71",
+       "pub-id_pmid": "29240876",
+       "section_type": "REF",
+       "source": "Bioinformatics",
+       "type": "ref",
+       "volume": "34",
+       "year": "2018"
+      },
+      "text": "Machine learning for classifying tuberculosis drug-resistance from DNA sequencing data",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 58179,
+      "infons": {
+       "fpage": "1",
+       "lpage": "22",
+       "section_type": "REF",
+       "source": "AI Open",
+       "type": "ref",
+       "year": "2018"
+      },
+      "text": "Graph Neural Networks: A Review of Methods and Applications",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 58239,
+      "infons": {
+       "fpage": "1",
+       "issue": "8",
+       "lpage": "23",
+       "section_type": "REF",
+       "source": "IEEE Transactions on Knowledge and Data Engineering",
+       "type": "ref",
+       "volume": "14",
+       "year": "2020"
+      },
+      "text": "Deep Learning on Graphs: A Survey",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 58273,
+      "infons": {
+       "comment": "\narXiv,",
+       "fpage": "1",
+       "lpage": "12",
+       "section_type": "REF",
+       "type": "ref",
+       "year": "2017"
+      },
+      "text": "Graph attention networks",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 58298,
+      "infons": {
+       "issue": "6",
+       "section_type": "REF",
+       "source": "ACM Trans Knowl Discov Data",
+       "type": "ref",
+       "volume": "13",
+       "year": "November 2019"
+      },
+      "text": "Attention models in graphs: A survey",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 58335,
+      "infons": {
+       "fpage": "8",
+       "issue": "1",
+       "lpage": "15",
+       "section_type": "REF",
+       "source": "IEEE Industry Applications Magazine",
+       "type": "ref",
+       "volume": "8",
+       "year": "2002"
+      },
+      "text": "(tony). The Transformer",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 58359,
+      "infons": {
+       "fpage": "1",
+       "lpage": "14",
+       "section_type": "REF",
+       "source": "ICLR 2017 - Conference Track Proceedings",
+       "type": "ref",
+       "year": "2019"
+      },
+      "text": "Semi-supervised classification with graph convolutional networks. 5th International Conference on Learning Representations",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 58482,
+      "infons": {
+       "fpage": "667",
+       "pub-id_pmid": "32390972",
+       "section_type": "REF",
+       "source": "Front Microbiol",
+       "type": "ref",
+       "volume": "11",
+       "year": "2020"
+      },
+      "text": "Multi-Label Random Forest Model for Tuberculosis Drug Resistance Classification and Mutation Ranking",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     }
+    ],
+    "annotations": [],
+    "relations": []
+   }
+  ]
+ }
+]

@@ -1,0 +1,71 @@
+[
+ {
+  "bioctype": "BioCCollection",
+  "source": "PMC",
+  "date": "20260127",
+  "key": "pmc.key",
+  "version": "1.0",
+  "infons": {},
+  "documents": [
+   {
+    "bioctype": "BioCDocument",
+    "id": "PMC3231766",
+    "infons": {
+     "license": "NO-CC CODE"
+    },
+    "passages": [
+     {
+      "bioctype": "BioCPassage",
+      "offset": 0,
+      "infons": {
+       "article-id_doi": "10.1186/1297-9686-35-S1-S99",
+       "article-id_pmc": "PMC3231766",
+       "article-id_pmid": "12927083",
+       "article-id_publisher-id": "1297-9686-35-S1-S99",
+       "fpage": "S99",
+       "issue": "Suppl 1",
+       "kwd": "Salmonella genetic candidate gene PCR-RFLP poultry",
+       "lpage": "S111",
+       "name_0": "surname:Malek;given-names:Massoud",
+       "name_1": "surname:Lamont;given-names:Susan J",
+       "section_type": "TITLE",
+       "type": "front",
+       "volume": "35",
+       "year": "2003"
+      },
+      "text": "Association of INOS, TRAIL, TGF-\u03b22, TGF-\u03b23, and IgL genes with response to Salmonella enteritidis in poultry",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 115,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract"
+      },
+      "text": "Several candidate genes were selected, based on their critical roles in the host's response to intracellular bacteria, to study the genetic control of the chicken response to Salmonella enteritidis (SE). The candidate genes were: inducible nitric oxide synthase (INOS), tumor necrosis factor related apoptosis inducing ligand (TRAIL), transforming growth factor \u03b22 (TGF-\u03b22), transforming growth factor \u03b23 (TGF-\u03b23), and immunoglobulin G light chain (IgL). Responses to pathogenic SE colonization or to SE vaccination were measured in the Iowa Salmonella response resource population (ISRRP). Outbred broiler sires and three diverse, highly inbred dam lines produced 508 F1 progeny, which were evaluated as young chicks for either bacterial load isolated from spleen or cecum contents after pathogenic SE inoculation, or the circulating antibody level after SE vaccination. Fragments of each gene were sequenced from the founder lines of the resource population to identify genomic sequence variation. Single nucleotide polymorphisms (SNP) were identified, then PCR-RFLP techniques were developed to genotype the F1 resource population. Linear mixed models were used for statistical analyses. Because the inbred dam lines always contributed one copy of the same allele, the heterozygous sire allele effects could be assessed in the F1 generation. Association analyses revealed significant effects of the sire allele of TRAIL-StyI on the spleen (P < 0.07) and cecum (P < 0.0002) SE bacterial load. Significant effects (P < 0.04) were found on the cecum bacterial load for TGF-\u03b23-BsrI. Varied and moderate association was found for SE vaccine antibody response for all genes. This is the first reported study on the association of SNP in INOS, TRAIL, TGF-\u03b22, TGF-\u03b23, and IgL with the chicken response to SE. Identification of candidate genes to improve the immune response may be useful for marker-assisted selection to enhance disease resistance.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 2080,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": "(To access the full article, please see PDF)",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     }
+    ],
+    "annotations": [],
+    "relations": []
+   }
+  ]
+ }
+]

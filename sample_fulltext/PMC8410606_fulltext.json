@@ -1,0 +1,1531 @@
+[
+ {
+  "bioctype": "BioCCollection",
+  "source": "PMC",
+  "date": "20260205",
+  "key": "pmc.key",
+  "version": "1.0",
+  "infons": {},
+  "documents": [
+   {
+    "bioctype": "BioCDocument",
+    "id": "PMC8410606",
+    "infons": {
+     "license": "CC BY"
+    },
+    "passages": [
+     {
+      "bioctype": "BioCPassage",
+      "offset": 0,
+      "infons": {
+       "article-id_doi": "10.1016/S2666-5247(21)00117-8",
+       "article-id_pii": "S2666-5247(21)00117-8",
+       "article-id_pmc": "PMC8410606",
+       "article-id_pmid": "34485958",
+       "fpage": "e472",
+       "issue": "9",
+       "license": "This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+       "lpage": "e480",
+       "name_0": "surname:Ludden;given-names:Catherine",
+       "name_1": "surname:Coll;given-names:Francesc",
+       "name_10": "surname:Parkhill;given-names:Julian",
+       "name_11": "surname:Peacock;given-names:Sharon J",
+       "name_2": "surname:Gouliouris;given-names:Theodore",
+       "name_3": "surname:Restif;given-names:Olivier",
+       "name_4": "surname:Blane;given-names:Beth",
+       "name_5": "surname:Blackwell;given-names:Grace A",
+       "name_6": "surname:Kumar;given-names:Narender",
+       "name_7": "surname:Naydenova;given-names:Plamena",
+       "name_8": "surname:Crawley;given-names:Charles",
+       "name_9": "surname:Brown;given-names:Nicholas M",
+       "section_type": "TITLE",
+       "type": "front",
+       "volume": "2",
+       "year": "2021"
+      },
+      "text": "Defining nosocomial transmission of Escherichia coli and antimicrobial resistance genes: a genomic surveillance study",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 118,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract_title_1"
+      },
+      "text": "Summary",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 126,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract_title_1"
+      },
+      "text": "Background",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 137,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract"
+      },
+      "text": "Escherichia coli is a leading cause of bloodstream infections. Developing interventions to reduce E coli infections requires an understanding of the frequency of nosocomial transmission, but the available evidence is scarce. We aimed to detect and characterise transmission of E coli and associated plasmids in a hospital setting.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 468,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract_title_1"
+      },
+      "text": "Methods",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 476,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract"
+      },
+      "text": "In this prospective observational cohort study, patients were admitted to two adult haematology wards at the Cambridge University Hospitals NHS Foundation Trust in England. Patients aged 16 years and older who were treated for haematological malignancies were included. Stool samples were collected from study participants on admission, once per week, and at discharge. We sequenced multiple E coli isolates (both extended spectrum \u03b2-lactamase [ESBL]-producing and non-ESBL-producing) from each stool sample. A genetic threshold to infer E coli transmission was defined by maximum within-host single nucleotide polymorphism (SNP) diversity and the probability of drawing observed pairs of between-patient isolates at different SNP thresholds. Putative transmission clusters were identified when sequences were less than the genetic threshold. Epidemiological links for each transmission event were investigated. We sequenced all E coli positive blood samples from the two adult haematology wards.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 1476,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract_title_1"
+      },
+      "text": "Findings",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 1485,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract"
+      },
+      "text": "We recruited 174 (51%) of 338 adult patients admitted to the wards between May 13 and Nov 13, 2015. We obtained and cultured 376 stool samples from 149 patients, of which 152 samples from 97 (65%) patients grew E coli. Whole-genome sequencing was done on 970 isolates. We identified extensive diversity in the bacterial population (90 sequence types) and mixed E coli sequence type carriage. 24 (26%) patients carried two sequence types, 12 (13%) carried three, and six (6%) patients carried four or more sequence types. Using a 17 SNP cutoff we identified ten clusters in 20 patients. The largest cluster contained seven patients, whereas four patients were included in multiple clusters. Strong epidemiological links were found between patients in seven clusters. 17 (11%) of 149 patients had stool samples positive for ESBL-producing E coli, the most common of which was associated with blaCTX-M-15 (12 [71%] of 17). Long-read sequencing revealed that blaCTX-M-15 was often integrated into the chromosome, with little evidence for plasmid transmission. Seven patients developed E coli bloodstream infection, four with identical strains to those in their stool; two of these had documented nosocomial acquisition.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 2701,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract_title_1"
+      },
+      "text": "Interpretation",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 2716,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract"
+      },
+      "text": "We provide evidence of bacterial transmission and endogenous infection during routine care by integrating genomic and epidemiological data and by determining a genetic cutoff informed by within-host diversity in the studied population. Our findings challenge single colony-based investigations, and the widely accepted notion of plasmid spread.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 3061,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract_title_1"
+      },
+      "text": "Funding",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 3069,
+      "infons": {
+       "section_type": "ABSTRACT",
+       "type": "abstract"
+      },
+      "text": "UK Department of Health, Wellcome Trust, UK National Institute for Health Research.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 3153,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "title_1"
+      },
+      "text": "Introduction",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 3166,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": "Escherichia coli is one of the leading causes of bloodstream and urinary tract infections, a proportion of which are health-care associated. Rates of E coli bloodstream infections have markedly increased in numerous countries, such as England, where the incidence rose from 60\u00b74 per 100\u2009000 population (32\u2009309 reported cases) in 2012\u201313, to 77\u00b73 per 100\u2009000 population (43\u2009209 reported cases) in 2019\u201320. This rate has increased from 76\u00b76 to 121\u00b76 per 100\u2009000 population at Cambridge University Hospitals in England within the same period. This problem is compounded by a global increase in the frequency of E coli infections caused by strains that are resistant to numerous antibiotics, which are associated with excess morbidity, mortality, longer hospital stays, and higher health-care costs.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 3980,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": "Interventions to support a reduction in health-care associated bloodstream infections caused by E coli require an understanding of the frequency of nosocomial transmission, but the available evidence remains scarce. Previous studies that used bacterial sequencing, an essential tool that provides the necessary genetic resolution, were done on small cohorts or included solely extended spectrum \u03b2-lactamase (ESBL)-producing E coli or specific sequence types, which were more likely to under-represent transmission of E coli overall (ie, including both ESBL-producing and non-ESBL-producing E coli). Furthermore, transmission studies require an understanding of the frequency of mixed strain E coli carriage and within-host diversity of the same lineage.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 4737,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "title_1_caption"
+      },
+      "text": "Research in context",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 4757,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": " Evidence before this study ",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 4786,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": "We searched PubMed for studies published in English from database inception to March 17, 2020, using the terms \u201cEscherichia coli\u201d, \u201cwhole genome sequencing\u201d, \u201ctransmission\u201d, and \u201chospital\u201d. We excluded reviews and included articles in which whole-genome sequencing was applied to study E coli transmission in human populations in a hospital setting (15 of 75 studies). 12 of 15 studies were focused on carbapenem or colistin resistance and were not evaluated further. Of the three remaining studies, one focused on the national epidemiology of a single clone (ST410) in Denmark and was based on 127 whole-genome sequenced isolates. Five possible regional outbreaks were identified using ten or less single nucleotide polymorphisms (SNPs). In a second study done in Denmark, whole-genome multilocus sequence typing (MLST) was used to distinguish between epidemiologically related and unrelated isolates of extended spectrum \u03b2-lactamase (ESBL)-producing E coli. Isolates obtained from the same patient, belonging to the same MLST, and cultured within 30 days were defined as epidemiologically related. In a third study, transmission of E coli among patients in haematology and oncology departments of German hospitals was investigated using core-genome MLST, in which closely related isolates were defined as having a maximum of ten allele differences.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 6154,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": " Added value of this study ",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 6182,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": "Our findings capture what happens during routine care, beyond the current bacterial genomics literature which largely focuses on outbreak investigations. We show that surveillance and outbreak investigations based on single colonies are likely to underestimate transmission events and the diversity of antimicrobial susceptibility profiles present in a sample. Our study also adds to the existing evidence on suitable methods to determine transmission events. We established a genome-based SNP threshold to infer E coli transmission in the study population by comparing SNP distances of isolates from the same host and combining these with epidemiological data. We identified transmission clusters involving predominately patients with non-ESBL E coli, which would be missed by other investigations focused on antimicrobial-resistant E coli. Using long-read sequencing, we were able to accurately study the transmission of antimicrobial resistance genes conferring resistance to cephalosporin drugs (ESBLs) and plasmids. Although E coli from patients carried the same genes conferring resistance, the genes were rarely carried on the same plasmids as those found in other patient samples. This finding would not have been identified using short-read sequencing. By comparing E coli isolates from blood and stool samples of individual patients we identified indistinguishable isolates, suggesting endogenous infection.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 7600,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": " Implications of all the available evidence ",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 7645,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": "Our study highlights polyclonal E coli colonisation, the pathogenesis of extraintestinal E coli infection (endogenous vs exogenous), and the clinical relevance of E coli transmission in the hospital setting. Our findings challenge the widely accepted notion of plasmid spread, at least for E coli, in this setting. Interventions to reduce E coli bacteraemia should aim to prevent endogenous infections, which were the main source of infection.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 8089,
+      "infons": {
+       "section_type": "INTRO",
+       "type": "paragraph"
+      },
+      "text": "The aim of this study was to report findings from genomic surveillance of E coli in two haematology hospital wards.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 8205,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_1"
+      },
+      "text": "Methods",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 8213,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "Study design and participants",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 8243,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "We did a prospective observational cohort study of patients admitted to two adult haematology wards at the Cambridge University Hospitals NHS Foundation Trust in England. We evaluated E coli acquisition and transmission in patients aged 16 years and older, who were treated for haematological malignancies. Patients younger than 16 years and those not treated for haematological malignancies were excluded. All patients provided written informed consent. The same cohort was previously studied to investigate the transmission of Klebsiella pneumoniae and Enterococcus faecium. The study protocol (appendix 1 pp 2\u20136) was approved by the National Research Ethics Service (14/EE1123 and 12/EE/0439) and the Cambridge University Hospitals NHS Foundation Trust (A093285 and A092685).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 9024,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "Procedures",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 9035,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "Hospital admission and bed movement data were extracted electronically using the hospital bed tracking system. Admission to the same bay, room, or ward at the same time or within 7 days was classified as a strong epidemiological link; admission in the same ward separated by more than 7 days or to the study hospital but to different wards (regardless of admission dates) was classified as a weak epidemiological link; and no epidemiological link was reported if neither of these occurred. After enrolment, patients provided stool samples during admission and then once a week until discharge. Samples were enriched in Tryptic Soy Broth (Sigma, Dorset, UK) and directly cultured onto Brilliance UTI Chromagar (Oxoid, Basingstoke, UK) to detect all E coli and onto Brilliance ESBL agar (Oxoid, Basingstoke, UK) to detect ESBL E coli. Up to 15 E coli colonies (ten putative ESBL-producing and five non-ESBL-producing), cultured from each stool sample, were selected for sequencing (appendix 1 p 2). For stool samples that grew fewer than 15 E coli colonies, all of the available colonies were sequenced.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 10137,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "During the 6-month study, any blood cultures taken from the patient cohort based on clinical need were identified in the diagnostic laboratory. If the sample grew E coli, the primary subculture plate was identified and retrieved from the diagnostic laboratory and up to 12 colonies were picked for sequencing. Hospital acquired and health-care associated infections were based on definitions by Friedman and colleagues. Additionally, we retrospectively identified all blood cultures positive for E coli in patients residing in the two haematology wards in the 12 months before this study (between May 13, 2014, and May 13, 2015) and 6 months after (between Nov 13, 2015, and May 13, 2016), from which one colony was obtained for sequencing from the culture in the freezer archive. Further details on culture protocols, selection of colonies, and antimicrobial susceptibility testing are shown in appendix 1 (p 2). The number of invasive infections per 1000 admissions was determined from the number of recruited patients admitted to haematology wards.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 11189,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "The objectives of this study were to measure within-host E coli diversity, identify potential clusters of E coli transmission between patients at the study sites, and identify associated plasmids encoding antimicrobial resistance genes in this setting.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 11442,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "Sequencing and bioinformatic analyses",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 11480,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "DNA was extracted, libraries prepared, and sequenced on an Illumina HiSeq2000 (San Diego, CA, USA) with 125 cycle paired-end reads. Following quality control, genomes were assembled using SPAdes (version 3.11.0) and mapped against the E coli reference strain (GenBank: LT632320) using SMALT (version 0.7.4). In-silico sequence type identification of all sequenced isolates was done using the EnteroBase MLST sequence archive. Sequencing and bioinformatic methods are described in appendix 1 (p 3). The core genome was derived using Roary (version 1.7.1) using the \u201cdon't split paralogs\u201d option. Whole-genome alignments were created by calling nucleotide alleles along the E coli LT632320 reference genome and pairwise single nucleotide polymorphism (SNP) distances in core genome alignments using pairsnp (appendix 1 pp 3\u20134). The core genome coordinates are publicly available. SNP distances cannot be compared with whole-genome SNP differences, but should be comparable with the distances reported using the same reference genome and coordinates used in this study. The genomes of multiple E coli isolates from the same patient were used to ascertain E coli within-host diversity for all participants and subsequently determine an appropriate threshold to define transmission of E coli sequence types between patients. The analysis was limited to instances in which different patients shared the same sequence type. The upper limit for a SNP cutoff was provisionally established from the maximum within-host diversity (the number of core genome differences in isolates of the same sequence type from the same patient), which defines the upper limit of transferable diversity from one person to another. The SNP cutoff was validated using a statistical approach, as described in appendix 1 (pp 4\u20135). The cutoff was applied to all pairs of sequences to identify putative transmission and was subsequently complemented with epidemiological information.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 13439,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "Detection of antimicrobial resistance and mobile elements",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 13497,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "Antimicrobial susceptibility testing was determined for all isolates using the N206 card on the Vitek 2 instrument (bioM\u00e9rieux, Marcy l'\u00c9toile, France), calibrated against EUCAST breakpoints. Detailed methods to detect antimicrobial resistance genes and the rationale for selecting isolates for long-read sequencing to investigate plasmid sharing between patients are shown in appendix 1 (p 5). Briefly, E coli genomes from all participants were screened for acquired genes encoding antibiotic resistance using Antibiotic Resistance Identification By Assembly (ARIBA; version 2.13.3). Chromosomal mechanisms of fluoroquinolone resistance were identified by screening isolates for the presence of associated amino acid changes in the quinolone resistance-determining regions of gyrA and parC alleles. To investigate whether plasmids encoding ESBL genes were shared between patients during the study, one blaCTX-M-15-positive and blaCTX-M-14-positive isolate from each sequence type was selected for long-read sequencing using the PacBio Sequel instrument (appendix 1 p 5). In-silico PCR was used for plasmid incompatibility group (replicon) typing. Geneious (version 11.1) was used for manual annotation and visualisation of complete plasmid sequences. ISFinder and the Basic Local Alignment Search Tool (BLAST; version 2.9.0) were used to identify insertion sequences and transposon fragments. BLAST comparisons visualised in the Artemis Comparison Tool (version 17.0.1) were used for plasmid comparisons (appendix 1 p 5).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 15022,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "Statistical analysis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 15043,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "The number of positive and negative cultures was assessed in patients who received antimicrobials in the previous 30 days, versus those who did not, with a two-tailed Fisher's exact test using R (version 3.6.3). Using R, a Mann Whitney U test was done to assess the difference in the number of sequenced colonies per stool sample between those with one sequence type and those with multiple sequence types. Plots were created using ggplot2 (version 3.3.1). To further validate the SNP threshold, we used a statistical approach that compared a range of cutoff values (appendix 1 pp 5\u20136).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 15632,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "title_2"
+      },
+      "text": "Role of the funding source",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 15659,
+      "infons": {
+       "section_type": "METHODS",
+       "type": "paragraph"
+      },
+      "text": "The funder of the study had no role in study design, data collection, data analysis, data interpretation, or writing of the report.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 15791,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "title_1"
+      },
+      "text": "Results",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 15799,
+      "infons": {
+       "file": "gr1.jpg",
+       "id": "fig1",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "Description of study participants and Escherichia coli culture",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 15862,
+      "infons": {
+       "file": "gr1.jpg",
+       "id": "fig1",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "ESBL=extended spectrum \u03b2-lactamase.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 15901,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "We recruited 174 (51%) of 338 adult patients admitted to the haematology ward betweeen May 13 and Nov 13, 2015. Of the 174 participants, 92 (53%) were male and 82 (47%) were female, with a median age of 61 years (IQR 49\u201369; range 19\u201394\u2009 years). Patient characteristics are shown in appendix 1 (p 9). Most patients (149 [86%]) were able to provide at least one stool sample. 101 patients provided two or more samples. A total of 376 stool samples were collected with a median of three samples (IQR 2\u20135) per patient. This subset of 149 patients formed the basis for all further analyses. Patients had a median age of 61 years (49\u201369), with 281 admissions in total (a median of one admission [1\u20132]), and stayed a median of 16 days (7\u201327) in hospital, as described previously. 97 (65%) patients had at least one stool positive for E coli, with a total of 152 positive stool samples identified. Most patients (80 [82%] of 97) with positive samples carried only non-ESBL-producing E coli, five (5%) carried only ESBL-producing E coli, and 12 (12%) carried both (figure 1).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 16982,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "114 (77%) patients received antimicrobials in the 30 days before or during enrolment, or both, including 47 (90%) of 52 patients with a negative E coli stool culture and 67 (69%) of 97 patients with a positive culture received antimicrobials in the previous 30 days or at enrolment, or both (p=0\u00b700036; appendix 1 p 6).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 17303,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "To assess E coli diversity and putative acquisition, we picked a median of five E coli colonies (IQR 5\u20135; range 1\u201315; hereafter termed isolates) from each of the 152 primary stool culture plates from 97 patients positive for E coli. Overall, whole-genome sequencing was done on 970 isolates (686 non-ESBL-producing and 284 ESBL-producing E coli). From these isolates we identified 90 different sequence types (appendix 1 pp 9, 13; appendix 2 p 1). The most frequently identified sequence types were ST131 (n=14 patients), ST10 (n=9), and ST69 (n=8; appendix 1 p 13), and accounted for 232 (24%) of 970 isolates. 17 (11%) of 149 patients had stool samples positive for ESBL-producing E coli, with variation in the presence of genes encoding ESBLs between different sequence types (appendix 1 p 9; appendix 2 p 1). Only blaCTX-M-14 and blaCTX-M-15 were present in two or more patients. E coli encoding blaCTX-M-15 was isolated from stools of 12 patients and blaCTX-M-14 from stools of two patients.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 18304,
+      "infons": {
+       "file": "gr2.jpg",
+       "id": "fig2",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "Number of Escherichia coli sequence types observed per patient (n=92)",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 18374,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "To quantify the amount of within-host E coli diversity, we determined the number of different E coli sequence types identified from each patient using data on 149 stool samples from 94 patients (excluding three stools from patients for whom only a single E coli colony was isolated). Around half (52 [55%]) of 94 patients were positive for a single sequence type. 24 (26%) patients carried two sequence types, 12 (13%) carried three, and six (6%) patients carried four or more sequence types, with a maximum of eight sequence types found in a single patient (figure 2). In a per stool analysis, 104 (70%) of 149 stools contained a single sequence type, 35 (23%) contained two sequence types, and ten (7%) contained more than two sequence types, with a maximum of five sequence types recovered from a single stool. Of the 149 stool samples with multiple isolates sequenced, 104 (70%) contained isolates of the same sequence type, and 45 samples (30%) contained more than one sequence type. There was no significant difference in the number of colonies picked from samples containing a single sequence type (median 5 colonies [IQR 5\u20135]) and those with multiple sequence types (median 5 [5\u201314]; 95% CI of the difference between the medians \u20132\u00b782\u2009\u00d7\u200910\u22125 to \u20137\u00b715\u2009\u00d7\u200910\u22127; p=0\u00b7098).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 19676,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "We then identified sequence types that were isolated from stools obtained from two or more patients, which revealed that 27 sequence types were carried by at least two patients. We questioned whether this finding represented coincidental carriage of the same sequence type or transmission from one patient to another. Acquisition analysis was possible for 71 (70%) of 101 patients who provided at least two stool samples during the study and had at least one positive sample for E coli. 30 (42%) patients had putative acquisition of one or more E coli sequence types through 50 acquisition events (appendix 1 p 9; appendix 2 p 2). Of the 17 patients positive for ESBL-producing-E coli, 13 (76%) were positive for ESBL-producing-E coli on their first stool sample, whereas four (24%) had tested positive on follow-up sampling indicating that putative acquisition of ESBL-producing-E coli occurred during hospital admission.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 20599,
+      "infons": {
+       "file": "gr3.jpg",
+       "id": "fig3",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "Histogram of maximum pairwise SNP distance (n=92)",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 20649,
+      "infons": {
+       "file": "gr3.jpg",
+       "id": "fig3",
+       "section_type": "FIG",
+       "type": "fig_caption"
+      },
+      "text": "SNP differences within sequence types from the same patient when at least two isolates of the same sequence type were identified. There were no data points at 31\u201360 days. SNP=single nucleotide polymorphism.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 20858,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "We used sequence data to define a cutoff of genetic similarity between two genomes that was consistent with E coli transmission in the population studied. A core genome pairwise comparison of isolates from the same patient and same sequence type showed a maximum diversity of 17 SNPs (6\u00b78 SNPs per million bases; figure 3), with the exception of three patients who carried isolates which belonged to distinct clades of the same sequence type (different by >300 SNPs, appendix 1 p 9; appendix 2 p 3). The Poisson distribution indicated an upper limit of 25 SNPs (appendix 1 p 14). Having defined two putative but different cutoffs of 17 and 25 SNPs, we used epidemiological information to select the final proposed cutoff. We found that patient pairs with a strong epidemiological link (same bay, room, or ward at the same time or within 7 days) carried isolates that were up to 17 SNPs different, whereas patient pairs carrying isolates 17 to 25 SNPs apart did not have strong epidemiological links. Thus, we selected a 17 SNP cutoff, appreciating that this cutoff is probably more specific but less sensitive than 25 SNPs.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 21983,
+      "infons": {
+       "file": "tbl1.xml",
+       "id": "tbl1",
+       "section_type": "TABLE",
+       "type": "table_caption"
+      },
+      "text": "Ten patient clusters from genomic analysis of Escherichia coli stool isolates",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 22061,
+      "infons": {
+       "file": "tbl1.xml",
+       "id": "tbl1",
+       "section_type": "TABLE",
+       "type": "table",
+       "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<table frame=\"hsides\" rules=\"groups\"><thead><tr><th/><th align=\"left\"><bold>Sequence type</bold></th><th align=\"left\"><bold>Acquired sequence type</bold><xref rid=\"tbl1fn1\" ref-type=\"table-fn\">*</xref></th><th align=\"left\"><bold>SNP distance</bold><xref rid=\"tbl1fn2\" ref-type=\"table-fn\">\u2020</xref></th></tr></thead><tbody><tr><td colspan=\"4\" align=\"left\"><bold>Cluster 1</bold></td></tr><tr><td align=\"left\">C011</td><td align=\"left\">ST7095</td><td align=\"left\">Yes</td><td align=\"left\">First case detected</td></tr><tr><td align=\"left\">C016</td><td align=\"left\">ST7095</td><td align=\"left\">Yes</td><td align=\"left\">2\u20136</td></tr><tr><td align=\"left\">C095</td><td align=\"left\">ST7095</td><td align=\"left\">Yes</td><td align=\"left\">2\u20133</td></tr><tr><td align=\"left\">C098</td><td align=\"left\">ST7095</td><td align=\"left\">Yes</td><td align=\"left\">0\u20132</td></tr><tr><td align=\"left\">C100</td><td align=\"left\">ST7095</td><td align=\"left\">Yes</td><td align=\"left\">5\u20137</td></tr><tr><td align=\"left\">C104</td><td align=\"left\">ST7095</td><td align=\"left\">Yes</td><td align=\"left\">2\u20134</td></tr><tr><td align=\"left\">D058</td><td align=\"left\">ST7095</td><td align=\"left\">No</td><td align=\"left\">1\u20133</td></tr><tr><td colspan=\"4\" align=\"left\"><bold>Cluster 2</bold></td></tr><tr><td align=\"left\">D013</td><td align=\"left\">ST635</td><td align=\"left\">No</td><td align=\"left\">First case detected</td></tr><tr><td align=\"left\">C100</td><td align=\"left\">ST635</td><td align=\"left\">Yes</td><td align=\"left\">0</td></tr><tr><td align=\"left\">D038</td><td align=\"left\">ST635</td><td align=\"left\">No</td><td align=\"left\">3</td></tr><tr><td align=\"left\">D045</td><td align=\"left\">ST635</td><td align=\"left\">Yes</td><td align=\"left\">1\u20132</td></tr><tr><td colspan=\"4\" align=\"left\"><bold>Cluster 3</bold></td></tr><tr><td align=\"left\">C031</td><td align=\"left\">ST1193</td><td align=\"left\">No</td><td align=\"left\">First case detected</td></tr><tr><td align=\"left\">C043</td><td align=\"left\">ST1193</td><td align=\"left\">Yes</td><td align=\"left\">0\u20132</td></tr><tr><td colspan=\"4\" align=\"left\"><bold>Cluster 4</bold></td></tr><tr><td align=\"left\">C023</td><td align=\"left\">ST1196</td><td align=\"left\">No</td><td align=\"left\">First case detected</td></tr><tr><td align=\"left\">C035</td><td align=\"left\">ST1196</td><td align=\"left\">No</td><td align=\"left\">0\u20137</td></tr><tr><td colspan=\"4\" align=\"left\"><bold>Cluster 5</bold></td></tr><tr><td align=\"left\">C022</td><td align=\"left\">ST131</td><td align=\"left\">No</td><td align=\"left\">First case detected</td></tr><tr><td align=\"left\">C027</td><td align=\"left\">ST131</td><td align=\"left\">No</td><td align=\"left\">0</td></tr><tr><td colspan=\"4\" align=\"left\"><bold>Cluster 6</bold></td></tr><tr><td align=\"left\">C043</td><td align=\"left\">ST6151</td><td align=\"left\">No</td><td align=\"left\">First case detected</td></tr><tr><td align=\"left\">C031</td><td align=\"left\">ST6151</td><td align=\"left\">Yes</td><td align=\"left\">0\u20132</td></tr><tr><td colspan=\"4\" align=\"left\"><bold>Cluster 7</bold></td></tr><tr><td align=\"left\">C031</td><td align=\"left\">ST648</td><td align=\"left\">No</td><td align=\"left\">First case detected</td></tr><tr><td align=\"left\">C043</td><td align=\"left\">ST648</td><td align=\"left\">Yes</td><td align=\"left\">0\u20131</td></tr><tr><td colspan=\"4\" align=\"left\"><bold>Cluster 8</bold></td></tr><tr><td align=\"left\">C096</td><td align=\"left\">ST69</td><td align=\"left\">No</td><td align=\"left\">First case detected</td></tr><tr><td align=\"left\">C100</td><td align=\"left\">ST69</td><td align=\"left\">Yes</td><td align=\"left\">0\u20131</td></tr><tr><td colspan=\"4\" align=\"left\"><bold>Cluster 9</bold></td></tr><tr><td align=\"left\">C059</td><td align=\"left\">ST7094</td><td align=\"left\">No</td><td align=\"left\">First case detected</td></tr><tr><td align=\"left\">D058</td><td align=\"left\">ST7094</td><td align=\"left\">Yes</td><td align=\"left\">0\u20131</td></tr><tr><td colspan=\"4\" align=\"left\"><bold>Cluster 10</bold></td></tr><tr><td align=\"left\">C005</td><td align=\"left\">ST443</td><td align=\"left\">No</td><td align=\"left\">First case detected</td></tr><tr><td align=\"left\">D030</td><td align=\"left\">ST443</td><td align=\"left\">No</td><td align=\"left\">8\u201311</td></tr></tbody></table>\n"
+      },
+      "text": "\tSequence type\tAcquired sequence type*\tSNP distance\u2020\t \tCluster 1\t \tC011\tST7095\tYes\tFirst case detected\t \tC016\tST7095\tYes\t2\u20136\t \tC095\tST7095\tYes\t2\u20133\t \tC098\tST7095\tYes\t0\u20132\t \tC100\tST7095\tYes\t5\u20137\t \tC104\tST7095\tYes\t2\u20134\t \tD058\tST7095\tNo\t1\u20133\t \tCluster 2\t \tD013\tST635\tNo\tFirst case detected\t \tC100\tST635\tYes\t0\t \tD038\tST635\tNo\t3\t \tD045\tST635\tYes\t1\u20132\t \tCluster 3\t \tC031\tST1193\tNo\tFirst case detected\t \tC043\tST1193\tYes\t0\u20132\t \tCluster 4\t \tC023\tST1196\tNo\tFirst case detected\t \tC035\tST1196\tNo\t0\u20137\t \tCluster 5\t \tC022\tST131\tNo\tFirst case detected\t \tC027\tST131\tNo\t0\t \tCluster 6\t \tC043\tST6151\tNo\tFirst case detected\t \tC031\tST6151\tYes\t0\u20132\t \tCluster 7\t \tC031\tST648\tNo\tFirst case detected\t \tC043\tST648\tYes\t0\u20131\t \tCluster 8\t \tC096\tST69\tNo\tFirst case detected\t \tC100\tST69\tYes\t0\u20131\t \tCluster 9\t \tC059\tST7094\tNo\tFirst case detected\t \tD058\tST7094\tYes\t0\u20131\t \tCluster 10\t \tC005\tST443\tNo\tFirst case detected\t \tD030\tST443\tNo\t8\u201311\t \t",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 22989,
+      "infons": {
+       "file": "tbl1.xml",
+       "id": "tbl1",
+       "section_type": "TABLE",
+       "type": "table_footnote"
+      },
+      "text": "Patient identification codes are indicated within each cluster. SNP=single nucleotide polymorphism.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 23089,
+      "infons": {
+       "file": "tbl1.xml",
+       "id": "tbl1",
+       "section_type": "TABLE",
+       "type": "table_footnote"
+      },
+      "text": "Patients were previously negative for E coli or acquired a new sequence type.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 23167,
+      "infons": {
+       "file": "tbl1.xml",
+       "id": "tbl1",
+       "section_type": "TABLE",
+       "type": "table_footnote"
+      },
+      "text": "SNP distance range refers to the minimum\u2013maximum SNPs between the isolate from that patient and others in the cluster.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 23288,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "We then applied the 17 SNP cutoff to all 970 E coli isolates, reflecting a strictly genomic investigation of putative transmission. We identified ten clusters (defined as containing two or more cases) in 20 patients, four of whom were placed in multiple clusters (table 1; appendix 1 p 15). Strong epidemiological links were found between patients in seven clusters (appendix 1 p 15). The two largest clusters contained seven patients associated with sequence type ST7095 and four patients associated with sequence type ST635 (phylogenetic trees and timelines shown in appendix 1 pp 16\u201319). These sequence types seemed to have been acquired after admission to hospital (six patients for ST7095 and two for ST635), further supporting hospital acquisition. The remaining eight clusters contained two patients each and were associated with eight different sequence types (ST69, ST131, ST443, ST648, ST1193, ST1196, ST6151, and ST7094).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 24223,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "A serious consequence of E coli carriage is the development of a bloodstream infection, which occurred in nine (5%) of 174 patients (281 admissions; appendix 1 pp 10\u201311) during the study period, equating to around 32 invasive infections per 1000 admissions. All nine patients had a bloodstream infection associated with health-care contact (four hospital acquired and five health-care associated). Seven patients were infected by non-ESBL-producing E coli and two by ESBL-producing E coli. Seven patients had at least one positive stool cultured and the other two did not provide a stool sample. Four patients provided a stool sample before infection onset. We sequenced 100 colonies from 12 stools from the seven patients (median 15 colonies per patient; range 5\u201330). The same sequence type was identified in blood and stool samples in four patients (two with ST131, one with ST95, and one with ST1193). Pairwise core genome comparison of these stool and disease-associated E coli genomes showed that the blood and stool isolates were very highly related (difference of 0 SNPs).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 25307,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "Over a longer timeframe (from May 13, 2014, to May 13, 2016), we identified 36 additional positive blood cultures from the same two study wards (from 25 patients) with at least one E coli isolate available for sequencing. The E coli isolates belonged to 18 sequence types, with nine (25%) isolates being ST131 and 12 (33%) ESBL-producing E coli. Details of all E coli isolates sequenced from bloodstream infections are shown in appendix 2 (p 1).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 25753,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "34 (23%) of 149 patients had E coli resistant to ciprofloxacin in stool isolates and the mechanisms of resistance were identified (appendix 1 pp 11; appendix 2 p 4). The types of ESBL-encoding genes we identified and sequence types carrying each type are shown in appendix 1 (pp 7, 9) and appendix 2 (p 1). We selected 31 ESBL-producing E coli isolates (21 stool and ten blood cultures) for long-read sequencing. In half of E coli blaCTX-M-15 cases (eight of 16), the gene was integrated into the chromosome rather than carried on a plasmid, with one further patient carrying an isolate with the gene on both the chromosome and a plasmid. Chromosomal insertion of blaCTX-M-15 occurred across four STs (ST131, ST443, ST648, and ST90; appendix 1 p 7). We identified two scenarios. The first was that plasmids carrying blaCTX-M-15 shared few segments (mostly over regions carrying antibiotic resistance genes) of high identity. We also observed the situation where isolates from two patients carried identical plasmids but these isolates differed by 25 or more SNPs and the patients carrying these had weak epidemiological links (appendix 1 p 8).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 26897,
+      "infons": {
+       "file": "tbl2.xml",
+       "id": "tbl2",
+       "section_type": "TABLE",
+       "type": "table_caption"
+      },
+      "text": "Plasmids encoding blaCTX-M-15 or blaCTX-M-14 from PacBio sequencing",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 26965,
+      "infons": {
+       "file": "tbl2.xml",
+       "id": "tbl2",
+       "section_type": "TABLE",
+       "type": "table",
+       "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<table frame=\"hsides\" rules=\"groups\"><thead><tr><th/><th align=\"left\"><bold>Sample identification</bold></th><th align=\"left\"><bold>Patient identification</bold></th><th align=\"left\"><bold>Sample type</bold></th><th align=\"left\"><bold>Sequence type</bold></th><th align=\"left\"><bold>Plasmid size, bp</bold></th><th align=\"left\"><bold>Incompatibility group</bold></th><th align=\"left\"><bold>Phenotypic resistance</bold><xref rid=\"tbl2fn1\" ref-type=\"table-fn\">*</xref></th><th align=\"left\"><bold>Antimicrobial resistance genes on plasmid</bold></th></tr></thead><tbody><tr><td align=\"left\">LR595882</td><td align=\"left\">3546</td><td align=\"left\">B005<xref rid=\"tbl2fn2\" ref-type=\"table-fn\">\u2020</xref></td><td align=\"left\">Blood</td><td align=\"left\">648</td><td align=\"left\">152\u2008153</td><td align=\"left\">IcFIA, IncFIB, IncFII</td><td align=\"left\">Cefotaxime, ceftazidime, amoxicillin, ciprofloxacin, gentamicin, piperacillin with tazobactam</td><td align=\"left\"><italic>bla</italic><sub>CTX-M-15</sub>; <italic>bla</italic><sub>TEM-1</sub>; <italic>aac(3)-IIa</italic>; <italic>dfrA17</italic>; <italic>sul1</italic>; <italic>tetB</italic>; <italic>mphA</italic>; <italic>aadA5</italic>; <italic>strAB</italic>; <italic>ermB</italic></td></tr><tr><td align=\"left\">LR595874</td><td align=\"left\">3547</td><td align=\"left\">B005<xref rid=\"tbl2fn2\" ref-type=\"table-fn\">\u2020</xref></td><td align=\"left\">Blood</td><td align=\"left\">648</td><td align=\"left\">152\u2008153</td><td align=\"left\">IcFIA, IncFIB, IncFII</td><td align=\"left\">Cefotaxime, ceftazidime, amoxicillin, ciprofloxacin, gentamicin, piperacillin with tazobactam</td><td align=\"left\"><italic>bla</italic><sub>CTX-M-15</sub>; <italic>bla</italic><sub>TEM-1</sub>; <italic>aac(3)-IIa</italic>; <italic>dfrA17</italic>; <italic>sul1</italic>; <italic>tetB</italic>; <italic>mphA</italic>; <italic>aadA5</italic>; <italic>strAB</italic>; <italic>ermB</italic></td></tr><tr><td align=\"left\">LR595875</td><td align=\"left\">3580</td><td align=\"left\">B006<xref rid=\"tbl2fn2\" ref-type=\"table-fn\">\u2020</xref></td><td align=\"left\">Blood</td><td align=\"left\">131</td><td align=\"left\">111\u2008743</td><td align=\"left\">IncFIB</td><td align=\"left\">Cefotaxime, ceftazidime, amoxicillin, gentamicin</td><td align=\"left\"><italic>bla</italic><sub>CTX-M-15</sub></td></tr><tr><td align=\"left\">LR595876</td><td align=\"left\">3550</td><td align=\"left\">C042<xref rid=\"tbl2fn2\" ref-type=\"table-fn\">\u2020</xref></td><td align=\"left\">Blood</td><td align=\"left\">2006</td><td align=\"left\">170\u2008000</td><td align=\"left\">IncFIA, IncFIB, IncFII</td><td align=\"left\">Cefotaxime, ceftazidime, amoxicillin, ciprofloxacin, gentamicin</td><td align=\"left\"><italic>bla</italic><sub>CTX-M-15</sub>; <italic>bla</italic><sub>OXA-1</sub>; <italic>aac(3)-IIa</italic>; <italic>aac6_prime-Ib-cr</italic>; <italic>dfrA17</italic>; <italic>sul1</italic>; <italic>tetB</italic>; <italic>mphA</italic>; <italic>aadA5</italic></td></tr><tr><td align=\"left\">LR595878</td><td align=\"left\">3271</td><td align=\"left\">C025</td><td align=\"left\">Stool</td><td align=\"left\">1723</td><td align=\"left\">111\u2008381</td><td align=\"left\">IncFIB</td><td align=\"left\">Cefotaxime, ceftazidime, ciprofloxacin</td><td align=\"left\"><italic>bla</italic><sub>CTX-M-15</sub></td></tr><tr><td align=\"left\">LR595886</td><td align=\"left\">2898</td><td align=\"left\">C065</td><td align=\"left\">Stool</td><td align=\"left\">131</td><td align=\"left\">164\u2008328</td><td align=\"left\">IncFIA, IncFII, IncN</td><td align=\"left\">Cefotaxime, ceftazidime, ciprofloxacin</td><td align=\"left\"><italic>bla</italic><sub>CTX-M-15</sub>; <italic>bla</italic><sub>OXA-1</sub>; <italic>aac6_prime-Ib-cr</italic>; <italic>dfrA17</italic>; <italic>sul1</italic>; <italic>mphA</italic>; <italic>aadA5</italic>; <italic>tetA</italic></td></tr><tr><td align=\"left\">LR595884</td><td align=\"left\">2981</td><td align=\"left\">C071</td><td align=\"left\">Stool</td><td align=\"left\">131</td><td align=\"left\">61\u2008991</td><td align=\"left\">IncFIA, IncFIB</td><td align=\"left\">Cefotaxime, ceftazidime, amikacin, amoxicillin, ciprofloxacin, gentamicin</td><td align=\"left\"><italic>bla</italic><sub>CTX-M-15</sub>; <italic>bla</italic><sub>OXA-1</sub>; <italic>aac(3)-IIa</italic>; <italic>aac6_prime-Ib-cr</italic>; <italic>dfrA17</italic>; <italic>sul1</italic>; <italic>mphA</italic>; <italic>aadA5</italic>; <italic>tetA</italic>(x2); <italic>strAB</italic></td></tr><tr><td align=\"left\">LR595879</td><td align=\"left\">3060</td><td align=\"left\">C071</td><td align=\"left\">Stool</td><td align=\"left\">131</td><td align=\"left\">69\u2008882</td><td align=\"left\">IncFIA, IncFIB</td><td align=\"left\">Cefotaxime, ceftazidime, amikacin, amoxicillin, ciprofloxacin, gentamicin, piperacillin with tazobactam</td><td align=\"left\"><italic>bla</italic><sub>CTX-M-15</sub>; <italic>bla</italic><sub>OXA-1</sub>(x2); <italic>aac(3)-IIa</italic>; <italic>aac6_prime-Ib-cr</italic>; <italic>dfrA17</italic>; <italic>sul1</italic>; <italic>mphA</italic>; <italic>aadA5</italic>; <italic>tetA</italic>(x3); <italic>strAB</italic></td></tr><tr><td align=\"left\">LR595890</td><td align=\"left\">2766</td><td align=\"left\">D038</td><td align=\"left\">Stool</td><td align=\"left\">1723</td><td align=\"left\">111\u2008381</td><td align=\"left\">IncFIB</td><td align=\"left\">Cefotaxime, ceftazidime, ciprofloxacin</td><td align=\"left\"><italic>bla</italic><sub>CTX-M-15</sub></td></tr><tr><td align=\"left\">LR595881</td><td align=\"left\">3125</td><td align=\"left\">D050</td><td align=\"left\">Stool</td><td align=\"left\">7097</td><td align=\"left\">81\u2008285</td><td align=\"left\">IncFIB</td><td align=\"left\">Cefotaxime, ceftazidime</td><td align=\"left\"><italic>bla</italic><sub>CTX-M-15</sub>; <italic>qnrS1</italic>; <italic>dfrA14</italic>; <italic>sul2</italic>; <italic>bla</italic><sub>TEM-1</sub></td></tr><tr><td align=\"left\">LR595877</td><td align=\"left\">2656</td><td align=\"left\">C047</td><td align=\"left\">Blood</td><td align=\"left\">156</td><td align=\"left\">111\u2008594</td><td align=\"left\">IncB/O/K/Z</td><td align=\"left\">Cefotaxime, gentamicin</td><td align=\"left\"><italic>bla</italic><sub>CTX-M-14</sub>; <italic>aac(3)-IIa</italic>; <italic>dfrA17</italic>; <italic>sul1</italic>; <italic>mphA</italic>; <italic>aadA5</italic></td></tr><tr><td align=\"left\">LR595889</td><td align=\"left\">2604</td><td align=\"left\">C047</td><td align=\"left\">Blood</td><td align=\"left\">428</td><td align=\"left\">94\u2008296</td><td align=\"left\">IncB/O/K/Z</td><td align=\"left\">Cefotaxime</td><td align=\"left\"><italic>bla</italic><sub>CTX-M-14</sub></td></tr><tr><td align=\"left\">LR595871</td><td align=\"left\">2656</td><td align=\"left\">C047</td><td align=\"left\">Blood</td><td align=\"left\">428</td><td align=\"left\">94\u2008061</td><td align=\"left\">IncB/O/K/Z</td><td align=\"left\">Cefotaxime</td><td align=\"left\"><italic>bla</italic><sub>CTX-M-14</sub></td></tr><tr><td align=\"left\">LR595888</td><td align=\"left\">2887</td><td align=\"left\">C062</td><td align=\"left\">Stool</td><td align=\"left\">3877</td><td align=\"left\">96\u2008306</td><td align=\"left\">IncB/O/K/Z</td><td align=\"left\">Cefotaxime</td><td align=\"left\"><italic>bla</italic><sub>CTX-M-14</sub></td></tr><tr><td align=\"left\">LR595880</td><td align=\"left\">2978</td><td align=\"left\">C062</td><td align=\"left\">Blood</td><td align=\"left\">131</td><td align=\"left\">96\u2008305</td><td align=\"left\">IncB/O/K/Z</td><td align=\"left\">Cefotaxime, amoxicillin, ciprofloxacin, gentamicin</td><td align=\"left\"><italic>bla</italic><sub>CTX-M-14</sub></td></tr><tr><td align=\"left\">LR595872</td><td align=\"left\">3877</td><td align=\"left\">C062</td><td align=\"left\">Stool</td><td align=\"left\">3877</td><td align=\"left\">96\u2008306</td><td align=\"left\">IncB/O/K/Z</td><td align=\"left\">Cefotaxime, amoxicillin</td><td align=\"left\"><italic>bla</italic><sub>CTX-M-14</sub></td></tr></tbody></table>\n"
+      },
+      "text": "\tSample identification\tPatient identification\tSample type\tSequence type\tPlasmid size, bp\tIncompatibility group\tPhenotypic resistance*\tAntimicrobial resistance genes on plasmid\t \tLR595882\t3546\tB005\u2020\tBlood\t648\t152\u2008153\tIcFIA, IncFIB, IncFII\tCefotaxime, ceftazidime, amoxicillin, ciprofloxacin, gentamicin, piperacillin with tazobactam\tblaCTX-M-15; blaTEM-1; aac(3)-IIa; dfrA17; sul1; tetB; mphA; aadA5; strAB; ermB\t \tLR595874\t3547\tB005\u2020\tBlood\t648\t152\u2008153\tIcFIA, IncFIB, IncFII\tCefotaxime, ceftazidime, amoxicillin, ciprofloxacin, gentamicin, piperacillin with tazobactam\tblaCTX-M-15; blaTEM-1; aac(3)-IIa; dfrA17; sul1; tetB; mphA; aadA5; strAB; ermB\t \tLR595875\t3580\tB006\u2020\tBlood\t131\t111\u2008743\tIncFIB\tCefotaxime, ceftazidime, amoxicillin, gentamicin\tblaCTX-M-15\t \tLR595876\t3550\tC042\u2020\tBlood\t2006\t170\u2008000\tIncFIA, IncFIB, IncFII\tCefotaxime, ceftazidime, amoxicillin, ciprofloxacin, gentamicin\tblaCTX-M-15; blaOXA-1; aac(3)-IIa; aac6_prime-Ib-cr; dfrA17; sul1; tetB; mphA; aadA5\t \tLR595878\t3271\tC025\tStool\t1723\t111\u2008381\tIncFIB\tCefotaxime, ceftazidime, ciprofloxacin\tblaCTX-M-15\t \tLR595886\t2898\tC065\tStool\t131\t164\u2008328\tIncFIA, IncFII, IncN\tCefotaxime, ceftazidime, ciprofloxacin\tblaCTX-M-15; blaOXA-1; aac6_prime-Ib-cr; dfrA17; sul1; mphA; aadA5; tetA\t \tLR595884\t2981\tC071\tStool\t131\t61\u2008991\tIncFIA, IncFIB\tCefotaxime, ceftazidime, amikacin, amoxicillin, ciprofloxacin, gentamicin\tblaCTX-M-15; blaOXA-1; aac(3)-IIa; aac6_prime-Ib-cr; dfrA17; sul1; mphA; aadA5; tetA(x2); strAB\t \tLR595879\t3060\tC071\tStool\t131\t69\u2008882\tIncFIA, IncFIB\tCefotaxime, ceftazidime, amikacin, amoxicillin, ciprofloxacin, gentamicin, piperacillin with tazobactam\tblaCTX-M-15; blaOXA-1(x2); aac(3)-IIa; aac6_prime-Ib-cr; dfrA17; sul1; mphA; aadA5; tetA(x3); strAB\t \tLR595890\t2766\tD038\tStool\t1723\t111\u2008381\tIncFIB\tCefotaxime, ceftazidime, ciprofloxacin\tblaCTX-M-15\t \tLR595881\t3125\tD050\tStool\t7097\t81\u2008285\tIncFIB\tCefotaxime, ceftazidime\tblaCTX-M-15; qnrS1; dfrA14; sul2; blaTEM-1\t \tLR595877\t2656\tC047\tBlood\t156\t111\u2008594\tIncB/O/K/Z\tCefotaxime, gentamicin\tblaCTX-M-14; aac(3)-IIa; dfrA17; sul1; mphA; aadA5\t \tLR595889\t2604\tC047\tBlood\t428\t94\u2008296\tIncB/O/K/Z\tCefotaxime\tblaCTX-M-14\t \tLR595871\t2656\tC047\tBlood\t428\t94\u2008061\tIncB/O/K/Z\tCefotaxime\tblaCTX-M-14\t \tLR595888\t2887\tC062\tStool\t3877\t96\u2008306\tIncB/O/K/Z\tCefotaxime\tblaCTX-M-14\t \tLR595880\t2978\tC062\tBlood\t131\t96\u2008305\tIncB/O/K/Z\tCefotaxime, amoxicillin, ciprofloxacin, gentamicin\tblaCTX-M-14\t \tLR595872\t3877\tC062\tStool\t3877\t96\u2008306\tIncB/O/K/Z\tCefotaxime, amoxicillin\tblaCTX-M-14\t \t",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 29477,
+      "infons": {
+       "file": "tbl2.xml",
+       "id": "tbl2",
+       "section_type": "TABLE",
+       "type": "table_footnote"
+      },
+      "text": "Antimicrobial non-susceptibility detected by VITEK2.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 29530,
+      "infons": {
+       "file": "tbl2.xml",
+       "id": "tbl2",
+       "section_type": "TABLE",
+       "type": "table_footnote"
+      },
+      "text": "Blood samples taken before and after the study.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 29578,
+      "infons": {
+       "section_type": "RESULTS",
+       "type": "paragraph"
+      },
+      "text": "blaCTX-M-14 was plasmid-borne (all IncB/O/K/Z) in all five blaCTX-M-14 positive isolates (four sequence types) from two patients (C062 and C047; table 2). blaCTX-M-14 positive plasmids from patient C062 were identical (>99% identity over >99% coverage), including plasmids from two different sequence types, consistent with within-host plasmid sharing between sequence types. However, the blaCTX-M-14 plasmids from C047 showed great diversity and were different to those found in C062. Representative blaCTX-M-14 carrying plasmids and plasmid comparisons are shown in appendix 1 (pp 11, 20\u201323) and appendix 2 (p 4).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 30196,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "title_1"
+      },
+      "text": "Discussion",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 30207,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "In this study we extensively examined within-host diversity by serial sampling 94 patients, which showed that almost half of all patients carried more than one sequence type and more than 70% of patients positive for ESBL-producing E coli were also positive for non-ESBL-producing E coli. This finding indicates that surveillance and outbreak investigations based on single colonies or focused solely on ESBL-producing isolates are likely to underestimate transmission events and the diversity of antimicrobial susceptibility profiles present in a sample. A previous study of 127 genomes from eight children, seven of whom were positive for ESBL-producing E coli, identified a median of four sequence types per child (range 1\u201310). Analysing seven ESBL-producing E coli genomes from three stool samples from one patient with cystic fibrosis identified up to three sequence types per sample.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 31099,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "Diversity was also identified within specific sequence types. A maximum of 17 SNPs were detected per sequence type in each patient, similar to that previously reported (12 SNPs) for ST131 isolated from long-term care facility residents. To date, few studies have investigated within-host diversity of E coli using sequencing, and these studies were small and limited by the inclusion of only ESBL-producing strains.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 31515,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "On the basis of genomic data, we identified that almost a third of patients appeared to acquire one or more E coli sequence types through a total of 50 acquisition events. Three of the 50 acquisition events were due to ESBL-producing E coli, and in total 34 unique sequence types were acquired. A major strength of our study was the development of a SNP cutoff to support E coli transmission in the studied population. Using a cutoff of 17 SNPs we found evidence for transmission that was restricted to small patient clusters. Additionally, we highlight the importance of investigating transmission of non-ESBL-producing E coli because eight of ten transmission clusters identified in this study were non-ESBL-producing E coli, including the two largest clusters.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 32279,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "The number of E coli bloodstream infections are continuously increasing annually but resistance to third-generation cephalosporins accounts for only around 14% of such infections in the UK, which was why we included both ESBL-producing and non-ESBL-producing E coli. By examining all blood cultures positive for E coli from the two haematology wards, we identified a diverse collection of invasive strains (19 sequence types) that were predominately non-ESBL producers. These results are consistent with those observed in a national survey of bloodstream infections done between 2001 and 2012 in England, in which less than 15% of invasive isolates were non-susceptible to third-generation cephalosporins annually compared with 17% of ESBL-producing isolates identified in this study. Our results are in concordance with previous publications that reported ST131 as one of the most frequently recovered lineages from bloodstream infections in the UK. All patients with a bloodstream infection during this study had a genetically distinct strain compared with isolates from other patients recruited to the study, but four of seven patients had highly similar strains in their blood and stool samples, suggesting an endogenous source for the infection.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 33530,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "We also revealed the complexity of investigating the transmission of ESBL-producing genes (blaCTX-M-15 and blaCTX-M-14). Previous studies have shown that characterisation of large plasmids (>50 kilobase pairs) from short-read genome sequence data is challenging due to the presence of repeated sequences. In this study, all ESBL-producing plasmids were fully characterised using long-read sequencing, which provided confidence in our conclusions on plasmid structure, genetic context of ESBL-encoding genes, and transmission. We found that blaCTX-M-15 was commonly integrated into the chromosome, unlike in previous studies which showed blaCTX-M-15 to be plasmid-encoded. Our data show that antimicrobial susceptibility data and plasmid replicon typing is not sufficient to identify plasmid transmission, and long-read sequencing is required to fully understand the dissemination of antimicrobial resistance genes.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 34445,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "Our study has several limitations. We sampled less than 50% of patients admitted to the two haematology wards, and we did not sample the environment or health-care workers. This sampling strategy might lead to underestimated epidemiological links and could explain the absence of links between patients carrying highly related isolates, the absence of genetic links in putative acquisition events, and the inability to identify the source of three putative exogenous infections. Additionally, we did not sequence the full diversity of E coli in stool samples, which can lead to some sequence types being misclassified as acquired but instead they might have been present at low abundance in previous samples. We observed that stool samples contained multiple sequence types, but we cannot exclude that these did not contain additional sequence types. Future studies could sequence directly from plate sweeps to capture greater diversity within individuals. We established a SNP cutoff to infer E coli transmission in this cohort of patients admitted to hospital. A limitation of this approach is that the directionality of transmission cannot be inferred. Also, combining epidemiological with genomic data to confirm transmission is essential, but this cutoff restricts the number of patients requiring detailed epidemiological follow-up. Additionally, the dataset and method described in this study are of great value to establish a SNP threshold, but more datasets from other settings would be needed to conclude a universal SNP cutoff.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 35984,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "In conclusion, the findings from our study have important implications for carriage, acquisition, and transmission analyses of E coli. Our study highlights polyclonal E coli colonisation, the value of characterising multiple isolates per sample, and the clinical relevance of E coli transmission in the hospital setting. Using the diversity of the same strains from the same host from multipick data we defined a cutoff of clonality that led to the identification of putative nosocomial transmission of E coli strains driving carriage and bloodstream infections in patients admitted to hospital. Using long-read sequencing, we identified diverse mechanisms of blaCTX-M-15 and blaCTX-M-14 carriage with no evidence of plasmid sharing between patients. High diversity was observed in bacteraemia isolates, but we identified patients with indistinguishable isolates from stool and blood samples, suggesting an endogenous infection. Future interventions to reduce the number of E coli bacteraemia should focus on preventing endogenous infections.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 37027,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "title_1"
+      },
+      "text": "Data sharing",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 37040,
+      "infons": {
+       "section_type": "DISCUSS",
+       "type": "paragraph"
+      },
+      "text": "The sequence data generated in this study have been submitted to the NCBI BioProject database (https://www.ncbi.nlm.nih.gov/bioproject/) under accession numbers PRJEB19918 and PRJEB21499, and individual accession numbers for Illumina and PacBio data are listed in appendix 1 (pp 9, 12) and appendix 2 (p 1).",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 37348,
+      "infons": {
+       "section_type": "COMP_INT",
+       "type": "title_1"
+      },
+      "text": "Declaration of interests",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 37373,
+      "infons": {
+       "section_type": "COMP_INT",
+       "type": "paragraph"
+      },
+      "text": "JP and SJP report grants from the Health Innovation Challenge Fund and Wellcome Trust, during the conduct of this study. JP and SJP report personal fees from Next Gen Diagnostics, outside the submitted work. All other authors declare no competing interests.",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 37631,
+      "infons": {
+       "section_type": "REF",
+       "type": "title"
+      },
+      "text": "References",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 37642,
+      "infons": {
+       "element-citation": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/940716/Annual_epidemiology_commentary_April_2019_March_2020.pdf",
+       "section_type": "REF",
+       "type": "ref",
+       "year": "2020"
+      },
+      "text": "Annual epidemiological commentary: Gram-negative bacteraemia, MRSA bacteraemia, MSSA bacteraemia and C difficile infections, up to and including financial year April 2019 to March 2020",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 37827,
+      "infons": {
+       "element-citation": "https://www.gov.uk/government/statistics/escherichia-coli-e-coli-bacteraemia-annual-data",
+       "section_type": "REF",
+       "type": "ref",
+       "year": "2020"
+      },
+      "text": "Escherichia coli (E. coli) bacteraemia: financial year counts and rates by acute trust and CCG, up to financial year 2019 to 2020",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 37957,
+      "infons": {
+       "fpage": "913",
+       "lpage": "920",
+       "name_0": "surname:Schwaber;given-names:MJ",
+       "name_1": "surname:Carmeli;given-names:Y",
+       "pub-id_pmid": "17848376",
+       "section_type": "REF",
+       "source": "J Antimicrob Chemother",
+       "type": "ref",
+       "volume": "60",
+       "year": "2007"
+      },
+      "text": "Mortality and delay in effective therapy associated with extended-spectrum \u03b2-lactamase production in Enterobacteriaceae bacteraemia: a systematic review and meta-analysis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 38131,
+      "infons": {
+       "fpage": "1987",
+       "lpage": "1994",
+       "name_0": "surname:Tumbarello;given-names:M",
+       "name_1": "surname:Sanguinetti;given-names:M",
+       "name_2": "surname:Montuori;given-names:E",
+       "pub-id_pmid": "17387156",
+       "section_type": "REF",
+       "source": "Antimicrob Agents Chemother",
+       "type": "ref",
+       "volume": "51",
+       "year": "2007"
+      },
+      "text": "Predictors of mortality in patients with bloodstream infections caused by extended-spectrum-\u03b2-lactamase-producing Enterobacteriaceae: importance of inadequate initial antimicrobial treatment",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 38325,
+      "infons": {
+       "fpage": "1311",
+       "lpage": "1320",
+       "name_0": "surname:Rottier;given-names:WC",
+       "name_1": "surname:Ammerlaan;given-names:HSM",
+       "name_2": "surname:Bonten;given-names:MJM",
+       "pub-id_pmid": "22396430",
+       "section_type": "REF",
+       "source": "J Antimicrob Chemother",
+       "type": "ref",
+       "volume": "67",
+       "year": "2012"
+      },
+      "text": "Effects of confounders and intermediates on the association of bacteraemia caused by extended-spectrum \u03b2-lactamase-producing Enterobacteriaceae and patient outcome: a meta-analysis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 38509,
+      "infons": {
+       "fpage": "254",
+       "lpage": "259",
+       "name_0": "surname:Melzer;given-names:M",
+       "name_1": "surname:Petersen;given-names:I",
+       "pub-id_pmid": "17574678",
+       "section_type": "REF",
+       "source": "J Infect",
+       "type": "ref",
+       "volume": "55",
+       "year": "2007"
+      },
+      "text": "Mortality following bacteraemic infection caused by extended spectrum beta-lactamase (ESBL) producing E. coli compared to non-ESBL producing E. coli",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 38658,
+      "infons": {
+       "fpage": "2122",
+       "lpage": "2131",
+       "name_0": "surname:Stoesser;given-names:N",
+       "name_1": "surname:Sheppard;given-names:AE",
+       "name_2": "surname:Moore;given-names:CE",
+       "pub-id_pmid": "25903575",
+       "section_type": "REF",
+       "source": "J Clin Microbiol",
+       "type": "ref",
+       "volume": "53",
+       "year": "2015"
+      },
+      "text": "Extensive within-host diversity in fecally carried extended-spectrum-beta-lactamase-producing Escherichia coli isolates: implications for transmission analyses",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 38818,
+      "infons": {
+       "fpage": "70",
+       "name_0": "surname:Brodrick;given-names:HJ",
+       "name_1": "surname:Raven;given-names:KE",
+       "name_2": "surname:Kallonen;given-names:T",
+       "pub-id_pmid": "28738847",
+       "section_type": "REF",
+       "source": "Genome Med",
+       "type": "ref",
+       "volume": "9",
+       "year": "2017"
+      },
+      "text": "Longitudinal genomic surveillance of multidrug-resistant Escherichia coli carriage in a long-term care facility in the United Kingdom",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 38952,
+      "infons": {
+       "fpage": "280",
+       "name_0": "surname:Knudsen;given-names:PK",
+       "name_1": "surname:Gammelsrud;given-names:KW",
+       "name_2": "surname:Alfsnes;given-names:K",
+       "pub-id_pmid": "29321570",
+       "section_type": "REF",
+       "source": "Sci Rep",
+       "type": "ref",
+       "volume": "8",
+       "year": "2018"
+      },
+      "text": "Transfer of a bla CTX-M-1-carrying plasmid between different Escherichia coli strains within the human gut explored by whole genome sequencing analyses",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 39104,
+      "infons": {
+       "fpage": "219",
+       "lpage": "226",
+       "name_0": "surname:Ludden;given-names:C",
+       "name_1": "surname:Moradigaravand;given-names:D",
+       "name_2": "surname:Jamrozy;given-names:D",
+       "pub-id_pmid": "30840764",
+       "section_type": "REF",
+       "source": "Clin Infect Dis",
+       "type": "ref",
+       "volume": "70",
+       "year": "2020"
+      },
+      "text": "A One Health study of the genetic relatedness of Klebsiella pneumoniae and their mobile elements in the East of England",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 39224,
+      "infons": {
+       "fpage": "103",
+       "lpage": "111",
+       "name_0": "surname:Gouliouris;given-names:T",
+       "name_1": "surname:Coll;given-names:F",
+       "name_2": "surname:Ludden;given-names:C",
+       "pub-id_pmid": "33106672",
+       "section_type": "REF",
+       "source": "Nat Microbiol",
+       "type": "ref",
+       "volume": "6",
+       "year": "2021"
+      },
+      "text": "Quantifying acquisition and transmission of Enterococcus faecium using genomic surveillance",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 39316,
+      "infons": {
+       "fpage": "791",
+       "lpage": "797",
+       "name_0": "surname:Friedman;given-names:NDKK",
+       "name_1": "surname:Kaye;given-names:KS",
+       "name_2": "surname:Stout;given-names:JE",
+       "pub-id_pmid": "12435215",
+       "section_type": "REF",
+       "source": "Ann Intern Med",
+       "type": "ref",
+       "volume": "137",
+       "year": "2002"
+      },
+      "text": "Health care--associated bloodstream infections in adults: a reason to change the accepted definition of community-acquired infections",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 39450,
+      "infons": {
+       "fpage": "469",
+       "lpage": "474",
+       "name_0": "surname:Harris;given-names:SR",
+       "name_1": "surname:Feil;given-names:EJ",
+       "name_2": "surname:Holden;given-names:MT",
+       "pub-id_pmid": "20093474",
+       "section_type": "REF",
+       "source": "Science",
+       "type": "ref",
+       "volume": "327",
+       "year": "2010"
+      },
+      "text": "Evolution of MRSA during hospital transmission and intercontinental spread",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 39525,
+      "infons": {
+       "fpage": "3691",
+       "lpage": "3693",
+       "name_0": "surname:Page;given-names:AJ",
+       "name_1": "surname:Cummins;given-names:CA",
+       "name_2": "surname:Hunt;given-names:M",
+       "pub-id_pmid": "26198102",
+       "section_type": "REF",
+       "source": "Bioinformatics",
+       "type": "ref",
+       "volume": "31",
+       "year": "2015"
+      },
+      "text": "Roary: rapid large-scale prokaryote pan genome analysis",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 39581,
+      "infons": {
+       "name_0": "surname:Hunt;given-names:M",
+       "name_1": "surname:Mather;given-names:AE",
+       "name_2": "surname:S\u00e1nchez-Bus\u00f3;given-names:L",
+       "section_type": "REF",
+       "source": "Microb Genom",
+       "type": "ref",
+       "volume": "3",
+       "year": "2017"
+      },
+      "text": "ARIBA: rapid antimicrobial resistance genotyping directly from sequencing reads",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 39661,
+      "infons": {
+       "fpage": "3222",
+       "lpage": "3232",
+       "name_0": "surname:Komp Lindgren;given-names:P",
+       "name_1": "surname:Karlsson;given-names:A",
+       "name_2": "surname:Hughes;given-names:D",
+       "pub-id_pmid": "14506034",
+       "section_type": "REF",
+       "source": "Antimicrob Agents Chemother",
+       "type": "ref",
+       "volume": "47",
+       "year": "2003"
+      },
+      "text": "Mutation rate and evolution of fluoroquinolone resistance in Escherichia coli isolates from patients with urinary tract infections",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 39792,
+      "infons": {
+       "fpage": "919",
+       "lpage": "928",
+       "name_0": "surname:Johnson;given-names:JR",
+       "name_1": "surname:Tchesnokova;given-names:V",
+       "name_2": "surname:Johnston;given-names:B",
+       "pub-id_pmid": "23288927",
+       "section_type": "REF",
+       "source": "J Infect Dis",
+       "type": "ref",
+       "volume": "207",
+       "year": "2013"
+      },
+      "text": "Abrupt emergence of a single dominant multidrug-resistant strain of Escherichia coli",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 39877,
+      "infons": {
+       "fpage": "219",
+       "lpage": "228",
+       "name_0": "surname:Carattoli;given-names:A",
+       "name_1": "surname:Bertini;given-names:A",
+       "name_2": "surname:Villa;given-names:L",
+       "name_3": "surname:Falbo;given-names:V",
+       "name_4": "surname:Hopkins;given-names:KL",
+       "name_5": "surname:Threlfall;given-names:EJ",
+       "pub-id_pmid": "15935499",
+       "section_type": "REF",
+       "source": "J Microbiol Methods",
+       "type": "ref",
+       "volume": "63",
+       "year": "2005"
+      },
+      "text": "Identification of plasmids by PCR-based replicon typing",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 39933,
+      "infons": {
+       "fpage": "641",
+       "lpage": "648",
+       "name_0": "surname:Doi;given-names:Y",
+       "name_1": "surname:Park;given-names:YS",
+       "name_2": "surname:Rivera;given-names:JI",
+       "pub-id_pmid": "23150211",
+       "section_type": "REF",
+       "source": "Clin Infect Dis",
+       "type": "ref",
+       "volume": "56",
+       "year": "2013"
+      },
+      "text": "Community-associated extended-spectrum \u03b2-lactamase-producing Escherichia coli infection in the United States",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 40045,
+      "infons": {
+       "fpage": "1779",
+       "lpage": "1785",
+       "name_0": "surname:Olesen;given-names:B",
+       "name_1": "surname:Hansen;given-names:DS",
+       "name_2": "surname:Nilsson;given-names:F",
+       "pub-id_pmid": "23554186",
+       "section_type": "REF",
+       "source": "J Clin Microbiol",
+       "type": "ref",
+       "volume": "51",
+       "year": "2013"
+      },
+      "text": "Prevalence and characteristics of the epidemic multiresistant Escherichia coli ST131 clonal group among extended-spectrum beta-lactamase-producing E. coli isolates in Copenhagen, Denmark",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 40232,
+      "infons": {
+       "element-citation": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/843129/English_Surveillance_Programme_for_Antimicrobial_Utilisation_and_Resistance_2019.pdf",
+       "section_type": "REF",
+       "type": "ref",
+       "year": "2019"
+      },
+      "text": "English Surveillance Programme for Antimicrobial Utilisation and Resistance (ESPAUR) report 2018\u20132019",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 40336,
+      "infons": {
+       "fpage": "1437",
+       "lpage": "1449",
+       "name_0": "surname:Kallonen;given-names:T",
+       "name_1": "surname:Brodrick;given-names:HJ",
+       "name_2": "surname:Harris;given-names:SR",
+       "section_type": "REF",
+       "source": "Genome Res",
+       "type": "ref",
+       "volume": "27",
+       "year": "2017"
+      },
+      "text": "Systematic longitudinal survey of invasive Escherichia coli in England demonstrates a stable population structure only transiently disturbed by the emergence of ST131",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 40503,
+      "infons": {
+       "fpage": "1661",
+       "lpage": "1666",
+       "name_0": "surname:Ciesielczuk;given-names:H",
+       "name_1": "surname:Jenkins;given-names:C",
+       "name_2": "surname:Chattaway;given-names:M",
+       "pub-id_pmid": "27329302",
+       "section_type": "REF",
+       "source": "Eur J Clin Microbiol Infect Dis",
+       "type": "ref",
+       "volume": "35",
+       "year": "2016"
+      },
+      "text": "Trends in ExPEC serogroups in the UK and their significance",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 40563,
+      "infons": {
+       "fpage": "1325",
+       "lpage": "1335",
+       "name_0": "surname:Day;given-names:MJ",
+       "name_1": "surname:Hopkins;given-names:KL",
+       "name_2": "surname:Wareham;given-names:DW",
+       "pub-id_pmid": "31653524",
+       "section_type": "REF",
+       "source": "Lancet Infect Dis",
+       "type": "ref",
+       "volume": "19",
+       "year": "2019"
+      },
+      "text": "Extended-spectrum \u03b2-lactamase-producing Escherichia coli in human-derived and foodchain-derived samples from England, Wales, and Scotland: an epidemiological surveillance and typing study",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 40754,
+      "infons": {
+       "name_0": "surname:Arredondo-Alonso;given-names:S",
+       "name_1": "surname:Willems;given-names:RJ",
+       "name_2": "surname:van Schaik;given-names:W",
+       "name_3": "surname:Sch\u00fcrch;given-names:AC",
+       "section_type": "REF",
+       "source": "Microb Genom",
+       "type": "ref",
+       "volume": "3",
+       "year": "2017"
+      },
+      "text": "On the (im)possibility of reconstructing plasmids from whole-genome short-read sequencing data",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 40849,
+      "infons": {
+       "fpage": "97",
+       "name_0": "surname:Mshana;given-names:SE",
+       "name_1": "surname:Imirzalioglu;given-names:C",
+       "name_2": "surname:Hossain;given-names:H",
+       "name_3": "surname:Hain;given-names:T",
+       "name_4": "surname:Domann;given-names:E",
+       "name_5": "surname:Chakraborty;given-names:T",
+       "pub-id_pmid": "19534775",
+       "section_type": "REF",
+       "source": "BMC Infect Dis",
+       "type": "ref",
+       "volume": "9",
+       "year": "2009"
+      },
+      "text": "Conjugative IncFI plasmids carrying CTX-M-15 among Escherichia coli ESBL producing isolates at a university hospital in Germany",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     },
+     {
+      "bioctype": "BioCPassage",
+      "offset": 40977,
+      "infons": {
+       "section_type": "SUPPL",
+       "type": "title_1"
+      },
+      "text": "Supplementary Materials",
+      "sentences": [],
+      "annotations": [],
+      "relations": []
+     }
+    ],
+    "annotations": [],
+    "relations": []
+   }
+  ]
+ }
+]

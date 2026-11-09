@@ -1,0 +1,230 @@
+[
+ {
+  "source": "BioC",
+  "date": "2024-08-14",
+  "key": "BioC.key",
+  "documents": [
+   {
+    "id": "elife-67852-transrepform1.docx",
+    "passages": [
+     {
+      "offset": 0,
+      "text": "Supplementary Material",
+      "annotations": []
+     },
+     {
+      "offset": 23,
+      "text": "eLife&rsquo;s transparent reporting form",
+      "annotations": []
+     },
+     {
+      "offset": 58,
+      "text": "We encourage authors to provide detailed information within their submission to facilitate the interpretation and replication of experiments. Authors can upload supporting documentation to indicate the use of appropriate reporting guidelines for health-related research (see&nbsp;EQUATOR Network), life science research (see the&nbsp;BioSharing Information Resource), or the&nbsp;ARRIVE guidelines&nbsp;for reporting work involving animal research. Where applicable, authors should refer to any relevant reporting standards documents in this form.",
+      "annotations": []
+     },
+     {
+      "offset": 586,
+      "text": "If you have any questions, please consult our Journal Policies and/or contact us: editorial@elifesciences.org.",
+      "annotations": []
+     },
+     {
+      "offset": 697,
+      "text": "Sample-size estimation",
+      "annotations": []
+     },
+     {
+      "offset": 720,
+      "text": "You should state whether an appropriate sample size was computed when the study was being designed",
+      "annotations": []
+     },
+     {
+      "offset": 820,
+      "text": "You should state the statistical method of sample size computation and any required assumptions",
+      "annotations": []
+     },
+     {
+      "offset": 916,
+      "text": "If no explicit power analysis was used, you should describe how you decided what sample (replicate) size (number) to use",
+      "annotations": []
+     },
+     {
+      "offset": 1037,
+      "text": "Please outline where this information can be found within the submission (e.g., sections or figure legends), or explain why this information doesn&rsquo;t apply to your submission:",
+      "annotations": []
+     },
+     {
+      "offset": 1212,
+      "text": "Sample size was computed at the beginning of the study based on prevalence of typhoid from a previous study in the informal settlement (see section on Recruitment of clinical typhoid fever cases and asymptomatic typhoid carriers",
+      "annotations": []
+     },
+     {
+      "offset": 1441,
+      "text": "Page 6",
+      "annotations": []
+     },
+     {
+      "offset": 1448,
+      "text": "Replicates",
+      "annotations": []
+     },
+     {
+      "offset": 1459,
+      "text": "You should report how often each experiment was performed",
+      "annotations": []
+     },
+     {
+      "offset": 1517,
+      "text": "You should include a definition of biological versus technical replication",
+      "annotations": []
+     },
+     {
+      "offset": 1592,
+      "text": "The data obtained should be provided and sufficient information should be provided to indicate the number of independent biological and/or technical replicates",
+      "annotations": []
+     },
+     {
+      "offset": 1752,
+      "text": "If you encountered any outliers, you should describe how these were handled",
+      "annotations": []
+     },
+     {
+      "offset": 1828,
+      "text": "Criteria for exclusion/inclusion of data should be clearly stated",
+      "annotations": []
+     },
+     {
+      "offset": 1894,
+      "text": "High-throughput sequence data should be uploaded before submission, with a private link for reviewers provided (these are available from both GEO and ArrayExpress)",
+      "annotations": []
+     },
+     {
+      "offset": 2058,
+      "text": "Please outline where this information can be found within the submission (e.g., sections or figure legends), or explain why this information doesn&rsquo;t apply to your submission:",
+      "annotations": []
+     },
+     {
+      "offset": 2233,
+      "text": "Detailed information on sample collection and laboratory work-ups, including detection and characterization of strains is section on Recruitment of clinical typhoid fever cases and asymptomatic typhoid carriers",
+      "annotations": []
+     },
+     {
+      "offset": 2444,
+      "text": "Page 6 ((Fig. 1 and Table S1),  and the Bacterial Culture section (page 7).",
+      "annotations": []
+     },
+     {
+      "offset": 2520,
+      "text": "Raw Illumina sequence reads have been submitted to the European Nucleotide Archive (ENA) under accession PRJEB19289. Individual sequence accession numbers are listed in Table S1.",
+      "annotations": []
+     },
+     {
+      "offset": 2699,
+      "text": "Statistical reporting",
+      "annotations": []
+     },
+     {
+      "offset": 2721,
+      "text": "Statistical analysis methods should be described and justified",
+      "annotations": []
+     },
+     {
+      "offset": 2784,
+      "text": "Raw data should be presented in figures whenever informative to do so (typically when N per group is less than 10)",
+      "annotations": []
+     },
+     {
+      "offset": 2899,
+      "text": "For each experiment, you should identify the statistical tests used, exact values of N, definitions of center, methods of multiple test correction, and dispersion and precision measures (e.g., mean, median, SD, SEM, confidence intervals; and,&nbsp;for the major substantive results,&nbsp;a measure of effect size (e.g., Pearson's r, Cohen's d)",
+      "annotations": []
+     },
+     {
+      "offset": 3233,
+      "text": "Report exact p-values wherever possible alongside the summary statistics and 95% confidence intervals. These should be reported for all key questions and not only when the p-value is less than 0.05.",
+      "annotations": []
+     },
+     {
+      "offset": 3432,
+      "text": "Please outline where this information can be found within the submission (e.g., sections or figure legends), or explain why this information doesn&rsquo;t apply to your submission:",
+      "annotations": []
+     },
+     {
+      "offset": 3607,
+      "text": "All statistical analyses unless otherwise stated were carried out using R (v4.0.2). Details of specific functions within R packages used for individual analyses are available in supplementary methods that is comprehensively presented in Supplementary Materials File.",
+      "annotations": []
+     },
+     {
+      "offset": 3874,
+      "text": "(For large datasets, or papers with a very large number of statistical tests, you may upload a single table file with tests, Ns, etc., with reference to sections in the manuscript.)",
+      "annotations": []
+     },
+     {
+      "offset": 4056,
+      "text": "Group allocation",
+      "annotations": []
+     },
+     {
+      "offset": 4073,
+      "text": "Indicate how samples were allocated into experimental groups (in the case of clinical studies, please specify allocation to treatment method); if randomization was used, please also state if restricted randomization was applied",
+      "annotations": []
+     },
+     {
+      "offset": 4301,
+      "text": "Indicate if masking was used during group allocation, data collection and/or data analysis",
+      "annotations": []
+     },
+     {
+      "offset": 4392,
+      "text": "Please outline where this information can be found within the submission (e.g., sections or figure legends), or explain why this information doesn&rsquo;t apply to your submission:",
+      "annotations": []
+     },
+     {
+      "offset": 4567,
+      "text": "The Microbiological analysis presented here did not require this kind of experimental design",
+      "annotations": []
+     },
+     {
+      "offset": 4660,
+      "text": "Additional data files (&ldquo;source data&rdquo;)",
+      "annotations": []
+     },
+     {
+      "offset": 4698,
+      "text": "We encourage you to upload relevant additional data files, such as numerical data that are represented as a graph in a figure, or as a summary table",
+      "annotations": []
+     },
+     {
+      "offset": 4847,
+      "text": "Where provided, these should be in the most useful format, and they can be uploaded as &ldquo;Source data&rdquo; files linked to a main figure or table",
+      "annotations": []
+     },
+     {
+      "offset": 4987,
+      "text": "Include model definition files including the full list of parameters used",
+      "annotations": []
+     },
+     {
+      "offset": 5061,
+      "text": "Include code used for data analysis (e.g., R, MatLab)",
+      "annotations": []
+     },
+     {
+      "offset": 5115,
+      "text": "Avoid stating that data files are &ldquo;available upon request&rdquo;",
+      "annotations": []
+     },
+     {
+      "offset": 5174,
+      "text": "Please indicate the figures or tables for which source data files have been provided:",
+      "annotations": []
+     },
+     {
+      "offset": 5260,
+      "text": "Additional data files are well presented in the supplementary Materials sections, this includes raw data in form of Tables and Figures computed to provide additional supplementary informaltion",
+      "annotations": []
+     }
+    ],
+    "relations": []
+   }
+  ]
+ }
+]
