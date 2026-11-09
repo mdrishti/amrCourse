@@ -14,7 +14,7 @@ sudo apt-get install git
 Then clone this repo:
 
 ```bash
-git clone <this-repo-url>
+git clone https://github.com/mdrishti/amrCourse.git
 cd amrCourse
 ```
 
